@@ -1,0 +1,18 @@
+# Raw data snapshots (reproducible via geo_metadata_fetcher.py)
+data/
+geo_metadata.json
+
+# Derived files (reproducible via pipeline scripts)
+rnaseq_classified.json
+ftp_index.json
+ftp_probe_results.json
+
+# OS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+
+# Claude Code
+.claude/
