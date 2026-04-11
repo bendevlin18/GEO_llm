@@ -1,29 +1,29 @@
 # Zea mays
 
-> 34 RNA-seq datasets | 2025/01/01 – 2026/04/08
+> 296 RNA-seq datasets | 2015/01/01 – 2026/04/08
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 30 |
+| bulk | 272 |
+| single-cell | 22 |
 | single-nucleus | 2 |
-| single-cell | 2 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 16 |
-| BW | 5 |
-| CSV | 4 |
-| TSV | 4 |
-| XLSX | 4 |
-| TAB | 3 |
-| H5 | 2 |
-| XLS | 1 |
-| GTF | 1 |
-| RDS | 1 |
+| TXT | 182 |
+| CSV | 38 |
+| XLSX | 36 |
+| TSV | 19 |
+| XLS | 10 |
+| BW | 9 |
+| TAB | 8 |
+| BED | 6 |
+| NARROWPEAK | 6 |
+| GTF | 5 |
 
 ## Recent Datasets
 
@@ -63,3 +63,21 @@
 | [GSE225917](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE225917) | Genome-wide characterization of fragile and resistant nucleosomes in response to... | Zea mays | 18 | BW | 2025/02/01 |
 | [GSE225916](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE225916) | Genome-wide characterization of fragile and resistant nucleosomes in response to... | Zea mays | 4 | TXT | 2025/02/01 |
 | [GSE262376](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE262376) | Quantitative RNA pseudouridine maps reveal multi-layered translation control thr... | Zea mays | 4 | TSV | 2025/01/15 |
+| [GSE275410](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE275410) | The genetic architecture of single-cell chromatin accessibility in maize | Zea mays | 43 |  | 2024/11/19 |
+| [GSE275409](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE275409) | The genetic architecture of cell-type-specific cis-regulation [RNA-seq] | Zea mays | 3 | RDS, TXT | 2024/11/19 |
+| [GSE280702](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE280702) | Strigolactones are involved in enhancing iron uptake in maize | Zea mays | 18 | TABULAR, TSV | 2024/10/30 |
+| [GSE280139](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE280139) | Transcriptome profiling of maize transcription factor mutants to probe gene regu... | Zea mays | 113 | TSV | 2024/10/23 |
+| [GSE278385](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE278385) | Transcriptome analysis of differentially expressed genes (DEGs) induced by Spori... | Zea mays | 12 | CSV, TXT | 2024/10/04 |
+| [GSE254177](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE254177) | ZmICE1a regulates the defence–storage trade-off in maize endosperm [RNA-seq] | Zea mays | 24 | TXT | 2024/09/19 |
+| [GSE277127](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE277127) | Evaluating the effect of secreted ribonucleases from Ustilago maydis on the extr... | Zea mays | 36 | GTF | 2024/09/17 |
+| [GSE273918](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE273918) | The Exserohilum turcicum effector EtEC81 reprograms alternative splicing in maiz... | Zea mays | 27 | TXT | 2024/08/29 |
+| [GSE249472](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE249472) | Transcriptome analysis of differentially expressed genes (DEGs) induced by RBSDV... | Zea mays | 4 | XLS | 2024/08/07 |
+| [GSE233952](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE233952) | Whole-transcriptome RNA sequencing and degradome sequencing were performed on ma... | Zea mays | 12 | TXT | 2024/08/01 |
+| [GSE262336](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE262336) | The biosynthesis of storage reserves and auxin is coordinated by a hierarchical ... | Zea mays | 12 | TXT | 2024/06/21 |
+| [GSE247571](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE247571) | Progressive meristem and single-cell transcriptomes reveal the regulatory mechan... | Zea mays | 54 | TXT | 2024/06/07 |
+| [GSE268429](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE268429) | ZmNF-YA1 contributes to maize thermotolerance by regulating heat shock response | Zea mays | 18 | TXT | 2024/06/02 |
+| [GSE230815](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE230815) | Metabolism of plant stem cells under low oxygen tension: metabolic reprogramming... | Zea mays | 18 | CSV | 2024/05/27 |
+| [GSE229138](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE229138) | Gene Editing of Gibberellin-Oxidase20 improves plant architecture and drought to... | Zea mays | 6 | TXT | 2024/04/10 |
+| [GSE199881](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE199881) | A spatiotemporal dynamic atlas of circular RNAs unraveled extensive intraspecifi... | Zea mays | 157 | GFF3, TXT | 2024/03/30 |
+
+*...and 246 more datasets.*

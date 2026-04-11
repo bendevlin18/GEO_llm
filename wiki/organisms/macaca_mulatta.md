@@ -1,30 +1,30 @@
 # Macaca mulatta
 
-> 67 RNA-seq datasets | 2025/01/01 – 2026/04/08
+> 325 RNA-seq datasets | 2015/01/01 – 2026/04/08
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 32 |
-| single-cell | 29 |
-| single-nucleus | 5 |
-| spatial | 1 |
+| bulk | 206 |
+| single-cell | 103 |
+| single-nucleus | 13 |
+| spatial | 3 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TSV | 27 |
-| MTX | 24 |
-| CSV | 20 |
-| TXT | 13 |
-| RDS | 6 |
-| XLSX | 5 |
-| FASTA | 4 |
-| TAB | 3 |
-| H5 | 3 |
-| BW | 2 |
+| TXT | 120 |
+| CSV | 73 |
+| TSV | 71 |
+| MTX | 60 |
+| XLSX | 28 |
+| H5 | 19 |
+| RDS | 12 |
+| BW | 9 |
+| TAB | 8 |
+| GTF | 6 |
 
 ## Recent Datasets
 
@@ -81,4 +81,4 @@
 | [GSE292111](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE292111) | Bulk RNA sequencing study of female rhesus macaques given Modified versions of t... | Macaca mulatta | 259 | TAB | 2025/08/01 |
 | [GSE291887](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE291887) | Single cell study on PBMCs from Rhesus macaques treated with IL-15/IL-15Ra | Macaca mulatta | 20 | MTX, TSV | 2025/08/01 |
 
-*...and 17 more datasets.*
+*...and 275 more datasets.*

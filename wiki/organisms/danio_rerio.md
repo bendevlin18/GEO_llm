@@ -1,30 +1,30 @@
 # Danio rerio
 
-> 308 RNA-seq datasets | 2025/01/01 – 2026/04/08
+> 1740 RNA-seq datasets | 2015/01/01 – 2026/04/08
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 209 |
-| single-cell | 93 |
-| spatial | 3 |
-| single-nucleus | 3 |
+| bulk | 1305 |
+| single-cell | 418 |
+| spatial | 10 |
+| single-nucleus | 7 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 115 |
-| TSV | 86 |
-| MTX | 61 |
-| CSV | 51 |
-| XLSX | 36 |
-| H5 | 16 |
-| RDS | 11 |
-| BW | 6 |
-| TAB | 4 |
-| H5AD | 4 |
+| TXT | 807 |
+| TSV | 327 |
+| CSV | 253 |
+| MTX | 199 |
+| XLSX | 196 |
+| XLS | 62 |
+| BW | 58 |
+| H5 | 55 |
+| RDS | 40 |
+| TAB | 34 |
 
 ## Recent Datasets
 
@@ -81,4 +81,4 @@
 | [GSE291478](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE291478) | Decaying and expanding Erk gradients process memory of skeletal size during zebr... | Danio rerio | 15 | CSV | 2026/02/11 |
 | [GSE319120](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE319120) | Cryptic Last Exon splicing is a conserved tuning mechanism during neural develop... | Danio rerio | 9 | XLSX | 2026/02/10 |
 
-*...and 258 more datasets.*
+*...and 1690 more datasets.*

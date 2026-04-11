@@ -1,60 +1,60 @@
 # Fibrosis & Wound Healing
 
-> 1834 RNA-seq datasets | 2025/01/01 – 2026/04/08
+> 6912 RNA-seq datasets | 2015/01/01 – 2026/04/08
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 1136 |
-| single-cell | 588 |
-| single-nucleus | 58 |
-| spatial | 52 |
+| bulk | 4678 |
+| single-cell | 1974 |
+| spatial | 138 |
+| single-nucleus | 122 |
 
 ## Organism Distribution
 
 | Organism | Count |
 |----------|------:|
-| Mus musculus | 976 |
-| Homo sapiens | 568 |
-| Rattus norvegicus | 63 |
-| Danio rerio | 55 |
-| Homo sapiens; Mus musculus | 18 |
-| Sus scrofa | 14 |
-| Mus musculus; Homo sapiens | 11 |
-| Schmidtea mediterranea | 9 |
-| Ovis aries | 8 |
-| Oryctolagus cuniculus | 8 |
+| Mus musculus | 3573 |
+| Homo sapiens | 2058 |
+| Danio rerio | 235 |
+| Rattus norvegicus | 217 |
+| Homo sapiens; Mus musculus | 75 |
+| Schmidtea mediterranea | 57 |
+| Sus scrofa | 55 |
+| Arabidopsis thaliana | 53 |
+| Mus musculus; Homo sapiens | 52 |
+| Drosophila melanogaster | 41 |
 
 ## Related Topics
 
 | Topic | Co-occurring Datasets |
 |-------|---------------------:|
-| [Development & Differentiation](development.md) | 845 |
-| [Immunology](immunology.md) | 671 |
-| [Metabolism & Metabolic Disease](metabolism.md) | 506 |
-| [Cancer](cancer.md) | 455 |
-| [Muscle & Musculoskeletal](skeletal_muscle.md) | 373 |
-| [Cardiovascular](cardiovascular.md) | 361 |
-| [Lung & Respiratory](lung_respiratory.md) | 282 |
-| [Drug Response & Pharmacology](drug_response.md) | 254 |
-| [Infectious Disease](infectious_disease.md) | 241 |
-| [Neuroscience](neuroscience.md) | 211 |
+| [Development & Differentiation](development.md) | 3166 |
+| [Cell Stress & Homeostasis](cell_stress.md) | 3028 |
+| [Immunology](immunology.md) | 2315 |
+| [Signal Transduction](signal_transduction.md) | 1689 |
+| [Cancer](cancer.md) | 1612 |
+| [Metabolism & Metabolic Disease](metabolism.md) | 1608 |
+| [Muscle & Musculoskeletal](skeletal_muscle.md) | 1345 |
+| [Cardiovascular](cardiovascular.md) | 1250 |
+| [Lung & Respiratory](lung_respiratory.md) | 997 |
+| [Liver & Hepatology](liver.md) | 932 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 668 |
-| TSV | 484 |
-| MTX | 372 |
-| CSV | 348 |
-| XLSX | 183 |
-| H5 | 100 |
-| RDS | 55 |
-| TAR | 46 |
-| XLS | 41 |
-| BW | 37 |
+| TXT | 3060 |
+| TSV | 1477 |
+| CSV | 1179 |
+| MTX | 1043 |
+| XLSX | 779 |
+| H5 | 333 |
+| XLS | 180 |
+| RDS | 165 |
+| TAR | 154 |
+| BW | 148 |
 
 ## Recent Datasets
 
@@ -111,4 +111,4 @@
 | [GSE305090](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE305090) | In vivo RNA metabolic labeling identifies the sentinel cells of the regenerating... | Danio rerio | 40 | TXT | 2026/03/30 |
 | [GSE304621](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE304621) | Single-cell and spatial transcriptomic analyses of gene therapy-associated retin... | Macaca mulatta | 10 | MTX, TSV | 2026/03/30 |
 
-*...and 1784 more datasets.*
+*...and 6862 more datasets.*

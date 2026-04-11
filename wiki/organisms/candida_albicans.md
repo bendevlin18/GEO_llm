@@ -1,24 +1,28 @@
 # Candida albicans
 
-> 27 RNA-seq datasets | 2025/01/01 – 2026/04/08
+> 144 RNA-seq datasets | 2015/01/01 – 2026/04/08
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 27 |
+| bulk | 143 |
+| single-cell | 1 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 13 |
-| CSV | 7 |
-| XLSX | 5 |
-| BW | 3 |
-| TSV | 2 |
+| TXT | 76 |
+| XLSX | 29 |
+| CSV | 25 |
+| TSV | 16 |
+| XLS | 5 |
+| BW | 4 |
+| DIFF | 3 |
+| WIG | 2 |
+| TDF | 2 |
 | TABULAR | 2 |
-| TDF | 1 |
 
 ## Recent Datasets
 
@@ -51,3 +55,28 @@
 | [GSE290357](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE290357) | Beyond the plasma membrane disruption: Novel antifungal mechanism of Neosartorya... | Candida albicans | 12 | TXT | 2025/03/03 |
 | [GSE284543](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE284543) | Roles of P-body factors in Candida albicans filamentation and stress response | Candida albicans | 24 | CSV | 2025/02/18 |
 | [GSE230146](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE230146) | C. albicans in healthy people and patients with UC | Candida albicans | 10 | XLSX | 2025/02/12 |
+| [GSE283948](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE283948) | Manganese homeostasis modulates glucan and chitin unmasking in Candida albicans | Candida albicans | 8 | TXT | 2024/12/31 |
+| [GSE274931](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE274931) | Ribosome Profiling Reveals Differences in Global Translational vs. Transcription... | Candida albicans | 12 | TSV | 2024/12/22 |
+| [GSE276413](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE276413) | Genetic Insights into the Rheological Strength of Candida albicans Biofilms | Candida albicans | 12 | XLS | 2024/10/21 |
+| [GSE267941](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE267941) | The early transcriptional and post-transcriptional responses to fluconazole in s... | Candida albicans | 12 | TXT | 2024/10/06 |
+| [GSE275502](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE275502) | Candida albicans pathways that protect against organic peroxides and lipid perox... | Candida albicans | 9 | CSV | 2024/09/20 |
+| [GSE262764](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE262764) | The spliceosome impacts morphogenesis in the human fungal pathogen Candida albic... | Candida albicans | 21 | TDF, TXT | 2024/05/28 |
+| [GSE263609](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE263609) | Candida albicans PPG1, a serine/threonine phosphatase, plays a vital role in cen... | Candida albicans | 8 | TXT | 2024/04/10 |
+| [GSE229566](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE229566) | Peptide YY: a Paneth cell antimicrobial peptide that maintains Candida gut comme... | Candida albicans | 12 | CSV | 2024/02/28 |
+| [GSE245114](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE245114) | Manganese homeostasis modulates fungal virulence and stress tolerance in Candida... | Candida albicans | 12 | TXT | 2024/02/13 |
+| [GSE168874](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE168874) | Whole genome mRNA  expression profiling during Candida albicans growth in comple... | Candida albicans | 8 | XLSX | 2023/12/27 |
+| [GSE168619](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE168619) | Whole genome mRNA  expression profiling during Candida albicans growth in comple... | Candida albicans | 8 | XLSX | 2023/12/27 |
+| [GSE249927](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE249927) | Identification of genes regulated by the transcription factor RFX1 (CR_06110C) i... | Candida albicans | 6 | TXT | 2023/12/15 |
+| [GSE244665](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE244665) | CTR9 affects virulence of Candida albicans by regulating methionine metabolism | Candida albicans | 12 | BW | 2023/11/30 |
+| [GSE245897](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE245897) | Filamentation and Biofilm Formation are Regulated by the Phase-Separation Capaci... | Candida albicans | 12 | CSV, TXT | 2023/11/20 |
+| [GSE227590](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE227590) | Genome-wide Translational Response of Candida albicans to Fluconazole Treatment | Candida albicans | 16 | TSV | 2023/08/05 |
+| [GSE238051](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE238051) | The Candida albicans reference strain SC5314 contains a rare, dominant allele of... | Candida albicans | 12 | TXT | 2023/07/29 |
+| [GSE217461](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE217461) | Inferring gene regulatory networks via transcriptional profiles as associated dy... | Candida albicans | 51 | TXT | 2023/06/23 |
+| [GSE209608](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE209608) | Next generation sequencing facilitates quantitative analysis of transcriptional ... | Candida albicans | 6 | TXT | 2023/05/18 |
+| [GSE223317](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE223317) | Transcriptional profiling of Candida albicans SC5314 grown on different carbon a... | Candida albicans | 15 | CSV | 2023/03/30 |
+| [GSE227654](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE227654) | The Rfg1 and Bcr1 transcription factors regulate acidic pH-induced filamentous g... | Candida albicans | 4 | TXT | 2023/03/24 |
+| [GSE223218](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE223218) | Grf10 regulates the response to copper, iron, and phosphate in Candida albicans. | Candida albicans | 24 |  | 2023/03/20 |
+| [GSE223217](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE223217) | Differential gene expression in the grf10Δ mutant of Candida albicans in high co... | Candida albicans | 12 | CSV, XLSX | 2023/03/20 |
+| [GSE223216](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE223216) | Differential gene expression in the grf10Δ mutant of Candida albicans in rich gr... | Candida albicans | 12 | CSV, XLSX | 2023/03/20 |
+
+*...and 94 more datasets.*

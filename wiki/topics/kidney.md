@@ -1,60 +1,60 @@
 # Kidney & Renal
 
-> 1484 RNA-seq datasets | 2025/01/01 – 2026/04/08
+> 7012 RNA-seq datasets | 2015/01/01 – 2026/04/08
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 1056 |
-| single-cell | 292 |
-| single-nucleus | 110 |
-| spatial | 26 |
+| bulk | 5776 |
+| single-cell | 999 |
+| single-nucleus | 167 |
+| spatial | 70 |
 
 ## Organism Distribution
 
 | Organism | Count |
 |----------|------:|
-| Homo sapiens | 681 |
-| Mus musculus | 620 |
-| Rattus norvegicus | 42 |
-| Danio rerio | 18 |
-| Drosophila melanogaster | 12 |
-| Mus musculus; Homo sapiens | 11 |
-| Homo sapiens; Mus musculus | 10 |
-| Sus scrofa | 8 |
-| Arabidopsis thaliana | 3 |
-| Macaca mulatta | 3 |
+| Homo sapiens | 3671 |
+| Mus musculus | 2359 |
+| Rattus norvegicus | 224 |
+| Drosophila melanogaster | 100 |
+| Danio rerio | 87 |
+| Homo sapiens; Mus musculus | 57 |
+| Mus musculus; Homo sapiens | 38 |
+| Sus scrofa | 37 |
+| Arabidopsis thaliana | 21 |
+| Xenopus laevis | 17 |
 
 ## Related Topics
 
 | Topic | Co-occurring Datasets |
 |-------|---------------------:|
-| [Cancer](cancer.md) | 537 |
-| [Development & Differentiation](development.md) | 448 |
-| [Immunology](immunology.md) | 395 |
-| [Metabolism & Metabolic Disease](metabolism.md) | 296 |
-| [Drug Response & Pharmacology](drug_response.md) | 214 |
-| [Cardiovascular](cardiovascular.md) | 175 |
-| [Infectious Disease](infectious_disease.md) | 173 |
-| [Hematopoiesis & Blood](hematopoiesis.md) | 138 |
-| [Neuroscience](neuroscience.md) | 136 |
-| [Epigenetics & Chromatin](epigenetics.md) | 129 |
+| [Cancer](cancer.md) | 2266 |
+| [Development & Differentiation](development.md) | 2003 |
+| [Cell Stress & Homeostasis](cell_stress.md) | 1660 |
+| [Immunology](immunology.md) | 1451 |
+| [Signal Transduction](signal_transduction.md) | 1383 |
+| [Metabolism & Metabolic Disease](metabolism.md) | 1147 |
+| [RNA Biology & Regulation](rna_biology.md) | 860 |
+| [Epigenetics & Chromatin](epigenetics.md) | 745 |
+| [Infectious Disease](infectious_disease.md) | 720 |
+| [Cardiovascular](cardiovascular.md) | 702 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 699 |
-| TSV | 273 |
-| CSV | 241 |
-| MTX | 181 |
-| XLSX | 174 |
-| TAR | 83 |
-| H5 | 52 |
-| XLS | 42 |
-| RDS | 39 |
-| BW | 27 |
+| TXT | 4008 |
+| TSV | 1447 |
+| CSV | 899 |
+| XLSX | 802 |
+| BIGWIG | 594 |
+| MTX | 528 |
+| XLS | 217 |
+| BW | 195 |
+| H5 | 163 |
+| TAR | 151 |
 
 ## Recent Datasets
 
@@ -111,4 +111,4 @@
 | [GSE281581](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE281581) | scRNA-seq of primary tumors and lung metastases from mouse models of metastatic ... | Mus musculus | 8 | MTX, TSV | 2026/03/27 |
 | [GSE281580](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE281580) | Human scRNA-seq of three primary and five metastatic breast cancers | Homo sapiens | 8 | MTX, TSV | 2026/03/27 |
 
-*...and 1434 more datasets.*
+*...and 6962 more datasets.*

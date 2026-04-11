@@ -1,60 +1,60 @@
 # Development & Differentiation
 
-> 9255 RNA-seq datasets | 2025/01/01 – 2026/04/08
+> 45439 RNA-seq datasets | 2015/01/01 – 2026/04/08
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 6031 |
-| single-cell | 2847 |
-| single-nucleus | 221 |
-| spatial | 156 |
+| bulk | 33752 |
+| single-cell | 10773 |
+| single-nucleus | 548 |
+| spatial | 366 |
 
 ## Organism Distribution
 
 | Organism | Count |
 |----------|------:|
-| Mus musculus | 4097 |
-| Homo sapiens | 3599 |
-| Danio rerio | 173 |
-| Rattus norvegicus | 147 |
-| Arabidopsis thaliana | 107 |
-| Drosophila melanogaster | 105 |
-| Homo sapiens; Mus musculus | 97 |
-| Caenorhabditis elegans | 60 |
-| Bos taurus | 58 |
-| Gallus gallus | 56 |
+| Mus musculus | 20686 |
+| Homo sapiens | 15617 |
+| Danio rerio | 998 |
+| Arabidopsis thaliana | 725 |
+| Drosophila melanogaster | 694 |
+| Rattus norvegicus | 651 |
+| Homo sapiens; Mus musculus | 572 |
+| Mus musculus; Homo sapiens | 327 |
+| Caenorhabditis elegans | 307 |
+| Sus scrofa | 300 |
 
 ## Related Topics
 
 | Topic | Co-occurring Datasets |
 |-------|---------------------:|
-| [Cancer](cancer.md) | 2961 |
-| [Immunology](immunology.md) | 2850 |
-| [Neuroscience](neuroscience.md) | 1854 |
-| [Metabolism & Metabolic Disease](metabolism.md) | 1740 |
-| [Epigenetics & Chromatin](epigenetics.md) | 1522 |
-| [Infectious Disease](infectious_disease.md) | 1221 |
-| [Drug Response & Pharmacology](drug_response.md) | 1213 |
-| [Hematopoiesis & Blood](hematopoiesis.md) | 1185 |
-| [Muscle & Musculoskeletal](skeletal_muscle.md) | 1090 |
-| [Cardiovascular](cardiovascular.md) | 968 |
+| [Cancer](cancer.md) | 12347 |
+| [Immunology](immunology.md) | 11852 |
+| [Signal Transduction](signal_transduction.md) | 9732 |
+| [Cell Stress & Homeostasis](cell_stress.md) | 8884 |
+| [Neuroscience](neuroscience.md) | 8439 |
+| [Epigenetics & Chromatin](epigenetics.md) | 8149 |
+| [Metabolism & Metabolic Disease](metabolism.md) | 6804 |
+| [Gene Regulation & Transcription](gene_regulation.md) | 6266 |
+| [Hematopoiesis & Blood](hematopoiesis.md) | 5629 |
+| [Muscle & Musculoskeletal](skeletal_muscle.md) | 5049 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 3468 |
-| TSV | 2353 |
-| CSV | 1927 |
-| MTX | 1698 |
-| XLSX | 897 |
-| H5 | 489 |
-| BW | 399 |
-| RDS | 339 |
-| XLS | 203 |
-| TAR | 169 |
+| TXT | 21860 |
+| TSV | 8560 |
+| CSV | 7530 |
+| MTX | 5242 |
+| XLSX | 4755 |
+| BW | 2609 |
+| H5 | 1485 |
+| BED | 1174 |
+| XLS | 1112 |
+| RDS | 853 |
 
 ## Recent Datasets
 
@@ -111,4 +111,4 @@
 | [GSE316271](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE316271) | Bulk RNA-seq profiling of p53-deficient mammary tumors driven by Runx1 and/or Rb... | Mus musculus | 14 | CSV | 2026/04/06 |
 | [GSE315007](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE315007) | Sex- and hepatocyte Pparg-dependent hepatic effects of a high fat diet containin... | Mus musculus | 30 | TXT | 2026/04/06 |
 
-*...and 9205 more datasets.*
+*...and 45389 more datasets.*

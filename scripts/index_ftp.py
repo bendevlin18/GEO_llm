@@ -51,11 +51,21 @@ def list_ftp_dir(ftp, path):
     return files
 
 
-def connect_ftp():
-    """Create a new anonymous FTP connection."""
-    ftp = ftplib.FTP(FTP_HOST, timeout=30)
-    ftp.login()
-    return ftp
+def connect_ftp(retries=5, delay=10):
+    """Create a new anonymous FTP connection with retry logic."""
+    for attempt in range(retries):
+        try:
+            ftp = ftplib.FTP(FTP_HOST, timeout=30)
+            ftp.login()
+            return ftp
+        except Exception as e:
+            if attempt < retries - 1:
+                wait = delay * (attempt + 1)
+                print(f"  FTP connect failed ({e}), retrying in {wait}s... "
+                      f"(attempt {attempt + 2}/{retries})")
+                time.sleep(wait)
+            else:
+                raise
 
 
 def load_existing_index():
@@ -100,55 +110,61 @@ def main():
     errors = 0
     start_time = time.time()
 
-    for i, acc in enumerate(todo):
-        # Reconnect periodically
-        if i > 0 and i % RECONNECT_EVERY == 0:
-            try:
-                ftp.quit()
-            except Exception:
-                pass
-            print(f"  Reconnecting FTP...")
-            ftp = connect_ftp()
+    try:
+        for i, acc in enumerate(todo):
+            # Reconnect periodically
+            if i > 0 and i % RECONNECT_EVERY == 0:
+                try:
+                    ftp.quit()
+                except Exception:
+                    pass
+                print(f"  Reconnecting FTP...")
+                ftp = connect_ftp()
 
-        path = get_suppl_path(acc)
-        files = list_ftp_dir(ftp, path)
-
-        # Retry once on transient error
-        if files is None:
-            time.sleep(2)
-            try:
-                ftp.quit()
-            except Exception:
-                pass
-            ftp = connect_ftp()
+            path = get_suppl_path(acc)
             files = list_ftp_dir(ftp, path)
+
+            # Retry once on transient error
             if files is None:
-                files = []
-                errors += 1
+                time.sleep(2)
+                try:
+                    ftp.quit()
+                except Exception:
+                    pass
+                ftp = connect_ftp()
+                files = list_ftp_dir(ftp, path)
+                if files is None:
+                    files = []
+                    errors += 1
 
-        # Store result
-        total_size = sum(f["size"] for f in files)
-        index[acc] = {
-            "files": [{"name": f["name"], "size": f["size"]} for f in files if not f["is_dir"]],
-            "n_files": len([f for f in files if not f["is_dir"]]),
-            "total_size": total_size,
-            "indexed_at": datetime.now().isoformat(),
-        }
-        completed += 1
+            # Store result
+            total_size = sum(f["size"] for f in files)
+            index[acc] = {
+                "files": [{"name": f["name"], "size": f["size"]} for f in files if not f["is_dir"]],
+                "n_files": len([f for f in files if not f["is_dir"]]),
+                "total_size": total_size,
+                "indexed_at": datetime.now().isoformat(),
+            }
+            completed += 1
 
-        # Progress
-        if completed % 50 == 0:
-            elapsed = time.time() - start_time
-            rate = completed / elapsed
-            remaining = (len(todo) - completed) / rate if rate > 0 else 0
-            print(f"  {completed}/{len(todo)} indexed "
-                  f"({rate:.1f}/sec, ~{remaining/60:.0f}min remaining, {errors} errors)")
+            # Progress
+            if completed % 50 == 0:
+                elapsed = time.time() - start_time
+                rate = completed / elapsed
+                remaining = (len(todo) - completed) / rate if rate > 0 else 0
+                print(f"  {completed}/{len(todo)} indexed "
+                      f"({rate:.1f}/sec, ~{remaining/60:.0f}min remaining, {errors} errors)")
 
-        # Save periodically
-        if completed % SAVE_EVERY == 0:
-            save_index(index)
+            # Save periodically
+            if completed % SAVE_EVERY == 0:
+                save_index(index)
 
-        time.sleep(REQUEST_DELAY)
+            time.sleep(REQUEST_DELAY)
+    except (KeyboardInterrupt, Exception) as e:
+        print(f"\n  Interrupted ({e}). Saving progress...")
+        save_index(index)
+        print(f"  Saved {len(index)} records to {FTP_INDEX_PATH}")
+        raise
 
     # Final save
     save_index(index)

@@ -1,60 +1,60 @@
 # Hematopoiesis & Blood
 
-> 2289 RNA-seq datasets | 2025/01/01 – 2026/04/08
+> 10797 RNA-seq datasets | 2015/01/01 – 2026/04/08
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 1406 |
-| single-cell | 810 |
-| single-nucleus | 41 |
-| spatial | 32 |
+| bulk | 7533 |
+| single-cell | 3101 |
+| spatial | 83 |
+| single-nucleus | 80 |
 
 ## Organism Distribution
 
 | Organism | Count |
 |----------|------:|
-| Mus musculus | 1088 |
-| Homo sapiens | 1026 |
-| Homo sapiens; Mus musculus | 28 |
-| Mus musculus; Homo sapiens | 24 |
-| Danio rerio | 23 |
-| Rattus norvegicus | 20 |
-| Sus scrofa | 12 |
-| Macaca mulatta | 12 |
-| Canis lupus familiaris | 4 |
-| Bos taurus | 4 |
+| Mus musculus | 5281 |
+| Homo sapiens | 4558 |
+| Homo sapiens; Mus musculus | 187 |
+| Danio rerio | 145 |
+| Mus musculus; Homo sapiens | 117 |
+| Rattus norvegicus | 68 |
+| Sus scrofa | 37 |
+| Drosophila melanogaster | 29 |
+| Macaca mulatta | 26 |
+| Plasmodium falciparum | 21 |
 
 ## Related Topics
 
 | Topic | Co-occurring Datasets |
 |-------|---------------------:|
-| [Development & Differentiation](development.md) | 1185 |
-| [Cancer](cancer.md) | 1146 |
-| [Immunology](immunology.md) | 1139 |
-| [Muscle & Musculoskeletal](skeletal_muscle.md) | 556 |
-| [Drug Response & Pharmacology](drug_response.md) | 473 |
-| [Metabolism & Metabolic Disease](metabolism.md) | 433 |
-| [Plant Biology](plant_biology.md) | 390 |
-| [Infectious Disease](infectious_disease.md) | 353 |
-| [Neuroscience](neuroscience.md) | 278 |
-| [Epigenetics & Chromatin](epigenetics.md) | 259 |
+| [Development & Differentiation](development.md) | 5629 |
+| [Cancer](cancer.md) | 5076 |
+| [Immunology](immunology.md) | 4687 |
+| [Muscle & Musculoskeletal](skeletal_muscle.md) | 2735 |
+| [Cell Stress & Homeostasis](cell_stress.md) | 2241 |
+| [Signal Transduction](signal_transduction.md) | 2142 |
+| [Drug Response & Pharmacology](drug_response.md) | 1666 |
+| [Metabolism & Metabolic Disease](metabolism.md) | 1644 |
+| [Plant Biology](plant_biology.md) | 1610 |
+| [Infectious Disease](infectious_disease.md) | 1385 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 862 |
-| TSV | 657 |
-| MTX | 488 |
-| CSV | 440 |
-| XLSX | 222 |
-| H5 | 139 |
-| RDS | 114 |
-| BW | 60 |
-| TAR | 41 |
-| XLS | 39 |
+| TXT | 5139 |
+| TSV | 2286 |
+| CSV | 1801 |
+| MTX | 1548 |
+| XLSX | 965 |
+| H5 | 490 |
+| BW | 403 |
+| RDS | 250 |
+| XLS | 215 |
+| TAR | 204 |
 
 ## Recent Datasets
 
@@ -111,4 +111,4 @@
 | [GSE326309](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326309) | Cohesin complex cooperates with PU.1 at super-enhancers to regulate the differen... | Mus musculus | 34 | BIGWIG, HIC, MTX, TSV | 2026/03/30 |
 | [GSE325763](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325763) | The retinoic acid receptor transcriptional coregulator RIP140 predicts poor outc... | Homo sapiens | 12 | TXT | 2026/03/30 |
 
-*...and 2239 more datasets.*
+*...and 10747 more datasets.*

@@ -1,6 +1,6 @@
 # Bulk RNA-seq
 
-> 17654 datasets | 2025/01/01 – 2026/04/08
+> 104001 datasets | 2015/01/01 – 2026/04/08
 
 Standard RNA-sequencing of bulk tissue or cell populations. Each sample represents the averaged transcriptome of many cells.
 
@@ -8,41 +8,41 @@ Standard RNA-sequencing of bulk tissue or cell populations. Each sample represen
 
 | Organism | Count |
 |----------|------:|
-| Homo sapiens | 7212 |
-| Mus musculus | 6684 |
-| Rattus norvegicus | 371 |
-| Arabidopsis thaliana | 285 |
-| Danio rerio | 209 |
-| Drosophila melanogaster | 206 |
-| Homo sapiens; Mus musculus | 166 |
-| Caenorhabditis elegans | 163 |
-| Mus musculus; Homo sapiens | 103 |
-| Saccharomyces cerevisiae | 97 |
-| Sus scrofa | 83 |
-| Bos taurus | 82 |
-| Gallus gallus | 67 |
-| Oryza sativa | 50 |
-| Escherichia coli | 49 |
+| Homo sapiens | 40111 |
+| Mus musculus | 37263 |
+| Arabidopsis thaliana | 2298 |
+| Rattus norvegicus | 1925 |
+| Drosophila melanogaster | 1612 |
+| Danio rerio | 1305 |
+| Homo sapiens; Mus musculus | 1137 |
+| Caenorhabditis elegans | 1023 |
+| Saccharomyces cerevisiae | 952 |
+| Mus musculus; Homo sapiens | 690 |
+| Sus scrofa | 552 |
+| Bos taurus | 473 |
+| Gallus gallus | 390 |
+| Oryza sativa | 352 |
+| Escherichia coli | 295 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count | Description |
 |------|------:|-------------|
-| TXT | 8707 | Text files (count matrices, gene lists, metadata) |
-| CSV | 3439 | Comma-separated (count matrices, DE results) |
-| XLSX | 2416 | Excel (DE results, sample annotations) |
-| TSV | 1575 | Tab-separated (10x barcodes/features, metadata) |
-| BW | 849 | BigWig (coverage tracks) |
-| XLS | 543 | Excel (legacy format) |
-| BIGWIG | 285 | BigWig (coverage tracks) |
-| TAB | 251 |  |
-| SF | 227 |  |
-| RESULTS | 184 |  |
-| BED | 175 |  |
-| NARROWPEAK | 149 |  |
-| RDS | 139 | R serialized objects (Seurat, SingleCellExperiment) |
-| BEDGRAPH | 110 |  |
-| TAR | 97 | Tar archives (bundled outputs) |
+| TXT | 57734 | Text files (count matrices, gene lists, metadata) |
+| CSV | 14325 | Comma-separated (count matrices, DE results) |
+| XLSX | 13413 | Excel (DE results, sample annotations) |
+| TSV | 9676 | Tab-separated (10x barcodes/features, metadata) |
+| BW | 6261 | BigWig (coverage tracks) |
+| BIGWIG | 4269 | BigWig (coverage tracks) |
+| XLS | 3372 | Excel (legacy format) |
+| BED | 2821 |  |
+| BEDGRAPH | 1533 |  |
+| TAB | 1500 |  |
+| NARROWPEAK | 1156 |  |
+| GTF | 955 |  |
+| WIG | 860 |  |
+| FASTA | 757 |  |
+| FPKM_TRACKING | 710 |  |
 
 ## Recent Datasets
 
@@ -99,4 +99,4 @@ Standard RNA-sequencing of bulk tissue or cell populations. Each sample represen
 | [GSE326861](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326861) | Ocy454 cell gene expression changes with PTH, FAK inhibitor and PDE8A deletion | Mus musculus | 12 | XLSX | 2026/04/07 |
 | [GSE326853](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326853) | Transcriptome analysis of treated and control samples from bladder carcinoma | Homo sapiens; Mus musculus | 18 | CSV, TSV | 2026/04/07 |
 
-*...and 17604 more datasets.*
+*...and 103951 more datasets.*

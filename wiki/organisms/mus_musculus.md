@@ -1,30 +1,30 @@
 # Mus musculus
 
-> 10664 RNA-seq datasets | 2025/01/01 – 2026/04/08
+> 50380 RNA-seq datasets | 2015/01/01 – 2026/04/08
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 6684 |
-| single-cell | 3230 |
-| single-nucleus | 579 |
-| spatial | 171 |
+| bulk | 37263 |
+| single-cell | 11665 |
+| single-nucleus | 1017 |
+| spatial | 435 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 4171 |
-| TSV | 2735 |
-| MTX | 2015 |
-| CSV | 1972 |
-| XLSX | 1012 |
-| H5 | 643 |
-| TAR | 492 |
-| BW | 358 |
-| RDS | 340 |
-| XLS | 261 |
+| TXT | 23637 |
+| TSV | 9702 |
+| CSV | 7846 |
+| MTX | 6119 |
+| XLSX | 5278 |
+| BW | 2496 |
+| H5 | 1925 |
+| XLS | 1268 |
+| TAR | 1178 |
+| BIGWIG | 1096 |
 
 ## Recent Datasets
 
@@ -81,4 +81,4 @@
 | [GSE326625](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326625) | Pleuromutilins alleviate psoriasis via inhibition of hnRNP-U/TNF-α | Mus musculus | 8 | TXT | 2026/04/06 |
 | [GSE326246](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326246) | Citraconate preserves T cell stemness and antitumor immunity | Mus musculus | 9 | TXT | 2026/04/06 |
 
-*...and 10614 more datasets.*
+*...and 50330 more datasets.*

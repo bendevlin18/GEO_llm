@@ -1,27 +1,30 @@
 # Canis lupus familiaris
 
-> 36 RNA-seq datasets | 2025/01/01 – 2026/04/08
+> 168 RNA-seq datasets | 2015/01/01 – 2026/04/08
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 28 |
-| single-cell | 6 |
+| bulk | 144 |
+| single-cell | 21 |
 | single-nucleus | 2 |
+| spatial | 1 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 13 |
-| TSV | 9 |
-| XLSX | 5 |
-| MTX | 5 |
-| CSV | 5 |
+| TXT | 87 |
+| TSV | 26 |
+| XLSX | 23 |
+| CSV | 18 |
+| MTX | 13 |
+| DIFF | 4 |
+| BW | 3 |
+| TAR | 3 |
 | RDATA | 3 |
-| BIGWIG | 1 |
-| TABULAR | 1 |
+| XLS | 2 |
 
 ## Recent Datasets
 
@@ -63,3 +66,19 @@
 | [GSE280031](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE280031) | Expression Profile of New Marker Genes Involved in Differentiation of Canine Adi... | Canis lupus familiaris | 12 | TSV | 2025/01/29 |
 | [GSE284559](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE284559) | Differential gene expression analysis in French bulldog high grade | Canis lupus familiaris | 18 | TXT | 2025/01/26 |
 | [GSE272307](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE272307) | transcriptional change of the lesion site margins after spinal cord injury in ca... | Canis lupus familiaris | 18 | XLSX | 2025/01/22 |
+| [GSE269477](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE269477) | Obesity regulates the fate of peripheral blood mononuclear cells through FoxM1 | Canis lupus familiaris | 8 | TXT | 2024/12/31 |
+| [GSE267867](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE267867) | Single cell sequencing of hypoimmunogenic neonatal islet beta cells | Canis lupus familiaris | 1 | MTX, TSV | 2024/12/18 |
+| [GSE264311](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE264311) | Wildtype and PALS1 knockout MDCKII cells grown under non-confluent and in 3D cys... | Canis lupus familiaris | 22 | TXT | 2024/11/30 |
+| [GSE234079](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE234079) | Differential expression of genes upon E-cadherin loss of function | Canis lupus familiaris | 6 | XLSX | 2024/11/14 |
+| [GSE281266](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE281266) | Gene expression profile at single cell level of gingiva and alveolar bone tissue... | Canis lupus familiaris | 4 | MTX, TSV | 2024/11/11 |
+| [GSE207623](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE207623) | A study of the effects of bisphenol A on dog obesity | Canis lupus familiaris | 6 | TXT | 2024/11/04 |
+| [GSE242034](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE242034) | Whole blood gene expression analysis of spontaneous hypertriglyceridemia in dogs... | Canis lupus familiaris | 31 | TXT | 2024/10/29 |
+| [GSE271945](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE271945) | Single cell gene expression profile for normal adult canine neuroretina | Canis lupus familiaris | 2 | MTX, TSV | 2024/10/01 |
+| [GSE248285](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE248285) | Multiomics analysis of canine myocardium after circumferential pulmonary vein ab... | Canis lupus familiaris | 10 | XLS | 2024/08/14 |
+| [GSE255529](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE255529) | Host-Microbe Interactions in the Nasal Cavity of Dogs with Chronic Idiopathic Rh... | Canis lupus familiaris | 12 | TXT | 2024/08/08 |
+| [GSE227619](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE227619) | Analysis of gene expression in the dog macular retina and supporting tissues: co... | Canis lupus familiaris | 22 | TXT | 2024/07/25 |
+| [GSE266234](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE266234) | Stromal expression profiling reveals immune-driven adaption to malignancy in can... | Canis lupus familiaris | 54 | XLSX | 2024/05/31 |
+| [GSE254005](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE254005) | Single-Cell RNA Sequencing Investigation of the Duodenal Mucosa in Canine Chroni... | Canis lupus familiaris | 7 | MTX, TSV | 2024/05/31 |
+| [GSE263280](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE263280) | Single-nuclei expression of canine veins during carotid-cartoid vein bypass impl... | Canis lupus familiaris | 5 | MTX, TSV | 2024/05/29 |
+
+*...and 118 more datasets.*

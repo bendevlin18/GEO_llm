@@ -1,26 +1,29 @@
 # Glycine max
 
-> 28 RNA-seq datasets | 2025/01/01 – 2026/04/08
+> 141 RNA-seq datasets | 2015/01/01 – 2026/04/08
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 27 |
-| single-nucleus | 1 |
+| bulk | 136 |
+| single-cell | 3 |
+| single-nucleus | 2 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 18 |
-| XLSX | 4 |
-| TSV | 2 |
-| XLS | 2 |
-| MATRIX | 1 |
-| GTF | 1 |
-| RDS | 1 |
-| CSV | 1 |
+| TXT | 86 |
+| XLSX | 21 |
+| CSV | 12 |
+| XLS | 9 |
+| TSV | 8 |
+| GTF | 3 |
+| TAB | 3 |
+| BW | 3 |
+| MTX | 3 |
+| RDS | 2 |
 
 ## Recent Datasets
 
@@ -54,3 +57,27 @@
 | [GSE200235](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE200235) | Dominant foliar endophytes in soybean | Glycine max | 36 | TXT | 2025/04/04 |
 | [GSE107970](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE107970) | Transcriptomic analysis reveals the importance of sugar metabolism and export fo... | Glycine max | 12 | TXT | 2025/03/12 |
 | [GSE262373](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE262373) | Quantitative RNA pseudouridine maps reveal multi-layered translation control thr... | Glycine max | 5 | TSV | 2025/01/15 |
+| [GSE244001](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE244001) | Beneficial rhizobacteria and virus infection modulate the feeding preferences of... | Glycine max | 40 | TXT | 2024/12/30 |
+| [GSE41201](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE41201) | Transcriptome variation between wild type and five-foliate leaf mutant in Glycin... | Glycine max | 6 |  | 2024/12/16 |
+| [GSE41200](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE41200) | Transcriptome variation between wild type and five-foliate leaf mutant in Glycin... | Glycine max | 4 | TXT | 2024/12/16 |
+| [GSE189036](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE189036) | Transcriptomic analysis reveals the importance of Protein Phosphatase 2 regulati... | Glycine max | 4 | TXT | 2024/11/17 |
+| [GSE233370](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE233370) | Differential transcriptome reprogramming induced by the soybean cyst nematode Ty... | Glycine max | 18 | XLSX | 2024/10/29 |
+| [GSE248224](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE248224) | Dissecting the temporal genetic networks programming soybean embryo development ... | Glycine max | 46 | TXT | 2024/10/16 |
+| [GSE243174](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE243174) | Single-cell Multiomic profiling of soybean cotyledon-stage seeds | Glycine max | 2 | BED, H5, MTX, TSV | 2024/09/30 |
+| [GSE275263](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE275263) | Circadian Clock Regulation in Soybean Senescence: A Transcriptome Analysis of Ea... | Glycine max | 2 | TXT | 2024/08/23 |
+| [GSE274768](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE274768) | Transcriptome data of compatible soybean host inoculated with Sinorhizobium fred... | Glycine max | 45 | TSV | 2024/08/18 |
+| [GSE234864](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE234864) | Soybean cell atlas gene expression profile | Glycine max | 18 | MTX, TSV | 2024/07/08 |
+| [GSE226149](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE226149) | Gene expression profile at single cell level from Glycine max nodules and roots. | Glycine max | 5 | MTX, TSV | 2024/07/08 |
+| [GSE270392](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE270392) | A spatially resolved multiomic single-cell atlas of soybean development | Glycine max | 59 | CSV, JPG, JSON, PNG, RDS, TXT | 2024/07/05 |
+| [GSE269425](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE269425) | The type Ⅲ effector NopL interacts with GmREM1a and GmNFR5 to promote symbiosis ... | Glycine max | 12 | CSV | 2024/06/13 |
+| [GSE232688](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE232688) | Soybean MKK2 establishes intricate signaling pathways to regulate soybean respon... | Glycine max | 18 | XLSX | 2024/05/06 |
+| [GSE231886](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE231886) | Histone demethylases JMJ19 and JMJ20 interact with LUX2 to mediate flowering tim... | Glycine max | 24 | BW, TXT | 2024/05/05 |
+| [GSE231885](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE231885) | Histone demethylases JMJ19 and JMJ20 interact with LUX2 to mediate flowering tim... | Glycine max | 4 | TXT | 2024/05/05 |
+| [GSE252910](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE252910) | OceanobacilluspicturaeAlleviatesCdstressandpromotesgrowthinsoybeanseedlings | Glycine max | 12 | TXT | 2024/01/18 |
+| [GSE240964](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE240964) | Transcriptomic and epigenetic responses unveil resistance mechanisms to Phytopht... | Glycine max | 64 | TXT | 2023/11/24 |
+| [GSE240966](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE240966) | Transcriptomic and epigenetic responses unveil resistance mechanisms to Phytopht... | Glycine max | 80 | TXT | 2023/11/23 |
+| [GSE237798](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE237798) | Combined phenotypic and transcriptomic analysis of soybean plants subjected to m... | Glycine max | 108 | TXT | 2023/07/23 |
+| [GSE201762](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE201762) | Transcriptome analysis reveals GmZF351-affected gene expression in leaf and root... | Glycine max | 12 | TXT | 2023/06/24 |
+| [GSE221901](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE221901) | RNA-seq dissects incomplete activation of glyceollin biosynthesis by soybean tra... | Glycine max | 9 |  | 2023/05/31 |
+
+*...and 91 more datasets.*

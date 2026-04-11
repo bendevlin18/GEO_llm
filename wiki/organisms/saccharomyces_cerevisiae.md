@@ -1,28 +1,28 @@
 # Saccharomyces cerevisiae
 
-> 101 RNA-seq datasets | 2025/01/01 – 2026/04/08
+> 980 RNA-seq datasets | 2015/01/01 – 2026/04/08
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 97 |
-| single-cell | 4 |
+| bulk | 952 |
+| single-cell | 28 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 41 |
-| CSV | 20 |
-| TSV | 13 |
-| XLSX | 11 |
-| BW | 10 |
-| XLS | 4 |
-| BIGWIG | 3 |
-| BEDGRAPH | 3 |
-| BED | 3 |
-| GTF | 2 |
+| TXT | 449 |
+| CSV | 150 |
+| XLSX | 123 |
+| BW | 110 |
+| TSV | 95 |
+| WIG | 42 |
+| BEDGRAPH | 37 |
+| BED | 34 |
+| BIGWIG | 30 |
+| XLS | 20 |
 
 ## Recent Datasets
 
@@ -79,4 +79,4 @@
 | [GSE276521](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE276521) | RNA sequencing in Saccharomyces cerevisiae with abrogated binding of Nab3 to PIC... | Saccharomyces cerevisiae | 9 | BEDGRAPH, FA, GTF, TXT | 2025/08/25 |
 | [GSE211775](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE211775) | RNA-seq in MaV208 WT and mutant Saccharomyces cerevisiae yeast strains treated w... | Saccharomyces cerevisiae | 15 | SF | 2025/08/22 |
 
-*...and 51 more datasets.*
+*...and 930 more datasets.*

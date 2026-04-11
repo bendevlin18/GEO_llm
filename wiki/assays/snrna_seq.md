@@ -1,6 +1,6 @@
 # Single-Nucleus RNA-seq (snRNA-seq)
 
-> 1020 datasets | 2025/01/01 – 2026/04/08
+> 1974 datasets | 2015/01/01 – 2026/04/08
 
 Transcriptome profiling from isolated nuclei rather than whole cells. Preferred for tissues that are difficult to dissociate (e.g., brain, adipose, muscle) or for frozen archival samples.
 
@@ -8,41 +8,41 @@ Transcriptome profiling from isolated nuclei rather than whole cells. Preferred 
 
 | Organism | Count |
 |----------|------:|
-| Mus musculus | 579 |
-| Homo sapiens | 324 |
-| Sus scrofa | 12 |
-| Rattus norvegicus | 12 |
-| Drosophila melanogaster | 10 |
-| Arabidopsis thaliana | 9 |
-| Homo sapiens; Mus musculus | 6 |
-| Macaca mulatta | 5 |
-| Mus musculus; Homo sapiens | 4 |
-| Gallus gallus | 4 |
-| Danio rerio | 3 |
-| Zea mays | 2 |
-| Populus trichocarpa | 2 |
-| Tupaia belangeri | 2 |
-| Canis lupus familiaris | 2 |
+| Mus musculus | 1017 |
+| Homo sapiens | 651 |
+| Rattus norvegicus | 46 |
+| Homo sapiens; Mus musculus | 22 |
+| Sus scrofa | 20 |
+| Drosophila melanogaster | 18 |
+| Mus musculus; Homo sapiens | 16 |
+| Arabidopsis thaliana | 15 |
+| Macaca mulatta | 13 |
+| Gallus gallus | 8 |
+| Danio rerio | 7 |
+| Bos taurus | 6 |
+| Macaca mulatta; Homo sapiens | 5 |
+| Homo sapiens; Canis lupus familiaris; Mus musculus | 4 |
+| Mus musculus; Homo sapiens; Canis lupus familiaris | 4 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count | Description |
 |------|------:|-------------|
-| TXT | 456 | Text files (count matrices, gene lists, metadata) |
-| TAR | 415 | Tar archives (bundled outputs) |
-| TSV | 329 | Tab-separated (10x barcodes/features, metadata) |
-| MTX | 293 | Sparse matrices (10x CellRanger output) |
-| H5 | 117 | HDF5 (CellRanger filtered matrices) |
-| CSV | 95 | Comma-separated (count matrices, DE results) |
-| RDS | 85 | R serialized objects (Seurat, SingleCellExperiment) |
-| TBI | 28 |  |
-| H5AD | 22 | AnnData HDF5 (scanpy/Python ecosystem) |
-| XLSX | 17 | Excel (DE results, sample annotations) |
-| BW | 12 | BigWig (coverage tracks) |
-| BED | 10 |  |
-| RDATA | 9 |  |
-| GTF | 6 |  |
-| ZIP | 5 |  |
+| TSV | 820 | Tab-separated (10x barcodes/features, metadata) |
+| MTX | 716 | Sparse matrices (10x CellRanger output) |
+| TXT | 623 | Text files (count matrices, gene lists, metadata) |
+| TAR | 468 | Tar archives (bundled outputs) |
+| CSV | 307 | Comma-separated (count matrices, DE results) |
+| H5 | 264 | HDF5 (CellRanger filtered matrices) |
+| RDS | 168 | R serialized objects (Seurat, SingleCellExperiment) |
+| TBI | 57 |  |
+| XLSX | 56 | Excel (DE results, sample annotations) |
+| H5AD | 54 | AnnData HDF5 (scanpy/Python ecosystem) |
+| BED | 32 |  |
+| BW | 21 | BigWig (coverage tracks) |
+| RDATA | 18 |  |
+| GTF | 12 |  |
+| ZIP | 10 |  |
 
 ## Recent Datasets
 
@@ -99,4 +99,4 @@ Transcriptome profiling from isolated nuclei rather than whole cells. Preferred 
 | [GSE296329](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE296329) | Single-cell epigenetic landscape, microenvironment interactions, and gene regula... | Homo sapiens | 12 | H5 | 2026/03/16 |
 | [GSE296139](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE296139) | Single-cell epigenetic landscape, microenvironment interactions, and gene regula... | Homo sapiens | 12 | H5 | 2026/03/16 |
 
-*...and 970 more datasets.*
+*...and 1924 more datasets.*

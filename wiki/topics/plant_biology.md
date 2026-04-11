@@ -1,60 +1,60 @@
 # Plant Biology
 
-> 1706 RNA-seq datasets | 2025/01/01 – 2026/04/08
+> 9525 RNA-seq datasets | 2015/01/01 – 2026/04/08
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 1273 |
-| single-cell | 370 |
-| single-nucleus | 39 |
-| spatial | 24 |
+| bulk | 8105 |
+| single-cell | 1282 |
+| single-nucleus | 85 |
+| spatial | 53 |
 
 ## Organism Distribution
 
 | Organism | Count |
 |----------|------:|
-| Mus musculus | 468 |
-| Homo sapiens | 399 |
-| Arabidopsis thaliana | 283 |
-| Oryza sativa | 51 |
-| Zea mays | 33 |
-| Rattus norvegicus | 30 |
-| Glycine max | 28 |
-| Solanum lycopersicum | 22 |
-| Sus scrofa | 16 |
-| Oryza sativa Japonica Group | 13 |
+| Arabidopsis thaliana | 2200 |
+| Mus musculus | 1943 |
+| Homo sapiens | 1456 |
+| Oryza sativa | 347 |
+| Zea mays | 278 |
+| Solanum lycopersicum | 183 |
+| Glycine max | 140 |
+| Oryza sativa Japonica Group | 125 |
+| Rattus norvegicus | 123 |
+| Triticum aestivum | 92 |
 
 ## Related Topics
 
 | Topic | Co-occurring Datasets |
 |-------|---------------------:|
-| [Development & Differentiation](development.md) | 756 |
-| [Immunology](immunology.md) | 454 |
-| [Cancer](cancer.md) | 397 |
-| [Hematopoiesis & Blood](hematopoiesis.md) | 390 |
-| [Metabolism & Metabolic Disease](metabolism.md) | 300 |
-| [Reproductive Biology](reproduction.md) | 266 |
-| [Infectious Disease](infectious_disease.md) | 245 |
-| [Epigenetics & Chromatin](epigenetics.md) | 213 |
-| [Neuroscience](neuroscience.md) | 180 |
-| [Drug Response & Pharmacology](drug_response.md) | 163 |
+| [Development & Differentiation](development.md) | 3760 |
+| [Cell Stress & Homeostasis](cell_stress.md) | 1898 |
+| [Signal Transduction](signal_transduction.md) | 1726 |
+| [Immunology](immunology.md) | 1712 |
+| [Cancer](cancer.md) | 1700 |
+| [Hematopoiesis & Blood](hematopoiesis.md) | 1610 |
+| [Infectious Disease](infectious_disease.md) | 1372 |
+| [Epigenetics & Chromatin](epigenetics.md) | 1349 |
+| [Metabolism & Metabolic Disease](metabolism.md) | 1266 |
+| [Reproductive Biology](reproduction.md) | 1187 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 692 |
-| TSV | 350 |
-| CSV | 334 |
-| MTX | 222 |
-| XLSX | 214 |
-| BW | 82 |
-| RDS | 64 |
-| H5 | 59 |
-| XLS | 42 |
-| BED | 22 |
+| TXT | 5072 |
+| CSV | 1315 |
+| XLSX | 1242 |
+| TSV | 1158 |
+| MTX | 609 |
+| BW | 416 |
+| XLS | 353 |
+| FASTA | 194 |
+| H5 | 189 |
+| FA | 168 |
 
 ## Recent Datasets
 
@@ -111,4 +111,4 @@
 | [GSE318600](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE318600) | Psoriasis-like disease prevents squamous skin tumor development by neutrophil-dr... | Mus musculus | 4 | H5 | 2026/03/25 |
 | [GSE311337](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE311337) | Filifactor alocis FtxA-dependent suppression of inflammation and apoptosis | Homo sapiens | 8 | TSV | 2026/03/25 |
 
-*...and 1656 more datasets.*
+*...and 9475 more datasets.*

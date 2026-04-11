@@ -1,25 +1,28 @@
 # Staphylococcus aureus
 
-> 26 RNA-seq datasets | 2025/01/01 – 2026/04/08
+> 175 RNA-seq datasets | 2015/01/01 – 2026/04/08
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 26 |
+| bulk | 173 |
+| single-cell | 2 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 12 |
-| XLSX | 9 |
-| CSV | 3 |
-| TABULAR | 1 |
-| WIG | 1 |
-| BW | 1 |
-| GFF | 1 |
-| TSV | 1 |
+| TXT | 85 |
+| XLSX | 50 |
+| CSV | 17 |
+| XLS | 12 |
+| GTF | 8 |
+| GFF | 7 |
+| WIG | 6 |
+| TSV | 6 |
+| FA | 3 |
+| BW | 2 |
 
 ## Recent Datasets
 
@@ -51,3 +54,29 @@
 | [GSE254567](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE254567) | Impact of the (p)ppGpp synthesis and maintenance of GTP homeostasis during stati... | Staphylococcus aureus | 12 | TXT | 2025/02/21 |
 | [GSE286163](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE286163) | Longistylin A inhibited SaeRS-dependent hemolysin expression and activated Type ... | Staphylococcus aureus | 6 | XLSX | 2025/01/09 |
 | [GSE255751](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE255751) | Multipronged impact of environmental temperature on Staphylococcus aureus infect... | Staphylococcus aureus | 6 | CSV | 2025/01/04 |
+| [GSE270986](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE270986) | Bacterial single-cell RNA sequencing captures biofilm transcriptional heterogene... | Staphylococcus aureus | 2 | TXT | 2024/11/04 |
+| [GSE253516](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE253516) | The transcriptional program of Staphylococcus aureus phage K is affected by a ho... | Staphylococcus aureus | 56 | XLSX | 2024/10/09 |
+| [GSE266471](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE266471) | Mechanistic Insights and In Vivo Efficacy of Thiosemicarbazones Against Methicil... | Staphylococcus aureus | 6 | XLSX | 2024/09/04 |
+| [GSE241614](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE241614) | Transcriptional analysis of transposon mutants disrupted in bacillithiol biosynt... | Staphylococcus aureus | 4 | TXT, XLSX | 2024/08/22 |
+| [GSE242845](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE242845) | Dual Gene Expression Analysis Identifies Factors Associated with Staphylococcus ... | Staphylococcus aureus | 8 | XLS | 2024/08/02 |
+| [GSE268637](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE268637) | Staphylococcus aureus adapts to exploit collagen-derived proline during chronic ... | Staphylococcus aureus | 8 | CSV, TXT | 2024/07/31 |
+| [GSE176028](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE176028) | MS2-affinity purification coupled with RNA sequencing (MAPS) reveals S. aureus R... | Staphylococcus aureus | 4 | XLSX | 2024/06/01 |
+| [GSE267020](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE267020) | Novel anti-virulence compounds disrupt exotoxin expression in MRSA | Staphylococcus aureus | 18 | XLSX | 2024/05/15 |
+| [GSE265954](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE265954) | The coordinated adaptation of Staphylococcus aureus to calprotectin dependent me... | Staphylococcus aureus | 36 | XLSX | 2024/05/14 |
+| [GSE255351](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE255351) | Prophage-encoded methyltransferase upregulates virulence to drive adaptation in ... | Staphylococcus aureus | 4 | TXT | 2024/04/17 |
+| [GSE252862](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE252862) | Prophage-encoded methyltransferase upregulates virulence to drive adaptation in ... | Staphylococcus aureus | 5 | TSV | 2024/04/17 |
+| [GSE250541](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE250541) | The unusual mode of action of the polyketide glycoside antibiotic cervimycin C | Staphylococcus aureus | 12 |  | 2024/04/02 |
+| [GSE250540](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE250540) | The unusual mode of action of the polyketide glycoside antibiotic cervimycin C [... | Staphylococcus aureus | 6 | TXT | 2024/04/02 |
+| [GSE209674](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE209674) | The unusual mode of action of the polyketide glycoside antibiotic cervimycin C [... | Staphylococcus aureus | 6 | TXT | 2024/04/02 |
+| [GSE168265](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE168265) | Comparative Ribo-Seq of Staphylococcus aureus harboring A2058-unmodified ribosom... | Staphylococcus aureus | 10 | TXT | 2024/01/16 |
+| [GSE253193](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE253193) | Gene expression profiling of Staphylococcus aureus strain Newman and gene asp23 ... | Staphylococcus aureus | 6 | TXT | 2024/01/14 |
+| [GSE248604](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE248604) | Facemask acne attenuation through modulation of indirect microbiome interactions | Staphylococcus aureus | 6 | TXT | 2023/11/27 |
+| [GSE239718](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE239718) | The Staphylococcus aureus CamS lipoprotein is a repressor of toxin production th... | Staphylococcus aureus | 12 | TXT | 2023/11/20 |
+| [GSE234900](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE234900) | Coculturing with Streptococcus anginosus alters Staphylococcus aureus transcript... | Staphylococcus aureus | 12 | FASTA, TXT | 2023/09/26 |
+| [GSE241582](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE241582) | Exploring modulation in Staphylococcus aureus biofilm formation and virulence du... | Staphylococcus aureus | 12 | XLSX | 2023/08/28 |
+| [GSE239411](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE239411) | Janus nanoparticles targeting extracellular polymeric substance achieve flexible... | Staphylococcus aureus | 4 | CSV | 2023/08/01 |
+| [GSE239513](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE239513) | Transcriptional response of USA300 MRSA to coculture with EGM139 Desemzia incert... | Staphylococcus aureus | 8 | CSV, TSV | 2023/07/28 |
+| [GSE237701](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE237701) | Transcriptomic exploration of SSR42 and its impact on Staphylococcus aureus viru... | Staphylococcus aureus | 2 | XLSX | 2023/07/25 |
+| [GSE136543](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE136543) | Characterized functions of hypothetical genes identified by Tn-seq important for... | Staphylococcus aureus | 21 | XLSX | 2023/06/27 |
+
+*...and 125 more datasets.*

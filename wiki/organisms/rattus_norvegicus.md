@@ -1,30 +1,30 @@
 # Rattus norvegicus
 
-> 465 RNA-seq datasets | 2025/01/01 – 2026/04/08
+> 2182 RNA-seq datasets | 2015/01/01 – 2026/04/08
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 371 |
-| single-cell | 76 |
-| single-nucleus | 12 |
-| spatial | 6 |
+| bulk | 1925 |
+| single-cell | 200 |
+| single-nucleus | 46 |
+| spatial | 11 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 204 |
-| CSV | 85 |
-| TSV | 82 |
-| XLSX | 57 |
-| MTX | 48 |
-| XLS | 19 |
-| H5 | 16 |
-| TAR | 8 |
-| BED | 5 |
-| SF | 4 |
+| TXT | 1148 |
+| XLSX | 324 |
+| CSV | 312 |
+| TSV | 242 |
+| MTX | 135 |
+| XLS | 104 |
+| BW | 29 |
+| H5 | 28 |
+| BED | 24 |
+| GTF | 22 |
 
 ## Recent Datasets
 
@@ -81,4 +81,4 @@
 | [GSE291848](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE291848) | Effect of deoxynivalenol and acrylamide on gene expression on IEC-6 intestinal c... | Rattus norvegicus | 16 | CSV, TSV | 2026/03/03 |
 | [GSE303814](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE303814) | A Bioorthogonal Nanoconcentrisome System for Epigenetic and Immunometabolic Repr... | Rattus norvegicus | 6 | XLSX | 2026/03/02 |
 
-*...and 415 more datasets.*
+*...and 2132 more datasets.*

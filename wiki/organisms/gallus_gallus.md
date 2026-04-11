@@ -1,30 +1,30 @@
 # Gallus gallus
 
-> 97 RNA-seq datasets | 2025/01/01 – 2026/04/08
+> 488 RNA-seq datasets | 2015/01/01 – 2026/04/08
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 67 |
-| single-cell | 25 |
-| single-nucleus | 4 |
-| spatial | 1 |
+| bulk | 390 |
+| single-cell | 85 |
+| single-nucleus | 8 |
+| spatial | 5 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 38 |
-| TSV | 20 |
-| MTX | 17 |
-| XLSX | 11 |
-| CSV | 10 |
-| BW | 6 |
-| H5 | 5 |
-| RDS | 3 |
-| TAR | 2 |
-| GTF | 2 |
+| TXT | 254 |
+| TSV | 69 |
+| XLSX | 64 |
+| CSV | 52 |
+| MTX | 49 |
+| XLS | 14 |
+| BW | 12 |
+| RDS | 11 |
+| H5 | 10 |
+| GTF | 8 |
 
 ## Recent Datasets
 
@@ -81,4 +81,4 @@
 | [GSE302747](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE302747) | KLF2 may suppress chicken adipogenesis by enhancing the GATA2 transcription | Gallus gallus | 6 | TXT | 2025/07/17 |
 | [GSE294245](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE294245) | Integrating metabolomic and transcriptomic to reveal the dynamics of ntramuscula... | Gallus gallus | 15 | TXT | 2025/07/16 |
 
-*...and 47 more datasets.*
+*...and 438 more datasets.*

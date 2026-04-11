@@ -1,28 +1,30 @@
 # Caenorhabditis elegans
 
-> 173 RNA-seq datasets | 2025/01/01 – 2026/04/08
+> 1071 RNA-seq datasets | 2015/01/01 – 2026/04/08
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 163 |
-| single-cell | 10 |
+| bulk | 1023 |
+| single-cell | 44 |
+| single-nucleus | 3 |
+| spatial | 1 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 66 |
-| CSV | 39 |
-| XLSX | 36 |
-| TSV | 15 |
-| BW | 11 |
-| TABULAR | 6 |
-| TAB | 4 |
-| SF | 4 |
-| MTX | 4 |
-| RESULTS | 3 |
+| TXT | 478 |
+| XLSX | 187 |
+| CSV | 160 |
+| BW | 86 |
+| TSV | 86 |
+| XLS | 43 |
+| TAB | 34 |
+| BED | 18 |
+| H5 | 12 |
+| MTX | 12 |
 
 ## Recent Datasets
 
@@ -79,4 +81,4 @@
 | [GSE312042](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE312042) | Phenotypic expansion of CALM1/2-associated disorders to include neurologic pheno... | Caenorhabditis elegans | 9 | SF, TXT | 2025/12/06 |
 | [GSE303122](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE303122) | Parental age selection in C. elegans influences progeny stress resistance capaci... | Caenorhabditis elegans | 7 | XLS | 2025/12/04 |
 
-*...and 123 more datasets.*
+*...and 1021 more datasets.*

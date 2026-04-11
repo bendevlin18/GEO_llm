@@ -1,27 +1,28 @@
 # Escherichia coli
 
-> 49 RNA-seq datasets | 2025/01/01 – 2026/04/08
+> 296 RNA-seq datasets | 2015/01/01 – 2026/04/08
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 49 |
+| bulk | 295 |
+| single-cell | 1 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 21 |
-| CSV | 19 |
-| XLSX | 7 |
-| XLS | 3 |
-| TSV | 2 |
-| TAB | 2 |
-| COOL | 1 |
-| BEDGRAPH | 1 |
-| GFF | 1 |
-| WIG | 1 |
+| TXT | 132 |
+| CSV | 73 |
+| XLSX | 55 |
+| TSV | 16 |
+| GFF | 14 |
+| XLS | 14 |
+| WIG | 12 |
+| GTF | 10 |
+| TAB | 7 |
+| FASTA | 6 |
 
 ## Recent Datasets
 
@@ -76,3 +77,6 @@
 | [GSE277048](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE277048) | Chemotranscriptomic Profiling with a Thiamine Monophosphate Photoaffinity Probe | Escherichia coli | 6 | TXT | 2025/02/17 |
 | [GSE273773](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE273773) | Acclimation of the Escherichia coli transcriptome after 10 hours of incubation i... | Escherichia coli | 6 | CSV, TXT | 2025/01/08 |
 | [GSE252441](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE252441) | Antimicrobial action of t-cinnamaldehyde on Escherichia coli MG1655 | Escherichia coli | 12 | XLSX | 2025/01/03 |
+| [GSE284789](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE284789) | A Noncanonical Intrinsic Terminator in the HicAB Toxin‒Antitoxin Operon Promotes... | Escherichia coli | 3 | TXT | 2024/12/25 |
+
+*...and 246 more datasets.*

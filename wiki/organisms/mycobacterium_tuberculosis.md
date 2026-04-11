@@ -1,21 +1,23 @@
 # Mycobacterium tuberculosis
 
-> 24 RNA-seq datasets | 2025/01/01 – 2026/04/08
+> 122 RNA-seq datasets | 2015/01/01 – 2026/04/08
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 24 |
+| bulk | 122 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 13 |
-| CSV | 5 |
-| XLSX | 4 |
-| TSV | 1 |
+| TXT | 77 |
+| CSV | 34 |
+| XLSX | 12 |
+| XLS | 4 |
+| TSV | 3 |
+| RPKM | 1 |
 | TABULAR | 1 |
 | BW | 1 |
 
@@ -47,3 +49,31 @@
 | [GSE288598](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE288598) | Transcriptomic Profiling of Efflux Pump Genes in Mycobacterium tuberculosis Unde... | Mycobacterium tuberculosis | 6 | XLSX | 2025/02/20 |
 | [GSE288494](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE288494) | Phagosomal RNA sensing through TLR8 controls susceptibility to tuberculosis | Mycobacterium tuberculosis | 1 | TXT | 2025/02/05 |
 | [GSE200125](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE200125) | Defining the interplay of carbon dioxide and the carbonic anhydrase CanB in regu... | Mycobacterium tuberculosis | 16 | XLSX | 2025/02/04 |
+| [GSE281239](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE281239) | Frequently arising ESX-1 associated phase variants influence Mycobacterium tuber... | Mycobacterium tuberculosis | 15 | TXT | 2024/12/18 |
+| [GSE260838](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE260838) | Identification of a depupylation regulator for an essential enzyme in Mycobacter... | Mycobacterium tuberculosis | 12 | TSV | 2024/11/01 |
+| [GSE244851](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE244851) | Elderly lung mucosa impact on Mycobacterium tuberculosis adaptation during infec... | Mycobacterium tuberculosis | 14 | TXT | 2024/10/21 |
+| [GSE255435](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE255435) | Co-cultivation induces elicitation of unique Fungus-derived Natural products tha... | Mycobacterium tuberculosis | 30 | TXT | 2024/10/15 |
+| [GSE228998](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE228998) | M.tb adaptation to human alveolar lining fluid (ALF) | Mycobacterium tuberculosis | 32 | TXT | 2024/02/20 |
+| [GSE226474](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE226474) | Dual-active oxadiazoles targeting the Mycobacterium tuberculosis ESX-1 secretion... | Mycobacterium tuberculosis | 4 | TXT | 2024/01/01 |
+| [GSE235293](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE235293) | The Heparin-binding hemagglutinin protein of Mycobacterium tuberculosis is a nuc... | Mycobacterium tuberculosis | 16 | CSV | 2023/11/29 |
+| [GSE248407](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE248407) | Transcriptional Response of Phosphomimetic (T380D) and Phosphoablative (T380A) N... | Mycobacterium tuberculosis | 7 | CSV | 2023/11/27 |
+| [GSE244235](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE244235) | Transcriptomic response of Mycobacterium tuberculosis to artemisinin, Artemisia ... | Mycobacterium tuberculosis | 44 | TXT | 2023/09/28 |
+| [GSE241072](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE241072) | Effect of mce3R deletion on Mycobacterium tuberculosis response to acidic pH and... | Mycobacterium tuberculosis | 16 | CSV | 2023/08/23 |
+| [GSE214729](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE214729) | Effect of suppression of ERDMAN_2020 on whole-genome transcriptomic profiling of... | Mycobacterium tuberculosis | 6 | TXT | 2023/07/19 |
+| [GSE218354](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE218354) | Effect of small M. tuberculosis RNA MTS1338 on the transcriptome under various s... | Mycobacterium tuberculosis | 24 | CSV | 2023/05/17 |
+| [GSE197742](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE197742) | Effect of SigA depletion and SigB knockout on the global transcription of Mtb | Mycobacterium tuberculosis | 10 | CSV | 2023/03/09 |
+| [GSE67670](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE67670) | Gene expression profiling of knock-out of Rv2869c/Rip1 in M. tuberculosis Erdman... | Mycobacterium tuberculosis | 16 | CSV | 2023/01/01 |
+| [GSE195959](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE195959) | Transcriptional response of M. tuberculosis (Mtb) STPKs | Mycobacterium tuberculosis | 71 | CSV | 2022/12/03 |
+| [GSE214266](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE214266) | Transcriptional Response of Mycobacterium tuberculosis H37Rv to Ca2+ | Mycobacterium tuberculosis | 24 | TXT | 2022/11/07 |
+| [GSE211141](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE211141) | Role of the extracytoplasmic function sigma factor SigE in the stringent respons... | Mycobacterium tuberculosis | 24 | TXT | 2022/08/16 |
+| [GSE201641](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE201641) | RNA Seq analysis of WT vs rv3249c mutant | Mycobacterium tuberculosis | 6 | CSV | 2022/08/01 |
+| [GSE203662](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE203662) | A multi-omics investigation into the mechanisms of hyper-virulence in Mycobacter... | Mycobacterium tuberculosis | 8 | TXT | 2022/07/13 |
+| [GSE154673](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE154673) | Mycobacterium tuberculosis transcription factor, EmbR regulates expression of vi... | Mycobacterium tuberculosis | 8 | TXT | 2022/07/01 |
+| [GSE199000](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE199000) | PrrA modulation of Mycobacterium tuberculosis response to acidic pH and high chl... | Mycobacterium tuberculosis | 8 | CSV | 2022/06/23 |
+| [GSE198999](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE198999) | PrrA modulation of Mycobacterium tuberculosis response to nitric oxide is critic... | Mycobacterium tuberculosis | 8 | CSV | 2022/06/23 |
+| [GSE198998](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE198998) | PrrA modulates Mycobacterium tuberculosis response to acidic pH and high chlorid... | Mycobacterium tuberculosis | 16 | CSV | 2022/06/23 |
+| [GSE198997](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE198997) | PrrA modulates Mycobacterium tuberculosis response to nitric oxide | Mycobacterium tuberculosis | 8 | CSV | 2022/06/23 |
+| [GSE203032](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE203032) | Condition-Specific Mapping of Operons (COSMO) Using Dynamic and Static Genome Da... | Mycobacterium tuberculosis | 64 | TXT | 2022/05/14 |
+| [GSE173225](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE173225) | RNA-seq analysis of various strains of Mycobacterium tuberculosis. | Mycobacterium tuberculosis | 6 | TXT | 2022/04/22 |
+
+*...and 72 more datasets.*

@@ -1,60 +1,60 @@
 # Gut & Intestinal Biology
 
-> 1428 RNA-seq datasets | 2025/01/01 – 2026/04/08
+> 6793 RNA-seq datasets | 2015/01/01 – 2026/04/08
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 950 |
-| single-cell | 419 |
-| single-nucleus | 34 |
-| spatial | 25 |
+| bulk | 5178 |
+| single-cell | 1489 |
+| spatial | 65 |
+| single-nucleus | 61 |
 
 ## Organism Distribution
 
 | Organism | Count |
 |----------|------:|
-| Mus musculus | 782 |
-| Homo sapiens | 352 |
-| Drosophila melanogaster | 32 |
-| Rattus norvegicus | 30 |
-| Danio rerio | 19 |
-| Sus scrofa | 15 |
-| Cryptococcus neoformans | 9 |
-| Mus musculus; Homo sapiens | 8 |
-| Caenorhabditis elegans | 8 |
-| Homo sapiens; Mus musculus | 6 |
+| Mus musculus | 3418 |
+| Homo sapiens | 1716 |
+| Drosophila melanogaster | 164 |
+| Rattus norvegicus | 87 |
+| Danio rerio | 78 |
+| Sus scrofa | 65 |
+| Caenorhabditis elegans | 55 |
+| Homo sapiens; Mus musculus | 51 |
+| Mus musculus; Homo sapiens | 44 |
+| Cryptococcus neoformans | 42 |
 
 ## Related Topics
 
 | Topic | Co-occurring Datasets |
 |-------|---------------------:|
-| [Immunology](immunology.md) | 668 |
-| [Development & Differentiation](development.md) | 535 |
-| [Infectious Disease](infectious_disease.md) | 496 |
-| [Cancer](cancer.md) | 393 |
-| [Metabolism & Metabolic Disease](metabolism.md) | 312 |
-| [Neuroscience](neuroscience.md) | 211 |
-| [Drug Response & Pharmacology](drug_response.md) | 121 |
-| [Fibrosis & Wound Healing](fibrosis_wound.md) | 99 |
-| [Hematopoiesis & Blood](hematopoiesis.md) | 97 |
-| [Lung & Respiratory](lung_respiratory.md) | 95 |
+| [Immunology](immunology.md) | 2736 |
+| [Development & Differentiation](development.md) | 2500 |
+| [Infectious Disease](infectious_disease.md) | 2002 |
+| [Cancer](cancer.md) | 1869 |
+| [Microbiology](microbiology.md) | 1556 |
+| [Signal Transduction](signal_transduction.md) | 1455 |
+| [Cell Stress & Homeostasis](cell_stress.md) | 1255 |
+| [Metabolism & Metabolic Disease](metabolism.md) | 1223 |
+| [Neuroscience](neuroscience.md) | 687 |
+| [Epigenetics & Chromatin](epigenetics.md) | 586 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 526 |
-| TSV | 374 |
-| CSV | 307 |
-| MTX | 262 |
-| XLSX | 157 |
-| H5 | 96 |
-| RDS | 40 |
-| XLS | 29 |
-| TAR | 28 |
-| H5AD | 17 |
+| TXT | 3211 |
+| TSV | 1276 |
+| CSV | 1189 |
+| XLSX | 801 |
+| MTX | 752 |
+| H5 | 240 |
+| XLS | 184 |
+| BW | 168 |
+| TAR | 113 |
+| RDS | 110 |
 
 ## Recent Datasets
 
@@ -111,4 +111,4 @@
 | [GSE311539](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE311539) | Microbiome-produced nicotinic acid controls colon regional identity and injury s... | Mus musculus | 10 | TXT | 2026/03/26 |
 | [GSE311538](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE311538) | Microbiome-produced nicotinic acid controls colon regional identity and injury s... | Mus musculus | 8 | CSV, MTX, XLSX | 2026/03/26 |
 
-*...and 1378 more datasets.*
+*...and 6743 more datasets.*

@@ -1,60 +1,60 @@
 # Drug Response & Pharmacology
 
-> 3613 RNA-seq datasets | 2025/01/01 – 2026/04/08
+> 13275 RNA-seq datasets | 2015/01/01 – 2026/04/08
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 2724 |
-| single-cell | 768 |
-| spatial | 62 |
-| single-nucleus | 59 |
+| bulk | 10735 |
+| single-cell | 2292 |
+| single-nucleus | 128 |
+| spatial | 120 |
 
 ## Organism Distribution
 
 | Organism | Count |
 |----------|------:|
-| Homo sapiens | 1938 |
-| Mus musculus | 1325 |
-| Rattus norvegicus | 90 |
-| Homo sapiens; Mus musculus | 37 |
-| Mus musculus; Homo sapiens | 26 |
-| Danio rerio | 21 |
-| Sus scrofa | 15 |
-| Mycobacterium tuberculosis | 9 |
-| Canis lupus familiaris | 7 |
-| Saccharomyces cerevisiae | 6 |
+| Homo sapiens | 7286 |
+| Mus musculus | 4567 |
+| Rattus norvegicus | 264 |
+| Homo sapiens; Mus musculus | 166 |
+| Mus musculus; Homo sapiens | 104 |
+| Danio rerio | 66 |
+| Sus scrofa | 41 |
+| Saccharomyces cerevisiae | 34 |
+| Arabidopsis thaliana | 31 |
+| Mycobacterium tuberculosis | 26 |
 
 ## Related Topics
 
 | Topic | Co-occurring Datasets |
 |-------|---------------------:|
-| [Cancer](cancer.md) | 2460 |
-| [Immunology](immunology.md) | 1447 |
-| [Development & Differentiation](development.md) | 1213 |
-| [Metabolism & Metabolic Disease](metabolism.md) | 763 |
-| [Infectious Disease](infectious_disease.md) | 492 |
-| [Hematopoiesis & Blood](hematopoiesis.md) | 473 |
-| [Neuroscience](neuroscience.md) | 466 |
-| [Epigenetics & Chromatin](epigenetics.md) | 430 |
-| [Muscle & Musculoskeletal](skeletal_muscle.md) | 345 |
-| [Cardiovascular](cardiovascular.md) | 336 |
+| [Cancer](cancer.md) | 8744 |
+| [Immunology](immunology.md) | 4708 |
+| [Development & Differentiation](development.md) | 4369 |
+| [Signal Transduction](signal_transduction.md) | 4315 |
+| [Cell Stress & Homeostasis](cell_stress.md) | 3673 |
+| [Metabolism & Metabolic Disease](metabolism.md) | 2397 |
+| [Epigenetics & Chromatin](epigenetics.md) | 1777 |
+| [Infectious Disease](infectious_disease.md) | 1707 |
+| [Hematopoiesis & Blood](hematopoiesis.md) | 1666 |
+| [Neuroscience](neuroscience.md) | 1644 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 1538 |
-| CSV | 741 |
-| TSV | 737 |
-| MTX | 458 |
-| XLSX | 416 |
-| H5 | 118 |
-| XLS | 95 |
-| RDS | 92 |
-| BW | 54 |
-| TAR | 49 |
+| TXT | 6622 |
+| CSV | 2332 |
+| TSV | 2147 |
+| XLSX | 1509 |
+| MTX | 1218 |
+| BW | 389 |
+| XLS | 359 |
+| H5 | 319 |
+| RDS | 192 |
+| TAB | 180 |
 
 ## Recent Datasets
 
@@ -111,4 +111,4 @@
 | [GSE292992](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE292992) | MDM2 degradation overcomes feedback regulation of p53 signaling in Merkel cell c... | Homo sapiens | 66 | CSV | 2026/04/02 |
 | [GSE326187](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326187) | Combined dopamine receptor inhibition and radiotherapy target mesothelioma-initi... | Homo sapiens | 12 | TXT | 2026/04/01 |
 
-*...and 3563 more datasets.*
+*...and 13225 more datasets.*

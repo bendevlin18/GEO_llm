@@ -1,60 +1,60 @@
 # Cardiovascular
 
-> 2486 RNA-seq datasets | 2025/01/01 – 2026/04/08
+> 10480 RNA-seq datasets | 2015/01/01 – 2026/04/08
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 1551 |
-| single-cell | 654 |
-| single-nucleus | 215 |
-| spatial | 66 |
+| bulk | 7558 |
+| single-cell | 2431 |
+| single-nucleus | 347 |
+| spatial | 144 |
 
 ## Organism Distribution
 
 | Organism | Count |
 |----------|------:|
-| Mus musculus | 1290 |
-| Homo sapiens | 873 |
-| Rattus norvegicus | 108 |
-| Danio rerio | 66 |
-| Sus scrofa | 25 |
-| Homo sapiens; Mus musculus | 22 |
-| Mus musculus; Homo sapiens | 19 |
-| Arabidopsis thaliana | 8 |
-| Rattus | 8 |
-| Oryctolagus cuniculus | 4 |
+| Mus musculus | 5274 |
+| Homo sapiens | 3678 |
+| Rattus norvegicus | 465 |
+| Danio rerio | 325 |
+| Homo sapiens; Mus musculus | 123 |
+| Sus scrofa | 87 |
+| Mus musculus; Homo sapiens | 66 |
+| Arabidopsis thaliana | 42 |
+| Gallus gallus | 25 |
+| Oryctolagus cuniculus | 17 |
 
 ## Related Topics
 
 | Topic | Co-occurring Datasets |
 |-------|---------------------:|
-| [Development & Differentiation](development.md) | 968 |
-| [Immunology](immunology.md) | 753 |
-| [Metabolism & Metabolic Disease](metabolism.md) | 623 |
-| [Muscle & Musculoskeletal](skeletal_muscle.md) | 566 |
-| [Cancer](cancer.md) | 498 |
-| [Fibrosis & Wound Healing](fibrosis_wound.md) | 361 |
-| [Neuroscience](neuroscience.md) | 360 |
-| [Drug Response & Pharmacology](drug_response.md) | 336 |
-| [Infectious Disease](infectious_disease.md) | 264 |
-| [Hematopoiesis & Blood](hematopoiesis.md) | 259 |
+| [Development & Differentiation](development.md) | 4374 |
+| [Cell Stress & Homeostasis](cell_stress.md) | 2944 |
+| [Immunology](immunology.md) | 2773 |
+| [Muscle & Musculoskeletal](skeletal_muscle.md) | 2478 |
+| [Signal Transduction](signal_transduction.md) | 2288 |
+| [Metabolism & Metabolic Disease](metabolism.md) | 2184 |
+| [Cancer](cancer.md) | 1896 |
+| [Neuroscience](neuroscience.md) | 1471 |
+| [Hematopoiesis & Blood](hematopoiesis.md) | 1262 |
+| [Fibrosis & Wound Healing](fibrosis_wound.md) | 1250 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 1025 |
-| TSV | 613 |
-| CSV | 454 |
-| MTX | 438 |
-| XLSX | 259 |
-| TAR | 161 |
-| H5 | 111 |
-| RDS | 91 |
-| XLS | 62 |
-| BW | 44 |
+| TXT | 4948 |
+| TSV | 2087 |
+| CSV | 1693 |
+| MTX | 1356 |
+| XLSX | 1225 |
+| H5 | 330 |
+| TAR | 322 |
+| XLS | 284 |
+| BW | 246 |
+| BIGWIG | 188 |
 
 ## Recent Datasets
 
@@ -111,4 +111,4 @@
 | [GSE287319](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE287319) | Combined Immunotherapy and Particle Therapy for Advanced HCC with Macrovascular ... | Homo sapiens | 12 | GCT | 2026/04/01 |
 | [GSE283439](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE283439) | RNA sequencing of neutrophils treated with microvesicles derived from glucose-de... | Mus musculus | 6 | XLS | 2026/04/01 |
 
-*...and 2436 more datasets.*
+*...and 10430 more datasets.*

@@ -1,60 +1,60 @@
 # Skin & Dermatology
 
-> 901 RNA-seq datasets | 2025/01/01 – 2026/04/08
+> 4288 RNA-seq datasets | 2015/01/01 – 2026/04/08
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 574 |
-| single-cell | 284 |
-| spatial | 25 |
-| single-nucleus | 18 |
+| bulk | 3153 |
+| single-cell | 1018 |
+| spatial | 70 |
+| single-nucleus | 47 |
 
 ## Organism Distribution
 
 | Organism | Count |
 |----------|------:|
-| Mus musculus | 410 |
-| Homo sapiens | 362 |
-| Danio rerio | 14 |
-| Rattus norvegicus | 13 |
-| Arabidopsis thaliana | 9 |
-| Homo sapiens; Mus musculus | 9 |
-| Mus musculus; Homo sapiens | 8 |
-| Bos taurus | 7 |
-| Gallus gallus | 5 |
-| Sus scrofa | 3 |
+| Homo sapiens | 1826 |
+| Mus musculus | 1769 |
+| Danio rerio | 65 |
+| Arabidopsis thaliana | 53 |
+| Rattus norvegicus | 52 |
+| Homo sapiens; Mus musculus | 41 |
+| Sus scrofa | 28 |
+| Mus musculus; Homo sapiens | 23 |
+| Gallus gallus | 18 |
+| Bos taurus | 18 |
 
 ## Related Topics
 
 | Topic | Co-occurring Datasets |
 |-------|---------------------:|
-| [Immunology](immunology.md) | 429 |
-| [Cancer](cancer.md) | 321 |
-| [Development & Differentiation](development.md) | 304 |
-| [Fibrosis & Wound Healing](fibrosis_wound.md) | 202 |
-| [Metabolism & Metabolic Disease](metabolism.md) | 173 |
-| [Drug Response & Pharmacology](drug_response.md) | 133 |
-| [Infectious Disease](infectious_disease.md) | 131 |
-| [Neuroscience](neuroscience.md) | 94 |
-| [Plant Biology](plant_biology.md) | 79 |
-| [Cardiovascular](cardiovascular.md) | 78 |
+| [Immunology](immunology.md) | 1732 |
+| [Development & Differentiation](development.md) | 1519 |
+| [Cancer](cancer.md) | 1361 |
+| [Signal Transduction](signal_transduction.md) | 956 |
+| [Cell Stress & Homeostasis](cell_stress.md) | 853 |
+| [Fibrosis & Wound Healing](fibrosis_wound.md) | 753 |
+| [Infectious Disease](infectious_disease.md) | 658 |
+| [Metabolism & Metabolic Disease](metabolism.md) | 650 |
+| [Drug Response & Pharmacology](drug_response.md) | 481 |
+| [Microbiology](microbiology.md) | 413 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 322 |
-| TSV | 262 |
-| CSV | 193 |
-| MTX | 191 |
-| XLSX | 84 |
-| H5 | 55 |
-| RDS | 31 |
-| TAR | 20 |
-| XLS | 19 |
-| TAB | 11 |
+| TXT | 2013 |
+| TSV | 905 |
+| CSV | 716 |
+| MTX | 577 |
+| XLSX | 483 |
+| H5 | 152 |
+| XLS | 121 |
+| BED | 86 |
+| BIGWIG | 85 |
+| RDS | 75 |
 
 ## Recent Datasets
 
@@ -111,4 +111,4 @@
 | [GSE276119](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE276119) | Hyperinnervation inhibits organ-level regeneration in mammalian skin | Mus musculus | 16 | H5 | 2026/03/20 |
 | [GSE266265](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE266265) | Endometrial Insights: Unmasking Endometriosis through Single-Cell Profiling and ... | Homo sapiens | 60 | RDS | 2026/03/20 |
 
-*...and 851 more datasets.*
+*...and 4238 more datasets.*

@@ -7,7 +7,7 @@ Build a periodically-updated, LLM-generated wiki that indexes GEO datasets by th
 ## Three-Layer Architecture
 
 ### Layer 1: Raw Sources (`data/`)
-- JSON snapshots from `geo_metadata_fetcher.py`, timestamped and immutable
+- JSON snapshots from `scripts/geo_metadata_fetcher.py`, timestamped and immutable
 - Each scrape covers a date window; new scrapes are additive
 
 ### Layer 2: The Wiki (`wiki/`)
@@ -64,9 +64,9 @@ The pipeline should support pulling new date windows and merging them into the e
 
 ### Update workflow
 
-1. **Fetch** — run `geo_metadata_fetcher.py` for a new date window, save to `data/geo_metadata_YYYY-MM-DD.json`
+1. **Fetch** — run `scripts/geo_metadata_fetcher.py` for a new date window, save to `data/geo_metadata_YYYY-MM-DD.json`
 2. **Merge** — load all data snapshots, deduplicate by accession (latest snapshot wins if a record appears in multiple fetches)
-3. **Classify** — run `extract_rnaseq.py` and `tag_topics.py` on the merged set
+3. **Classify** — run `scripts/extract_rnaseq.py` and `scripts/tag_topics.py` on the merged set
 4. **Rebuild** — regenerate `search_index.txt`, wiki pages, and update `log.md`
 
 ### Deduplication
@@ -106,3 +106,44 @@ Data files (raw JSON snapshots, classified records, FTP index) are gitignored si
 - Caching of prompts to reduce cost on re-runs
 
 Requires `ANTHROPIC_API_KEY` env var. The classification prompt and taxonomy developed in Phase 1 will carry over directly.
+
+## Phase 3: Beyond RNA-seq
+
+Phase 1 focuses on RNA-seq because it's the largest and most consistently structured slice of GEO. Once the RNA-seq pipeline is mature, the wiki should expand to cover all major GEO assay types. The same three-layer architecture (raw sources → classified data → wiki pages) applies; the main work is building assay-specific classifiers and extending the taxonomy.
+
+### Assay types to add
+
+| Assay Family | Subtypes / Modalities | Key File Types |
+|---|---|---|
+| **ChIP-seq / CUT&RUN / CUT&Tag** | Histone marks, TF binding, broad vs. narrow peaks | BED, BigWig, narrowPeak, broadPeak |
+| **ATAC-seq** | Bulk ATAC, single-cell ATAC (scATAC) | BED, BigWig, fragments.tsv |
+| **Methylation** | WGBS, RRBS, Infinium arrays (450K, EPIC) | BED, IDAT, beta-value matrices |
+| **Hi-C / 3D Genome** | Hi-C, Micro-C, HiChIP, capture Hi-C | .hic, .cool, .mcool, contact matrices |
+| **Proteomics** | Mass spec, CITE-seq protein | CSV, TSV, mzML |
+| **Multiomics** | 10x Multiome (RNA+ATAC), SHARE-seq, TEA-seq, CITE-seq | H5, MTX, fragments.tsv |
+| **Microarray** | Expression arrays, SNP arrays | CEL, CHP, TXT |
+| **Other sequencing** | WGS, WES, amplicon-seq, long-read (PacBio, ONT) | BAM, VCF, FASTQ |
+
+### What changes per assay
+
+- **`extract_rnaseq.py`** → generalized `classify_assay.py` that routes records to assay-specific classifiers. The RNA-seq classifier becomes one module.
+- **Modality classification** — each assay family has its own subtypes (e.g., ChIP-seq: histone vs. TF; methylation: WGBS vs. array). These need assay-specific keyword rules or LLM classification.
+- **Topic taxonomy** — the existing 28 topics are largely assay-agnostic and should carry over. May need additions for assay-specific research areas (e.g., "chromatin architecture" for Hi-C).
+- **Wiki structure** — `wiki/assays/` expands with new pages per assay type. Organism and topic pages become cross-assay, showing what data is available across modalities for a given organism or research area.
+- **Search index** — same pipe-delimited format, just more records and a wider set of modality values.
+- **FTP indexing** — already assay-agnostic; works for any GEO dataset.
+
+### Suggested rollout order
+
+1. **ChIP-seq / CUT&RUN** — second-largest assay type on GEO, well-structured, complements RNA-seq for gene regulation studies
+2. **ATAC-seq** — growing fast, especially scATAC alongside scRNA-seq
+3. **Methylation** — large existing body of data, distinct file types
+4. **Multiomics** — increasingly common, links to existing RNA-seq entries
+5. **Hi-C / 3D genome** — smaller but high-value, specialized file formats
+6. **Microarray** — legacy data but massive archive, simpler to classify
+
+### Cross-assay features (longer term)
+
+- **Multi-assay dataset pages** — many GEO SuperSeries bundle RNA-seq + ChIP-seq + ATAC-seq from the same study. Link these together so a user can find all data from a single experiment.
+- **Assay co-occurrence index** — for a given organism + topic, show which assay types are available (e.g., "for mouse kidney, there are 88 snRNA-seq, 12 ATAC-seq, and 5 ChIP-seq datasets").
+- **Data integration readiness** — flag datasets where multiple assays share the same samples, enabling multi-omic integration.

@@ -1,60 +1,60 @@
 # Metabolism & Metabolic Disease
 
-> 4904 RNA-seq datasets | 2025/01/01 – 2026/04/08
+> 20679 RNA-seq datasets | 2015/01/01 – 2026/04/08
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 3780 |
-| single-cell | 924 |
-| single-nucleus | 142 |
-| spatial | 58 |
+| bulk | 17223 |
+| single-cell | 3007 |
+| single-nucleus | 308 |
+| spatial | 141 |
 
 ## Organism Distribution
 
 | Organism | Count |
 |----------|------:|
-| Mus musculus | 2561 |
-| Homo sapiens | 1525 |
-| Rattus norvegicus | 109 |
-| Danio rerio | 52 |
-| Caenorhabditis elegans | 49 |
-| Homo sapiens; Mus musculus | 46 |
-| Drosophila melanogaster | 40 |
-| Sus scrofa | 32 |
-| Arabidopsis thaliana | 32 |
-| Mus musculus; Homo sapiens | 26 |
+| Mus musculus | 10224 |
+| Homo sapiens | 5998 |
+| Rattus norvegicus | 518 |
+| Danio rerio | 241 |
+| Homo sapiens; Mus musculus | 234 |
+| Drosophila melanogaster | 211 |
+| Caenorhabditis elegans | 210 |
+| Arabidopsis thaliana | 173 |
+| Saccharomyces cerevisiae | 171 |
+| Sus scrofa | 165 |
 
 ## Related Topics
 
 | Topic | Co-occurring Datasets |
 |-------|---------------------:|
-| [Development & Differentiation](development.md) | 1740 |
-| [Immunology](immunology.md) | 1679 |
-| [Cancer](cancer.md) | 1562 |
-| [Infectious Disease](infectious_disease.md) | 850 |
-| [Drug Response & Pharmacology](drug_response.md) | 763 |
-| [Neuroscience](neuroscience.md) | 637 |
-| [Cardiovascular](cardiovascular.md) | 623 |
-| [Fibrosis & Wound Healing](fibrosis_wound.md) | 506 |
-| [Muscle & Musculoskeletal](skeletal_muscle.md) | 498 |
-| [Epigenetics & Chromatin](epigenetics.md) | 487 |
+| [Development & Differentiation](development.md) | 6804 |
+| [Liver & Hepatology](liver.md) | 6716 |
+| [Immunology](immunology.md) | 6209 |
+| [Cancer](cancer.md) | 5780 |
+| [Cell Stress & Homeostasis](cell_stress.md) | 5541 |
+| [Signal Transduction](signal_transduction.md) | 5391 |
+| [Infectious Disease](infectious_disease.md) | 3384 |
+| [Microbiology](microbiology.md) | 2580 |
+| [Drug Response & Pharmacology](drug_response.md) | 2397 |
+| [Neuroscience](neuroscience.md) | 2239 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 2094 |
-| CSV | 951 |
-| TSV | 939 |
-| XLSX | 650 |
-| MTX | 593 |
-| H5 | 138 |
-| XLS | 130 |
-| BW | 89 |
-| RDS | 88 |
-| TAR | 81 |
+| TXT | 10230 |
+| CSV | 3382 |
+| TSV | 3166 |
+| XLSX | 2804 |
+| MTX | 1671 |
+| XLS | 680 |
+| BW | 500 |
+| H5 | 429 |
+| BIGWIG | 307 |
+| BED | 270 |
 
 ## Recent Datasets
 
@@ -111,4 +111,4 @@
 | [GSE233919](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE233919) | miR-200a-3p regulates gene expression of diabetic cardiomyopathy in murine cardi... | Mus musculus | 18 | TXT | 2026/04/04 |
 | [GSE326622](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326622) | Mechanotransduction unifies healthy non-diabetic wound healing over time by prom... | Mus musculus | 12 | MTX, TSV | 2026/04/03 |
 
-*...and 4854 more datasets.*
+*...and 20629 more datasets.*

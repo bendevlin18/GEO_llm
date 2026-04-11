@@ -1,30 +1,30 @@
 # Sus scrofa
 
-> 128 RNA-seq datasets | 2025/01/01 – 2026/04/08
+> 676 RNA-seq datasets | 2015/01/01 – 2026/04/08
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 83 |
-| single-cell | 31 |
-| single-nucleus | 12 |
-| spatial | 2 |
+| bulk | 552 |
+| single-cell | 96 |
+| single-nucleus | 20 |
+| spatial | 8 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 47 |
-| TSV | 28 |
-| CSV | 23 |
-| MTX | 20 |
-| XLSX | 13 |
-| H5 | 7 |
-| TAR | 5 |
-| BW | 3 |
-| H5AD | 3 |
-| RDS | 3 |
+| TXT | 328 |
+| XLSX | 102 |
+| CSV | 86 |
+| TSV | 82 |
+| MTX | 56 |
+| XLS | 32 |
+| FA | 18 |
+| H5 | 17 |
+| GTF | 16 |
+| TAR | 14 |
 
 ## Recent Datasets
 
@@ -81,4 +81,4 @@
 | [GSE296006](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE296006) | Tackling the early lung graft immunity by preconditioning donors with corticoste... | Sus scrofa | 1 | TXT | 2025/10/20 |
 | [GSE281004](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE281004) | Effects of interference and overexpression of NUDT3 on fat deposition in porcine... | Sus scrofa | 8 | TXT | 2025/10/20 |
 
-*...and 78 more datasets.*
+*...and 626 more datasets.*

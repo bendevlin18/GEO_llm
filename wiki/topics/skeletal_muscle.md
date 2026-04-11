@@ -1,60 +1,60 @@
 # Muscle & Musculoskeletal
 
-> 2357 RNA-seq datasets | 2025/01/01 – 2026/04/08
+> 10877 RNA-seq datasets | 2015/01/01 – 2026/04/08
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 1636 |
-| single-cell | 621 |
-| single-nucleus | 61 |
-| spatial | 39 |
+| bulk | 8390 |
+| single-cell | 2238 |
+| single-nucleus | 148 |
+| spatial | 101 |
 
 ## Organism Distribution
 
 | Organism | Count |
 |----------|------:|
-| Mus musculus | 1248 |
-| Homo sapiens | 792 |
-| Rattus norvegicus | 90 |
-| Danio rerio | 43 |
-| Homo sapiens; Mus musculus | 22 |
-| Sus scrofa | 15 |
-| Bos taurus | 15 |
-| Gallus gallus | 11 |
-| Drosophila melanogaster | 10 |
-| Mus musculus; Homo sapiens | 9 |
+| Mus musculus | 5722 |
+| Homo sapiens | 3657 |
+| Rattus norvegicus | 349 |
+| Danio rerio | 182 |
+| Sus scrofa | 108 |
+| Homo sapiens; Mus musculus | 96 |
+| Drosophila melanogaster | 81 |
+| Mus musculus; Homo sapiens | 77 |
+| Bos taurus | 67 |
+| Gallus gallus | 50 |
 
 ## Related Topics
 
 | Topic | Co-occurring Datasets |
 |-------|---------------------:|
-| [Development & Differentiation](development.md) | 1090 |
-| [Immunology](immunology.md) | 762 |
-| [Cancer](cancer.md) | 715 |
-| [Cardiovascular](cardiovascular.md) | 566 |
-| [Hematopoiesis & Blood](hematopoiesis.md) | 556 |
-| [Metabolism & Metabolic Disease](metabolism.md) | 498 |
-| [Fibrosis & Wound Healing](fibrosis_wound.md) | 373 |
-| [Drug Response & Pharmacology](drug_response.md) | 345 |
-| [Infectious Disease](infectious_disease.md) | 294 |
-| [Epigenetics & Chromatin](epigenetics.md) | 226 |
+| [Development & Differentiation](development.md) | 5049 |
+| [Immunology](immunology.md) | 3166 |
+| [Cancer](cancer.md) | 3072 |
+| [Hematopoiesis & Blood](hematopoiesis.md) | 2735 |
+| [Cardiovascular](cardiovascular.md) | 2478 |
+| [Cell Stress & Homeostasis](cell_stress.md) | 2393 |
+| [Signal Transduction](signal_transduction.md) | 2362 |
+| [Metabolism & Metabolic Disease](metabolism.md) | 1863 |
+| [Fibrosis & Wound Healing](fibrosis_wound.md) | 1345 |
+| [Epigenetics & Chromatin](epigenetics.md) | 1192 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 915 |
-| TSV | 551 |
-| CSV | 446 |
-| MTX | 377 |
-| XLSX | 275 |
-| H5 | 102 |
-| RDS | 76 |
-| XLS | 67 |
-| BW | 45 |
-| TAR | 44 |
+| TXT | 5206 |
+| TSV | 1946 |
+| CSV | 1737 |
+| XLSX | 1337 |
+| MTX | 1170 |
+| H5 | 338 |
+| BW | 320 |
+| XLS | 318 |
+| BED | 186 |
+| TAR | 170 |
 
 ## Recent Datasets
 
@@ -111,4 +111,4 @@
 | [GSE291185](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE291185) | Regenerative potential of neonatal tendon cells is regulated by intrinsic resist... | Mus musculus | 18 | XLSX | 2026/04/01 |
 | [GSE289101](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE289101) | Human CD14+ monocytes from volunteers before and after a 3 hours, 24 hours and 1... | Homo sapiens | 20 | TXT | 2026/04/01 |
 
-*...and 2307 more datasets.*
+*...and 10827 more datasets.*

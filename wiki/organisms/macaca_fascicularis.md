@@ -1,30 +1,30 @@
 # Macaca fascicularis
 
-> 22 RNA-seq datasets | 2025/01/01 – 2026/04/08
+> 121 RNA-seq datasets | 2015/01/01 – 2026/04/08
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 11 |
-| single-cell | 9 |
-| spatial | 1 |
-| single-nucleus | 1 |
+| bulk | 65 |
+| single-cell | 51 |
+| single-nucleus | 3 |
+| spatial | 2 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 8 |
-| TSV | 6 |
-| MTX | 5 |
-| XLSX | 2 |
-| CSV | 2 |
-| TAB | 1 |
-| H5 | 1 |
-| ZIP | 1 |
-| RDS | 1 |
-| H5AD | 1 |
+| TXT | 55 |
+| TSV | 31 |
+| MTX | 27 |
+| CSV | 14 |
+| XLSX | 13 |
+| H5 | 8 |
+| TAB | 5 |
+| RDS | 4 |
+| XLS | 2 |
+| BED | 2 |
 
 ## Recent Datasets
 
@@ -52,3 +52,33 @@
 | [GSE248832](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE248832) | Isoform Usage as a Distinct Regulatory Layer Driving Nutrient-Responsive Metabol... | Macaca fascicularis | 4 | TXT | 2025/02/03 |
 | [GSE287567](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE287567) | Global gene expression profiling of circulating endothelial cells in SARS-CoV-2-... | Macaca fascicularis | 6 | TXT | 2025/01/28 |
 | [GSE283562](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE283562) | Single cell level investigations into the correlates of protection from attenuat... | Macaca fascicularis | 23 | MTX, TSV | 2025/01/15 |
+| [GSE246092](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE246092) | Transcriptional Responses to TREM2 Agonist Antibody Treatment in Cynomologus Mon... | Macaca fascicularis | 48 | TAB | 2024/12/05 |
+| [GSE241217](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE241217) | Transcriptional Responses to TREM2 Agonist Antibody Treatment in Cynomologus Mon... | Macaca fascicularis | 52 | H5, TAB | 2024/12/05 |
+| [GSE241190](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE241190) | Transcriptional Responses to TREM2 Agonist Antibody Treatment in Cynomologus Mon... | Macaca fascicularis | 16 | H5 | 2024/12/05 |
+| [GSE236453](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE236453) | Transcriptional Responses to TREM2 Agonist Antibody Treatment in Cynomologus Mon... | Macaca fascicularis | 36 | TAB | 2024/12/05 |
+| [GSE149956](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE149956) | RNA sequencing of lung tissue of cynomolgus monkeys | Macaca fascicularis | 16 | TXT | 2024/12/01 |
+| [GSE246148](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE246148) | Preclinical efficacy of a live vesicular stomatitis virus-based Lassa virus vacc... | Macaca fascicularis | 39 | TXT | 2024/11/30 |
+| [GSE281290](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE281290) | A Penta-Component Mpox mRNA Vaccine Induced Protective Immunity in Naive and Sim... | Macaca fascicularis | 14 | XLS | 2024/11/11 |
+| [GSE280718](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE280718) | Cross-species Single-cell Transcriptomics Reveals Neuronal Similarities and Hete... | Macaca fascicularis | 85 | MTX, TSV, TXT | 2024/11/04 |
+| [GSE276753](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE276753) | An accelerated Parkinson’s disease monkey model using AAV-α-synuclein plus Poly(... | Macaca fascicularis | 32 | MTX, TSV | 2024/09/20 |
+| [GSE276184](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE276184) | Single-cell transcriptomic analysis reveals dynamic cellular processes in cornea... | Macaca fascicularis | 6 | MTX, TSV | 2024/09/20 |
+| [GSE241665](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE241665) | Wnt signaling activation confers a syncytiotrophoblast progenitor state on troph... | Macaca fascicularis | 8 | XLSX | 2024/09/08 |
+| [GSE243770](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE243770) | Estrogen-triggered Monkey Multi-Organ Cell Atlas [scRNA-Seq] | Macaca fascicularis | 5 | MTX, TSV | 2024/07/25 |
+| [GSE243771](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE243771) | Estrogen-triggered Monkey Multi-Organ Cell Atlas | Macaca fascicularis | 10 | BED, MTX, TSV | 2024/07/24 |
+| [GSE241235](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE241235) | A novel adjuvant formulation induces robust Th1/Th17 memory and mucosal recall r... | Macaca fascicularis | 30 | TSV | 2024/07/24 |
+| [GSE268204](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE268204) | Cytomegalovirus vaccine vector-induced effector memory CD4+ T cells protect cyno... | Macaca fascicularis | 84 | CSV | 2024/05/24 |
+| [GSE267379](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE267379) | Developmental trajectory of unconventional T cells of the cynomolgus macaque thy... | Macaca fascicularis | 1 | H5, MTX, TSV | 2024/05/19 |
+| [GSE250569](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE250569) | Preclinical study on safety and efficacy of GMP human umbilical cord mesenchymal... | Macaca fascicularis | 30 |  | 2024/05/01 |
+| [GSE262140](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE262140) | Atlas of Cynomolgus Macaque Hematopoiesis | Macaca fascicularis | 36 | MTX, TSV | 2024/04/26 |
+| [GSE253538](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE253538) | Cynomolgus macaques as a translational model of human immune responses to yellow... | Macaca fascicularis | 81 | TXT | 2024/03/29 |
+| [GSE256418](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE256418) | Cell-mediated Immune Response Signature to AAV Capsid in Cynomolgus Monkeys | Macaca fascicularis | 102 | TXT | 2024/02/26 |
+| [GSE208114](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE208114) | A Biodistribution Study of OTV vs. ASO by Intravenous or Intrathecal Administrat... | Macaca fascicularis | 9 | CSV, H5, MTX, TSV | 2024/02/12 |
+| [GSE180906](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE180906) | Obese Skeletal Muscle-Expressed Interferon Regulatory Factor 4 Transcriptionally... | Macaca fascicularis | 2 | TXT | 2023/12/12 |
+| [GSE242229](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE242229) | Single-cell transcriptomic atlas reveals tissue architecture and deciphers patho... | Macaca fascicularis | 2 | MTX, TSV | 2023/09/06 |
+| [GSE225770](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE225770) | CD8+ cells and small viral reservoirs facilitate post-ART SIV control in MHC-M3+... | Macaca fascicularis | 16 | TXT, XLSX | 2023/08/07 |
+| [GSE239741](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE239741) | A somatic cell cloned rhesus monkey obtained by trophoblast replacement [RNA-seq... | Macaca fascicularis | 4 | TXT | 2023/08/01 |
+| [GSE237547](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE237547) | A recombinant vesicular stomatitis virus-based vaccine provides postexposure pro... | Macaca fascicularis | 104 | XLSX | 2023/07/24 |
+| [GSE233232](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE233232) | RNAseq of the in vitro matured and in vivo matured monkey oocytes | Macaca fascicularis | 6 | TXT | 2023/07/15 |
+| [GSE188418](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE188418) | A Transcriptomic and Proteomic Atlas of Obesity and Type 2 Diabetes in Cynomolgu... | Macaca fascicularis | 516 | TXT | 2023/06/22 |
+
+*...and 71 more datasets.*

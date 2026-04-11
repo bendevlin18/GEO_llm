@@ -11,7 +11,8 @@ import os
 import sys
 from datetime import datetime
 
-# Import classification and tagging logic
+# Import classification and tagging logic (add scripts/ to path for imports)
+sys.path.insert(0, os.path.join(os.path.dirname(__file__)))
 from extract_rnaseq import classify, rna_filter
 from tag_topics import tag_topics
 
@@ -83,10 +84,10 @@ def main():
     print(f"  Saved rnaseq_classified.json")
 
     print("\nStep 4: Rebuilding search index...")
-    os.system("conda run -n geo_llm python build_search_index.py")
+    os.system("conda run -n GEO_llm python scripts/build_search_index.py")
 
     print("\nStep 5: Regenerating wiki pages...")
-    os.system("conda run -n geo_llm python generate_wiki.py")
+    os.system("conda run -n GEO_llm python scripts/generate_wiki.py")
 
     # Update log
     today = datetime.now().strftime("%Y-%m-%d")

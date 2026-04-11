@@ -1,29 +1,29 @@
 # Drosophila melanogaster
 
-> 252 RNA-seq datasets | 2025/01/01 – 2026/04/08
+> 1818 RNA-seq datasets | 2015/01/01 – 2026/04/08
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 206 |
-| single-cell | 36 |
-| single-nucleus | 10 |
+| bulk | 1612 |
+| single-cell | 188 |
+| single-nucleus | 18 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 91 |
-| TSV | 49 |
-| CSV | 46 |
-| XLSX | 33 |
-| BW | 31 |
-| MTX | 22 |
-| RDS | 7 |
-| TAB | 7 |
-| SF | 6 |
-| H5AD | 6 |
+| TXT | 878 |
+| CSV | 267 |
+| XLSX | 235 |
+| TSV | 235 |
+| BW | 218 |
+| MTX | 94 |
+| BED | 67 |
+| BEDGRAPH | 60 |
+| BIGWIG | 44 |
+| TAB | 42 |
 
 ## Recent Datasets
 
@@ -80,4 +80,4 @@
 | [GSE305311](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE305311) | Homeostatic Preservation of Action Potential Waveform by Notch and Nerfin-1 | Drosophila melanogaster | 13 | XLSX | 2026/02/16 |
 | [GSE293356](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE293356) | Morphological innovation without gene co-option: the Drosophila sex comb evolved... | Drosophila melanogaster | 6 | MTX, TSV, XLSX | 2026/02/12 |
 
-*...and 202 more datasets.*
+*...and 1768 more datasets.*

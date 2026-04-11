@@ -1,60 +1,60 @@
 # Epigenetics & Chromatin
 
-> 3319 RNA-seq datasets | 2025/01/01 – 2026/04/08
+> 18860 RNA-seq datasets | 2015/01/01 – 2026/04/08
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 2563 |
-| single-cell | 616 |
-| single-nucleus | 104 |
-| spatial | 36 |
+| bulk | 16354 |
+| single-cell | 2187 |
+| single-nucleus | 245 |
+| spatial | 74 |
 
 ## Organism Distribution
 
 | Organism | Count |
 |----------|------:|
-| Homo sapiens | 1407 |
-| Mus musculus | 1270 |
-| Arabidopsis thaliana | 78 |
-| Drosophila melanogaster | 67 |
-| Homo sapiens; Mus musculus | 51 |
-| Mus musculus; Homo sapiens | 40 |
-| Caenorhabditis elegans | 35 |
-| Rattus norvegicus | 27 |
-| Saccharomyces cerevisiae | 24 |
-| Schizosaccharomyces pombe | 17 |
+| Homo sapiens | 7411 |
+| Mus musculus | 7221 |
+| Arabidopsis thaliana | 635 |
+| Drosophila melanogaster | 459 |
+| Homo sapiens; Mus musculus | 355 |
+| Saccharomyces cerevisiae | 258 |
+| Mus musculus; Homo sapiens | 231 |
+| Caenorhabditis elegans | 216 |
+| Rattus norvegicus | 187 |
+| Danio rerio | 157 |
 
 ## Related Topics
 
 | Topic | Co-occurring Datasets |
 |-------|---------------------:|
-| [Development & Differentiation](development.md) | 1522 |
-| [Cancer](cancer.md) | 1221 |
-| [Immunology](immunology.md) | 829 |
-| [Metabolism & Metabolic Disease](metabolism.md) | 487 |
-| [Neuroscience](neuroscience.md) | 472 |
-| [Drug Response & Pharmacology](drug_response.md) | 430 |
-| [Infectious Disease](infectious_disease.md) | 396 |
-| [CRISPR & Gene Editing](crispr_gene_editing.md) | 268 |
-| [Hematopoiesis & Blood](hematopoiesis.md) | 259 |
-| [Muscle & Musculoskeletal](skeletal_muscle.md) | 226 |
+| [Development & Differentiation](development.md) | 8149 |
+| [Gene Regulation & Transcription](gene_regulation.md) | 6224 |
+| [Cancer](cancer.md) | 6184 |
+| [Immunology](immunology.md) | 3894 |
+| [Cell Stress & Homeostasis](cell_stress.md) | 3676 |
+| [Signal Transduction](signal_transduction.md) | 3409 |
+| [RNA Biology & Regulation](rna_biology.md) | 2452 |
+| [Neuroscience](neuroscience.md) | 2345 |
+| [Metabolism & Metabolic Disease](metabolism.md) | 2061 |
+| [Drug Response & Pharmacology](drug_response.md) | 1777 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 1379 |
-| TSV | 670 |
-| CSV | 590 |
-| BW | 484 |
-| XLSX | 302 |
-| MTX | 300 |
-| H5 | 169 |
-| BED | 125 |
-| BIGWIG | 117 |
-| NARROWPEAK | 81 |
+| TXT | 9450 |
+| BW | 3286 |
+| TSV | 2449 |
+| CSV | 2313 |
+| XLSX | 1728 |
+| BED | 1386 |
+| MTX | 951 |
+| BIGWIG | 817 |
+| BEDGRAPH | 758 |
+| NARROWPEAK | 618 |
 
 ## Recent Datasets
 
@@ -111,4 +111,4 @@
 | [GSE313038](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE313038) | The DoGA Consortium Atlas of Canine Enhancers and Promoters Across Tissues and D... | Canis lupus familiaris | 114 | CSV | 2026/04/01 |
 | [GSE305019](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE305019) | C/EBPβ Deficiency Enhances Keratinocyte Apoptosis after UVB-Induced DNA Damage v... | Mus musculus | 6 | CSV | 2026/04/01 |
 
-*...and 3269 more datasets.*
+*...and 18810 more datasets.*

@@ -28,26 +28,34 @@ See [search_index.txt](search_index.txt) (5,580 entries, one per dataset).
 
 | Topic | Count | Page |
 |-------|------:|------|
-| Development & Differentiation | 9,255 | [development.md](topics/development.md) |
-| Cancer | 8,808 | [cancer.md](topics/cancer.md) |
-| Immunology | 8,767 | [immunology.md](topics/immunology.md) |
-| Metabolism & Metabolic Disease | 4,904 | [metabolism.md](topics/metabolism.md) |
-| Neuroscience | 4,433 | [neuroscience.md](topics/neuroscience.md) |
-| Infectious Disease | 4,213 | [infectious_disease.md](topics/infectious_disease.md) |
-| Drug Response & Pharmacology | 3,613 | [drug_response.md](topics/drug_response.md) |
-| Epigenetics & Chromatin | 3,319 | [epigenetics.md](topics/epigenetics.md) |
-| Cardiovascular | 2,486 | [cardiovascular.md](topics/cardiovascular.md) |
-| Muscle & Musculoskeletal | 2,357 | [skeletal_muscle.md](topics/skeletal_muscle.md) |
-| Hematopoiesis & Blood | 2,289 | [hematopoiesis.md](topics/hematopoiesis.md) |
-| Fibrosis & Wound Healing | 1,834 | [fibrosis_wound.md](topics/fibrosis_wound.md) |
-| Lung & Respiratory | 1,813 | [lung_respiratory.md](topics/lung_respiratory.md) |
-| Plant Biology | 1,706 | [plant_biology.md](topics/plant_biology.md) |
-| Aging & Senescence | 1,644 | [aging.md](topics/aging.md) |
-| CRISPR & Gene Editing | 1,639 | [crispr_gene_editing.md](topics/crispr_gene_editing.md) |
-| Kidney & Renal | 1,484 | [kidney.md](topics/kidney.md) |
-| Reproductive Biology | 1,452 | [reproduction.md](topics/reproduction.md) |
-| Gut & Intestinal Biology | 1,428 | [gut_intestine.md](topics/gut_intestine.md) |
-| Skin & Dermatology | 901 | [skin.md](topics/skin.md) |
+| Development & Differentiation | 45,439 | [development.md](topics/development.md) |
+| Cancer | 39,487 | [cancer.md](topics/cancer.md) |
+| Immunology | 37,313 | [immunology.md](topics/immunology.md) |
+| Cell Stress & Homeostasis | 26,969 | [cell_stress.md](topics/cell_stress.md) |
+| Signal Transduction | 26,755 | [signal_transduction.md](topics/signal_transduction.md) |
+| Metabolism & Metabolic Disease | 20,679 | [metabolism.md](topics/metabolism.md) |
+| Neuroscience | 19,903 | [neuroscience.md](topics/neuroscience.md) |
+| Infectious Disease | 19,407 | [infectious_disease.md](topics/infectious_disease.md) |
+| Epigenetics & Chromatin | 18,860 | [epigenetics.md](topics/epigenetics.md) |
+| RNA Biology & Regulation | 14,899 | [rna_biology.md](topics/rna_biology.md) |
+| Gene Regulation & Transcription | 14,516 | [gene_regulation.md](topics/gene_regulation.md) |
+| Drug Response & Pharmacology | 13,275 | [drug_response.md](topics/drug_response.md) |
+| Microbiology | 13,013 | [microbiology.md](topics/microbiology.md) |
+| Muscle & Musculoskeletal | 10,877 | [skeletal_muscle.md](topics/skeletal_muscle.md) |
+| Hematopoiesis & Blood | 10,797 | [hematopoiesis.md](topics/hematopoiesis.md) |
+| Cardiovascular | 10,480 | [cardiovascular.md](topics/cardiovascular.md) |
+| Plant Biology | 9,525 | [plant_biology.md](topics/plant_biology.md) |
+| CRISPR & Gene Editing | 8,080 | [crispr_gene_editing.md](topics/crispr_gene_editing.md) |
+| Liver & Hepatology | 7,656 | [liver.md](topics/liver.md) |
+| Lung & Respiratory | 7,543 | [lung_respiratory.md](topics/lung_respiratory.md) |
+| Kidney & Renal | 7,012 | [kidney.md](topics/kidney.md) |
+| Fibrosis & Wound Healing | 6,912 | [fibrosis_wound.md](topics/fibrosis_wound.md) |
+| Reproductive Biology | 6,877 | [reproduction.md](topics/reproduction.md) |
+| Gut & Intestinal Biology | 6,793 | [gut_intestine.md](topics/gut_intestine.md) |
+| Cell Cycle & Proliferation | 6,652 | [cell_cycle.md](topics/cell_cycle.md) |
+| Aging & Senescence | 5,833 | [aging.md](topics/aging.md) |
+| Skin & Dermatology | 4,288 | [skin.md](topics/skin.md) |
+| Eye & Vision | 2,902 | [eye_vision.md](topics/eye_vision.md) |
 
 ## By Organism
 

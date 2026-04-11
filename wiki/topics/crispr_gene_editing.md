@@ -1,60 +1,60 @@
 # CRISPR & Gene Editing
 
-> 1639 RNA-seq datasets | 2025/01/01 – 2026/04/08
+> 8080 RNA-seq datasets | 2015/01/01 – 2026/04/08
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 1258 |
-| single-cell | 345 |
-| single-nucleus | 31 |
-| spatial | 5 |
+| bulk | 6919 |
+| single-cell | 1080 |
+| single-nucleus | 64 |
+| spatial | 17 |
 
 ## Organism Distribution
 
 | Organism | Count |
 |----------|------:|
-| Mus musculus | 891 |
-| Homo sapiens | 569 |
-| Danio rerio | 35 |
-| Homo sapiens; Mus musculus | 14 |
-| Rattus norvegicus | 11 |
-| Drosophila melanogaster | 10 |
-| Mus musculus; Homo sapiens | 7 |
-| Arabidopsis thaliana | 6 |
-| Caenorhabditis elegans | 6 |
-| Oryza sativa | 5 |
+| Mus musculus | 4124 |
+| Homo sapiens | 3073 |
+| Danio rerio | 129 |
+| Homo sapiens; Mus musculus | 74 |
+| Rattus norvegicus | 51 |
+| Drosophila melanogaster | 42 |
+| Mus musculus; Homo sapiens | 42 |
+| Arabidopsis thaliana | 39 |
+| Sus scrofa | 26 |
+| Saccharomyces cerevisiae | 22 |
 
 ## Related Topics
 
 | Topic | Co-occurring Datasets |
 |-------|---------------------:|
-| [Development & Differentiation](development.md) | 668 |
-| [Cancer](cancer.md) | 531 |
-| [Immunology](immunology.md) | 492 |
-| [Metabolism & Metabolic Disease](metabolism.md) | 354 |
-| [Neuroscience](neuroscience.md) | 291 |
-| [Epigenetics & Chromatin](epigenetics.md) | 268 |
-| [Drug Response & Pharmacology](drug_response.md) | 211 |
-| [Infectious Disease](infectious_disease.md) | 189 |
-| [Hematopoiesis & Blood](hematopoiesis.md) | 172 |
-| [Cardiovascular](cardiovascular.md) | 166 |
+| [Development & Differentiation](development.md) | 3012 |
+| [Cancer](cancer.md) | 2245 |
+| [Immunology](immunology.md) | 1981 |
+| [Gene Regulation & Transcription](gene_regulation.md) | 1795 |
+| [Signal Transduction](signal_transduction.md) | 1750 |
+| [Cell Stress & Homeostasis](cell_stress.md) | 1466 |
+| [Metabolism & Metabolic Disease](metabolism.md) | 1324 |
+| [Epigenetics & Chromatin](epigenetics.md) | 1243 |
+| [Neuroscience](neuroscience.md) | 1236 |
+| [RNA Biology & Regulation](rna_biology.md) | 992 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 725 |
-| CSV | 337 |
-| TSV | 301 |
-| XLSX | 201 |
-| MTX | 200 |
-| H5 | 64 |
-| BW | 54 |
-| XLS | 38 |
-| RDS | 24 |
-| SF | 21 |
+| TXT | 4412 |
+| TSV | 1575 |
+| CSV | 1192 |
+| XLSX | 981 |
+| BIGWIG | 599 |
+| MTX | 545 |
+| BW | 340 |
+| XLS | 240 |
+| H5 | 180 |
+| TAB | 112 |
 
 ## Recent Datasets
 
@@ -111,4 +111,4 @@
 | [GSE309633](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE309633) | Sex-Dependent Effects of Glutamatergic Disruption on Dopaminergic Neuron Subtype... | Mus musculus | 48 | TXT | 2026/03/29 |
 | [GSE325729](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325729) | Bulk RNA-seq of SIT1 knockout and control T cells from human healthy donors | Homo sapiens | 24 | TXT | 2026/03/28 |
 
-*...and 1589 more datasets.*
+*...and 8030 more datasets.*

@@ -1,30 +1,30 @@
 # Mus musculus; Homo sapiens
 
-> 164 RNA-seq datasets | 2025/01/01 – 2026/04/08
+> 971 RNA-seq datasets | 2015/01/01 – 2026/04/08
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 103 |
-| single-cell | 56 |
-| single-nucleus | 4 |
-| spatial | 1 |
+| bulk | 690 |
+| single-cell | 256 |
+| single-nucleus | 16 |
+| spatial | 9 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 54 |
-| TSV | 50 |
-| MTX | 38 |
-| BW | 31 |
-| CSV | 29 |
-| XLSX | 12 |
-| BIGWIG | 10 |
-| BED | 9 |
-| H5 | 8 |
-| NARROWPEAK | 8 |
+| TXT | 372 |
+| TSV | 206 |
+| BW | 165 |
+| CSV | 156 |
+| MTX | 145 |
+| BED | 78 |
+| XLSX | 67 |
+| H5 | 41 |
+| BIGWIG | 39 |
+| NARROWPEAK | 38 |
 
 ## Recent Datasets
 
@@ -81,4 +81,4 @@
 | [GSE304029](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE304029) | BRD2 Bromodomain-Mediated Regulation of Cell State Plasticity Modulates Therapy ... | Mus musculus; Homo sapiens | 56 | TXT | 2025/11/17 |
 | [GSE270064](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE270064) | In vivo intratumoral Heterogeneity in a dish: Scalable Forebrain Organoid Models... | Mus musculus; Homo sapiens | 0 |  | 2025/11/13 |
 
-*...and 114 more datasets.*
+*...and 921 more datasets.*

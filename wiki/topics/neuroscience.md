@@ -1,60 +1,60 @@
 # Neuroscience
 
-> 4433 RNA-seq datasets | 2025/01/01 – 2026/04/08
+> 19903 RNA-seq datasets | 2015/01/01 – 2026/04/08
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 2652 |
-| single-cell | 1248 |
-| single-nucleus | 423 |
-| spatial | 110 |
+| bulk | 14245 |
+| single-cell | 4501 |
+| single-nucleus | 903 |
+| spatial | 254 |
 
 ## Organism Distribution
 
 | Organism | Count |
 |----------|------:|
-| Mus musculus | 2477 |
-| Homo sapiens | 1323 |
-| Rattus norvegicus | 147 |
-| Drosophila melanogaster | 80 |
-| Danio rerio | 78 |
-| Homo sapiens; Mus musculus | 35 |
-| Caenorhabditis elegans | 23 |
-| Sus scrofa | 22 |
-| Gallus gallus | 21 |
-| Mus musculus; Homo sapiens | 16 |
+| Mus musculus | 10863 |
+| Homo sapiens | 5632 |
+| Rattus norvegicus | 765 |
+| Drosophila melanogaster | 426 |
+| Danio rerio | 395 |
+| Homo sapiens; Mus musculus | 219 |
+| Caenorhabditis elegans | 154 |
+| Mus musculus; Homo sapiens | 111 |
+| Gallus gallus | 106 |
+| Macaca mulatta | 85 |
 
 ## Related Topics
 
 | Topic | Co-occurring Datasets |
 |-------|---------------------:|
-| [Development & Differentiation](development.md) | 1854 |
-| [Immunology](immunology.md) | 1429 |
-| [Cancer](cancer.md) | 908 |
-| [Infectious Disease](infectious_disease.md) | 646 |
-| [Metabolism & Metabolic Disease](metabolism.md) | 637 |
-| [Epigenetics & Chromatin](epigenetics.md) | 472 |
-| [Drug Response & Pharmacology](drug_response.md) | 466 |
-| [Cardiovascular](cardiovascular.md) | 360 |
-| [Aging & Senescence](aging.md) | 356 |
-| [CRISPR & Gene Editing](crispr_gene_editing.md) | 291 |
+| [Development & Differentiation](development.md) | 8439 |
+| [Immunology](immunology.md) | 5294 |
+| [Signal Transduction](signal_transduction.md) | 4871 |
+| [Cell Stress & Homeostasis](cell_stress.md) | 4515 |
+| [Cancer](cancer.md) | 3556 |
+| [Epigenetics & Chromatin](epigenetics.md) | 2345 |
+| [Infectious Disease](infectious_disease.md) | 2275 |
+| [Metabolism & Metabolic Disease](metabolism.md) | 2239 |
+| [RNA Biology & Regulation](rna_biology.md) | 2205 |
+| [Gene Regulation & Transcription](gene_regulation.md) | 1880 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 1519 |
-| TSV | 1191 |
-| CSV | 946 |
-| MTX | 871 |
-| XLSX | 421 |
-| H5 | 274 |
-| TAR | 205 |
-| RDS | 201 |
-| BW | 93 |
-| XLS | 83 |
+| TXT | 8969 |
+| TSV | 4123 |
+| CSV | 3582 |
+| MTX | 2510 |
+| XLSX | 2156 |
+| H5 | 743 |
+| BW | 674 |
+| TAR | 499 |
+| RDS | 480 |
+| XLS | 439 |
 
 ## Recent Datasets
 
@@ -111,4 +111,4 @@
 | [GSE325620](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325620) | Comparative single-cell multiomic analysis reveals evolutionarily conserved and ... | Danio rerio | 14 | H5 | 2026/04/02 |
 | [GSE325478](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325478) | Comparative single-cell multiomic analysis reveals evolutionarily conserved and ... | Mus musculus | 18 | H5 | 2026/04/02 |
 
-*...and 4383 more datasets.*
+*...and 19853 more datasets.*

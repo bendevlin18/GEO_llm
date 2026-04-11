@@ -1,29 +1,30 @@
 # Ovis aries
 
-> 35 RNA-seq datasets | 2025/01/01 – 2026/04/08
+> 184 RNA-seq datasets | 2015/01/01 – 2026/04/08
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 22 |
-| single-cell | 12 |
+| bulk | 156 |
+| single-cell | 26 |
+| single-nucleus | 1 |
 | spatial | 1 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 12 |
-| TSV | 10 |
-| MTX | 8 |
-| CSV | 5 |
-| XLSX | 5 |
-| TAR | 1 |
-| XLS | 1 |
-| COUNTS | 1 |
-| TAB | 1 |
-| RDS | 1 |
+| TXT | 98 |
+| TSV | 27 |
+| CSV | 26 |
+| XLSX | 26 |
+| MTX | 19 |
+| XLS | 4 |
+| DIFF | 4 |
+| FA | 3 |
+| GTF | 2 |
+| PDF | 1 |
 
 ## Recent Datasets
 
@@ -64,3 +65,20 @@
 | [GSE283873](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE283873) | Immune-mediated regeneration of cell-free vascular grafts in an ovine model | Ovis aries | 2 | MTX, TSV | 2025/02/25 |
 | [GSE286932](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE286932) | The effect of different concentrations of ruminal VFAs on the circadian rhythm o... | Ovis aries | 36 | CSV | 2025/01/14 |
 | [GSE270391](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE270391) | Developmental Programming: Sex-specific Effects of Prenatal Exposure to a Real-L... | Ovis aries | 30 | TXT | 2025/01/12 |
+| [GSE278762](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE278762) | Intrauterine Fetal Growth Restriction Leads to Sexually Dimorphic Programming of... | Ovis aries | 32 | TXT | 2024/12/12 |
+| [GSE275228](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE275228) | Extrauterine support of preterm lambs achieves similar transcriptomic profiling ... | Ovis aries | 36 | CSV | 2024/11/21 |
+| [GSE188766](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE188766) | Single cell sequencing of sheep testis | Ovis aries | 2 | MTX, TSV | 2024/11/12 |
+| [GSE236643](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE236643) | Undernutrition disrupts jejunal and ileal microbiota and epithelial tissue homeo... | Ovis aries | 20 | XLSX | 2024/11/07 |
+| [GSE278012](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE278012) | The grass–microbiome-rumen axis in grazing sheep farming intervened by supplemen... | Ovis aries | 6 | MTX, TSV | 2024/10/08 |
+| [GSE266851](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE266851) | MEOX2 Regulates Adipogenic Differentiation of Adipose-Derived Stromal Vascular F... | Ovis aries | 6 | TXT | 2024/10/01 |
+| [GSE248786](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE248786) | Antenatal Glucocorticoid Exposure Induced Neurodegenerative Changes in the Fetal... | Ovis aries | 48 | TSV | 2024/09/13 |
+| [GSE247587](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE247587) | Identifying transcriptomic profiles after repetitive vaccination in ovine spleen | Ovis aries | 18 | TXT | 2024/08/23 |
+| [GSE273981](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE273981) | Transcriptome sequencing of sheep hypothalamus tissue reveals the regulatory rol... | Ovis aries | 9 | TXT | 2024/08/09 |
+| [GSE253249](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE253249) | Transcriptomic analysis of sheep hypothalamus on sex-dependent differences in bo... | Ovis aries | 17 | SF | 2024/07/17 |
+| [GSE266406](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE266406) | Soybean molasses increases subcutaneous fat deposition while reducing lipid oxid... | Ovis aries | 8 | CSV, XLSX | 2024/07/03 |
+| [GSE270269](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE270269) | RNA splicing and alternative polyadenylation profile during sheep zygotic genome... | Ovis aries | 26 | TXT | 2024/06/20 |
+| [GSE269818](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE269818) | Cell and tissue adaptation in the pulmonary autograft in a large animal model of... | Ovis aries | 22 | TXT | 2024/06/14 |
+| [GSE268651](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE268651) | Single-cell Transcriptomes and Follicular Fluid Proteomics of Ovine Atretic Foll... | Ovis aries | 6 | TXT | 2024/06/05 |
+| [GSE227043](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE227043) | Transcriptome profiling of multi-chambered stomachs in developing lambs [Day 5 a... | Ovis aries | 24 | CSV | 2024/05/17 |
+
+*...and 134 more datasets.*

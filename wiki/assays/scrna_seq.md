@@ -1,6 +1,6 @@
 # Single-Cell RNA-seq (scRNA-seq)
 
-> 6126 datasets | 2025/01/01 – 2026/04/08
+> 23057 datasets | 2015/01/01 – 2026/04/08
 
 Transcriptome profiling at single-cell resolution. Typically uses droplet-based (10x Chromium, Drop-seq) or plate-based (Smart-seq) protocols. Supplementary files often include sparse count matrices (MTX), HDF5 objects (H5/H5AD), or R objects (RDS/Seurat).
 
@@ -8,41 +8,41 @@ Transcriptome profiling at single-cell resolution. Typically uses droplet-based 
 
 | Organism | Count |
 |----------|------:|
-| Mus musculus | 3230 |
-| Homo sapiens | 2183 |
-| Danio rerio | 93 |
-| Homo sapiens; Mus musculus | 92 |
-| Rattus norvegicus | 76 |
-| Mus musculus; Homo sapiens | 56 |
-| Drosophila melanogaster | 36 |
-| Sus scrofa | 31 |
-| Macaca mulatta | 29 |
-| Gallus gallus | 25 |
-| Bos taurus | 19 |
-| Ovis aries | 12 |
-| Caenorhabditis elegans | 10 |
-| Arabidopsis thaliana | 10 |
-| Macaca fascicularis | 9 |
+| Mus musculus | 11665 |
+| Homo sapiens | 8332 |
+| Homo sapiens; Mus musculus | 461 |
+| Danio rerio | 418 |
+| Mus musculus; Homo sapiens | 256 |
+| Rattus norvegicus | 200 |
+| Drosophila melanogaster | 188 |
+| Macaca mulatta | 103 |
+| Sus scrofa | 96 |
+| Gallus gallus | 85 |
+| Arabidopsis thaliana | 63 |
+| Bos taurus | 56 |
+| Macaca fascicularis | 51 |
+| Caenorhabditis elegans | 44 |
+| Mus | 29 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count | Description |
 |------|------:|-------------|
-| TSV | 3574 | Tab-separated (10x barcodes/features, metadata) |
-| MTX | 3308 | Sparse matrices (10x CellRanger output) |
-| CSV | 1234 | Comma-separated (count matrices, DE results) |
-| TXT | 1022 | Text files (count matrices, gene lists, metadata) |
-| H5 | 971 | HDF5 (CellRanger filtered matrices) |
-| RDS | 461 | R serialized objects (Seurat, SingleCellExperiment) |
-| TAR | 263 | Tar archives (bundled outputs) |
-| XLSX | 220 | Excel (DE results, sample annotations) |
-| H5AD | 219 | AnnData HDF5 (scanpy/Python ecosystem) |
-| BW | 139 | BigWig (coverage tracks) |
-| BED | 90 |  |
-| TBI | 85 |  |
-| ZIP | 48 |  |
-| BIGWIG | 42 | BigWig (coverage tracks) |
-| JSON | 40 | JSON (cell metadata, spatial coordinates) |
+| TSV | 11790 | Tab-separated (10x barcodes/features, metadata) |
+| MTX | 10554 | Sparse matrices (10x CellRanger output) |
+| TXT | 5650 | Text files (count matrices, gene lists, metadata) |
+| CSV | 4870 | Comma-separated (count matrices, DE results) |
+| H5 | 3165 | HDF5 (CellRanger filtered matrices) |
+| RDS | 1257 | R serialized objects (Seurat, SingleCellExperiment) |
+| TAR | 1064 | Tar archives (bundled outputs) |
+| XLSX | 941 | Excel (DE results, sample annotations) |
+| BW | 560 | BigWig (coverage tracks) |
+| H5AD | 546 | AnnData HDF5 (scanpy/Python ecosystem) |
+| BED | 358 |  |
+| BIGWIG | 264 | BigWig (coverage tracks) |
+| TBI | 201 |  |
+| TAB | 198 |  |
+| NARROWPEAK | 154 |  |
 
 ## Recent Datasets
 
@@ -99,4 +99,4 @@ Transcriptome profiling at single-cell resolution. Typically uses droplet-based 
 | [GSE326484](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326484) | Combined dopamine receptor inhibition and radiotherapy target mesothelioma-initi... | Homo sapiens | 4 | MTX, TSV | 2026/04/04 |
 | [GSE326368](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326368) | Zona-pellucida-inspired cellular microenvironment induces the formation of human... | Homo sapiens | 6 | CSV | 2026/04/04 |
 
-*...and 6076 more datasets.*
+*...and 23007 more datasets.*

@@ -1,28 +1,30 @@
 # Mus
 
-> 23 RNA-seq datasets | 2025/01/01 – 2026/04/08
+> 103 RNA-seq datasets | 2015/01/01 – 2026/04/08
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 19 |
-| single-cell | 4 |
+| bulk | 68 |
+| single-cell | 29 |
+| spatial | 4 |
+| single-nucleus | 2 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 9 |
-| XLSX | 7 |
-| MTX | 3 |
-| TSV | 3 |
-| CSV | 3 |
-| XLS | 2 |
-| GTF | 1 |
-| CLOUPE | 1 |
-| JSON | 1 |
-| ZIP | 1 |
+| TXT | 49 |
+| TSV | 23 |
+| MTX | 21 |
+| XLSX | 17 |
+| CSV | 12 |
+| H5 | 6 |
+| XLS | 5 |
+| JSON | 3 |
+| BW | 2 |
+| BED | 2 |
 
 ## Recent Datasets
 
@@ -51,3 +53,32 @@
 | [GSE202882](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE202882) | Single cell RNA-seq analysis of the Rbpj mutant mouse kidney by Foxd1Cre | Mus | 2 | MTX, TSV | 2025/02/19 |
 | [GSE280144](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE280144) | Viruses hijack FPN1 to disrupt iron withholding and suppress host defense | Mus | 15 | XLSX | 2025/01/01 |
 | [GSE271521](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE271521) | Local inflammation precedes respiratory muscle wasting and fibrotic remodeling i... | Mus | 18 | XLSX | 2025/01/01 |
+| [GSE256179](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE256179) | Endothelial POFUT1 controls injury-induced liver fibrosis by repressing fibrinog... | Mus | 4 | TXT | 2024/12/18 |
+| [GSE283199](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE283199) | NKp46 regulates type 1 innate lymphoid cell proliferation and function and anti-... | Mus | 10 | TXT | 2024/12/05 |
+| [GSE275950](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE275950) | Elevated microRNA-187 causes cardiac endothelial dysplasia to promote congenital... | Mus | 4 | XLS | 2024/11/03 |
+| [GSE268329](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE268329) | GENERATION OF MOUSE NEOCORTICAL ORGANOIDS TO MODEL THE IMPACT OF CIS-REGULATORY ... | Mus | 16 | SF | 2024/10/20 |
+| [GSE244230](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE244230) | Transcriptome analysis of lung neutrophils from mice infected with Mycobacterium... | Mus | 6 | CSV | 2024/09/27 |
+| [GSE272834](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE272834) | RNA-Seq Analysis of Paclitaxel-Resistant PDX Models in Mice | Mus | 4 | TXT | 2024/08/10 |
+| [GSE206896](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE206896) | Prtg+ve Rhombic Lip Ventricular Zone Stem Cells Initiate and Maintain Group 3 Me... | Mus | 6 | TXT | 2024/08/06 |
+| [GSE264040](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE264040) | RNA expression in CD4+ T cells with anti-VEGFB treatment | Mus | 6 | TXT | 2024/07/31 |
+| [GSE263994](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE263994) | Single-cell RNA transcriptome defines the signaling networks regulated by ACE2 i... | Mus | 6 | MTX, TSV | 2024/07/15 |
+| [GSE203599](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE203599) | Fat graft survival requires metabolic reprogramming towards glycolytic pathway | Mus | 15 | TXT | 2024/06/01 |
+| [GSE267182](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE267182) | The interplay between oxidative stress and inflammation supports autistic-relate... | Mus | 78 | TXT | 2024/05/15 |
+| [GSE262959](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE262959) | Single-cell transcriptome atlas in C57BL/6 mice encodes morphological phenotypes... | Mus | 2 | TXT | 2024/05/04 |
+| [GSE265758](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE265758) | FABP4 deficiency ameliorates alcoholic steatohepatitis in mice | Mus | 6 | TXT | 2024/04/24 |
+| [GSE263911](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE263911) | AML1-ETO and CCND2 overexpression¬ cooperate to drive acute myeloid leukemia ini... | Mus | 9 | TXT | 2024/04/19 |
+| [GSE203139](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE203139) | Obesogenic high-fat diet and MYC cooperate to promote lactate accumulation and t... | Mus | 20 | XLSX | 2024/04/08 |
+| [GSE208039](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE208039) | Transcriptional Activation of Regenerative Haematopoiesis via Niche Sensing [snR... | Mus | 2 | H5, TBI, TSV | 2024/04/01 |
+| [GSE262427](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE262427) | Macrophage WEE1 promotes atherosclerosis via directly phosphorylating NF-κB p65 ... | Mus | 12 | TXT | 2024/03/30 |
+| [GSE205307](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE205307) | Single-cell RNA sequencing reveals myeloid and T cell co-stimulation mediated by... | Mus | 10 | CSV, H5, JSON, MTX, PNG, TSV | 2024/03/05 |
+| [GSE205306](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE205306) | Interleukin 7 therapy changes tumor immune environment to pro-inflammatory throu... | Mus | 2 | CSV, H5, JSON, MTX, PNG, TSV | 2024/03/05 |
+| [GSE205305](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE205305) | Interleukin 7 therapy changes tumor immune environment to pro-inflammatory throu... | Mus | 8 | CSV, MTX, TSV | 2024/03/05 |
+| [GSE203118](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE203118) | RNA sequencing of neutrophils isolated from lung, spleen and bone marrow of Myco... | Mus | 24 | TXT | 2024/02/29 |
+| [GSE255014](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE255014) | The Peripheral Atf3+ Neuronal Population is Responsible for Nerve Regeneration a... | Mus | 4 | MTX, TSV | 2024/02/09 |
+| [GSE249685](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE249685) | To find the differentially regulated genes between WT and E81Q, WT and Q62L grou... | Mus | 3 | TXT | 2024/01/10 |
+| [GSE237664](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE237664) | Global role of IGF2BP1 in controlling the expression of Wnt/β-catenin-regulated ... | Mus | 6 | BED, TXT | 2023/09/19 |
+| [GSE235225](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE235225) | Investigating the role of Bax/Bak as a driver of inflammation in aging | Mus | 2 | MTX, TSV | 2023/08/16 |
+| [GSE203245](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE203245) | Single cell RNA sequencing of mouse indced pluripotent stem cell (iPSC)-derived ... | Mus | 4 | H5 | 2023/05/12 |
+| [GSE203243](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE203243) | Single cell RNA sequencing of adult mouse Acta2+ lung cells | Mus | 1 | H5 | 2023/05/08 |
+
+*...and 53 more datasets.*

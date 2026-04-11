@@ -1,30 +1,30 @@
 # Homo sapiens; Mus musculus
 
-> 271 RNA-seq datasets | 2025/01/01 – 2026/04/08
+> 1643 RNA-seq datasets | 2015/01/01 – 2026/04/08
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 166 |
-| single-cell | 92 |
-| spatial | 7 |
-| single-nucleus | 6 |
+| bulk | 1137 |
+| single-cell | 461 |
+| spatial | 23 |
+| single-nucleus | 22 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TSV | 84 |
-| TXT | 82 |
-| MTX | 59 |
-| CSV | 59 |
-| BW | 31 |
-| XLSX | 28 |
-| H5 | 24 |
-| BEDGRAPH | 10 |
-| TAR | 10 |
-| BED | 10 |
+| TXT | 682 |
+| TSV | 361 |
+| CSV | 270 |
+| MTX | 238 |
+| BW | 220 |
+| BED | 137 |
+| XLSX | 120 |
+| H5 | 89 |
+| NARROWPEAK | 61 |
+| BEDGRAPH | 59 |
 
 ## Recent Datasets
 
@@ -81,4 +81,4 @@
 | [GSE315130](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE315130) | Differential mRNA expression analysis of multiple human and mouse pancreatic can... | Homo sapiens; Mus musculus | 67 | TXT, XLSX | 2026/01/31 |
 | [GSE310202](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE310202) | Linezolid prevents fibroblast activation and ameliorates tissue fibrosis by inhi... | Homo sapiens; Mus musculus | 36 | TABULAR, TXT | 2026/01/29 |
 
-*...and 221 more datasets.*
+*...and 1593 more datasets.*

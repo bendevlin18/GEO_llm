@@ -1,60 +1,60 @@
 # Reproductive Biology
 
-> 1452 RNA-seq datasets | 2025/01/01 – 2026/04/08
+> 6877 RNA-seq datasets | 2015/01/01 – 2026/04/08
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 1048 |
-| single-cell | 345 |
-| single-nucleus | 38 |
-| spatial | 21 |
+| bulk | 5557 |
+| single-cell | 1188 |
+| single-nucleus | 79 |
+| spatial | 53 |
 
 ## Organism Distribution
 
 | Organism | Count |
 |----------|------:|
-| Mus musculus | 582 |
-| Homo sapiens | 544 |
-| Bos taurus | 36 |
-| Drosophila melanogaster | 35 |
-| Sus scrofa | 24 |
-| Rattus norvegicus | 24 |
-| Arabidopsis thaliana | 17 |
-| Caenorhabditis elegans | 16 |
-| Ovis aries | 11 |
-| Homo sapiens; Mus musculus | 10 |
+| Mus musculus | 2709 |
+| Homo sapiens | 2264 |
+| Bos taurus | 188 |
+| Drosophila melanogaster | 164 |
+| Sus scrofa | 139 |
+| Rattus norvegicus | 116 |
+| Arabidopsis thaliana | 104 |
+| Caenorhabditis elegans | 95 |
+| Ovis aries | 63 |
+| Gallus gallus | 55 |
 
 ## Related Topics
 
 | Topic | Co-occurring Datasets |
 |-------|---------------------:|
-| [Development & Differentiation](development.md) | 907 |
-| [Cancer](cancer.md) | 406 |
-| [Immunology](immunology.md) | 316 |
-| [Plant Biology](plant_biology.md) | 266 |
-| [Epigenetics & Chromatin](epigenetics.md) | 218 |
-| [Metabolism & Metabolic Disease](metabolism.md) | 218 |
-| [Drug Response & Pharmacology](drug_response.md) | 161 |
-| [Infectious Disease](infectious_disease.md) | 149 |
-| [Neuroscience](neuroscience.md) | 98 |
-| [Aging & Senescence](aging.md) | 86 |
+| [Development & Differentiation](development.md) | 4138 |
+| [Cancer](cancer.md) | 1660 |
+| [Signal Transduction](signal_transduction.md) | 1309 |
+| [Cell Stress & Homeostasis](cell_stress.md) | 1258 |
+| [Immunology](immunology.md) | 1223 |
+| [Epigenetics & Chromatin](epigenetics.md) | 1191 |
+| [Plant Biology](plant_biology.md) | 1187 |
+| [Metabolism & Metabolic Disease](metabolism.md) | 831 |
+| [RNA Biology & Regulation](rna_biology.md) | 824 |
+| [Gene Regulation & Transcription](gene_regulation.md) | 655 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 587 |
-| CSV | 308 |
-| TSV | 308 |
-| MTX | 214 |
-| XLSX | 150 |
-| BW | 77 |
-| H5 | 44 |
-| RDS | 43 |
-| XLS | 40 |
-| TAB | 22 |
+| TXT | 3484 |
+| CSV | 1074 |
+| TSV | 1033 |
+| XLSX | 856 |
+| MTX | 606 |
+| BW | 369 |
+| XLS | 201 |
+| BED | 131 |
+| H5 | 126 |
+| BIGWIG | 105 |
 
 ## Recent Datasets
 
@@ -111,4 +111,4 @@
 | [GSE302877](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE302877) | Milk Fat Globule EGF and Factor V/VIII Domain Containing (MFGE8) as a Novel Play... | Equus caballus | 3 | MTX, TSV | 2026/03/25 |
 | [GSE262636](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE262636) | Histone Variant H2A.J is a Key Epigenetic Regulator in Human Trophoblast Develop... | Homo sapiens | 58 | MTX, TSV | 2026/03/25 |
 
-*...and 1402 more datasets.*
+*...and 6827 more datasets.*

@@ -1,30 +1,30 @@
 # Arabidopsis thaliana
 
-> 305 RNA-seq datasets | 2025/01/01 – 2026/04/08
+> 2379 RNA-seq datasets | 2015/01/01 – 2026/04/08
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 285 |
-| single-cell | 10 |
-| single-nucleus | 9 |
-| spatial | 1 |
+| bulk | 2298 |
+| single-cell | 63 |
+| single-nucleus | 15 |
+| spatial | 3 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 151 |
-| CSV | 45 |
-| XLSX | 36 |
-| BW | 29 |
-| TSV | 27 |
-| RDS | 9 |
-| BEDGRAPH | 9 |
-| MTX | 7 |
-| TAB | 7 |
-| BIGWIG | 7 |
+| TXT | 1313 |
+| XLSX | 313 |
+| CSV | 239 |
+| BW | 227 |
+| TSV | 154 |
+| XLS | 87 |
+| BED | 67 |
+| BEDGRAPH | 57 |
+| TAB | 53 |
+| WIG | 51 |
 
 ## Recent Datasets
 
@@ -81,4 +81,4 @@
 | [GSE317084](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE317084) | Transcriptome analysis of Arabidopsis thaliana seedlings after combined isoxaben... | Arabidopsis thaliana | 12 | XLS | 2026/01/26 |
 | [GSE316913](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE316913) | Transcriptome analysis of Arabidopsis thaliana treated with valinomycin | Arabidopsis thaliana | 12 | XLSX | 2026/01/26 |
 
-*...and 255 more datasets.*
+*...and 2329 more datasets.*

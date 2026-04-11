@@ -1,23 +1,28 @@
 # Schizosaccharomyces pombe
 
-> 32 RNA-seq datasets | 2025/01/01 – 2026/04/08
+> 223 RNA-seq datasets | 2015/01/01 – 2026/04/08
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 32 |
+| bulk | 221 |
+| single-cell | 2 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 18 |
-| XLSX | 8 |
-| BW | 4 |
-| TSV | 2 |
-| WIG | 1 |
-| BEDGRAPH | 1 |
+| TXT | 104 |
+| XLSX | 43 |
+| BW | 40 |
+| BEDGRAPH | 26 |
+| CSV | 14 |
+| FPKM_TRACKING | 9 |
+| WIG | 7 |
+| BIGWIG | 6 |
+| TAB | 5 |
+| TSV | 5 |
 
 ## Recent Datasets
 
@@ -55,3 +60,23 @@
 | [GSE276243](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE276243) | A bifunctional snoRNA with separable activities in guiding rRNA 2'-O-methylation... | Schizosaccharomyces pombe | 4 | TXT | 2025/03/17 |
 | [GSE276242](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE276242) | A bifunctional snoRNA with separable activities in guiding rRNA 2'-O-methylation... | Schizosaccharomyces pombe | 2 | TXT | 2025/03/17 |
 | [GSE283365](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE283365) | Fission yeast Caprin protein is required for efficient heterochromatin establish... | Schizosaccharomyces pombe | 6 | XLSX | 2025/02/13 |
+| [GSE263826](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE263826) | Dsk1 repairs DSBs by homologous recombination via Rad52 in  Schizosaccharomyces ... | Schizosaccharomyces pombe | 6 | XLS | 2024/12/25 |
+| [GSE284036](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE284036) | Genome wide expression  profiling of S.pombe upon Atf1 over expression in Δpcr1 ... | Schizosaccharomyces pombe | 4 | XLSX | 2024/12/23 |
+| [GSE269096](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE269096) | Php|NF-Y transcription factor infiltrates repressive heterochromatin to generate... | Schizosaccharomyces pombe | 87 | BEDGRAPH, SGR | 2024/12/06 |
+| [GSE269093](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE269093) | PhpNF-Y drives heterochromatic transcription to generate splicing machinery-depe... | Schizosaccharomyces pombe | 4 | BEDGRAPH | 2024/12/06 |
+| [GSE252561](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE252561) | Centromere positioning orchestrates telomere bouquet formation and the initiatio... | Schizosaccharomyces pombe | 6 | TXT | 2024/12/03 |
+| [GSE254579](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE254579) | Intrinsically Disordered Regions Steer the Function Coordination of the Travelin... | Schizosaccharomyces pombe | 10 | TXT | 2024/11/13 |
+| [GSE243036](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE243036) | Ageing-associated long non-coding RNA extends lifespan and reduces translation i... | Schizosaccharomyces pombe | 12 | BW | 2024/10/21 |
+| [GSE243034](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE243034) | Ageing-associated long non-coding RNA extends lifespan and reduces translation i... | Schizosaccharomyces pombe | 6 | XLSX | 2024/10/21 |
+| [GSE216106](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE216106) | Fission yeast essential nuclear pore protein nup211 regulates the transcriptome | Schizosaccharomyces pombe | 6 | CSV | 2024/10/04 |
+| [GSE274241](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE274241) | A comprehensive Schizosaccharomyces pombe atlas of physical transcription factor... | Schizosaccharomyces pombe | 356 | BW | 2024/08/20 |
+| [GSE274240](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE274240) | A comprehensive Schizosaccharomyces pombe atlas of physical transcription factor... | Schizosaccharomyces pombe | 12 | CSV | 2024/08/20 |
+| [GSE271887](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE271887) | Transcriptional response to MMS in haploid and diploid Schizosaccharomyces pombe | Schizosaccharomyces pombe | 12 | TXT | 2024/07/24 |
+| [GSE250095](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE250095) | Nitrogen signaling factor changes gene expression and binding of transcription f... | Schizosaccharomyces pombe | 149 | BW | 2024/06/25 |
+| [GSE250093](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE250093) | Nitrogen signaling factor changes gene expression and binding of transcription f... | Schizosaccharomyces pombe | 41 | BW | 2024/06/25 |
+| [GSE179514](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE179514) | Ago and Fkbp project | Schizosaccharomyces pombe | 49 | TDF | 2024/06/25 |
+| [GSE269854](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE269854) | The Greatwall-Endosulfine-PP2A/B55 pathway controls entry into quiescence by pro... | Schizosaccharomyces pombe | 6 | TXT | 2024/06/17 |
+| [GSE235589](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE235589) | Structure of an aberrant spliceosome intermediate on its way to disassembly | Schizosaccharomyces pombe | 7 | BW | 2024/06/01 |
+| [GSE242312](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE242312) | A systematic screen identifies Saf5 as a link between splicing and transcription... | Schizosaccharomyces pombe | 6 | TXT | 2024/05/20 |
+
+*...and 173 more datasets.*

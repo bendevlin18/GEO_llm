@@ -1,60 +1,60 @@
 # Infectious Disease
 
-> 4213 RNA-seq datasets | 2025/01/01 – 2026/04/08
+> 19407 RNA-seq datasets | 2015/01/01 – 2026/04/08
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 3064 |
-| single-cell | 1021 |
-| single-nucleus | 74 |
-| spatial | 54 |
+| bulk | 15722 |
+| single-cell | 3371 |
+| single-nucleus | 177 |
+| spatial | 137 |
 
 ## Organism Distribution
 
 | Organism | Count |
 |----------|------:|
-| Mus musculus | 1706 |
-| Homo sapiens | 1417 |
-| Macaca mulatta | 46 |
-| Rattus norvegicus | 42 |
-| Escherichia coli | 41 |
-| Arabidopsis thaliana | 32 |
-| Danio rerio | 32 |
-| Sus scrofa | 30 |
-| Mycobacterium tuberculosis | 24 |
-| Staphylococcus aureus | 24 |
+| Mus musculus | 6402 |
+| Homo sapiens | 6333 |
+| Arabidopsis thaliana | 232 |
+| Escherichia coli | 220 |
+| Macaca mulatta | 175 |
+| Rattus norvegicus | 169 |
+| Staphylococcus aureus | 156 |
+| Caenorhabditis elegans | 134 |
+| Sus scrofa | 132 |
+| Homo sapiens; Mus musculus | 121 |
 
 ## Related Topics
 
 | Topic | Co-occurring Datasets |
 |-------|---------------------:|
-| [Immunology](immunology.md) | 2314 |
-| [Development & Differentiation](development.md) | 1221 |
-| [Cancer](cancer.md) | 1049 |
-| [Metabolism & Metabolic Disease](metabolism.md) | 850 |
-| [Neuroscience](neuroscience.md) | 646 |
-| [Lung & Respiratory](lung_respiratory.md) | 594 |
-| [Gut & Intestinal Biology](gut_intestine.md) | 496 |
-| [Drug Response & Pharmacology](drug_response.md) | 492 |
-| [Epigenetics & Chromatin](epigenetics.md) | 396 |
-| [Hematopoiesis & Blood](hematopoiesis.md) | 353 |
+| [Immunology](immunology.md) | 9321 |
+| [Microbiology](microbiology.md) | 5286 |
+| [Development & Differentiation](development.md) | 4986 |
+| [Cancer](cancer.md) | 4009 |
+| [Cell Stress & Homeostasis](cell_stress.md) | 3744 |
+| [Signal Transduction](signal_transduction.md) | 3709 |
+| [Metabolism & Metabolic Disease](metabolism.md) | 3384 |
+| [Lung & Respiratory](lung_respiratory.md) | 2358 |
+| [Neuroscience](neuroscience.md) | 2275 |
+| [Gut & Intestinal Biology](gut_intestine.md) | 2002 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 1694 |
-| CSV | 979 |
-| TSV | 913 |
-| MTX | 588 |
-| XLSX | 471 |
-| H5 | 217 |
-| RDS | 113 |
-| XLS | 96 |
-| BW | 91 |
-| TAR | 74 |
+| TXT | 9445 |
+| CSV | 3509 |
+| TSV | 3000 |
+| XLSX | 2509 |
+| MTX | 1725 |
+| H5 | 611 |
+| XLS | 554 |
+| BW | 485 |
+| RDS | 299 |
+| TAR | 259 |
 
 ## Recent Datasets
 
@@ -111,4 +111,4 @@
 | [GSE302890](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE302890) | Discovery of kidney disease targets using multimodal human podocyte injury model... | Homo sapiens | 48 | XLS, XLSX | 2026/04/02 |
 | [GSE294295](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE294295) | Met32 governs transcriptional control of sulfur metabolic flexibility and resist... | Candida albicans | 24 | BW, TXT | 2026/04/02 |
 
-*...and 4163 more datasets.*
+*...and 19357 more datasets.*

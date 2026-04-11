@@ -1,28 +1,28 @@
 # Oryza sativa
 
-> 54 RNA-seq datasets | 2025/01/01 – 2026/04/08
+> 363 RNA-seq datasets | 2015/01/01 – 2026/04/08
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 50 |
-| single-cell | 4 |
+| bulk | 352 |
+| single-cell | 11 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 29 |
-| XLSX | 10 |
-| CSV | 9 |
-| TSV | 6 |
-| BW | 4 |
-| RDS | 2 |
-| XLS | 1 |
-| NARROWPEAK | 1 |
-| H5 | 1 |
-| MTX | 1 |
+| TXT | 219 |
+| XLSX | 65 |
+| CSV | 33 |
+| TSV | 17 |
+| BW | 14 |
+| XLS | 13 |
+| BIGWIG | 9 |
+| TDF | 7 |
+| WIG | 6 |
+| FPKM_TRACKING | 4 |
 
 ## Recent Datasets
 
@@ -79,4 +79,4 @@
 | [GSE288025](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE288025) | RAD51 family factors remodel the NHEJ system to modulate stress-induced biosynth... | Oryza sativa | 18 | XLSX | 2025/01/30 |
 | [GSE253909](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE253909) | The PHR2-DGP1 Signaling Integrates Carbon and Nitrogen Assimilatory Metabolisms ... | Oryza sativa | 12 | TXT | 2025/01/27 |
 
-*...and 4 more datasets.*
+*...and 313 more datasets.*

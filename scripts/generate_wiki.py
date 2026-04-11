@@ -206,6 +206,14 @@ TOPIC_NAMES = {
     "crispr_gene_editing": "CRISPR & Gene Editing",
     "drug_response": "Drug Response & Pharmacology",
     "plant_biology": "Plant Biology",
+    "microbiology": "Microbiology",
+    "cell_stress": "Cell Stress & Homeostasis",
+    "rna_biology": "RNA Biology & Regulation",
+    "gene_regulation": "Gene Regulation & Transcription",
+    "cell_cycle": "Cell Cycle & Proliferation",
+    "signal_transduction": "Signal Transduction",
+    "eye_vision": "Eye & Vision",
+    "liver": "Liver & Hepatology",
 }
 
 

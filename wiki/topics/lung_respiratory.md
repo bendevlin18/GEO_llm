@@ -1,60 +1,60 @@
 # Lung & Respiratory
 
-> 1813 RNA-seq datasets | 2025/01/01 – 2026/04/08
+> 7543 RNA-seq datasets | 2015/01/01 – 2026/04/08
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 1112 |
-| single-cell | 619 |
-| spatial | 43 |
-| single-nucleus | 39 |
+| bulk | 5354 |
+| single-cell | 2039 |
+| spatial | 82 |
+| single-nucleus | 68 |
 
 ## Organism Distribution
 
 | Organism | Count |
 |----------|------:|
-| Mus musculus | 828 |
-| Homo sapiens | 797 |
-| Rattus norvegicus | 32 |
-| Homo sapiens; Mus musculus | 17 |
-| Sus scrofa | 12 |
-| Bos taurus | 9 |
-| Ovis aries | 6 |
-| Mus musculus; Homo sapiens | 6 |
-| Macaca mulatta | 6 |
-| Gallus gallus | 5 |
+| Homo sapiens | 3320 |
+| Mus musculus | 3237 |
+| Rattus norvegicus | 141 |
+| Homo sapiens; Mus musculus | 86 |
+| Sus scrofa | 68 |
+| Streptococcus pneumoniae | 47 |
+| Mus musculus; Homo sapiens | 46 |
+| Macaca mulatta | 34 |
+| Mesocricetus auratus | 31 |
+| Bos taurus | 27 |
 
 ## Related Topics
 
 | Topic | Co-occurring Datasets |
 |-------|---------------------:|
-| [Immunology](immunology.md) | 915 |
-| [Cancer](cancer.md) | 708 |
-| [Infectious Disease](infectious_disease.md) | 594 |
-| [Development & Differentiation](development.md) | 560 |
-| [Drug Response & Pharmacology](drug_response.md) | 286 |
-| [Fibrosis & Wound Healing](fibrosis_wound.md) | 282 |
-| [Metabolism & Metabolic Disease](metabolism.md) | 253 |
-| [Cardiovascular](cardiovascular.md) | 206 |
-| [Hematopoiesis & Blood](hematopoiesis.md) | 152 |
-| [Epigenetics & Chromatin](epigenetics.md) | 151 |
+| [Immunology](immunology.md) | 3238 |
+| [Cancer](cancer.md) | 2875 |
+| [Infectious Disease](infectious_disease.md) | 2358 |
+| [Development & Differentiation](development.md) | 2223 |
+| [Cell Stress & Homeostasis](cell_stress.md) | 1890 |
+| [Signal Transduction](signal_transduction.md) | 1483 |
+| [Microbiology](microbiology.md) | 1194 |
+| [Fibrosis & Wound Healing](fibrosis_wound.md) | 997 |
+| [Drug Response & Pharmacology](drug_response.md) | 972 |
+| [Metabolism & Metabolic Disease](metabolism.md) | 860 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 650 |
-| TSV | 502 |
-| CSV | 367 |
-| MTX | 366 |
-| XLSX | 177 |
-| H5 | 143 |
-| RDS | 72 |
-| XLS | 50 |
-| TAR | 45 |
-| H5AD | 28 |
+| TXT | 3418 |
+| TSV | 1525 |
+| CSV | 1330 |
+| MTX | 1000 |
+| XLSX | 793 |
+| H5 | 438 |
+| XLS | 200 |
+| RDS | 184 |
+| BW | 168 |
+| TAR | 140 |
 
 ## Recent Datasets
 
@@ -111,4 +111,4 @@
 | [GSE312048](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE312048) | Ascertaining the effect of switching deregulated Myc ON in KRasG12D-driven mouse... | Mus musculus | 16 | MTX, TSV | 2026/03/31 |
 | [GSE308612](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE308612) | The Role of Transforming Growth Factor Alpha in Mediating the Malignant Transfor... | Homo sapiens | 6 | TXT | 2026/03/31 |
 
-*...and 1763 more datasets.*
+*...and 7493 more datasets.*

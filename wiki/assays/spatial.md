@@ -1,6 +1,6 @@
 # Spatial Transcriptomics
 
-> 396 datasets | 2025/01/01 – 2026/04/08
+> 1027 datasets | 2015/01/01 – 2026/04/08
 
 Spatially-resolved transcriptomics that preserves tissue context. Includes sequencing-based (10x Visium, Slide-seq, Stereo-seq) and imaging-based (MERFISH, seqFISH, CosMx, Xenium) methods. Supplementary files may include spatial coordinates (JSON/CSV) and tissue images (PNG/JPG).
 
@@ -8,41 +8,41 @@ Spatially-resolved transcriptomics that preserves tissue context. Includes seque
 
 | Organism | Count |
 |----------|------:|
-| Homo sapiens | 172 |
-| Mus musculus | 171 |
-| Homo sapiens; Mus musculus | 7 |
-| Rattus norvegicus | 6 |
-| Danio rerio | 3 |
+| Homo sapiens | 441 |
+| Mus musculus | 435 |
+| Homo sapiens; Mus musculus | 23 |
+| Rattus norvegicus | 11 |
+| Danio rerio | 10 |
+| Mus musculus; Homo sapiens | 9 |
+| Sus scrofa | 8 |
+| Gallus gallus | 5 |
+| Xenopus laevis | 4 |
+| Mus | 4 |
+| Nematostella vectensis | 3 |
+| Arabidopsis thaliana | 3 |
+| Macaca mulatta | 3 |
 | Dugesia japonica | 3 |
-| Marmota monax | 2 |
-| Sus scrofa | 2 |
-| Populus trichocarpa | 2 |
-| Bombyx mori; Bombyx mandarina | 2 |
-| Apis mellifera | 1 |
-| human skin metagenome | 1 |
-| Gallus gallus | 1 |
-| synthetic construct; Homo sapiens | 1 |
-| Gallus gallus; Mus musculus | 1 |
+| Homo sapiens; blank sample | 2 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count | Description |
 |------|------:|-------------|
-| TSV | 178 | Tab-separated (10x barcodes/features, metadata) |
-| MTX | 149 | Sparse matrices (10x CellRanger output) |
-| CSV | 115 | Comma-separated (count matrices, DE results) |
-| TXT | 80 | Text files (count matrices, gene lists, metadata) |
-| H5 | 75 | HDF5 (CellRanger filtered matrices) |
-| PNG | 40 | Images (spatial, QC plots) |
-| JSON | 39 | JSON (cell metadata, spatial coordinates) |
-| JPG | 34 | Images (spatial, QC plots) |
-| RDS | 31 | R serialized objects (Seurat, SingleCellExperiment) |
-| TAR | 24 | Tar archives (bundled outputs) |
-| XLSX | 22 | Excel (DE results, sample annotations) |
-| TIFF | 20 |  |
-| H5AD | 14 | AnnData HDF5 (scanpy/Python ecosystem) |
-| DCC | 5 |  |
-| ZIP | 5 |  |
+| TSV | 428 | Tab-separated (10x barcodes/features, metadata) |
+| MTX | 364 | Sparse matrices (10x CellRanger output) |
+| CSV | 339 | Comma-separated (count matrices, DE results) |
+| TXT | 213 | Text files (count matrices, gene lists, metadata) |
+| H5 | 209 | HDF5 (CellRanger filtered matrices) |
+| PNG | 163 | Images (spatial, QC plots) |
+| JSON | 146 | JSON (cell metadata, spatial coordinates) |
+| JPG | 121 | Images (spatial, QC plots) |
+| TAR | 110 | Tar archives (bundled outputs) |
+| TIFF | 75 |  |
+| RDS | 71 | R serialized objects (Seurat, SingleCellExperiment) |
+| XLSX | 62 | Excel (DE results, sample annotations) |
+| H5AD | 40 | AnnData HDF5 (scanpy/Python ecosystem) |
+| DCC | 34 |  |
+| ZIP | 17 |  |
 
 ## Recent Datasets
 
@@ -99,4 +99,4 @@ Spatially-resolved transcriptomics that preserves tissue context. Includes seque
 | [GSE304864](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE304864) | Multiomics immune profiling of a patient-relevant orthotopic lung cancer model u... | Mus musculus | 11 | CSV, H5 | 2026/03/06 |
 | [GSE299711](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE299711) | Clonal dynamics reveal cancer resistance arises from adaptive programs [scRNA-Se... | Homo sapiens | 8 | RDS | 2026/03/04 |
 
-*...and 346 more datasets.*
+*...and 977 more datasets.*

@@ -1,30 +1,30 @@
 # Homo sapiens
 
-> 9891 RNA-seq datasets | 2025/01/01 – 2026/04/08
+> 49535 RNA-seq datasets | 2015/01/01 – 2026/04/08
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 7212 |
-| single-cell | 2183 |
-| single-nucleus | 324 |
-| spatial | 172 |
+| bulk | 40111 |
+| single-cell | 8332 |
+| single-nucleus | 651 |
+| spatial | 441 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 4206 |
-| TSV | 2076 |
-| CSV | 2037 |
-| MTX | 1259 |
-| XLSX | 1013 |
-| BW | 385 |
-| H5 | 377 |
-| RDS | 270 |
-| TAR | 258 |
-| XLS | 212 |
+| TXT | 25329 |
+| TSV | 9667 |
+| CSV | 7862 |
+| XLSX | 4905 |
+| MTX | 3930 |
+| BIGWIG | 3069 |
+| BW | 2600 |
+| BED | 1440 |
+| H5 | 1240 |
+| XLS | 1112 |
 
 ## Recent Datasets
 
@@ -81,4 +81,4 @@
 | [GSE326938](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326938) | Discovery of a primed endothelial progenitor that requires VEGF/ERK inhibition t... | Homo sapiens | 10 | H5 | 2026/04/06 |
 | [GSE326936](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326936) | Discovery of a primed endothelial progenitor that requires VEGF/ERK inhibition t... | Homo sapiens | 6 | H5 | 2026/04/06 |
 
-*...and 9841 more datasets.*
+*...and 49485 more datasets.*

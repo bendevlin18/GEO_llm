@@ -1,29 +1,29 @@
 # Bos taurus
 
-> 103 RNA-seq datasets | 2025/01/01 – 2026/04/08
+> 535 RNA-seq datasets | 2015/01/01 – 2026/04/08
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 82 |
-| single-cell | 19 |
-| single-nucleus | 2 |
+| bulk | 473 |
+| single-cell | 56 |
+| single-nucleus | 6 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 52 |
-| CSV | 26 |
-| XLSX | 14 |
-| TSV | 10 |
-| MTX | 9 |
-| SF | 2 |
-| CLOUPE | 1 |
-| CNT | 1 |
-| BW | 1 |
-| RDS | 1 |
+| TXT | 330 |
+| CSV | 73 |
+| XLSX | 69 |
+| TSV | 42 |
+| MTX | 29 |
+| XLS | 12 |
+| TAB | 8 |
+| BW | 8 |
+| SF | 7 |
+| BED | 6 |
 
 ## Recent Datasets
 
@@ -80,4 +80,4 @@
 | [GSE302935](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE302935) | A single-cell assessment of intramuscular and subcutaneous adipose tissue in bee... | Bos taurus | 4 | MTX, TSV | 2025/07/31 |
 | [GSE295732](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE295732) | Bovine endometrium drives and responds to divergence of in vitro produced concep... | Bos taurus | 41 | XLSX | 2025/07/31 |
 
-*...and 53 more datasets.*
+*...and 485 more datasets.*

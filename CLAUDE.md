@@ -4,27 +4,182 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Single-script Python tool that fetches GEO (Gene Expression Omnibus) Series metadata from NCBI's Entrez E-Utilities API. It searches for GSE records published within a configurable time window, retrieves document summaries in batches, and outputs structured JSON.
+A periodically-updated, LLM-generated wiki that indexes GEO (Gene Expression Omnibus) RNA-seq datasets by their key features — organism, assay modality, research topic, and data availability — making it easy to discover what data exists and in what form. Inspired by [Karpathy's LLM wiki pattern](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f).
+
+The wiki and search index (`wiki/search_index.txt`) are designed for easy LLM querying: an LLM can search the index to quickly find relevant GEO datasets by organism, modality, topic, or data format.
+
+## Three-Layer Architecture
+
+### Layer 1: Raw Sources (`data/`)
+- JSON snapshots from `geo_metadata_fetcher.py`, timestamped and immutable
+- Each scrape covers a date window; new scrapes are additive
+- Data files are gitignored (reproducible via the pipeline)
+
+### Layer 2: The Wiki (`wiki/`)
+- LLM-generated markdown pages organized by facets:
+  - **By organism** — `wiki/organisms/homo_sapiens.md`, etc.
+  - **By assay type** — `wiki/assays/bulk_rnaseq.md`, `wiki/assays/scrna_seq.md`, etc.
+  - **By research topic** — LLM-inferred from titles/summaries (`wiki/topics/cancer.md`, etc.)
+  - **`wiki/index.md`** — master catalog
+  - **`wiki/log.md`** — append-only ingest log
+- `wiki/search_index.txt` — flat-file search index for LLM queries
+
+### Layer 3: Schema (`CLAUDE.md` + config)
+- Wiki conventions, page templates, ingest workflow, tagging taxonomy
+
+## Current Focus: RNA-seq Classification (Phase 1)
+
+Focus exclusively on RNA-sequencing datasets. The ingest pipeline:
+1. **Fetch** — pull GEO metadata via NCBI E-Utilities API
+2. **Filter & classify** — identify RNA-seq datasets, classify modality (bulk / single-cell / spatial / single-nucleus)
+3. **Tag topics** — infer research area from title/summary
+4. **Generate wiki pages** — organism pages, modality pages, topic pages, index, and search index
+
+## Pipeline Scripts
+
+All scripts live in `scripts/` and should be run from the project root (e.g., `python scripts/index_ftp.py`).
+
+| Script | Purpose |
+|---|---|
+| `scripts/geo_metadata_fetcher.py` | Fetches GEO Series metadata from NCBI E-Utilities API |
+| `scripts/extract_rnaseq.py` | Filters metadata to RNA-seq datasets and classifies modality |
+| `scripts/tag_topics.py` | Infers research topics from titles/summaries |
+| `scripts/ftp_probe.py` | Probes GEO FTP for supplementary file details |
+| `scripts/index_ftp.py` | Indexes FTP directory listings for data availability |
+| `scripts/build_search_index.py` | Builds `wiki/search_index.txt` for LLM querying |
+| `scripts/generate_wiki.py` | Generates wiki markdown pages from classified data |
+| `scripts/merge_and_rebuild.py` | Merges data snapshots, deduplicates, and rebuilds the wiki |
 
 ## Running
+
+All scripts require the `GEO_llm` conda environment and should be run from the project root:
 
 ```bash
 # Requires Python 3.10+ (uses X | Y union type syntax)
 # No external dependencies — stdlib only (urllib, xml, json, argparse)
+# Always use: conda run -n GEO_llm python scripts/<script>.py
 
-python geo_metadata_fetcher.py --email you@example.com
-python geo_metadata_fetcher.py --email you@example.com --months 6 --batch-size 300 --add-ftp-urls -o output.json
+# Fetch metadata for a date range
+conda run -n GEO_llm python scripts/geo_metadata_fetcher.py --email benjamin.devlin@duke.edu --start-date 2024/01/01 --end-date 2024/03/31 -o data/geo_metadata_2024-Q1.json
+
+# Full merge/classify/tag/rebuild pipeline (runs all steps end-to-end)
+conda run -n GEO_llm python scripts/merge_and_rebuild.py
+
+# FTP indexing (slow — ~1.6 records/sec, ~18 hours for 100k records; saves incrementally)
+conda run -n GEO_llm python scripts/index_ftp.py
 ```
 
-Email is required by NCBI policy. Can be set via `NCBI_EMAIL` env var. Optional `NCBI_API_KEY` env var raises rate limit from 3 to 10 req/sec.
+Email is required by NCBI policy (`benjamin.devlin@duke.edu`). Can also be set via `NCBI_EMAIL` env var. Optional `NCBI_API_KEY` env var raises rate limit from 3 to 10 req/sec.
 
-## Architecture
+## Repository Structure
 
-All logic is in `geo_metadata_fetcher.py`. The pipeline is:
+```
+GEO_llm/
+├── data/                          # Layer 1: Raw sources (gitignored)
+│   ├── geo_metadata_2015-Q1.json      # Quarterly scrapes from 2015 to present
+│   ├── geo_metadata_2015-Q2.json      # Named as geo_metadata_YYYY-QN.json
+│   ├── ...                            # Coverage: 2015-Q1 through 2024-Q4
+│   ├── geo_metadata_2025-Q1.json      # plus 2025 quarters
+│   └── geo_metadata_2026-04-09.json   # Latest scrape (Jan–Apr 2026)
+│
+├── wiki/                          # Layer 2: LLM-generated wiki (checked in)
+│   ├── index.md                       # Master catalog
+│   ├── log.md                         # Append-only ingest log
+│   ├── search_index.txt               # Flat-file index for LLM querying
+│   ├── organisms/                     # One page per organism (~155 species)
+│   │   ├── homo_sapiens.md
+│   │   ├── mus_musculus.md
+│   │   └── ...
+│   ├── assays/                        # One page per RNA-seq modality
+│   │   ├── bulk_rnaseq.md
+│   │   ├── scrna_seq.md
+│   │   ├── snrna_seq.md
+│   │   └── spatial.md
+│   └── topics/                        # One page per research area (28 topics)
+│       ├── cancer.md
+│       ├── neuroscience.md
+│       ├── microbiology.md
+│       └── ...
+│
+├── scripts/                       # Pipeline scripts (run from project root)
+│   ├── geo_metadata_fetcher.py        # Fetch raw GEO metadata from NCBI API
+│   ├── extract_rnaseq.py              # Filter to RNA-seq, classify modality
+│   ├── tag_topics.py                  # Infer research topics from titles/summaries
+│   ├── ftp_probe.py                   # Probe individual GEO FTP dirs for file details
+│   ├── index_ftp.py                   # Bulk FTP indexing across all classified datasets
+│   ├── build_search_index.py          # Build wiki/search_index.txt for LLM querying
+│   ├── generate_wiki.py              # Generate wiki markdown pages from classified data
+│   └── merge_and_rebuild.py           # Merge snapshots, deduplicate, rebuild wiki
+│
+├── rnaseq_classified.json         # Intermediate: classified RNA-seq records (gitignored)
+├── ftp_index.json                 # Intermediate: FTP file listings (gitignored)
+├── ftp_probe_results.json         # Intermediate: FTP probe results (gitignored)
+│
+├── CLAUDE.md                      # Layer 3: Schema and project instructions
+└── plans.md                       # Project roadmap and architecture notes
+```
 
-1. **eSearch** (`search_geo`) — queries GDS database for GSE records in a date range, returns History server params (query_key, webenv)
-2. **eSummary** (`fetch_summaries`) — pages through results in batches using History server, parses XML DocumentSummary elements
-3. **Parse** (`parse_doc_summary`) — extracts fields from each summary; filters to GSE-only records
-4. **Output** — prints stats, writes JSON
+**Data flow:** `data/` (raw snapshots) → pipeline scripts → `wiki/` (LLM-queryable output)
 
-`eutils_get` handles all HTTP requests with retry logic (3 attempts, exponential backoff). Rate limiting is enforced via `REQUEST_DELAY` (0.35s between requests).
+Gitignored files (`data/`, `rnaseq_classified.json`, `ftp_index.json`, `ftp_probe_results.json`) are all reproducible via the pipeline scripts.
+
+## Answering Dataset Queries
+
+When the user asks about datasets (e.g., "find mouse kidney snRNA-seq datasets"), use these sources in order:
+
+1. **`wiki/search_index.txt`** — first stop for discovery. Grep for terms like organism, modality, topic. Each line is pipe-delimited: `accession|modality|organism|n_samples|[file_formats]|topics|title|keywords`.
+2. **`wiki/` pages** — organism, assay, and topic pages provide curated summaries grouped by facet. Note: these pages show summary stats (modality breakdown, organism distribution, related topics, file types) plus the **50 most recent datasets** in a table. They are not full listings — for comprehensive results, use the search index or `rnaseq_classified.json`.
+3. **`data/*.json`** — raw GEO metadata with full summaries, platform info, pub dates, FTP links. **Use this when the user asks about a specific dataset or wants additional details** beyond what the search index provides (e.g., full abstract, platform, publication date, sample details). Grep for the accession (e.g., `GSE312968`) across the data files.
+4. **`ftp_index.json`** — actual supplementary filenames and sizes from the GEO FTP server. Shows what preprocessed data is available (RDS, H5, MTX, CSV, etc.) and how large the files are.
+
+## Key Data Files
+
+**`rnaseq_classified.json`** — canonical classified dataset (JSON)
+- One object per RNA-seq dataset with structured fields: `accession`, `title`, `summary` (first 500 chars), `organism`, `n_samples`, `platform_id`, `suppfile`, `pub_date`, `modality`, `topics` (array)
+- Use for programmatic access and detailed lookups
+
+**`wiki/search_index.txt`** — grep-optimized search index (pipe-delimited text)
+- Format: `accession|modality|organism|n_samples|files|topics|title|keywords`
+- Summary replaced with extracted keywords (stop words removed, compressed)
+- Includes FTP file info when available from `ftp_index.json` (actual filenames + sizes), falls back to `[GEO:types]` from suppfile field
+- No `platform_id` or `pub_date`
+- Use for fast grep-based discovery
+
+The search index is a denormalized, grep-friendly projection of the classified JSON enriched with FTP data. Both contain the same set of records.
+
+## Current Data Coverage
+
+- **Date range:** 2015-Q1 through April 2026 (45 quarterly snapshots)
+- **Total unique GEO records:** ~227,000
+- **RNA-seq datasets classified:** ~130,000
+  - Bulk: ~104,000 | Single-cell: ~23,000 | Single-nucleus: ~2,000 | Spatial: ~1,000
+- **Topic tagging:** ~96.6% tagged (~4,500 untagged — see Known Limitations)
+- **FTP index:** In progress — ~26,000 of 130,000 indexed so far
+- **Wiki:** 155 organism pages, 28 topic pages, 4 assay pages
+
+## Topic Taxonomy (28 topics)
+
+The keyword-based tagger (`scripts/tag_topics.py`) assigns multi-label tags. A dataset can match multiple topics.
+
+| Category | Topics |
+|---|---|
+| **Disease/Clinical** | cancer, infectious_disease, cardiovascular, kidney, lung_respiratory, gut_intestine, liver, eye_vision, skin |
+| **Biology** | development, immunology, neuroscience, metabolism, hematopoiesis, reproduction, aging, cell_cycle, cell_stress |
+| **Molecular** | epigenetics, rna_biology, gene_regulation, signal_transduction |
+| **Methods/Tools** | crispr_gene_editing, drug_response |
+| **Other** | microbiology, plant_biology, fibrosis_wound, skeletal_muscle |
+
+## Known Limitations
+
+- **~4,500 untagged records** — mostly ENCODE datasets with boilerplate summaries ("For data usage terms and conditions...") and records with very sparse metadata. These lack enough text for keyword matching.
+- **Wiki pages show max 50 recent datasets** — by design in `generate_wiki.py` (`dataset_table(max_rows=50)`). Use `search_index.txt` or `rnaseq_classified.json` for full listings.
+- **FTP indexing is slow** — ~1.6 records/sec due to NCBI rate limits. A full 130k-record run takes ~18 hours. The script saves incrementally (every 100 records) and can be resumed if interrupted.
+- **Classification is rule-based** — `extract_rnaseq.py` uses keyword heuristics, not LLM classification. May misclassify edge cases. Phase 2 plans to use Anthropic API for more accurate batch classification.
+- **RNA-seq only (Phase 1)** — ChIP-seq, ATAC-seq, methylation, and other assay types are not yet indexed. See `plans.md` Phase 3 for expansion roadmap.
+
+## Key Design Decisions
+
+- **LLM-first querying** — the search index and wiki pages are structured for LLM consumption, not just human browsing
+- **Incremental updates** — new date windows are fetched and merged without duplicates (keyed on GSE accession, latest snapshot wins)
+- **Phase 1 uses Claude Code interactively** for classification; Phase 2 will move to Anthropic API calls for automated batch processing
+- **Conda environment** — all scripts run under the `GEO_llm` conda env via `conda run -n GEO_llm`
