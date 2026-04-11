@@ -107,6 +107,34 @@ Data files (raw JSON snapshots, classified records, FTP index) are gitignored si
 
 Requires `ANTHROPIC_API_KEY` env var. The classification prompt and taxonomy developed in Phase 1 will carry over directly.
 
+## Phase 2.5: Analysis Protocols (`wiki/protocols/`)
+
+Add a `wiki/protocols/` folder with step-by-step analysis guides for each data format a user might encounter when downloading a GEO dataset. Each protocol page should explain what the data format is, what tools are needed, and walk through a standard analysis workflow.
+
+### Difficulty / time tiers
+
+| Tier | Data Starting Point | Estimated Time | Difficulty | Example Formats |
+|---|---|---|---|---|
+| **1 — Ready to use** | Processed count matrices, DE results, annotated objects | Minutes to hours | Easy | CSV, TSV, XLSX with counts or DE tables |
+| **2 — Needs loading** | Serialized analysis objects | Hours | Easy–Medium | RDS (Seurat), H5AD (AnnData), RData |
+| **3 — Needs processing** | Raw count matrices (unfiltered) | Hours to a day | Medium | MTX + barcodes + features (10x), H5 (CellRanger) |
+| **4 — Needs alignment** | Raw sequencing reads only | Days | Hard | FASTQ (from SRA), no supplementary files |
+
+### Protocol pages to create
+
+- `protocols/csv_tsv_counts.md` — loading pre-made count matrices, basic QC, DE analysis
+- `protocols/rds_seurat.md` — loading Seurat objects, exploring existing annotations, extending analysis
+- `protocols/h5ad_anndata.md` — loading AnnData/scanpy objects, similar to RDS tier
+- `protocols/mtx_10x.md` — loading sparse matrices from CellRanger output, filtering, clustering
+- `protocols/h5_cellranger.md` — loading HDF5 from CellRanger, converting to Seurat/AnnData
+- `protocols/fastq_alignment.md` — obtaining FASTQ from SRA, alignment with STAR/CellRanger/STARsolo, generating count matrices
+- `protocols/index.md` — overview page with the tier table and decision flowchart ("I have X format, what do I do?")
+
+### Integration with the wiki
+
+- Search index and dataset pages already track file formats via FTP indexing. Protocol pages can be linked from dataset entries so users go directly from "this dataset has MTX files" to "here's how to analyze MTX files."
+- The difficulty/time tier for each dataset could eventually be added as a field in the search index, letting users filter by analysis effort (e.g., "show me scRNA-seq mouse brain datasets where processed data is available").
+
 ## Phase 3: Beyond RNA-seq
 
 Phase 1 focuses on RNA-seq because it's the largest and most consistently structured slice of GEO. Once the RNA-seq pipeline is mature, the wiki should expand to cover all major GEO assay types. The same three-layer architecture (raw sources → classified data → wiki pages) applies; the main work is building assay-specific classifiers and extending the taxonomy.
