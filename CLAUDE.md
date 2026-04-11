@@ -49,6 +49,8 @@ All scripts live in `scripts/` and should be run from the project root (e.g., `p
 | `scripts/build_search_index.py` | Builds `wiki/search_index.txt` for LLM querying |
 | `scripts/generate_wiki.py` | Generates wiki markdown pages from classified data |
 | `scripts/merge_and_rebuild.py` | Merges data snapshots, deduplicates, and rebuilds the wiki |
+| `scripts/bootstrap.py` | Downloads pre-built data files from the latest GitHub Release |
+| `scripts/create_data_release.py` | (Maintainer) Creates a GitHub Release and uploads data assets |
 
 ## Running
 
@@ -67,6 +69,12 @@ conda run -n GEO_llm python scripts/merge_and_rebuild.py
 
 # FTP indexing (slow — ~1.6 records/sec, ~18 hours for 100k records; saves incrementally)
 conda run -n GEO_llm python scripts/index_ftp.py
+
+# Bootstrap pre-built data from GitHub Releases (skips the ~18 hr pipeline)
+conda run -n GEO_llm python scripts/bootstrap.py
+
+# (Maintainer) Publish a new data release to GitHub
+GITHUB_TOKEN=ghp_... conda run -n GEO_llm python scripts/create_data_release.py --tag data-v1.0.0
 ```
 
 Email is required by NCBI policy (`benjamin.devlin@duke.edu`). Can also be set via `NCBI_EMAIL` env var. Optional `NCBI_API_KEY` env var raises rate limit from 3 to 10 req/sec.

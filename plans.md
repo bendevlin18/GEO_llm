@@ -82,12 +82,85 @@ GEO records can be updated after initial publication. The merge step should:
 - Could use Claude Code scheduled triggers or a simple cron + shell script
 - Each run appends to `log.md` with date, window, counts
 
-### Data sharing (future)
+### Data sharing
 
-Data files (raw JSON snapshots, classified records, FTP index) are gitignored since they're reproducible via the pipeline. For others to use the repo with pre-built data without re-running the full pipeline:
-- GitHub Releases with attached data archives
-- Or a bootstrap script that fetches a compressed data bundle from a hosted location
-- Or Git LFS if the data stabilizes in size
+Data files are gitignored because they're large and reproducible via the pipeline — but re-running from scratch takes ~18 hours (FTP indexing alone). For others to bootstrap without that cost, the repo needs a data distribution strategy.
+
+#### What needs sharing
+
+| File | Size | Compressed estimate | Notes |
+|---|---|---|---|
+| `rnaseq_classified.json` | 103 MB | ~12 MB | Intermediate — skip extract+tag steps |
+| `ftp_index.json` | 46 MB | ~5 MB | Intermediate — skip FTP indexing (~18 hrs) |
+| `data/` (45 quarterly JSONs) | 315 MB | ~50 MB | Raw source — needed to re-run from scratch |
+| `wiki/search_index.txt` | 52 MB | — | Already in git |
+
+The two intermediates (`rnaseq_classified.json` + `ftp_index.json`) are the highest-value files to share — they let a new user skip the entire pipeline and go straight to querying or rebuilding the wiki.
+
+#### Option A: GitHub Releases (recommended — simplest)
+
+Attach compressed archives to a versioned GitHub Release (e.g., `data-v1.0`):
+- `bootstrap_data.tar.gz` — intermediates only (`rnaseq_classified.json` + `ftp_index.json`, ~17 MB compressed)
+- `raw_data.tar.gz` (optional) — all quarterly `data/` snapshots (~50 MB compressed)
+
+A `scripts/bootstrap.py` script fetches and extracts the latest release assets using the GitHub API (no auth needed for public repos). Users run one command after cloning:
+
+```bash
+conda run -n GEO_llm python scripts/bootstrap.py
+```
+
+Pros: zero infrastructure, versioned alongside code, free, 2 GB/asset limit is not a concern here.
+Cons: manual step to cut a new release when data updates; assets don't auto-update between releases.
+
+#### Option B: Hugging Face Datasets
+
+Host the intermediates as a dataset on the HF Hub (`bendevlin18/geo-rnaseq-index` or similar). The HF `datasets` library makes loading trivial for the target audience:
+
+```python
+from datasets import load_dataset
+ds = load_dataset("bendevlin18/geo-rnaseq-index", split="train")
+```
+
+The `huggingface_hub` Python API supports programmatic uploads, so the pipeline can push updated data after each rebuild. Dataset cards provide searchable documentation.
+
+Pros: excellent discoverability for ML/bioinformatics users, no infra, free, supports streaming large files.
+Cons: requires HF account and API token in the pipeline; slightly awkward for non-Python consumers; format conversion (JSON → Parquet or Arrow) adds a step.
+
+#### Option C: Git LFS
+
+Un-gitignore the intermediate files and track them with Git LFS. Transparent to users — `git clone` fetches everything.
+
+Free tier: 1 GB storage, 1 GB/month bandwidth.
+
+With ~150 MB of intermediates, the storage limit is fine — but the 1 GB/month bandwidth cap would be hit quickly if the repo gets any real usage (~7 clones/month). Paid LFS bandwidth is $5/50 GB.
+
+Pros: seamless for git users, no separate download step.
+Cons: bandwidth costs at scale; slows down `git clone`; doesn't help with the 315 MB `data/` archive (would push storage over limit).
+
+**Verdict: not recommended unless usage stays very low.**
+
+#### Option D: DVC (Data Version Control)
+
+Add DVC to the repo and point it at a cloud storage backend (S3, GCS, Backblaze B2, or Cloudflare R2 — R2 has no egress fees). Users run `dvc pull` after `git clone`.
+
+```bash
+git clone https://github.com/bendevlin18/GEO_llm
+cd GEO_llm
+dvc pull  # fetches data/ + intermediates from remote
+```
+
+DVC tracks data versions alongside code commits, so each git tag has a corresponding data snapshot.
+
+Pros: proper data versioning, CI/CD friendly, supports all major cloud backends.
+Cons: adds `dvc` as a dependency; requires provisioning and paying for cloud storage; more ops overhead than the project currently needs.
+
+**Verdict: best long-term option if the project grows to multiple contributors or needs automated CI data updates.**
+
+#### Recommended path
+
+1. **Now:** implement Option A (GitHub Releases + bootstrap script). Low effort, unblocks external users immediately.
+2. **If HF discoverability matters:** add Option B alongside A — push to HF Hub after each pipeline rebuild.
+3. **If the project gets automated CI or multiple contributors:** migrate to Option D (DVC + R2).
 
 ## Batch Processing Approach
 
