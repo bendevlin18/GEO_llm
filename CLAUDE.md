@@ -129,7 +129,35 @@ GEO_llm/
 
 **Data flow:** `data/` (raw snapshots) → pipeline scripts → `wiki/` (LLM-queryable output)
 
-Gitignored files (`data/`, `rnaseq_classified.json`, `ftp_index.json`, `ftp_probe_results.json`) are all reproducible via the pipeline scripts.
+Gitignored files (`data/`, `rnaseq_classified.json`, `ftp_index.json`, `ftp_probe_results.json`) are all reproducible via the pipeline scripts. Pre-built versions of the two intermediates are available via GitHub Releases — see the **Data Releases** section below.
+
+## Data Releases
+
+Pre-built data is distributed via GitHub Releases so users can skip the full pipeline (~18 hours). The current release is **`data-v1.0.0`**.
+
+### Bootstrapping (new users)
+
+```bash
+# After cloning, fetch rnaseq_classified.json + ftp_index.json (~30 MB download)
+conda run -n GEO_llm python scripts/bootstrap.py
+
+# Optionally also fetch raw quarterly GEO metadata snapshots (~50 MB)
+conda run -n GEO_llm python scripts/bootstrap.py --include-raw
+```
+
+### Publishing a new release (maintainers)
+
+Run this after a pipeline rebuild to make the updated data available:
+
+```bash
+GITHUB_TOKEN=ghp_... conda run -n GEO_llm python scripts/create_data_release.py \
+    --tag data-v2.0.0 \
+    --notes "Coverage: 2015-Q1 through <date> | <N> RNA-seq datasets | 100% FTP indexed"
+```
+
+This packages `rnaseq_classified.json` + `ftp_index.json` into `bootstrap_data.tar.gz` and uploads it to a new GitHub Release. Use `--include-raw` to also bundle the `data/` quarterly snapshots.
+
+Release tags follow the pattern `data-vMAJOR.MINOR.PATCH`. Increment MAJOR for schema-breaking changes, MINOR for new data coverage, PATCH for re-runs or fixes.
 
 ## Answering Dataset Queries
 
@@ -162,8 +190,9 @@ The search index is a denormalized, grep-friendly projection of the classified J
 - **RNA-seq datasets classified:** ~130,000
   - Bulk: ~104,000 | Single-cell: ~23,000 | Single-nucleus: ~2,000 | Spatial: ~1,000
 - **Topic tagging:** ~96.6% tagged (~4,500 untagged — see Known Limitations)
-- **FTP index:** In progress — ~26,000 of 130,000 indexed so far
+- **FTP index:** Complete — 130,059 / 130,059 records indexed (100%)
 - **Wiki:** 155 organism pages, 28 topic pages, 4 assay pages
+- **Data release:** `data-v1.0.0` published on GitHub Releases (bootstrap bundle: 29.5 MB)
 
 ## Topic Taxonomy (28 topics)
 
