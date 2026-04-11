@@ -1,5 +1,6 @@
 """
-Index GEO FTP supplementary directories for all classified RNA-seq datasets.
+Index GEO FTP supplementary directories for all classified datasets
+(RNA-seq + ChIP-seq/ATAC-seq and any other classified assay types).
 Extracts actual filenames, sizes, and file counts.
 
 Saves results incrementally to ftp_index.json so it can be resumed if interrupted.
@@ -83,12 +84,23 @@ def save_index(index):
 
 
 def main():
-    # Load classified records
-    with open("rnaseq_classified.json") as f:
-        data = json.load(f)
+    # Load all classified records (RNA-seq + any other assay types)
+    accessions_seen: set[str] = set()
+    accessions: list[str] = []
 
-    accessions = [r["accession"] for r in data if r["accession"]]
-    print(f"Total accessions to index: {len(accessions)}")
+    for classified_file in ("rnaseq_classified.json", "chipseq_classified.json"):
+        if os.path.exists(classified_file):
+            with open(classified_file) as f:
+                records = json.load(f)
+            new = [r["accession"] for r in records
+                   if r["accession"] and r["accession"] not in accessions_seen]
+            accessions.extend(new)
+            accessions_seen.update(new)
+            print(f"Loaded {len(new):,} accessions from {classified_file}")
+        else:
+            print(f"Skipping {classified_file} (not found)")
+
+    print(f"Total unique accessions to index: {len(accessions):,}")
 
     # Load existing progress
     index = load_existing_index()
