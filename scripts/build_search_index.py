@@ -1,5 +1,6 @@
 """
-Build a compact, grep-friendly search index from classified RNA-seq data.
+Build a compact, grep-friendly search index from classified datasets.
+Combines RNA-seq and ChIP-seq (and related) classified records.
 Incorporates FTP file listings when available.
 
 One line per dataset:
@@ -15,6 +16,18 @@ from collections import Counter
 
 with open("rnaseq_classified.json") as f:
     data = json.load(f)
+
+# Include ChIP-seq / ATAC-seq classified records if available
+if os.path.exists("chipseq_classified.json"):
+    with open("chipseq_classified.json") as f:
+        chipseq_data = json.load(f)
+    # Deduplicate: RNA-seq wins if same accession appears in both
+    rna_accessions = {r["accession"] for r in data}
+    new_records = [r for r in chipseq_data if r["accession"] not in rna_accessions]
+    data = data + new_records
+    print(f"Loaded ChIP-seq index: {len(chipseq_data)} entries ({len(new_records)} unique to ChIP-seq)")
+else:
+    print("No chipseq_classified.json found, building RNA-seq only index")
 
 # Load FTP index if available
 ftp_index = {}

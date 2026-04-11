@@ -4,6 +4,7 @@ geo_metadata.json
 
 # Derived files (reproducible via pipeline scripts)
 rnaseq_classified.json
+chipseq_classified.json
 ftp_index.json
 ftp_probe_results.json
 

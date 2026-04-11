@@ -1,5 +1,5 @@
 """
-Generate wiki markdown pages from classified RNA-seq data.
+Generate wiki markdown pages from classified RNA-seq and ChIP-seq data.
 Produces per-modality and per-organism pages with dataset tables.
 """
 import json
@@ -323,5 +323,162 @@ else:
 with open(index_path, "w") as f:
     f.write(index)
 print(f"\n  Updated {index_path} with topic index")
+
+# ── ChIP-seq / ATAC-seq pages ──────────────────────────────────────────────
+
+CHIPSEQ_FILE = "chipseq_classified.json"
+
+if os.path.exists(CHIPSEQ_FILE):
+    with open(CHIPSEQ_FILE) as f:
+        chipseq_data = json.load(f)
+
+    _chip_dates = sorted(set(r["pub_date"] for r in chipseq_data if r.get("pub_date")))
+    CHIP_DATE_RANGE = f"{_chip_dates[0]} – {_chip_dates[-1]}" if _chip_dates else "unknown"
+
+    CHIPSEQ_FILE_TYPES = {
+        "BED":        "BED peak calls (genomic intervals)",
+        "BIGWIG":     "BigWig coverage tracks",
+        "BW":         "BigWig coverage tracks",
+        "NARROWPEAK": "ENCODE narrowPeak format (TF / sharp peaks)",
+        "BROADPEAK":  "ENCODE broadPeak format (histone / broad marks)",
+        "BEDGRAPH":   "BedGraph coverage files",
+        "BAM":        "Aligned reads (BAM)",
+        "TXT":        "Text files (peak lists, count tables, metadata)",
+        "CSV":        "Comma-separated data",
+        "TSV":        "Tab-separated data",
+        "TAR":        "Tar archives (bundled outputs)",
+        "WIG":        "Wiggle coverage format",
+        "GTF":        "Gene/peak annotation (GTF/GFF)",
+        "BAR":        "BAR peak files (older format)",
+        "PEAKS":      "Peak call files",
+    }
+
+    def write_chipseq_modality_page(slug: str, label: str, description: str,
+                                    records: list, show_target_breakdown: bool = True) -> None:
+        orgs = top_items(records, "organism")
+        supps = suppfile_summary(records)
+
+        content = f"""# {label}
+
+> {len(records)} datasets | {CHIP_DATE_RANGE}
+
+{description}
+"""
+        if show_target_breakdown and any("target_type" in r for r in records):
+            targets = Counter(r.get("target_type", "other") for r in records)
+            content += """
+## Target Type Breakdown
+
+| Target Type | Count | Description |
+|-------------|------:|-------------|
+"""
+            target_descs = {
+                "histone": "Histone modification marks (H3K27ac, H3K4me3, H3K27me3, etc.)",
+                "tf":      "Transcription factor binding sites",
+                "other":   "Chromatin structural proteins (CTCF, cohesin, Pol2, etc.)",
+                "n/a":     "Not applicable",
+            }
+            for t, c in targets.most_common():
+                desc = target_descs.get(t, "")
+                content += f"| {t} | {c} | {desc} |\n"
+
+        content += """
+## Organism Distribution
+
+| Organism | Count |
+|----------|------:|
+"""
+        for org, c in orgs:
+            content += f"| {org} | {c} |\n"
+
+        content += """
+## Supplementary File Types
+
+| Type | Count | Description |
+|------|------:|-------------|
+"""
+        for s, c in supps.most_common(15):
+            desc = CHIPSEQ_FILE_TYPES.get(s.upper(), "")
+            content += f"| {s} | {c} | {desc} |\n"
+
+        recent = sorted(records, key=lambda r: r["pub_date"], reverse=True)
+        content += f"\n## Recent Datasets\n\n{dataset_table(recent)}\n"
+
+        os.makedirs(os.path.join(WIKI, "assays"), exist_ok=True)
+        path = os.path.join(WIKI, "assays", f"{slug}.md")
+        with open(path, "w") as f:
+            f.write(content)
+        print(f"  Wrote {path} ({len(records)} records)")
+
+    chipseq_modality_info = {
+        "chip_seq": {
+            "label": "ChIP-seq",
+            "filter": "chip_seq",
+            "desc": (
+                "Chromatin immunoprecipitation followed by sequencing (ChIP-seq). "
+                "Profiles histone modification marks, transcription factor binding sites, "
+                "and chromatin-associated proteins genome-wide. "
+                "Supplementary files typically include peak calls (BED, narrowPeak, broadPeak) "
+                "and coverage tracks (BigWig)."
+            ),
+            "target_breakdown": True,
+        },
+        "atac_seq": {
+            "label": "ATAC-seq",
+            "filter": "atac_seq",
+            "desc": (
+                "Assay for Transposase-Accessible Chromatin with sequencing (ATAC-seq). "
+                "Maps open/accessible chromatin regions genome-wide using Tn5 transposase. "
+                "Available as bulk ATAC-seq and single-cell ATAC-seq (scATAC-seq). "
+                "Supplementary files typically include peak calls (BED, narrowPeak) and "
+                "coverage tracks (BigWig), with fragment files (TSV) for single-cell data."
+            ),
+            "target_breakdown": False,
+        },
+        "cut_and_run": {
+            "label": "CUT&RUN",
+            "filter": "cut_and_run",
+            "desc": (
+                "Cleavage Under Targets and Release Using Nuclease (CUT&RUN). "
+                "An antibody-targeted approach that uses tethered MNase to cleave chromatin "
+                "near bound proteins. Lower background than ChIP-seq, works well with fewer cells. "
+                "Supplementary files follow the same conventions as ChIP-seq (BED, BigWig)."
+            ),
+            "target_breakdown": True,
+        },
+        "cut_and_tag": {
+            "label": "CUT&Tag",
+            "filter": "cut_and_tag",
+            "desc": (
+                "Cleavage Under Targets and Tagmentation (CUT&Tag). "
+                "Uses protein-A-Tn5 fusion to simultaneously cut and tag chromatin near "
+                "antibody-bound targets. Even lower background than CUT&RUN, compatible with "
+                "single cells. Supplementary files: BED, BigWig, narrowPeak."
+            ),
+            "target_breakdown": True,
+        },
+        "chip_exo": {
+            "label": "ChIP-exo",
+            "filter": "chip_exo",
+            "desc": (
+                "ChIP-exo adds an exonuclease digestion step to standard ChIP-seq, "
+                "providing single-nucleotide resolution of protein-DNA binding. "
+                "Primarily used for precise TF binding site mapping."
+            ),
+            "target_breakdown": True,
+        },
+    }
+
+    print("\nGenerating ChIP-seq / chromatin assay pages...")
+    for slug, info in chipseq_modality_info.items():
+        records = [r for r in chipseq_data if r["modality"] == info["filter"]]
+        if not records:
+            continue
+        write_chipseq_modality_page(
+            slug, info["label"], info["desc"], records,
+            show_target_breakdown=info["target_breakdown"],
+        )
+else:
+    print("\nNo chipseq_classified.json found — skipping ChIP-seq wiki pages.")
 
 print("\nDone.")

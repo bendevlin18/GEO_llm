@@ -49,6 +49,7 @@ All scripts live in `scripts/` and should be run from the project root (e.g., `p
 | `scripts/build_search_index.py` | Builds `wiki/search_index.txt` for LLM querying |
 | `scripts/generate_wiki.py` | Generates wiki markdown pages from classified data |
 | `scripts/merge_and_rebuild.py` | Merges data snapshots, deduplicates, and rebuilds the wiki |
+| `scripts/extract_chipseq.py` | Filters metadata to ChIP-seq/ATAC-seq datasets, classifies modality and target type |
 | `scripts/bootstrap.py` | Downloads pre-built data files from the latest GitHub Release |
 | `scripts/create_data_release.py` | (Maintainer) Creates a GitHub Release and uploads data assets |
 
@@ -190,8 +191,11 @@ The search index is a denormalized, grep-friendly projection of the classified J
 - **RNA-seq datasets classified:** ~130,000
   - Bulk: ~104,000 | Single-cell: ~23,000 | Single-nucleus: ~2,000 | Spatial: ~1,000
 - **Topic tagging:** ~96.6% tagged (~4,500 untagged — see Known Limitations)
-- **FTP index:** Complete — 130,059 / 130,059 records indexed (100%)
-- **Wiki:** 155 organism pages, 28 topic pages, 4 assay pages
+- **FTP index:** Complete — 130,059 / 130,059 RNA-seq records indexed (100%)
+- **ChIP-seq / chromatin datasets classified:** ~45,000
+  - ChIP-seq: ~35,500 | ATAC-seq: ~8,000 | CUT&RUN: ~720 | CUT&Tag: ~710 | ChIP-exo: ~87
+- **Wiki:** 155 organism pages, 28 topic pages, 9 assay pages (4 RNA-seq + 5 ChIP-seq/chromatin)
+- **Search index:** 164,647 total records (RNA-seq + ChIP-seq/ATAC-seq combined)
 - **Data release:** `data-v1.0.0` published on GitHub Releases (bootstrap bundle: 29.5 MB)
 
 ## Topic Taxonomy (28 topics)
