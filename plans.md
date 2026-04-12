@@ -58,6 +58,36 @@ A key goal is understanding not just *what* a dataset is, but *what files are av
 
 The `suppFile` field in GEO metadata gives a starting signal (e.g., "CSV", "RDS", "H5AD"), and FTP directory listings can reveal more detail.
 
+## Search Index Sharding (near-term)
+
+`wiki/search_index.txt` is already at 69 MB and growing with each new assay type added. GitHub's soft limit is 50 MB and hard limit is 100 MB — adding methylation and ChIP-seq alone will push past the hard limit.
+
+### Plan: one index file per assay family
+
+Split `wiki/search_index.txt` into per-assay files:
+
+```
+wiki/search_index_rnaseq.txt       # ~130k records, ~52 MB
+wiki/search_index_chipseq.txt      # ~35k records, ~14 MB
+wiki/search_index_atacseq.txt      # ~8k records, ~3 MB
+wiki/search_index_cut_run_tag.txt  # ~1.4k records, ~0.5 MB
+wiki/search_index_methylation.txt  # (future)
+wiki/search_index_other.txt        # catch-all for smaller assay types
+```
+
+Keep `wiki/search_index.txt` as a **combined index** but move it out of git (gitignore it) — it's too large for GitHub and can be reconstructed by concatenating the per-assay files. The per-assay files stay in git since each is well under 50 MB.
+
+### Changes required
+
+- `scripts/build_search_index.py` — write per-assay files in addition to (or instead of) the combined file
+- `wiki/` — add the new per-assay index files, remove or gitignore the combined one
+- `CLAUDE.md` — update querying instructions to name the per-assay files
+- `README.md` — update grep examples to reference per-assay files
+
+### LLM querying impact
+
+Per-assay files are actually better for LLM use: an LLM asked about ChIP-seq data only needs to load `search_index_chipseq.txt`, not wade through 130k RNA-seq records. The combined index remains useful for cross-assay queries and can be generated locally.
+
 ## Incremental Update Strategy
 
 The pipeline should support pulling new date windows and merging them into the existing index without duplicates or data loss.
