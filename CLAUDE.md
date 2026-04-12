@@ -52,6 +52,7 @@ All scripts live in `scripts/` and should be run from the project root (e.g., `p
 | `scripts/extract_chipseq.py` | Filters metadata to ChIP-seq/ATAC-seq datasets, classifies modality and target type |
 | `scripts/extract_methylation.py` | Filters metadata to methylation datasets, classifies protocol modality |
 | `scripts/extract_multiomics.py` | Filters metadata to multiomics datasets (CITE-seq, 10x Multiome, SHARE-seq, TEA-seq), classifies subtype, and back-annotates `rnaseq_classified.json` and `chipseq_classified.json` with `is_multiomics: true` |
+| `scripts/generate_plots.py` | Generates PNG charts for the README (`assets/`) from classified data; requires `matplotlib` |
 | `scripts/bootstrap.py` | Downloads pre-built data files from the latest GitHub Release |
 | `scripts/create_data_release.py` | (Maintainer) Creates a GitHub Release and uploads data assets |
 
@@ -61,7 +62,8 @@ All scripts require the `GEO_llm` conda environment and should be run from the p
 
 ```bash
 # Requires Python 3.10+ (uses X | Y union type syntax)
-# No external dependencies — stdlib only (urllib, xml, json, argparse)
+# Core pipeline: stdlib only (urllib, xml, json, argparse)
+# generate_plots.py also requires: conda install -n GEO_llm matplotlib
 # Always use: conda run -n GEO_llm python scripts/<script>.py
 
 # Fetch metadata for a date range
@@ -81,6 +83,37 @@ GITHUB_TOKEN=ghp_... conda run -n GEO_llm python scripts/create_data_release.py 
 ```
 
 Email is required by NCBI policy (`benjamin.devlin@duke.edu`). Can also be set via `NCBI_EMAIL` env var. Optional `NCBI_API_KEY` env var raises rate limit from 3 to 10 req/sec.
+
+## Full Rebuild Checklist
+
+Run these steps in order after fetching new GEO metadata. Each step depends on the previous.
+
+```bash
+# 1. Classify all assay types (each reads data/*.json, writes *_classified.json)
+conda run -n GEO_llm python scripts/extract_rnaseq.py
+conda run -n GEO_llm python scripts/extract_chipseq.py
+conda run -n GEO_llm python scripts/extract_methylation.py
+conda run -n GEO_llm python scripts/extract_multiomics.py   # also back-annotates rnaseq + chipseq
+
+# 2. Index FTP supplementary files (slow, incremental — skip if ftp_index.json is current)
+conda run -n GEO_llm python scripts/index_ftp.py
+
+# 3. Rebuild search index shards (reads all *_classified.json + ftp_index.json)
+conda run -n GEO_llm python scripts/build_search_index.py
+
+# 4. Regenerate wiki pages
+conda run -n GEO_llm python scripts/generate_wiki.py
+
+# 5. Regenerate README charts — run this every rebuild so assets/ stays in sync
+conda run -n GEO_llm python scripts/generate_plots.py
+
+# 6. Commit wiki/ and assets/ to git, then push
+git add wiki/ assets/
+git commit -m "Rebuild wiki and plots — <date>"
+git push
+```
+
+**Note:** `generate_plots.py` reads the classified JSON files directly (`rnaseq_classified.json`, `chipseq_classified.json`, `methylation_classified.json`, `multiomics_classified.json`). It must be run after step 1 (classify) and should always be re-run before committing, so the charts in `assets/` reflect the current data and not a stale snapshot.
 
 ## Repository Structure
 
