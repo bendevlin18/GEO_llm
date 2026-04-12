@@ -39,10 +39,16 @@ git clone https://github.com/bendevlin18/GEO_llm
 cd GEO_llm
 
 # Find mouse snRNA-seq datasets related to neuroscience
-grep "snrna_seq.*Mus musculus.*neuroscience" wiki/search_index.txt
+grep "single-nucleus.*Mus musculus.*neuroscience" wiki/search_index_rnaseq.txt
 
 # Find human spatial transcriptomics with H5AD files
-grep "spatial.*Homo sapiens" wiki/search_index.txt | grep "\.h5ad"
+grep "spatial.*Homo sapiens" wiki/search_index_rnaseq.txt | grep "\.h5ad"
+
+# Find human ChIP-seq datasets related to cancer
+grep "chip_seq.*Homo sapiens.*cancer" wiki/search_index_chipseq.txt
+
+# Find ATAC-seq datasets in mouse
+grep "Mus musculus" wiki/search_index_atacseq.txt
 
 # Browse the wiki
 cat wiki/organisms/mus_musculus.md
@@ -72,7 +78,17 @@ conda run -n GEO_llm python scripts/generate_wiki.py
 
 ## Querying with an LLM
 
-The search index (`wiki/search_index.txt`) is designed for LLM consumption. Each line is pipe-delimited:
+The search index is split into per-assay shard files, each designed for LLM consumption:
+
+| File | Assay | Records |
+|---|---|---|
+| `wiki/search_index_rnaseq.txt` | Bulk, scRNA-seq, snRNA-seq, spatial | ~130k |
+| `wiki/search_index_chipseq.txt` | ChIP-seq, ChIP-exo | ~26.6k |
+| `wiki/search_index_atacseq.txt` | ATAC-seq | ~6.6k |
+| `wiki/search_index_cut_run_tag.txt` | CUT&RUN, CUT&Tag | ~1.4k |
+| `wiki/search_index_methylation.txt` | WGBS, RRBS, EM-seq, MeDIP-seq, 5hmC-seq, arrays | ~5.2k |
+
+Each line is pipe-delimited:
 
 ```
 accession|modality|organism|n_samples|files|topics|title|keywords
@@ -80,10 +96,10 @@ accession|modality|organism|n_samples|files|topics|title|keywords
 
 Example:
 ```
-GSE217775|scrna_seq|Mus musculus|12|GSE217775_filtered_feature_bc_matrix.h5(245MB)|neuroscience,development|Single-cell RNA-seq of mouse cortex|transcription factor neuronal identity layer cortex
+GSE217775|single-cell|Mus musculus|12|GSE217775_filtered_feature_bc_matrix.h5(245MB)|neuroscience,development|Single-cell RNA-seq of mouse cortex|transcription factor neuronal identity layer cortex
 ```
 
-To use it: paste relevant lines (or a filtered subset) into an LLM prompt. The index is optimized for grep-based pre-filtering — find candidate lines with grep, then pass them to the LLM for interpretation.
+To use it: grep the relevant shard file for candidate lines, then pass them to an LLM for interpretation.
 
 Example prompt pattern:
 > Here are GEO RNA-seq datasets matching "mouse kidney snrna": [paste grep results]
@@ -94,10 +110,14 @@ Example prompt pattern:
 ```
 GEO_llm/
 ├── wiki/                        # LLM-queryable output (checked in)
-│   ├── search_index.txt             # Flat-file index — start here for queries
+│   ├── search_index_rnaseq.txt      # RNA-seq index (~130k records)
+│   ├── search_index_chipseq.txt     # ChIP-seq index (~26.6k records)
+│   ├── search_index_atacseq.txt     # ATAC-seq index (~6.6k records)
+│   ├── search_index_cut_run_tag.txt # CUT&RUN / CUT&Tag index (~1.4k records)
+│   ├── search_index_methylation.txt # Methylation index (~5.2k records)
 │   ├── index.md                     # Master catalog
 │   ├── organisms/                   # One page per species (~155)
-│   ├── assays/                      # One page per RNA-seq modality (4)
+│   ├── assays/                      # One page per assay type (18)
 │   └── topics/                      # One page per research area (28)
 │
 ├── scripts/                     # Pipeline scripts (run from project root)

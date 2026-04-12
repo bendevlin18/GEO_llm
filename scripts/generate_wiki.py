@@ -481,4 +481,180 @@ if os.path.exists(CHIPSEQ_FILE):
 else:
     print("\nNo chipseq_classified.json found — skipping ChIP-seq wiki pages.")
 
+# ── Methylation pages ─────────────────────────────────────────────────────────
+
+METHYLATION_FILE = "methylation_classified.json"
+
+if os.path.exists(METHYLATION_FILE):
+    with open(METHYLATION_FILE) as f:
+        meth_data = json.load(f)
+
+    _meth_dates = sorted(set(r["pub_date"] for r in meth_data if r.get("pub_date")))
+    METH_DATE_RANGE = f"{_meth_dates[0]} – {_meth_dates[-1]}" if _meth_dates else "unknown"
+
+    METHYLATION_FILE_TYPES = {
+        "TXT":    "Text files (methylation tables, coverage files, metadata)",
+        "BED":    "BED files (CpG methylation calls, DMR intervals)",
+        "CSV":    "Comma-separated methylation data",
+        "TSV":    "Tab-separated methylation data",
+        "BIGWIG": "BigWig coverage / methylation tracks",
+        "BW":     "BigWig coverage / methylation tracks",
+        "BEDGRAPH": "BedGraph methylation coverage",
+        "IDAT":   "Illumina array raw intensity data (450K / EPIC)",
+        "CG":     "CpG methylation call files (Bismark, BSseeker)",
+        "TAR":    "Tar archives (bundled outputs)",
+        "XLSX":   "Excel (methylation tables, differential analysis)",
+        "RDS":    "R serialized objects (minfi, SummarizedExperiment)",
+        "H5":     "HDF5 methylation data",
+        "BIS":    "Bismark alignment / methylation extraction output",
+        "COV":    "Coverage / bismark bismark .cov files",
+    }
+
+    def write_methylation_page(slug: str, label: str, description: str,
+                               records: list) -> None:
+        orgs = top_items(records, "organism")
+        supps = suppfile_summary(records)
+
+        content = f"""# {label}
+
+> {len(records)} datasets | {METH_DATE_RANGE}
+
+{description}
+
+## Organism Distribution
+
+| Organism | Count |
+|----------|------:|
+"""
+        for org, c in orgs:
+            content += f"| {org} | {c} |\n"
+
+        content += """
+## Supplementary File Types
+
+| Type | Count | Description |
+|------|------:|-------------|
+"""
+        for s, c in supps.most_common(15):
+            desc = METHYLATION_FILE_TYPES.get(s.upper(), "")
+            content += f"| {s} | {c} | {desc} |\n"
+
+        recent = sorted(records, key=lambda r: r["pub_date"], reverse=True)
+        content += f"\n## Recent Datasets\n\n{dataset_table(recent)}\n"
+
+        os.makedirs(os.path.join(WIKI, "assays"), exist_ok=True)
+        path = os.path.join(WIKI, "assays", f"{slug}.md")
+        with open(path, "w") as f:
+            f.write(content)
+        print(f"  Wrote {path} ({len(records)} records)")
+
+    methylation_modality_info = {
+        "methylation": {
+            "label": "DNA Methylation Profiling",
+            "filter": None,   # all records = overview page
+            "desc": (
+                "All DNA methylation profiling datasets on GEO, including bisulfite sequencing "
+                "(WGBS, RRBS), enzymatic methods (EM-seq), hydroxymethylation profiling (5hmC-seq), "
+                "immunoprecipitation-based approaches (MeDIP-seq), and Illumina Infinium arrays "
+                "(450K, EPIC). See individual assay pages for protocol-specific views."
+            ),
+        },
+        "wgbs": {
+            "label": "WGBS (Whole Genome Bisulfite Sequencing)",
+            "filter": "wgbs",
+            "desc": (
+                "Whole Genome Bisulfite Sequencing (WGBS). Provides single-base resolution "
+                "methylation maps across the entire genome by treating DNA with sodium bisulfite "
+                "(which converts unmethylated cytosines to uracil) before sequencing. "
+                "Supplementary files typically include CpG methylation calls (BED, BedGraph, "
+                "TXT) and coverage tracks (BigWig)."
+            ),
+        },
+        "rrbs": {
+            "label": "RRBS (Reduced Representation Bisulfite Sequencing)",
+            "filter": "rrbs",
+            "desc": (
+                "Reduced Representation Bisulfite Sequencing (RRBS). A cost-efficient bisulfite "
+                "sequencing approach that focuses coverage on CpG-rich regions by using "
+                "restriction enzyme digestion (typically MspI) prior to sequencing. Provides "
+                "single-base resolution at a fraction of the cost of WGBS."
+            ),
+        },
+        "methylation_array": {
+            "label": "Methylation Arrays (450K / EPIC)",
+            "filter": "methylation_array",
+            "desc": (
+                "Illumina Infinium methylation arrays, including the 27K, 450K (HumanMethylation450), "
+                "and EPIC (850K) platforms. Measure methylation beta-values at hundreds of thousands "
+                "of CpG sites. Widely used in epigenome-wide association studies (EWAS) and clinical "
+                "research. Supplementary files often include IDAT files (raw intensities) or "
+                "processed beta-value matrices (CSV, TXT, RDS)."
+            ),
+        },
+        "em_seq": {
+            "label": "EM-seq (Enzymatic Methyl-seq)",
+            "filter": "em_seq",
+            "desc": (
+                "Enzymatic Methyl-seq (EM-seq) uses TET2 and APOBEC3A enzymes instead of "
+                "bisulfite conversion to distinguish methylated from unmethylated cytosines. "
+                "Preserves DNA integrity better than bisulfite treatment, enabling higher "
+                "complexity libraries and more uniform coverage."
+            ),
+        },
+        "medip_seq": {
+            "label": "MeDIP-seq",
+            "filter": "medip_seq",
+            "desc": (
+                "Methylated DNA Immunoprecipitation sequencing (MeDIP-seq). Uses an antibody "
+                "against 5-methylcytosine to immunoprecipitate methylated DNA fragments before "
+                "sequencing. Provides genome-wide methylation enrichment data but at lower "
+                "resolution than bisulfite-based methods."
+            ),
+        },
+        "hmc_seq": {
+            "label": "5hmC Sequencing",
+            "filter": "hmc_seq",
+            "desc": (
+                "Profiling of 5-hydroxymethylcytosine (5hmC), an oxidized form of 5mC produced "
+                "by TET enzymes and linked to active DNA demethylation. Methods include "
+                "hMeDIP-seq (antibody-based), TAB-seq (bisulfite-based), and chemical labeling "
+                "approaches. Enriched in brain tissue, embryonic cells, and gene regulatory "
+                "regions."
+            ),
+        },
+        "oxbs_seq": {
+            "label": "oxBS-seq / TAB-seq",
+            "filter": "oxbs_seq",
+            "desc": (
+                "Oxidative Bisulfite Sequencing (oxBS-seq) uses potassium perruthenate to "
+                "oxidize 5hmC to 5fC before bisulfite conversion, allowing strand-specific "
+                "5mC quantification at single-base resolution. TET-Assisted Bisulfite "
+                "sequencing (TAB-seq) is a related approach for profiling 5hmC directly."
+            ),
+        },
+        "other_methylation": {
+            "label": "Other Methylation Profiling",
+            "filter": "other_methylation",
+            "desc": (
+                "Methylation profiling datasets where the specific protocol could not be "
+                "determined from the title and summary. Includes SuperSeries that aggregate "
+                "multiple SubSeries, studies using targeted bisulfite amplicon sequencing, "
+                "and records with minimal metadata."
+            ),
+        },
+    }
+
+    print("\nGenerating methylation assay pages...")
+    for slug, info in methylation_modality_info.items():
+        if info["filter"] is None:
+            records = meth_data   # overview page = all records
+        else:
+            records = [r for r in meth_data if r["modality"] == info["filter"]]
+        if not records:
+            print(f"  Skipping {slug} — no records")
+            continue
+        write_methylation_page(slug, info["label"], info["desc"], records)
+else:
+    print("\nNo methylation_classified.json found — skipping methylation wiki pages.")
+
 print("\nDone.")

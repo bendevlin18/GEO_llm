@@ -88,7 +88,7 @@ def main():
     accessions_seen: set[str] = set()
     accessions: list[str] = []
 
-    for classified_file in ("rnaseq_classified.json", "chipseq_classified.json"):
+    for classified_file in ("rnaseq_classified.json", "chipseq_classified.json", "methylation_classified.json"):
         if os.path.exists(classified_file):
             with open(classified_file) as f:
                 records = json.load(f)

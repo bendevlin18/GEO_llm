@@ -50,6 +50,8 @@ All scripts live in `scripts/` and should be run from the project root (e.g., `p
 | `scripts/generate_wiki.py` | Generates wiki markdown pages from classified data |
 | `scripts/merge_and_rebuild.py` | Merges data snapshots, deduplicates, and rebuilds the wiki |
 | `scripts/extract_chipseq.py` | Filters metadata to ChIP-seq/ATAC-seq datasets, classifies modality and target type |
+| `scripts/extract_methylation.py` | Filters metadata to methylation datasets, classifies protocol modality |
+| `scripts/extract_multiomics.py` | Filters metadata to multiomics datasets (CITE-seq, 10x Multiome, SHARE-seq, TEA-seq), classifies subtype, and back-annotates `rnaseq_classified.json` and `chipseq_classified.json` with `is_multiomics: true` |
 | `scripts/bootstrap.py` | Downloads pre-built data files from the latest GitHub Release |
 | `scripts/create_data_release.py` | (Maintainer) Creates a GitHub Release and uploads data assets |
 
@@ -121,6 +123,9 @@ GEO_llm/
 │   └── merge_and_rebuild.py           # Merge snapshots, deduplicate, rebuild wiki
 │
 ├── rnaseq_classified.json         # Intermediate: classified RNA-seq records (gitignored)
+├── chipseq_classified.json        # Intermediate: classified ChIP-seq/ATAC-seq records (gitignored)
+├── methylation_classified.json    # Intermediate: classified methylation records (gitignored)
+├── multiomics_classified.json     # Intermediate: classified multiomics records (gitignored)
 ├── ftp_index.json                 # Intermediate: FTP file listings (gitignored)
 ├── ftp_probe_results.json         # Intermediate: FTP probe results (gitignored)
 │
@@ -164,7 +169,15 @@ Release tags follow the pattern `data-vMAJOR.MINOR.PATCH`. Increment MAJOR for s
 
 When the user asks about datasets (e.g., "find mouse kidney snRNA-seq datasets"), use these sources in order:
 
-1. **`wiki/search_index.txt`** — first stop for discovery. Grep for terms like organism, modality, topic. Each line is pipe-delimited: `accession|modality|organism|n_samples|[file_formats]|topics|title|keywords`.
+1. **Per-assay search index shards** — first stop for discovery. Choose the relevant shard and grep for organism, modality, topic. Each line is pipe-delimited: `accession|modality|organism|n_samples|files|topics|title|keywords|flags`.
+   - `wiki/search_index_rnaseq.txt` — bulk, single-cell, single-nucleus, spatial (~130k records, 52.9 MB)
+   - `wiki/search_index_chipseq.txt` — chip_seq, chip_exo (~26.6k records, 13.9 MB)
+   - `wiki/search_index_atacseq.txt` — atac_seq (~6.6k records, 3.2 MB)
+   - `wiki/search_index_cut_run_tag.txt` — cut_and_run, cut_and_tag (~1.4k records, 671 KB)
+   - `wiki/search_index_methylation.txt` — wgbs, rrbs, em_seq, oxbs_seq, hmc_seq, medip_seq, methylation_array, other_methylation (~5.2k records, 1.9 MB)
+   - `wiki/search_index_multiomics.txt` — cite_seq, multiome, spatial_multiomics, other_multiomics (~926 records, 546 KB)
+   - `wiki/search_index.txt` — combined (all assay types); **gitignored**, reconstructable by concatenating the per-assay files
+   - **`flags` field (9th column):** empty for most records; `multiomics` for records that also appear in `search_index_multiomics.txt`. Use this to filter for datasets where paired/joint multiomics data is available alongside the primary assay.
 2. **`wiki/` pages** — organism, assay, and topic pages provide curated summaries grouped by facet. Note: these pages show summary stats (modality breakdown, organism distribution, related topics, file types) plus the **50 most recent datasets** in a table. They are not full listings — for comprehensive results, use the search index or `rnaseq_classified.json`.
 3. **`data/*.json`** — raw GEO metadata with full summaries, platform info, pub dates, FTP links. **Use this when the user asks about a specific dataset or wants additional details** beyond what the search index provides (e.g., full abstract, platform, publication date, sample details). Grep for the accession (e.g., `GSE312968`) across the data files.
 4. **`ftp_index.json`** — actual supplementary filenames and sizes from the GEO FTP server. Shows what preprocessed data is available (RDS, H5, MTX, CSV, etc.) and how large the files are.
@@ -172,15 +185,27 @@ When the user asks about datasets (e.g., "find mouse kidney snRNA-seq datasets")
 ## Key Data Files
 
 **`rnaseq_classified.json`** — canonical classified dataset (JSON)
-- One object per RNA-seq dataset with structured fields: `accession`, `title`, `summary` (first 500 chars), `organism`, `n_samples`, `platform_id`, `suppfile`, `pub_date`, `modality`, `topics` (array)
+- One object per RNA-seq dataset with structured fields: `accession`, `title`, `summary` (first 500 chars), `organism`, `n_samples`, `platform_id`, `suppfile`, `pub_date`, `modality`, `topics` (array), `is_multiomics` (bool, added by `extract_multiomics.py`)
 - Use for programmatic access and detailed lookups
 
-**`wiki/search_index.txt`** — grep-optimized search index (pipe-delimited text)
-- Format: `accession|modality|organism|n_samples|files|topics|title|keywords`
+**`chipseq_classified.json`** — canonical classified ChIP-seq/ATAC-seq dataset (JSON)
+- Fields: `accession`, `title`, `summary`, `organism`, `n_samples`, `platform_id`, `suppfile`, `pub_date`, `modality`, `target_type`, `topics`, `is_multiomics` (bool, added by `extract_multiomics.py`)
+
+**`multiomics_classified.json`** — canonical classified multiomics dataset (JSON)
+- Fields: `accession`, `title`, `summary`, `organism`, `n_samples`, `platform_id`, `suppfile`, `pub_date`, `modality`, `topics`
+- Overlaps intentionally with `rnaseq_classified.json` and `chipseq_classified.json` — a CITE-seq study will appear in both RNA-seq and multiomics sets
+
+**`wiki/search_index_rnaseq.txt`**, **`search_index_chipseq.txt`**, **`search_index_atacseq.txt`**, **`search_index_cut_run_tag.txt`**, **`search_index_methylation.txt`**, **`search_index_multiomics.txt`** — grep-optimized search index shards (pipe-delimited text, checked into git)
+- Format: `accession|modality|organism|n_samples|files|topics|title|keywords|flags`
 - Summary replaced with extracted keywords (stop words removed, compressed)
 - Includes FTP file info when available from `ftp_index.json` (actual filenames + sizes), falls back to `[GEO:types]` from suppfile field
+- `flags` (9th column): `multiomics` if the record also appears in the multiomics shard; empty otherwise
 - No `platform_id` or `pub_date`
-- Use for fast grep-based discovery
+- Use for fast grep-based discovery; pick the shard matching the assay type of interest
+
+**`wiki/search_index.txt`** — combined index (all assay types, gitignored)
+- Concatenation of all per-assay shards; too large for git (~70 MB) but reconstructable by re-running `build_search_index.py`
+- Use for cross-assay queries when running locally
 
 The search index is a denormalized, grep-friendly projection of the classified JSON enriched with FTP data. Both contain the same set of records.
 
@@ -194,8 +219,13 @@ The search index is a denormalized, grep-friendly projection of the classified J
 - **FTP index:** Complete — 130,059 / 130,059 RNA-seq records indexed (100%)
 - **ChIP-seq / chromatin datasets classified:** ~45,000
   - ChIP-seq: ~35,500 | ATAC-seq: ~8,000 | CUT&RUN: ~720 | CUT&Tag: ~710 | ChIP-exo: ~87
-- **Wiki:** 155 organism pages, 28 topic pages, 9 assay pages (4 RNA-seq + 5 ChIP-seq/chromatin)
-- **Search index:** 164,647 total records (RNA-seq + ChIP-seq/ATAC-seq combined)
+- **Methylation datasets classified:** ~7,258
+  - Other/unclassified: ~3,750 | Array (450K/EPIC): ~1,347 | WGBS: ~1,240 | RRBS: ~516 | MeDIP-seq: ~196 | 5hmC-seq: ~110 | EM-seq: ~59 | oxBS-seq: ~40
+- **Multiomics datasets classified:** ~926
+  - CITE-seq: ~376 | Other multiomics: ~389 | 10x Multiome/SHARE-seq: ~86 | Spatial multiomics: ~75
+  - 749 RNA-seq records and 353 ChIP-seq/ATAC-seq records back-annotated with `is_multiomics: true`
+- **Wiki:** 155 organism pages, 28 topic pages, 18 assay pages (4 RNA-seq + 5 ChIP-seq/chromatin + 9 methylation)
+- **Search index:** 170,741 total records (RNA-seq + ChIP-seq/ATAC-seq + methylation + multiomics combined)
 - **Data release:** `data-v1.0.0` published on GitHub Releases (bootstrap bundle: 29.5 MB)
 
 ## Topic Taxonomy (28 topics)
@@ -224,3 +254,5 @@ The keyword-based tagger (`scripts/tag_topics.py`) assigns multi-label tags. A d
 - **Incremental updates** — new date windows are fetched and merged without duplicates (keyed on GSE accession, latest snapshot wins)
 - **Phase 1 uses Claude Code interactively** for classification; Phase 2 will move to Anthropic API calls for automated batch processing
 - **Conda environment** — all scripts run under the `GEO_llm` conda env via `conda run -n GEO_llm`
+- **Multiomics cross-listing** — the same GSE accession intentionally appears in multiple classified sets (e.g., a 10x Multiome study is in both `rnaseq_classified.json` and `multiomics_classified.json`). This is by design: each shard answers queries about its primary assay type. The `is_multiomics` flag on RNA-seq and ChIP-seq records, and the `flags` column in the search index, let users discover that additional paired data exists for a given dataset.
+- **Back-annotation pattern** — `extract_multiomics.py` is authoritative for the multiomics set. After running it, it patches `rnaseq_classified.json` and `chipseq_classified.json` in-place to set `is_multiomics: true` on overlapping accessions. `build_search_index.py` reads these flags and propagates them to the `flags` column of the per-assay search index shards.
