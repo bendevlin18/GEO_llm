@@ -657,4 +657,142 @@ if os.path.exists(METHYLATION_FILE):
 else:
     print("\nNo methylation_classified.json found — skipping methylation wiki pages.")
 
+# ── Multiomics pages ──────────────────────────────────────────────────────────
+
+MULTIOMICS_FILE = "multiomics_classified.json"
+
+if os.path.exists(MULTIOMICS_FILE):
+    with open(MULTIOMICS_FILE) as f:
+        multi_data = json.load(f)
+
+    _multi_dates = sorted(set(r["pub_date"] for r in multi_data if r.get("pub_date")))
+    MULTI_DATE_RANGE = f"{_multi_dates[0]} – {_multi_dates[-1]}" if _multi_dates else "unknown"
+
+    MULTIOMICS_FILE_TYPES = {
+        "H5":        "HDF5 (CellRanger filtered matrices, combined RNA+ATAC)",
+        "H5AD":      "AnnData HDF5 (scanpy/Python ecosystem, multi-modal)",
+        "RDS":       "R serialized objects (Seurat, MultiAssayExperiment)",
+        "MTX":       "Sparse count matrices (10x CellRanger output, RNA or ATAC)",
+        "TSV":       "Tab-separated data (barcodes, features, fragment files)",
+        "CSV":       "Comma-separated data (count matrices, protein counts, metadata)",
+        "TXT":       "Text files (count matrices, cell metadata)",
+        "TAR":       "Tar archives (bundled multi-modal outputs)",
+        "FRAGMENTS": "ATAC fragment files (paired RNA+ATAC experiments)",
+        "BED":       "BED peak calls (ATAC accessibility)",
+        "BIGWIG":    "BigWig coverage tracks (ATAC or RNA coverage)",
+        "BW":        "BigWig coverage tracks",
+        "LOOM":      "Loom files (single-cell matrices)",
+        "XLSX":      "Excel (metadata, differential results)",
+        "RDA":       "R data files (multi-assay objects)",
+    }
+
+    def write_multiomics_page(slug: str, label: str, description: str,
+                              records: list) -> None:
+        orgs = top_items(records, "organism")
+        supps = suppfile_summary(records)
+
+        content = f"""# {label}
+
+> {len(records)} datasets | {MULTI_DATE_RANGE}
+
+{description}
+
+## Organism Distribution
+
+| Organism | Count |
+|----------|------:|
+"""
+        for org, c in orgs:
+            content += f"| {org} | {c} |\n"
+
+        content += """
+## Supplementary File Types
+
+| Type | Count | Description |
+|------|------:|-------------|
+"""
+        for s, c in supps.most_common(15):
+            desc = MULTIOMICS_FILE_TYPES.get(s.upper(), "")
+            content += f"| {s} | {c} | {desc} |\n"
+
+        recent = sorted(records, key=lambda r: r["pub_date"], reverse=True)
+        content += f"\n## Recent Datasets\n\n{dataset_table(recent)}\n"
+
+        os.makedirs(os.path.join(WIKI, "assays"), exist_ok=True)
+        path = os.path.join(WIKI, "assays", f"{slug}.md")
+        with open(path, "w") as f:
+            f.write(content)
+        print(f"  Wrote {path} ({len(records)} records)")
+
+    multiomics_modality_info = {
+        "multiomics": {
+            "label": "Multiomics",
+            "filter": None,  # overview page = all records
+            "desc": (
+                "Datasets that simultaneously profile multiple molecular modalities from the same "
+                "cells or samples in a single experiment — for example, RNA + surface protein "
+                "(CITE-seq), RNA + chromatin accessibility (10x Multiome, SHARE-seq), or spatial "
+                "transcriptomics paired with another assay. See individual protocol pages for "
+                "more specific views."
+            ),
+        },
+        "cite_seq": {
+            "label": "CITE-seq",
+            "filter": "cite_seq",
+            "desc": (
+                "Cellular Indexing of Transcriptomes and Epitopes by Sequencing (CITE-seq). "
+                "Simultaneously measures gene expression (RNA) and surface protein abundance "
+                "using antibody-derived tags (ADTs) from the same single cell. Closely related "
+                "methods include REAP-seq, ASAP-seq, and feature barcoding on the 10x platform. "
+                "Supplementary files typically include separate RNA and ADT count matrices "
+                "(CSV, TSV, H5, RDS/Seurat)."
+            ),
+        },
+        "multiome": {
+            "label": "RNA + ATAC Multiome",
+            "filter": "multiome",
+            "desc": (
+                "Joint profiling of gene expression (RNA) and chromatin accessibility (ATAC) "
+                "from the same single cells. The 10x Genomics Chromium Single Cell Multiome "
+                "ATAC + Gene Expression kit is the most common platform. Related methods include "
+                "SHARE-seq and SNARE-seq. Supplementary files include both RNA count matrices "
+                "(H5, MTX) and ATAC fragment files (TSV) or peak calls (BED, BigWig)."
+            ),
+        },
+        "spatial_multiomics": {
+            "label": "Spatial Multiomics",
+            "filter": "spatial_multiomics",
+            "desc": (
+                "Spatially-resolved profiling that combines transcriptomics with at least one "
+                "additional molecular modality (proteomics, epigenomics, or metabolomics) while "
+                "preserving tissue context. Includes spatial proteogenomics (Slide-tags, "
+                "MERFISH + protein), spatial epigenomics (Spatial-ATAC), and other paired "
+                "spatial assays."
+            ),
+        },
+        "other_multiomics": {
+            "label": "Other Multiomics",
+            "filter": "other_multiomics",
+            "desc": (
+                "Joint profiling experiments that don't fall into the CITE-seq or RNA+ATAC "
+                "categories. Includes triomics approaches (TEA-seq: RNA + ATAC + protein; "
+                "DOGMA-seq: DNA methylation + chromatin + RNA), single-cell joint methylome + "
+                "transcriptome profiling (scNMT-seq), and other simultaneous multi-assay designs."
+            ),
+        },
+    }
+
+    print("\nGenerating multiomics assay pages...")
+    for slug, info in multiomics_modality_info.items():
+        if info["filter"] is None:
+            records = multi_data
+        else:
+            records = [r for r in multi_data if r["modality"] == info["filter"]]
+        if not records:
+            print(f"  Skipping {slug} — no records")
+            continue
+        write_multiomics_page(slug, info["label"], info["desc"], records)
+else:
+    print("\nNo multiomics_classified.json found — skipping multiomics wiki pages.")
+
 print("\nDone.")
