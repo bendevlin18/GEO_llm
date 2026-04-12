@@ -1,32 +1,42 @@
-# GEO RNA-seq Wiki
+# GEO Multi-omics Wiki
 
-A periodically-updated, LLM-queryable index of RNA-seq datasets from [GEO (Gene Expression Omnibus)](https://www.ncbi.nlm.nih.gov/geo/). Covers 130,000+ datasets from 2015 to present, organized by organism, modality, research topic, and available file formats.
+A periodically-updated, LLM-queryable index of genomics datasets from [GEO (Gene Expression Omnibus)](https://www.ncbi.nlm.nih.gov/geo/). Covers 170,000+ datasets across RNA-seq, ChIP-seq, ATAC-seq, methylation, and multiomics from 2015 to present, organized by organism, modality, research topic, and available file formats.
 
 Inspired by [Karpathy's LLM wiki pattern](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f).
 
 ## What this is
 
-Finding relevant RNA-seq data on GEO is hard. The search interface is limited, metadata is inconsistent, and it's impossible to quickly answer questions like:
+Finding relevant sequencing data on GEO is hard. The search interface is limited, metadata is inconsistent, and it's impossible to quickly answer questions like:
 
 - *"What mouse kidney snRNA-seq datasets have processed count matrices available?"*
-- *"How many human cancer bulk RNA-seq datasets were published in 2023?"*
+- *"How many human cancer ChIP-seq datasets targeting H3K27ac were published since 2022?"*
 - *"Is there spatial transcriptomics data for zebrafish development?"*
+- *"Which CITE-seq datasets profile human PBMCs with both RNA and protein?"*
 
 This project solves that by building a structured, grep-friendly index designed for LLM querying. Give it to an LLM as context and it can answer dataset discovery questions in seconds.
 
 ## Data coverage
 
+![Datasets by assay type](assets/plot_assay_overview.png)
+
 | Metric | Value |
 |---|---|
 | Date range | 2015-Q1 through April 2026 |
-| RNA-seq datasets | ~130,000 |
+| **RNA-seq datasets** | **~130,000** |
 | — Bulk RNA-seq | ~104,000 |
 | — Single-cell (scRNA-seq) | ~23,000 |
 | — Single-nucleus (snRNA-seq) | ~2,000 |
 | — Spatial transcriptomics | ~1,000 |
+| **ChIP-seq / CUT&RUN / CUT&Tag** | **~45,000** |
+| **ATAC-seq** | **~8,000** |
+| **Methylation** (WGBS, RRBS, arrays, …) | **~7,300** |
+| **Multiomics** (CITE-seq, 10x Multiome, …) | **~930** |
 | Organisms | 155 species |
 | Research topics | 28 categories |
 | FTP index (supplementary files) | 100% covered |
+
+![RNA-seq modality breakdown](assets/plot_rnaseq_modalities.png)
+![Growth over time](assets/plot_growth_over_time.png)
 
 ## Quick start
 
@@ -84,19 +94,23 @@ The search index is split into per-assay shard files, each designed for LLM cons
 |---|---|---|
 | `wiki/search_index_rnaseq.txt` | Bulk, scRNA-seq, snRNA-seq, spatial | ~130k |
 | `wiki/search_index_chipseq.txt` | ChIP-seq, ChIP-exo | ~26.6k |
-| `wiki/search_index_atacseq.txt` | ATAC-seq | ~6.6k |
+| `wiki/search_index_atacseq.txt` | ATAC-seq | ~8k |
 | `wiki/search_index_cut_run_tag.txt` | CUT&RUN, CUT&Tag | ~1.4k |
 | `wiki/search_index_methylation.txt` | WGBS, RRBS, EM-seq, MeDIP-seq, 5hmC-seq, arrays | ~5.2k |
+| `wiki/search_index_multiomics.txt` | CITE-seq, 10x Multiome, spatial multiomics | ~930 |
 
 Each line is pipe-delimited:
 
 ```
-accession|modality|organism|n_samples|files|topics|title|keywords
+accession|modality|organism|n_samples|files|topics|title|keywords|flags
 ```
+
+The `flags` field (9th column) is `multiomics` for RNA-seq or ATAC-seq records that are also part of a multiomics study, and empty otherwise — useful for finding datasets with paired multi-modal data available.
 
 Example:
 ```
-GSE217775|single-cell|Mus musculus|12|GSE217775_filtered_feature_bc_matrix.h5(245MB)|neuroscience,development|Single-cell RNA-seq of mouse cortex|transcription factor neuronal identity layer cortex
+GSE217775|single-cell|Mus musculus|12|GSE217775_filtered_feature_bc_matrix.h5(245MB)|neuroscience,development|Single-cell RNA-seq of mouse cortex|transcription factor neuronal identity layer cortex|
+GSE100866|single-cell|Homo sapiens|12|GSE100866_CBMC_8K_13AB_10X-RNA_umi.csv.gz(14MB),...|immunology|CITE-seq: simultaneous measurement of epitopes and transcriptomes|...|multiomics
 ```
 
 To use it: grep the relevant shard file for candidate lines, then pass them to an LLM for interpretation.
@@ -112,22 +126,34 @@ GEO_llm/
 ├── wiki/                        # LLM-queryable output (checked in)
 │   ├── search_index_rnaseq.txt      # RNA-seq index (~130k records)
 │   ├── search_index_chipseq.txt     # ChIP-seq index (~26.6k records)
-│   ├── search_index_atacseq.txt     # ATAC-seq index (~6.6k records)
+│   ├── search_index_atacseq.txt     # ATAC-seq index (~8k records)
 │   ├── search_index_cut_run_tag.txt # CUT&RUN / CUT&Tag index (~1.4k records)
 │   ├── search_index_methylation.txt # Methylation index (~5.2k records)
+│   ├── search_index_multiomics.txt  # Multiomics index (~930 records)
 │   ├── index.md                     # Master catalog
 │   ├── organisms/                   # One page per species (~155)
-│   ├── assays/                      # One page per assay type (18)
+│   ├── assays/                      # One page per assay type (23)
 │   └── topics/                      # One page per research area (28)
+│
+├── assets/                      # Charts for README (checked in)
+│   ├── plot_assay_overview.png
+│   ├── plot_rnaseq_modalities.png
+│   ├── plot_growth_over_time.png
+│   ├── plot_top_organisms.png
+│   └── plot_topics.png
 │
 ├── scripts/                     # Pipeline scripts (run from project root)
 │   ├── bootstrap.py                 # Download pre-built data from GitHub Releases
 │   ├── geo_metadata_fetcher.py      # Fetch raw GEO metadata from NCBI API
 │   ├── extract_rnaseq.py            # Filter to RNA-seq, classify modality
+│   ├── extract_chipseq.py           # Filter to ChIP-seq / ATAC-seq, classify
+│   ├── extract_methylation.py       # Filter to methylation datasets, classify
+│   ├── extract_multiomics.py        # Filter to multiomics datasets, classify + back-annotate
 │   ├── tag_topics.py                # Infer research topics from titles/summaries
 │   ├── index_ftp.py                 # Index supplementary files from GEO FTP
-│   ├── build_search_index.py        # Build wiki/search_index.txt
+│   ├── build_search_index.py        # Build all per-assay search index shards
 │   ├── generate_wiki.py             # Generate wiki markdown pages
+│   ├── generate_plots.py            # Generate README charts (requires matplotlib)
 │   └── merge_and_rebuild.py         # End-to-end pipeline runner
 │
 ├── data/                        # Raw GEO metadata snapshots (gitignored, ~315 MB)
@@ -137,6 +163,11 @@ GEO_llm/
 ├── CLAUDE.md                    # Full technical documentation
 └── plans.md                     # Project roadmap
 ```
+
+## Organisms and topics
+
+![Top organisms](assets/plot_top_organisms.png)
+![Top research topics](assets/plot_topics.png)
 
 ## Topic taxonomy
 
@@ -176,7 +207,8 @@ All scripts use the NCBI E-Utilities API. An `NCBI_EMAIL` env var is required by
 ## Requirements
 
 - Python 3.10+ (uses `X | Y` union type syntax)
-- No external Python dependencies — stdlib only (`urllib`, `xml`, `json`, `tarfile`)
+- No external Python dependencies for the core pipeline — stdlib only (`urllib`, `xml`, `json`, `tarfile`)
+- `matplotlib` required for `generate_plots.py`: `conda install -n GEO_llm matplotlib`
 - Conda environment recommended: `conda env create -n GEO_llm python=3.11`
 
 ## Roadmap
@@ -185,4 +217,4 @@ See [`plans.md`](plans.md) for the full roadmap. Current priorities:
 
 - **Phase 2** — Automated pipeline using the Anthropic API (unattended scrape → classify → publish)
 - **Phase 2.5** — Analysis protocol pages (`wiki/protocols/`) with step-by-step guides per file format
-- **Phase 3** — Expand beyond RNA-seq to ChIP-seq, ATAC-seq, methylation, and multiomics
+- **Cross-assay features** — Multi-assay dataset pages linking SuperSeries that span RNA-seq + ChIP-seq + ATAC-seq from the same study
