@@ -235,6 +235,24 @@ if unrouted:
     for m, n in modalities.most_common():
         print(f"  {m}: {n}")
 
+# Write modality-split RNA-seq shards for Claude.ai Project upload
+# The full rnaseq shard (~52 MB) exceeds project knowledge limits; these subsets fit
+RNASEQ_SPLITS = {
+    "wiki/search_index_rnaseq_singlecell.txt": "single-cell",
+    "wiki/search_index_rnaseq_snrnaseq.txt": "single-nucleus",
+    "wiki/search_index_rnaseq_spatial.txt": "spatial",
+}
+rnaseq_lines = shard_lines.get("search_index_rnaseq.txt", [])
+print("\nRNA-seq modality splits (for Claude.ai Project):")
+for path, modality in RNASEQ_SPLITS.items():
+    split = [l for l in rnaseq_lines if l.split("|")[1] == modality]
+    with open(path, "w") as f:
+        f.write(HEADER)
+        for line in split:
+            f.write(line + "\n")
+    size_kb = os.path.getsize(path) / 1024
+    print(f"  {path}: {len(split)} records ({size_kb:.0f} KB)")
+
 # Show some example lines
 print("\nExample lines (rnaseq, multiomics-flagged, multiomics):")
 flagged = [l for l in lines if l.split("|")[-1] == "multiomics" and "bulk" in l.split("|")[1]]

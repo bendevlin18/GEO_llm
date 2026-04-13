@@ -294,6 +294,18 @@ The keyword-based tagger (`scripts/tag_topics.py`) assigns multi-label tags. A d
 - **Classification is rule-based** — `extract_rnaseq.py` uses keyword heuristics, not LLM classification. May misclassify edge cases. Phase 2 plans to use Anthropic API for more accurate batch classification.
 - **RNA-seq only (Phase 1)** — ChIP-seq, ATAC-seq, methylation, and other assay types are not yet indexed. See `plans.md` Phase 3 for expansion roadmap.
 
+## Query Intent and Design Philosophy
+
+This project is designed for **complex, natural-language dataset discovery** — not simple faceted search. The target queries are things like:
+
+- *"Mouse kidney development bulk RNA-seq, at least 5 samples"*
+- *"Single-cell RNA-seq from 8-month-old APP/PS1 mice — and a dataset of similar size from 5XFAD mice to compare"*
+- *"Human PBMC CITE-seq with both RNA and protein, processed H5 files available"*
+
+These queries require domain knowledge (APP/PS1 and 5XFAD are Alzheimer's mouse models), semantic understanding (matching intent across title/keywords, not just structured fields), and reasoning (comparing sample counts across datasets). **An LLM must be in the loop** for the intended use cases. Simple dropdown/text-box UIs are insufficient.
+
+The search index shards are designed to be grep-filtered to a manageable candidate set, then passed to an LLM for interpretation and ranking. The primary access pattern is: **grep → LLM**, not **grep → human**.
+
 ## Key Design Decisions
 
 - **LLM-first querying** — the search index and wiki pages are structured for LLM consumption, not just human browsing
