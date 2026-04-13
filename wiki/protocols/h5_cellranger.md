@@ -1,8 +1,22 @@
 # H5 / CellRanger HDF5
 
-**Effort: ⭐⭐⭐ Medium | Time: half a day**
+**Effort: ⭐⭐⭐ Medium | Total time: half a day**
 
 HDF5 files (`.h5`) from 10x Genomics CellRanger are a single-file alternative to the MTX trio. They contain the same count matrix but packed into one binary file, which is faster to load and easier to transfer. Like MTX, this is raw data — no cell type labels — so you'll run QC and clustering yourself.
+
+## Requirements
+
+| | |
+|---|---|
+| **OS** | Mac or Windows — any works equally well for loading and analysis |
+| **Compute** | Laptop or desktop — no cluster needed for <50,000 cells |
+| **RAM** | **Rule of thumb: 5–10× the compressed H5 file size.** A 10 MB `.h5` → ~50–100 MB in memory (trivial). A 76 MB `.h5` → ~400–800 MB. A 1.8 GB `.h5` → 10–20 GB — needs a high-RAM machine or cluster. H5 files load as sparse matrices by default; only densify when strictly necessary. |
+| **Storage** | H5 files are single files (no extraction needed); keep on local disk |
+| **Key packages** | R: `Seurat`, `ggplot2`; Python: `scanpy`, `anndata`, `h5py` |
+
+> **Windows note:** R and Seurat work on Windows without issues. Python via [Miniforge](https://github.com/conda-forge/miniforge) (conda) is the easiest path. `h5py` installs cleanly via conda. Use `plan("multisession")` instead of `plan("multicore")` if using the `future` package.
+
+---
 
 ## What's inside
 
@@ -22,7 +36,27 @@ GSE154989_mmLungPlate_fQC_dSp_rawCount.h5
 GSE102934_iCell_10x_brain.h5
 ```
 
-## Loading in R (Seurat)
+---
+
+## Steps (R — Seurat)
+
+### Step 1 — Install Seurat *(first time only, ~10–20 min)*
+
+```r
+install.packages("Seurat")
+```
+
+> **Windows:** install [Rtools](https://cran.r-project.org/bin/windows/Rtools/) first if you get compilation errors.
+
+### Step 2 — Download the H5 file from GEO *(~2–20 min depending on file size)*
+
+```bash
+wget "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE117nnn/GSE117963/suppl/GSE117963_10X_plaque_14w_filtered_gene_bc_matrices_h5.h5"
+```
+
+> **Windows:** use the GEO web interface or paste the URL directly into your browser.
+
+### Step 3 — Load the H5 file *(~1–5 min)*
 
 ```r
 library(Seurat)
@@ -44,7 +78,9 @@ sobj_list <- lapply(files, function(f) {
 merged <- Reduce(function(a, b) merge(a, b), sobj_list)
 ```
 
-## Standard QC and clustering pipeline (R)
+> **RAM check:** a 1.8 GB H5 file can expand to 10–20 GB in memory as a dense matrix. Load into sparse format (default) and only densify subsets.
+
+### Step 4 — QC and filter *(~10–20 min)*
 
 ```r
 # QC metrics
@@ -53,12 +89,16 @@ sobj[["percent.mt"]] <- PercentageFeatureSet(sobj, pattern = "^MT-")  # human
 
 VlnPlot(sobj, features = c("nFeature_RNA", "nCount_RNA", "percent.mt"), ncol = 3)
 
-# Filter
+# Filter — adjust thresholds based on your violin plots
 sobj <- subset(sobj,
                subset = nFeature_RNA > 200 &
                         nFeature_RNA < 6000 &
                         percent.mt < 20)
+```
 
+### Step 5 — Normalize and cluster *(~10–30 min for <50k cells; ~30–90 min for 50k–200k)*
+
+```r
 # Normalize → variable features → scale → PCA → neighbors → cluster → UMAP
 sobj <- NormalizeData(sobj) |>
         FindVariableFeatures(nfeatures = 2000) |>
@@ -70,12 +110,25 @@ sobj <- NormalizeData(sobj) |>
 
 DimPlot(sobj, label = TRUE)
 
-# Find marker genes per cluster
+# Find marker genes per cluster (~5–20 min)
 markers <- FindAllMarkers(sobj, only.pos = TRUE,
                           min.pct = 0.25, logfc.threshold = 0.25)
 ```
 
-## Loading in Python (scanpy)
+> **Time:** PCA + neighbors + UMAP on 5,000 cells: ~2–5 min on a laptop. On 50,000 cells: ~15–30 min. On 200,000+ cells, consider a cluster node with 64 GB RAM.
+
+---
+
+## Steps (Python — scanpy)
+
+### Step 1 — Set up environment *(first time only, ~10 min)*
+
+```bash
+conda create -n scrna python=3.11 scanpy anndata h5py matplotlib seaborn -y
+conda activate scrna
+```
+
+### Step 2 — Download and load *(~2–20 min)*
 
 ```python
 import scanpy as sc
@@ -89,7 +142,6 @@ import anndata
 samples = {
     "plaque_14w": sc.read_10x_h5("GSE117963_10X_plaque_14w_filtered_gene_bc_matrices_h5.h5"),
     "plaque_18w": sc.read_10x_h5("GSE117963_10X_plaque_18w_filtered_gene_bc_matrices_h5.h5"),
-    "whole_aorta": sc.read_10x_h5("GSE117963_10X_whole_aorta_filtered_gene_bc_matrices_h5.h5"),
 }
 for name, s in samples.items():
     s.obs["sample"] = name
@@ -99,7 +151,7 @@ adata = anndata.concat(samples.values(), label="sample",
                        keys=samples.keys(), join="outer")
 ```
 
-## Standard QC pipeline (Python)
+### Step 3 — QC and cluster *(~20–60 min)*
 
 ```python
 sc.pp.filter_cells(adata, min_genes=200)
@@ -126,6 +178,8 @@ sc.tl.umap(adata)
 sc.pl.umap(adata, color="leiden")
 ```
 
+---
+
 ## Reading with h5py directly (when standard loaders fail)
 
 Occasionally GEO H5 files use a non-CellRanger internal structure. Inspect with h5py:
@@ -140,6 +194,8 @@ with h5py.File("GSE154989_mmLungPlate_fQC_dSp_rawCount.h5", "r") as f:
 ```
 
 This prints the internal key structure so you can figure out where the matrix, barcodes, and genes are stored.
+
+---
 
 ## Real GEO examples
 
@@ -156,7 +212,7 @@ This prints the internal key structure so you can figure out where the matrix, b
 ### [GSE102934](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE102934) — bigSCale: framework for large-scale scRNA-seq
 - **Organism:** Homo sapiens | **Samples:** 1,847 cells | **Topics:** neuroscience, development
 - **Files:** `GSE102934_iCell_10x_brain.h5` (1.8 GB)
-- Very large H5 file — a good stress test for your loading pipeline; ensure sufficient RAM
+- Very large H5 file — a good stress test for your loading pipeline; ensure sufficient RAM (16–32 GB)
 
 ### [GSE150551](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE150551) — Epigenetic bistability in neuron-specific genes
 - **Organism:** Mus musculus | **Samples:** 39 | **Topics:** neuroscience, cancer
@@ -169,3 +225,4 @@ This prints the internal key structure so you can figure out where the matrix, b
 - **Non-CellRanger H5 files:** some labs produce custom HDF5 files with non-standard structure (see the h5py inspection recipe above). Common alternative structures have keys like `/counts`, `/matrix/data`, or simply store a dense array.
 - **Feature types:** CellRanger H5 files from Multiome or CITE-seq experiments contain multiple feature types (`Gene Expression`, `Antibody Capture`, `Peaks`). Seurat's `Read10X_h5()` returns a list; access RNA with `counts$`Gene Expression``. In scanpy use the `gex_only` parameter.
 - **File size vs. RAM:** a 1.8 GB H5 file expands to 10–20 GB in memory as a dense matrix. Load into a sparse format (CellRanger H5 files are sparse by default) and only densify when necessary.
+- **Windows file paths:** use forward slashes or raw strings in Python (`r"C:\path\to\file.h5"`) to avoid path escape issues.
