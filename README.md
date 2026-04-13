@@ -119,6 +119,69 @@ Example prompt pattern:
 > Here are GEO RNA-seq datasets matching "mouse kidney snrna": [paste grep results]
 > Which of these are most likely to have processed count matrices suitable for re-analysis?
 
+## Querying with free AI tools (no subscription needed)
+
+You don't need a paid LLM subscription to query this index. The primary data source for AI querying is the **search index shards** — pipe-delimited `.txt` files in `wiki/` that contain one record per line for every dataset. The wiki `.md` pages are human-readable summaries but only show the 50 most recent datasets per category; use the index shards for comprehensive results.
+
+| Shard | Size | Contents |
+|---|---|---|
+| `wiki/search_index_multiomics.txt` | 546 KB | CITE-seq, 10x Multiome, spatial multiomics |
+| `wiki/search_index_cut_run_tag.txt` | 671 KB | CUT&RUN, CUT&Tag |
+| `wiki/search_index_methylation.txt` | 1.9 MB | WGBS, RRBS, EM-seq, arrays |
+| `wiki/search_index_atacseq.txt` | 3.2 MB | ATAC-seq |
+| `wiki/search_index_chipseq.txt` | 13.9 MB | ChIP-seq, ChIP-exo |
+| `wiki/search_index_rnaseq.txt` | 52.9 MB | Bulk, scRNA-seq, snRNA-seq, spatial |
+
+The smaller shards (multiomics through ATAC-seq) can be uploaded directly to most AI tools. For ChIP-seq and RNA-seq, pre-filter with `grep` to get a manageable subset first.
+
+### Option A: Google NotebookLM (recommended)
+
+[NotebookLM](https://notebooklm.google.com) is free with a Google account. Upload a shard as a source, then query in plain English.
+
+**For shards under ~5 MB** — upload the file directly:
+1. Clone the repo or download the shard file from GitHub
+2. Go to [notebooklm.google.com](https://notebooklm.google.com), create a notebook, and upload the `.txt` file as a source
+3. Ask in plain English:
+   > "Find mouse kidney snRNA-seq datasets that have processed count matrices"
+   > "Which CITE-seq datasets profile human PBMCs with at least 10 samples?"
+   > "What spatial transcriptomics datasets exist for zebrafish?"
+
+**For larger shards (ChIP-seq, RNA-seq)** — add the raw GitHub URL as a web source, or pre-filter with `grep` and upload the result:
+
+```bash
+# Pre-filter to a manageable subset, then upload the output file
+grep -i "mus musculus" wiki/search_index_rnaseq.txt | grep "single-nucleus" > mouse_snrnaseq.txt
+```
+
+### Option B: Google Gemini (free tier — large context)
+
+Gemini's free tier supports a 1M token context window. For smaller shards, paste the file contents directly into the chat. For larger ones, pre-filter first.
+
+```bash
+# Get a subset, copy to clipboard, then paste into Gemini
+grep -i "kidney" wiki/search_index_rnaseq.txt | grep "single-nucleus" | head -200
+```
+
+Prompt pattern:
+> Here is a pipe-delimited index of GEO datasets (format: accession|modality|organism|n_samples|files|topics|title|keywords|flags). Find entries with processed H5 or RDS files and at least 5 samples:
+> [paste results]
+
+### Option C: Claude.ai or ChatGPT (free tier)
+
+Both work well for querying pre-filtered subsets. Use `grep` to narrow to a few hundred lines, then paste into the chat with a brief description of the format.
+
+### Option D: Offline / local LLMs (free, private)
+
+If you have [Ollama](https://ollama.com) installed:
+
+```bash
+grep "single-nucleus.*Mus musculus.*kidney" wiki/search_index_rnaseq.txt > subset.txt
+
+cat subset.txt | ollama run llama3.1 "Which of these GEO datasets have processed count matrices? Format: accession|modality|organism|n_samples|files|topics|title"
+```
+
+Models with 128k+ context (llama3.1, Mistral, Gemma 2) handle the smaller shards without pre-filtering.
+
 ## Repository structure
 
 ```
@@ -215,6 +278,7 @@ All scripts use the NCBI E-Utilities API. An `NCBI_EMAIL` env var is required by
 
 See [`plans.md`](plans.md) for the full roadmap. Current priorities:
 
+- **`scripts/query.py`** — CLI grep wrapper with named flags (`--modality`, `--organism`, `--topic`, `--files`) for users who want search without memorizing the index format
+- **GitHub Pages static search** — browser-based faceted search with no install or LLM required
 - **Phase 2** — Automated pipeline using the Anthropic API (unattended scrape → classify → publish)
-- **Phase 2.5** — Analysis protocol pages (`wiki/protocols/`) with step-by-step guides per file format
 - **Cross-assay features** — Multi-assay dataset pages linking SuperSeries that span RNA-seq + ChIP-seq + ATAC-seq from the same study
