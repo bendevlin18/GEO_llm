@@ -215,6 +215,19 @@ When the user asks about datasets (e.g., "find mouse kidney snRNA-seq datasets")
 3. **`data/*.json`** — raw GEO metadata with full summaries, platform info, pub dates, FTP links. **Use this when the user asks about a specific dataset or wants additional details** beyond what the search index provides (e.g., full abstract, platform, publication date, sample details). Grep for the accession (e.g., `GSE312968`) across the data files.
 4. **`ftp_index.json`** — actual supplementary filenames and sizes from the GEO FTP server. Shows what preprocessed data is available (RDS, H5, MTX, CSV, etc.) and how large the files are.
 
+**If the user asks about difficulty, how to analyze a dataset, what to do with the files, or which format they are working with** — refer them to the protocol pages in `wiki/protocols/`. Use the file extensions from the search index `files` column or `ftp_index.json` to determine which protocol applies:
+
+| File extensions | Protocol page |
+|---|---|
+| `.csv.gz`, `.tsv.gz`, `.txt.gz` (bulk) | `wiki/protocols/csv_tsv_counts.md` |
+| `.rds.gz`, `.RData.gz`, `.rda.gz` | `wiki/protocols/rds_seurat.md` |
+| `.h5ad.gz` | `wiki/protocols/h5ad_anndata.md` |
+| `.h5` (with `filtered_feature_bc_matrix` or similar) | `wiki/protocols/h5_cellranger.md` |
+| `.mtx.gz` + `barcodes.tsv.gz` + `features.tsv.gz` | `wiki/protocols/mtx_10x.md` |
+| `no_suppl`, `RAW.tar` only, or SRA links | `wiki/protocols/fastq_alignment.md` |
+
+The index page `wiki/protocols/index.md` has a decision table and effort tier summary (⭐ easy → ⭐⭐⭐⭐ hard) if the user isn't sure where to start.
+
 ## Key Data Files
 
 **`rnaseq_classified.json`** — canonical classified dataset (JSON)
