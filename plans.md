@@ -313,3 +313,100 @@ Phase 1 focuses on RNA-seq because it's the largest and most consistently struct
 - **Multi-assay dataset pages** — many GEO SuperSeries bundle RNA-seq + ChIP-seq + ATAC-seq from the same study. Link these together so a user can find all data from a single experiment.
 - **Assay co-occurrence index** — for a given organism + topic, show which assay types are available (e.g., "for mouse kidney, there are 88 snRNA-seq, 12 ATAC-seq, and 5 ChIP-seq datasets").
 - **Data integration readiness** — flag datasets where multiple assays share the same samples, enabling multi-omic integration.
+
+## Free-Tier Access: Using the Wiki Without an LLM Subscription
+
+The wiki and search index are designed for LLM querying, but many researchers won't have Claude Code, a paid API key, or any LLM subscription. This section tracks ways to make the resource useful to those users.
+
+### The core problem
+
+The search index shards are grep-friendly but large (the RNA-seq shard is 52 MB, 130k lines). The wiki pages are human-readable but don't support full-text search across all 170k records. Neither is convenient for a biologist who just wants to ask "do you have mouse kidney snRNA-seq data with processed H5 files?"
+
+### Access tier 1: No tools required — browser + GitHub
+
+The wiki pages are already readable on GitHub at `wiki/assays/`, `wiki/organisms/`, `wiki/topics/`. For simple browsing ("what mouse datasets exist?", "what scRNA-seq files does this modality have?"), the wiki pages are sufficient. GitHub's built-in file browser and search (Ctrl+F on any page) covers basic use cases.
+
+**Improvements to support this tier:**
+- Ensure wiki pages are well-organized and skimmable (already good)
+- Add a `wiki/README.md` or improve `wiki/index.md` with a browsing guide so users who land on the wiki directory know where to start
+
+### Access tier 2: Grep / Python — free, offline, no LLM needed
+
+The pipe-delimited search index is explicitly designed for grep. Any user with Python or bash can run powerful queries with zero cost.
+
+```bash
+# Mouse kidney snRNA-seq with H5 files
+grep "single-nucleus" wiki/search_index_rnaseq.txt | grep -i "mus musculus" | grep -i "kidney" | grep "H5"
+
+# Human cancer scRNA-seq with processed Seurat objects
+grep "single-cell" wiki/search_index_rnaseq.txt | grep -i "homo sapiens" | grep -i "cancer" | grep "RDS"
+```
+
+**Planned additions to support this tier:**
+- `scripts/query.py` — a simple CLI wrapper around grep with named flags (`--modality`, `--organism`, `--topic`, `--files`, `--min-samples`). Returns formatted results. Zero dependencies beyond stdlib.
+- Example query recipes in the README so users know the grep patterns without having to figure out the index format
+- Potentially a short `QUERYING.md` guide in the wiki
+
+### Access tier 3: Free cloud LLMs with file upload
+
+Several free-tier cloud tools can ingest files and answer questions about them. These let a biologist describe what they want in plain English without knowing grep syntax.
+
+**Google NotebookLM (best option for this use case)**
+- Free with a Google account; no subscription needed
+- Accepts uploaded documents as "sources" — users can upload one or more search index shards (or the smaller wiki pages) as source material
+- Designed exactly for "chat with your documents" queries: "find mouse kidney snRNA-seq datasets that have RDS files and at least 10 samples"
+- The 52 MB RNA-seq shard is large but the wiki assay pages (a few KB each) are a perfect fit
+- **Plan:** add a section to the README explaining how to use NotebookLM with the wiki pages — which files to upload, example queries
+
+**Google Gemini (gemini.google.com) — free tier**
+- 1M token context window on free tier (as of 2025) — large enough to paste an entire shard
+- Users can paste the contents of a search index shard directly into the chat and ask natural-language questions
+- More friction than NotebookLM (manual copy-paste) but no setup required
+
+**Claude.ai free tier**
+- Smaller context window than Gemini but well-suited to pasting individual wiki pages (assay pages, organism pages) and asking follow-up questions
+- Best for "I already found the assay page, tell me more / help me choose between these datasets"
+
+**ChatGPT free tier**
+- Similar to Claude.ai free — small context, works well for wiki page sections
+- GPT-4o mini is available free and handles tabular markdown well
+
+**Plan:** write a short guide ("Using the wiki with free AI tools") covering NotebookLM, Gemini, and Claude.ai free with concrete examples of what to upload and what to ask.
+
+### Access tier 4: Local LLMs — free, private, no internet required
+
+For users who can run local inference (researchers at institutions without cloud access, or those with privacy constraints):
+
+**Ollama + llama3.1 / Mistral / Gemma**
+- Free, runs on a laptop with 8+ GB RAM
+- User installs Ollama, downloads a model, and pipes search index chunks into the model
+- Works best with models that have 8k+ context windows; 128k-context models (like llama3.1) can handle entire wiki pages
+- `scripts/query.py` (planned above) could have an `--llm` flag to pipe results through a local Ollama endpoint
+
+**LM Studio**
+- GUI for running local models; easier for non-technical users than Ollama CLI
+- Same approach: load wiki pages or search index chunks as context
+
+**Plan:** add an "offline / local LLM" note to the querying guide, with an Ollama one-liner example.
+
+### Access tier 5: Hosted web interface — no install, no LLM needed
+
+A lightweight static search interface that runs entirely in the browser, no server or LLM required.
+
+**Option A: GitHub Pages + lunr.js or Fuse.js**
+- Pre-build a JSON search index at wiki generation time (`scripts/generate_wiki.py` emits a `search_index.json` alongside the text shards)
+- Deploy a static HTML/JS page to GitHub Pages that loads the JSON and supports faceted search (organism, modality, topic, file type, min samples)
+- Zero hosting cost; updates automatically on each push
+- Covers the "I want to search without any tools" use case entirely
+
+**Option B: Hugging Face Spaces (Gradio app)**
+- A small Gradio app that loads the search index shards and supports natural-language or faceted queries
+- Free on HF Spaces for public repos; no user account required to use the demo
+- Could integrate a free HF-hosted model (e.g., Mistral-7B via the Inference API) for natural-language querying on top of grep results
+- More capable than the static option but requires Python runtime
+
+**Recommended path:**
+1. **Near-term:** add `scripts/query.py` CLI + grep recipe examples in the README (tier 2) — highest value, lowest effort
+2. **Near-term:** add a NotebookLM / free LLM guide to the README (tier 3) — no code required, high discoverability
+3. **Medium-term:** GitHub Pages static search (tier 5A) — covers users who won't touch a command line
+4. **Later:** HF Spaces Gradio app (tier 5B) — richer experience, natural-language queries
