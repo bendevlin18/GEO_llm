@@ -15,6 +15,110 @@ WIKI = "wiki"
 _dates = sorted(set(r["pub_date"] for r in data if r.get("pub_date")))
 DATE_RANGE = f"{_dates[0]} – {_dates[-1]}" if _dates else "unknown"
 
+# ── Protocol linking ──────────────────────────────────────────────────────────
+
+# Maps uppercase file-type token → (relative path from wiki/assays/, label, effort)
+PROTOCOL_MAP = {
+    "CSV":   ("../protocols/csv_tsv_counts.md",  "CSV / TSV Count Matrices",   "⭐ Easy"),
+    "TSV":   ("../protocols/csv_tsv_counts.md",  "CSV / TSV Count Matrices",   "⭐ Easy"),
+    "TXT":   ("../protocols/csv_tsv_counts.md",  "CSV / TSV Count Matrices",   "⭐ Easy"),
+    "XLSX":  ("../protocols/csv_tsv_counts.md",  "CSV / TSV Count Matrices",   "⭐ Easy"),
+    "XLS":   ("../protocols/csv_tsv_counts.md",  "CSV / TSV Count Matrices",   "⭐ Easy"),
+    "TAB":   ("../protocols/csv_tsv_counts.md",  "CSV / TSV Count Matrices",   "⭐ Easy"),
+    "RDS":   ("../protocols/rds_seurat.md",       "RDS / Seurat Objects",       "⭐⭐ Easy–Medium"),
+    "RDA":   ("../protocols/rds_seurat.md",       "RDS / Seurat Objects",       "⭐⭐ Easy–Medium"),
+    "RDATA": ("../protocols/rds_seurat.md",       "RDS / Seurat Objects",       "⭐⭐ Easy–Medium"),
+    "H5AD":  ("../protocols/h5ad_anndata.md",     "H5AD / AnnData (scanpy)",   "⭐⭐ Easy–Medium"),
+    "H5":    ("../protocols/h5_cellranger.md",    "H5 / CellRanger HDF5",      "⭐⭐⭐ Medium"),
+    "MTX":   ("../protocols/mtx_10x.md",          "MTX / 10x Sparse Matrices", "⭐⭐⭐ Medium"),
+}
+
+# File-type tokens that signal raw data only (no processed supplements)
+_FASTQ_SIGNALS = {"RAW", "FASTQ", "FQ", "NO_SUPPL", "SRA"}
+
+# File types without a protocol page yet — grouped by future page label
+_FUTURE_PROTOCOLS = {
+    "BED":        "BED / BigWig / Peak files",
+    "BIGWIG":     "BED / BigWig / Peak files",
+    "BW":         "BED / BigWig / Peak files",
+    "NARROWPEAK": "BED / BigWig / Peak files",
+    "BROADPEAK":  "BED / BigWig / Peak files",
+    "BEDGRAPH":   "BED / BigWig / Peak files",
+    "WIG":        "BED / BigWig / Peak files",
+    "IDAT":       "IDAT (Illumina array raw intensities)",
+    "COV":        "Bismark coverage / CpG call files",
+    "CG":         "Bismark coverage / CpG call files",
+    "BIS":        "Bismark coverage / CpG call files",
+}
+
+# Display order for the protocol table (easiest → hardest)
+_PROTOCOL_ORDER = [
+    "../protocols/csv_tsv_counts.md",
+    "../protocols/rds_seurat.md",
+    "../protocols/h5ad_anndata.md",
+    "../protocols/h5_cellranger.md",
+    "../protocols/mtx_10x.md",
+    "../protocols/fastq_alignment.md",
+]
+
+
+def protocol_links_section(supps, always_show_fastq=False):
+    """Return a '## Analyzing These Datasets' markdown section, or '' if nothing applies.
+
+    supps           - Counter of file-type strings (any case); keys come from suppfile_summary()
+    always_show_fastq - force the FASTQ/SRA row even when no raw-data signals are detected
+                        (useful for assay types where raw reads are the only realistic path)
+    """
+    present = {s.upper() for s in supps}
+
+    # Collect applicable protocols, deduplicating by path
+    protocols = {}   # path → {"label": str, "effort": str, "types": list[str]}
+    for ft in sorted(present):
+        if ft in PROTOCOL_MAP:
+            path, label, effort = PROTOCOL_MAP[ft]
+            if path not in protocols:
+                protocols[path] = {"label": label, "effort": effort, "types": []}
+            protocols[path]["types"].append(ft)
+
+    # Collect future-protocol file types seen in this assay
+    future_groups = {}   # group label → set of file types
+    for ft in sorted(present):
+        if ft in _FUTURE_PROTOCOLS:
+            group = _FUTURE_PROTOCOLS[ft]
+            future_groups.setdefault(group, set()).add(ft)
+
+    # Determine whether to show the FASTQ row
+    show_fastq = always_show_fastq or bool(present & _FASTQ_SIGNALS)
+
+    if not protocols and not show_fastq:
+        return ""
+
+    lines = ["\n## Analyzing These Datasets\n"]
+    lines.append("| File Types | Protocol | Effort |")
+    lines.append("|------------|----------|--------|")
+
+    for path in _PROTOCOL_ORDER:
+        if path == "../protocols/fastq_alignment.md":
+            if show_fastq:
+                lines.append(
+                    f"| no_suppl / RAW.tar / FASTQ | "
+                    f"[FASTQ / SRA Alignment]({path}) | ⭐⭐⭐⭐ Hard |"
+                )
+        elif path in protocols:
+            p = protocols[path]
+            type_str = ", ".join(sorted(p["types"]))
+            lines.append(f"| {type_str} | [{p['label']}]({path}) | {p['effort']} |")
+
+    if future_groups:
+        notes = []
+        for group, types in sorted(future_groups.items()):
+            notes.append(f"**{group}** ({', '.join(sorted(types))})")
+        lines.append(
+            "\n> **Protocol pages coming soon:** " + "; ".join(notes) + "."
+        )
+
+    return "\n".join(lines) + "\n"
+
 
 def suppfile_summary(records):
     """Summarize supplementary file types."""
@@ -92,6 +196,8 @@ def write_modality_page(modality, label, description, records):
     for s, c in supps.most_common(15):
         desc = type_desc.get(s, "")
         content += f"| {s} | {c} | {desc} |\n"
+
+    content += protocol_links_section(supps)
 
     # Recent datasets
     recent = sorted(records, key=lambda r: r["pub_date"], reverse=True)
@@ -401,6 +507,8 @@ if os.path.exists(CHIPSEQ_FILE):
             desc = CHIPSEQ_FILE_TYPES.get(s.upper(), "")
             content += f"| {s} | {c} | {desc} |\n"
 
+        content += protocol_links_section(supps)
+
         recent = sorted(records, key=lambda r: r["pub_date"], reverse=True)
         content += f"\n## Recent Datasets\n\n{dataset_table(recent)}\n"
 
@@ -538,6 +646,8 @@ if os.path.exists(METHYLATION_FILE):
         for s, c in supps.most_common(15):
             desc = METHYLATION_FILE_TYPES.get(s.upper(), "")
             content += f"| {s} | {c} | {desc} |\n"
+
+        content += protocol_links_section(supps)
 
         recent = sorted(records, key=lambda r: r["pub_date"], reverse=True)
         content += f"\n## Recent Datasets\n\n{dataset_table(recent)}\n"
@@ -714,6 +824,8 @@ if os.path.exists(MULTIOMICS_FILE):
         for s, c in supps.most_common(15):
             desc = MULTIOMICS_FILE_TYPES.get(s.upper(), "")
             content += f"| {s} | {c} | {desc} |\n"
+
+        content += protocol_links_section(supps)
 
         recent = sorted(records, key=lambda r: r["pub_date"], reverse=True)
         content += f"\n## Recent Datasets\n\n{dataset_table(recent)}\n"

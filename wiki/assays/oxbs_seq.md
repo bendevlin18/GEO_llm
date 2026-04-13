@@ -30,6 +30,14 @@ Oxidative Bisulfite Sequencing (oxBS-seq) uses potassium perruthenate to oxidize
 | IGV | 1 |  |
 | CSV | 1 | Comma-separated methylation data |
 
+## Analyzing These Datasets
+
+| File Types | Protocol | Effort |
+|------------|----------|--------|
+| CSV, TSV, TXT, XLS | [CSV / TSV Count Matrices](../protocols/csv_tsv_counts.md) | ⭐ Easy |
+
+> **Protocol pages coming soon:** **BED / BigWig / Peak files** (BED, BEDGRAPH, BW); **Bismark coverage / CpG call files** (COV).
+
 ## Recent Datasets
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |

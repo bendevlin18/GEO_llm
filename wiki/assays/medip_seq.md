@@ -44,6 +44,14 @@ Methylated DNA Immunoprecipitation sequencing (MeDIP-seq). Uses an antibody agai
 | BAM | 1 |  |
 | FPKM_TRACKING | 1 |  |
 
+## Analyzing These Datasets
+
+| File Types | Protocol | Effort |
+|------------|----------|--------|
+| CSV, TAB, TSV, TXT, XLS, XLSX | [CSV / TSV Count Matrices](../protocols/csv_tsv_counts.md) | ⭐ Easy |
+
+> **Protocol pages coming soon:** **BED / BigWig / Peak files** (BED, BEDGRAPH, BIGWIG, BW, NARROWPEAK, WIG).
+
 ## Recent Datasets
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |

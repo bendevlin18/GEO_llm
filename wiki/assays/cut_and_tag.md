@@ -52,6 +52,17 @@ Cleavage Under Targets and Tagmentation (CUT&Tag). Uses protein-A-Tn5 fusion to 
 | WIG | 3 | Wiggle coverage format |
 | TAB | 3 |  |
 
+## Analyzing These Datasets
+
+| File Types | Protocol | Effort |
+|------------|----------|--------|
+| CSV, TAB, TSV, TXT, XLS, XLSX | [CSV / TSV Count Matrices](../protocols/csv_tsv_counts.md) | ⭐ Easy |
+| RDS | [RDS / Seurat Objects](../protocols/rds_seurat.md) | ⭐⭐ Easy–Medium |
+| H5 | [H5 / CellRanger HDF5](../protocols/h5_cellranger.md) | ⭐⭐⭐ Medium |
+| MTX | [MTX / 10x Sparse Matrices](../protocols/mtx_10x.md) | ⭐⭐⭐ Medium |
+
+> **Protocol pages coming soon:** **BED / BigWig / Peak files** (BED, BEDGRAPH, BIGWIG, BROADPEAK, BW, NARROWPEAK, WIG).
+
 ## Recent Datasets
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |

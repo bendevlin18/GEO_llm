@@ -44,6 +44,18 @@ Joint profiling experiments that don't fall into the CITE-seq or RNA+ATAC catego
 | BEDGRAPH | 10 |  |
 | JSON | 10 |  |
 
+## Analyzing These Datasets
+
+| File Types | Protocol | Effort |
+|------------|----------|--------|
+| CSV, TAB, TSV, TXT, XLS, XLSX | [CSV / TSV Count Matrices](../protocols/csv_tsv_counts.md) | ⭐ Easy |
+| RDA, RDATA, RDS | [RDS / Seurat Objects](../protocols/rds_seurat.md) | ⭐⭐ Easy–Medium |
+| H5AD | [H5AD / AnnData (scanpy)](../protocols/h5ad_anndata.md) | ⭐⭐ Easy–Medium |
+| H5 | [H5 / CellRanger HDF5](../protocols/h5_cellranger.md) | ⭐⭐⭐ Medium |
+| MTX | [MTX / 10x Sparse Matrices](../protocols/mtx_10x.md) | ⭐⭐⭐ Medium |
+
+> **Protocol pages coming soon:** **BED / BigWig / Peak files** (BED, BEDGRAPH, BIGWIG, BROADPEAK, BW, NARROWPEAK, WIG); **Bismark coverage / CpG call files** (COV).
+
 ## Recent Datasets
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |

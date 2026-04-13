@@ -35,6 +35,15 @@ Enzymatic Methyl-seq (EM-seq) uses TET2 and APOBEC3A enzymes instead of bisulfit
 | RDS | 1 | R serialized objects (minfi, SummarizedExperiment) |
 | CGMAP | 1 |  |
 
+## Analyzing These Datasets
+
+| File Types | Protocol | Effort |
+|------------|----------|--------|
+| CSV, TSV, TXT | [CSV / TSV Count Matrices](../protocols/csv_tsv_counts.md) | ⭐ Easy |
+| RDS | [RDS / Seurat Objects](../protocols/rds_seurat.md) | ⭐⭐ Easy–Medium |
+
+> **Protocol pages coming soon:** **BED / BigWig / Peak files** (BED, BEDGRAPH, BW); **Bismark coverage / CpG call files** (COV).
+
 ## Recent Datasets
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |

@@ -42,6 +42,14 @@ Profiling of 5-hydroxymethylcytosine (5hmC), an oxidized form of 5mC produced by
 | XML | 1 |  |
 | TAR | 1 | Tar archives (bundled outputs) |
 
+## Analyzing These Datasets
+
+| File Types | Protocol | Effort |
+|------------|----------|--------|
+| CSV, TSV, TXT, XLS, XLSX | [CSV / TSV Count Matrices](../protocols/csv_tsv_counts.md) | ⭐ Easy |
+
+> **Protocol pages coming soon:** **BED / BigWig / Peak files** (BED, BEDGRAPH, BIGWIG, BW, NARROWPEAK, WIG); **Bismark coverage / CpG call files** (COV).
+
 ## Recent Datasets
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |

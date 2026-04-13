@@ -51,6 +51,14 @@ ChIP-exo adds an exonuclease digestion step to standard ChIP-seq, providing sing
 | XLS | 1 |  |
 | NARROWPEAK | 1 | ENCODE narrowPeak format (TF / sharp peaks) |
 
+## Analyzing These Datasets
+
+| File Types | Protocol | Effort |
+|------------|----------|--------|
+| CSV, TAB, TXT, XLS, XLSX | [CSV / TSV Count Matrices](../protocols/csv_tsv_counts.md) | ⭐ Easy |
+
+> **Protocol pages coming soon:** **BED / BigWig / Peak files** (BED, BEDGRAPH, BIGWIG, BW, NARROWPEAK, WIG).
+
 ## Recent Datasets
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |
