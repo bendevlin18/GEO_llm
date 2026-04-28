@@ -1,12 +1,12 @@
 # Nematostella vectensis
 
-> 33 RNA-seq datasets | 2015/01/01 – 2026/04/08
+> 34 RNA-seq datasets | 2015/01/01 – 2026/04/27
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 20 |
+| bulk | 21 |
 | single-cell | 10 |
 | spatial | 3 |
 
@@ -16,12 +16,12 @@
 |------|------:|
 | TXT | 18 |
 | RDS | 8 |
-| TSV | 6 |
+| TSV | 7 |
 | MTX | 5 |
 | XLSX | 3 |
+| BED | 3 |
 | CSV | 2 |
 | GTF | 2 |
-| BED | 2 |
 | RDATA | 2 |
 | H5 | 2 |
 
@@ -29,6 +29,7 @@
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |
 |-----------|-------|----------|--------:|-----------------|------|
+| [GSE307384](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE307384) | The role and inheritance of gene body methylation in an invertebrate | Nematostella vectensis | 47 | BED, BIGWIG, CGMAP, NARROWPEAK, TSV | 2026/04/10 |
 | [GSE284212](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE284212) | Functional characterization of immune-related cells in a cnidarian | Nematostella vectensis | 4 | RDS, TSV, XLSX | 2026/03/05 |
 | [GSE288441](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE288441) | Cellular and transcriptional trajectories of adult neural fate specification in ... | Nematostella vectensis | 84 | FNA, GTF, RDS, TXT | 2026/01/12 |
 | [GSE294388](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE294388) | Decoding cnidarian cell type gene regulation | Nematostella vectensis | 27 | BED, RDS | 2025/11/17 |

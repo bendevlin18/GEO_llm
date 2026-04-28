@@ -1,12 +1,12 @@
 # Felis catus
 
-> 28 RNA-seq datasets | 2015/01/01 – 2026/04/08
+> 29 RNA-seq datasets | 2015/01/01 – 2026/04/27
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 23 |
+| bulk | 24 |
 | single-cell | 4 |
 | single-nucleus | 1 |
 
@@ -16,8 +16,8 @@
 |------|------:|
 | TXT | 17 |
 | CSV | 4 |
+| XLSX | 4 |
 | TSV | 3 |
-| XLSX | 3 |
 | H5 | 3 |
 | GTF | 2 |
 | DIFF | 1 |
@@ -29,6 +29,7 @@
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |
 |-----------|-------|----------|--------:|-----------------|------|
+| [GSE328075](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328075) | CD8⁺ T-cell exhaustion-like and mitochondrial dysfunction define immune dysregul... | Felis catus | 16 | XLSX | 2026/04/17 |
 | [GSE303653](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE303653) | Integrated landscape of renal metabolism in domestic cats with spontaneous chron... | Felis catus | 40 | TSV | 2025/10/14 |
 | [GSE303159](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE303159) | Host RNA dynamics in cats with feline infectious peritonitis | Felis catus | 131 | TSV | 2025/09/17 |
 | [GSE275971](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE275971) | Next generation mRNA and miRNA sequencing data sets from young and adult female ... | Felis catus | 142 | XLSX | 2025/07/30 |

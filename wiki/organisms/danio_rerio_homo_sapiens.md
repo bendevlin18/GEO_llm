@@ -1,13 +1,13 @@
 # Danio rerio; Homo sapiens
 
-> 23 RNA-seq datasets | 2015/01/01 – 2026/04/08
+> 24 RNA-seq datasets | 2015/01/01 – 2026/04/27
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
 | bulk | 17 |
-| single-cell | 6 |
+| single-cell | 7 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
@@ -15,11 +15,11 @@
 |------|------:|
 | TXT | 11 |
 | CSV | 5 |
+| TSV | 5 |
 | BW | 4 |
 | NARROWPEAK | 4 |
-| TSV | 4 |
+| MTX | 3 |
 | XLSX | 2 |
-| MTX | 2 |
 | JSON | 1 |
 | COV | 1 |
 | BED | 1 |
@@ -28,6 +28,7 @@
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |
 |-----------|-------|----------|--------:|-----------------|------|
+| [GSE275308](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE275308) | Single cell RNA sequencing (scRNA-seq) of embryonic zebrafish and human aortic e... | Danio rerio; Homo sapiens | 9 | MTX, TSV | 2026/04/20 |
 | [GSE325556](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325556) | Amniotic fluid cell-free RNA profiling reveals AGMAT as a biomarker for fetal re... | Danio rerio; Homo sapiens | 28 | CSV | 2026/03/25 |
 | [GSE316340](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE316340) | Pharmaco-behavioral Profiling Identifies Suppressors of Autism Gene-Associated P... | Danio rerio; Homo sapiens | 58 | CSV, TXT, XLSX | 2026/03/18 |
 | [GSE259251](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE259251) | ndufs2-/- zebrafish model Leigh syndrome with shortened lifespan, developmental ... | Danio rerio; Homo sapiens | 30 | TSV, TXT | 2025/12/01 |

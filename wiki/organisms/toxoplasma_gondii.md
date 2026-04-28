@@ -1,19 +1,19 @@
 # Toxoplasma gondii
 
-> 56 RNA-seq datasets | 2015/01/01 – 2026/04/08
+> 57 RNA-seq datasets | 2015/01/01 – 2026/04/27
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 52 |
+| bulk | 53 |
 | single-cell | 4 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 25 |
+| TXT | 26 |
 | XLSX | 13 |
 | XLS | 7 |
 | CSV | 5 |
@@ -28,6 +28,7 @@
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |
 |-----------|-------|----------|--------:|-----------------|------|
+| [GSE303610](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE303610) | Two distinct SWI/SNF complexes direct chromatin-linked transcriptional programs ... | Toxoplasma gondii | 126 | TXT | 2026/04/26 |
 | [GSE285297](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE285297) | RNA-seq data analysis of TgNF7 on Toxoplasma gondii tachyzoite development | Toxoplasma gondii | 6 | XLS | 2025/12/31 |
 | [GSE314937](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE314937) | Profound effect of asparagine-linked glycosylation protein 11 (TgALG11) on genom... | Toxoplasma gondii | 6 | XLSX | 2025/12/28 |
 | [GSE311669](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE311669) | Bradyzoite subtypes rule the crossroads of Toxoplasma development | Toxoplasma gondii | 2 | MTX, TSV | 2025/12/23 |
@@ -77,6 +78,5 @@
 | [GSE132250](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE132250) | Identification of a master regulator of differentiation in Toxoplasma | Toxoplasma gondii | 63 | BEDGRAPH, NARROWPEAK, TXT | 2020/01/16 |
 | [GSE132248](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE132248) | Stage-specific RNA-sequencing to identify genes differentially expressed between... | Toxoplasma gondii | 10 | TXT | 2020/01/16 |
 | [GSE132238](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE132238) | Single-cell RNA-sequencing of wildtype (ME49∆KU80) or mutant (ME49∆KU80∆BFD1) pa... | Toxoplasma gondii | 16 | TXT | 2020/01/16 |
-| [GSE136123](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE136123) | A MORC-driven transcriptional switch controls Toxoplasma developmental trajector... | Toxoplasma gondii | 18 | XLSX | 2019/12/21 |
 
-*...and 6 more datasets.*
+*...and 7 more datasets.*

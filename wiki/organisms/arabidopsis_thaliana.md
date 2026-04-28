@@ -1,13 +1,13 @@
 # Arabidopsis thaliana
 
-> 2379 RNA-seq datasets | 2015/01/01 – 2026/04/08
+> 2392 RNA-seq datasets | 2015/01/01 – 2026/04/27
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 2298 |
-| single-cell | 63 |
+| bulk | 2308 |
+| single-cell | 66 |
 | single-nucleus | 15 |
 | spatial | 3 |
 
@@ -15,11 +15,11 @@
 
 | Type | Count |
 |------|------:|
-| TXT | 1313 |
-| XLSX | 313 |
-| CSV | 239 |
+| TXT | 1317 |
+| XLSX | 314 |
+| CSV | 242 |
 | BW | 227 |
-| TSV | 154 |
+| TSV | 158 |
 | XLS | 87 |
 | BED | 67 |
 | BEDGRAPH | 57 |
@@ -30,6 +30,19 @@
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |
 |-----------|-------|----------|--------:|-----------------|------|
+| [GSE326555](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326555) | Effect of 4EHP (nCBP) mutation on gene expression during heat stress responses i... | Arabidopsis thaliana | 18 | TXT | 2026/04/24 |
+| [GSE306295](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE306295) | Wounding activates HSFA1 to  promote cellular reprogramming in Arabidopsis | Arabidopsis thaliana | 30 | TSV | 2026/04/22 |
+| [GSE244759](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE244759) | An ERF-CEP5 Induced Root Hair Formation module: A Drought Adaptation Mechanism U... | Arabidopsis thaliana | 36 |  | 2026/04/21 |
+| [GSE244750](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE244750) | Arabidopsis transcriptomic response to Flavobacterium sp. 98 inoculation | Arabidopsis thaliana | 24 | TXT | 2026/04/21 |
+| [GSE244749](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE244749) | Identification of ERF115 and ERF114 downstream genes | Arabidopsis thaliana | 12 | XLSX | 2026/04/21 |
+| [GSE325043](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325043) | F-box control of Multiple Organellar RNA Editing Factor 2 coordinates seed germi... | Arabidopsis thaliana | 6 | CSV | 2026/04/16 |
+| [GSE261364](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE261364) | Regulation of oxygen-sensing through oxygen-dependent degradation of transcripti... | Arabidopsis thaliana | 4 | TXT | 2026/04/16 |
+| [GSE300719](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE300719) | Time-course transcriptomes from shoot apex and leaves of Arabidopsis thaliana | Arabidopsis thaliana | 24 | CSV | 2026/04/15 |
+| [GSE293577](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE293577) | Global transcriptome of Arabidopsis mutants nac42-L1 and nac42-L2 inoculated by ... | Arabidopsis thaliana | 12 | TXT | 2026/04/15 |
+| [GSE234193](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE234193) | Stem cell activity is linked to a transient acquisition of pluripotency during c... | Arabidopsis thaliana | 8 | MTX, TSV | 2026/04/15 |
+| [GSE234192](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE234192) | Single-cell RNA-sequencing of calli harvested 7 and 12 days after incubation on ... | Arabidopsis thaliana | 2 | MTX, RDS, TSV | 2026/04/15 |
+| [GSE234191](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE234191) | Bulk RNA-sequencing of calli harvested 7 and 12 days after incubation on callus-... | Arabidopsis thaliana | 6 | TSV | 2026/04/15 |
+| [GSE300417](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE300417) | SIB1-SEC23A undergo ER to chloroplast relocalization to mediate immunity in Arab... | Arabidopsis thaliana | 18 | CSV | 2026/04/13 |
 | [GSE326413](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326413) | Histone chaperones ASF1s control germination by repressing PRX69 | Arabidopsis thaliana | 6 | TXT | 2026/04/08 |
 | [GSE307070](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE307070) | The vesicle trafficking R-SNARE VAMP714 connects auxin responses, ROS and ion ho... | Arabidopsis thaliana | 24 | TXT | 2026/04/08 |
 | [GSE285083](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE285083) | 2-Cys peroxiredoxins and the chaperone cpHSP70 act in concert in chloroplast bio... | Arabidopsis thaliana | 9 | CSV | 2026/04/05 |
@@ -67,18 +80,5 @@
 | [GSE315308](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE315308) | Engineering prolyl hydroxylase-dependent proteolysis enables the orthogonal cont... | Arabidopsis thaliana | 9 | TXT | 2026/02/12 |
 | [GSE284378](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE284378) | RIPseq of AtMKIP1-YFP and AtBE3-YFP in Arabidopsis thaliana | Arabidopsis thaliana | 12 | XLSX | 2026/02/11 |
 | [GSE304788](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE304788) | 14-3-3 proteins GRF6 and GRF8 positively regulate drought tolerance in Arabidops... | Arabidopsis thaliana | 24 | TXT | 2026/02/06 |
-| [GSE282075](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE282075) | ROS1: Key Marker and Regulator of Accessible Chromatin in Arabidopsis [RNA-Seq] | Arabidopsis thaliana | 12 | TXT | 2026/02/06 |
-| [GSE316931](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE316931) | Transcriptome analysis of Arabidopsis sqtl1 mutant | Arabidopsis thaliana | 6 | CSV | 2026/02/05 |
-| [GSE308332](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE308332) | Arabidopsis mRNA export factor tho5ab: molecular interactions and role in heat s... | Arabidopsis thaliana | 48 | TSV | 2026/02/03 |
-| [GSE311992](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE311992) | VERNALIZATION-INSENSITIVE 3-LIKE 2 (VIL2) and PHYTOCHROME-INTERACTING FACTOR 4 (... | Arabidopsis thaliana | 6 | BW | 2026/01/31 |
-| [GSE80687](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE80687) | Genome-wide target analysis of Class III HD-ZIP transcription factors | Arabidopsis thaliana | 32 | DIFF, XLSX | 2026/01/31 |
-| [GSE80571](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE80571) | Genome-wide target analysis of Class III HD-ZIP transcription factors [RNA-Seq] | Arabidopsis thaliana | 20 | DIFF | 2026/01/31 |
-| [GSE303133](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE303133) | FVE and HDA9 form a complex to promote thermomorphogenesis by reducing H2A.Z dep... | Arabidopsis thaliana | 12 | TXT | 2026/01/29 |
-| [GSE290158](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE290158) | A plant histone H3.3-specific amino acid safeguards the deposition of H3K36 meth... | Arabidopsis thaliana | 12 | TXT | 2026/01/29 |
-| [GSE289944](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE289944) | A plant histone H3.3-specific amino acid safeguards the deposition of H3K36 meth... | Arabidopsis thaliana | 9 | TXT | 2026/01/29 |
-| [GSE289942](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE289942) | A plant histone H3.3-specific amino acid safeguards the deposition of H3K36 meth... | Arabidopsis thaliana | 6 | TXT | 2026/01/29 |
-| [GSE317547](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE317547) | RBOHD-dependent apoplastic oxidative burst plays a protective role against the n... | Arabidopsis thaliana | 12 | XLSX | 2026/01/28 |
-| [GSE317084](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE317084) | Transcriptome analysis of Arabidopsis thaliana seedlings after combined isoxaben... | Arabidopsis thaliana | 12 | XLS | 2026/01/26 |
-| [GSE316913](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE316913) | Transcriptome analysis of Arabidopsis thaliana treated with valinomycin | Arabidopsis thaliana | 12 | XLSX | 2026/01/26 |
 
-*...and 2329 more datasets.*
+*...and 2342 more datasets.*

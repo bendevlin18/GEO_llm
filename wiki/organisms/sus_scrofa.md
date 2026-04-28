@@ -1,13 +1,13 @@
 # Sus scrofa
 
-> 676 RNA-seq datasets | 2015/01/01 – 2026/04/08
+> 679 RNA-seq datasets | 2015/01/01 – 2026/04/27
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 552 |
-| single-cell | 96 |
+| bulk | 554 |
+| single-cell | 97 |
 | single-nucleus | 20 |
 | spatial | 8 |
 
@@ -15,14 +15,14 @@
 
 | Type | Count |
 |------|------:|
-| TXT | 328 |
+| TXT | 329 |
 | XLSX | 102 |
 | CSV | 86 |
 | TSV | 82 |
 | MTX | 56 |
 | XLS | 32 |
 | FA | 18 |
-| H5 | 17 |
+| H5 | 18 |
 | GTF | 16 |
 | TAR | 14 |
 
@@ -30,6 +30,9 @@
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |
 |-----------|-------|----------|--------:|-----------------|------|
+| [GSE318785](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE318785) | Multiomic profiling reveals the regulation of important im-mune genes by PU.1 in... | Sus scrofa | 4 | TXT | 2026/04/13 |
+| [GSE318787](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE318787) | Multiomic profiling reveals the regulation of important im-mune genes by PU.1 in... | Sus scrofa | 10 | NARROWPEAK | 2026/04/10 |
+| [GSE314861](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE314861) | Pathogen-specific immune responses might underlie divergent outcomes of coronavi... | Sus scrofa | 24 | H5 | 2026/04/10 |
 | [GSE326758](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326758) | De novo transcriptome assembly of the Korean minipig (Sus scrofa) [I] | Sus scrofa | 50 | FA, TSV, TXT | 2026/04/07 |
 | [GSE308982](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE308982) | Intravitreal AAV delivery induces integrin-dependent ocular inflammation and act... | Sus scrofa | 8 | MTX, TSV | 2026/04/07 |
 | [GSE196044](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE196044) | Single-Cell Transcriptomic and Chromatin Accessibility Atlas of Peripheral Blood... | Sus scrofa | 6 | H5, XLS | 2026/04/07 |
@@ -77,8 +80,5 @@
 | [GSE308377](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE308377) | Minimal edit, maximal effect: extended survival SCID pigs with single amino acid... | Sus scrofa | 6 | TXT | 2025/11/04 |
 | [GSE247984](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE247984) | Remodeling of 3D Gene Architecture in Myocardium from Embryonic Development to E... | Sus scrofa | 9 | HIC, TAR | 2025/11/01 |
 | [GSE247983](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE247983) | Remodeling of 3D Gene Architecture in Myocardium from Embryonic Development to E... | Sus scrofa | 3 | TAR | 2025/11/01 |
-| [GSE280547](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE280547) | Uncovering changes in 3D-chromatin structure and dynamic gene expression during ... | Sus scrofa | 9 | TXT | 2025/10/23 |
-| [GSE296006](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE296006) | Tackling the early lung graft immunity by preconditioning donors with corticoste... | Sus scrofa | 1 | TXT | 2025/10/20 |
-| [GSE281004](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE281004) | Effects of interference and overexpression of NUDT3 on fat deposition in porcine... | Sus scrofa | 8 | TXT | 2025/10/20 |
 
-*...and 626 more datasets.*
+*...and 629 more datasets.*

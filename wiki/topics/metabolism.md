@@ -1,114 +1,114 @@
 # Metabolism & Metabolic Disease
 
-> 20679 RNA-seq datasets | 2015/01/01 – 2026/04/08
+> 20856 RNA-seq datasets | 2015/01/01 – 2026/04/27
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 17223 |
-| single-cell | 3007 |
-| single-nucleus | 308 |
-| spatial | 141 |
+| bulk | 17365 |
+| single-cell | 3032 |
+| single-nucleus | 314 |
+| spatial | 145 |
 
 ## Organism Distribution
 
 | Organism | Count |
 |----------|------:|
-| Mus musculus | 10224 |
-| Homo sapiens | 5998 |
-| Rattus norvegicus | 518 |
+| Mus musculus | 10304 |
+| Homo sapiens | 6065 |
+| Rattus norvegicus | 523 |
 | Danio rerio | 241 |
-| Homo sapiens; Mus musculus | 234 |
-| Drosophila melanogaster | 211 |
+| Homo sapiens; Mus musculus | 236 |
+| Drosophila melanogaster | 212 |
 | Caenorhabditis elegans | 210 |
-| Arabidopsis thaliana | 173 |
-| Saccharomyces cerevisiae | 171 |
+| Arabidopsis thaliana | 174 |
+| Saccharomyces cerevisiae | 173 |
 | Sus scrofa | 165 |
 
 ## Related Topics
 
 | Topic | Co-occurring Datasets |
 |-------|---------------------:|
-| [Development & Differentiation](development.md) | 6804 |
-| [Liver & Hepatology](liver.md) | 6716 |
-| [Immunology](immunology.md) | 6209 |
-| [Cancer](cancer.md) | 5780 |
-| [Cell Stress & Homeostasis](cell_stress.md) | 5541 |
-| [Signal Transduction](signal_transduction.md) | 5391 |
-| [Infectious Disease](infectious_disease.md) | 3384 |
-| [Microbiology](microbiology.md) | 2580 |
-| [Drug Response & Pharmacology](drug_response.md) | 2397 |
-| [Neuroscience](neuroscience.md) | 2239 |
+| [Development & Differentiation](development.md) | 6855 |
+| [Liver & Hepatology](liver.md) | 6775 |
+| [Immunology](immunology.md) | 6270 |
+| [Cancer](cancer.md) | 5842 |
+| [Cell Stress & Homeostasis](cell_stress.md) | 5601 |
+| [Signal Transduction](signal_transduction.md) | 5439 |
+| [Infectious Disease](infectious_disease.md) | 3423 |
+| [Microbiology](microbiology.md) | 2601 |
+| [Drug Response & Pharmacology](drug_response.md) | 2420 |
+| [Neuroscience](neuroscience.md) | 2260 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 10230 |
-| CSV | 3382 |
-| TSV | 3166 |
-| XLSX | 2804 |
-| MTX | 1671 |
-| XLS | 680 |
-| BW | 500 |
-| H5 | 429 |
-| BIGWIG | 307 |
-| BED | 270 |
+| TXT | 10314 |
+| CSV | 3418 |
+| TSV | 3196 |
+| XLSX | 2826 |
+| MTX | 1695 |
+| XLS | 686 |
+| BW | 502 |
+| H5 | 433 |
+| BIGWIG | 308 |
+| BED | 271 |
 
 ## Recent Datasets
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |
 |-----------|-------|----------|--------:|-----------------|------|
-| [GSE327357](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327357) | Virus-like particles enable targeted gene engineering and pooled CRISPR screenin... | Homo sapiens | 14 | CSV | 2026/04/08 |
-| [GSE327354](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327354) | Virus-like particles enable targeted gene engineering and pooled CRISPR screenin... | Homo sapiens | 18 | CSV | 2026/04/08 |
-| [GSE327352](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327352) | Virus-like particles enable targeted gene engineering and pooled CRISPR screenin... | Homo sapiens | 12 | CSV | 2026/04/08 |
-| [GSE327133](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327133) | Virus-like particles enable targeted gene engineering and pooled CRISPR screenin... | Homo sapiens | 28 | CSV | 2026/04/08 |
-| [GSE327098](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327098) | EZH2 Blockade Reverses Doxorubicin Resistance by Disrupting Metabolic and DNA Re... | Homo sapiens | 12 | XLS | 2026/04/08 |
-| [GSE327065](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327065) | Persistent Methylmalonate Overload Despite Glycemic Control Drives Mitochondrial... | Mus musculus | 6 | TXT | 2026/04/08 |
-| [GSE327064](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327064) | Metabolic and Transcriptional alterations in Candida auris during Interaction wi... | Candidozyma auris | 6 | XLSX | 2026/04/08 |
-| [GSE326782](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326782) | Mitochondrial L-2-hydroxyglutarate is a physiologic signaling metabolite [scRNA-... | Mus musculus | 7 | CSV, MTX, TSV | 2026/04/08 |
-| [GSE313989](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE313989) | Differential Regulation of Retinoic Acid Metabolism in Fanconi Anemia | Homo sapiens | 8 | CSV, TXT | 2026/04/08 |
-| [GSE298120](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE298120) | Succinate Modulation as a Novel Mechanism Underlying the Effects of Intermittent... | Mus musculus | 29 | TSV | 2026/04/08 |
-| [GSE288373](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE288373) | Tofacitinib Repairs GM-CSF-induced RA Mitochondrial Dysfunction | Homo sapiens | 6 | TXT | 2026/04/08 |
-| [GSE326820](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326820) | ChREBPα: A Central Metabolic Sensor Driving Lipid Droplet Renewal in Preimplanta... | Mus musculus | 6 | TXT | 2026/04/07 |
-| [GSE326669](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326669) | Fate mapping reveals a prenatal-to-neonatal wave of ILC2s with a history of Cd3g... | Mus musculus | 11 | CSV | 2026/04/07 |
-| [GSE326567](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326567) | Deciphering Metabolic Resistance to Multiple Herbicides in Palmer amaranth (Amar... | Amaranthus palmeri | 48 | CSV | 2026/04/07 |
-| [GSE325635](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325635) | Antiretroviral therapy during development impairs cardiac reverse remodeling in ... | Rattus norvegicus | 107 | TXT | 2026/04/07 |
-| [GSE325173](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325173) | Antiretroviral therapy in the peripartum period impairs post pregnancy cardiac r... | Rattus norvegicus | 54 | TXT | 2026/04/07 |
-| [GSE312076](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE312076) | Zone-specific hepatocytes orchestrate the early onset of host defence mechanisms... | Mus musculus | 3 | H5, TAR | 2026/04/07 |
-| [GSE308982](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE308982) | Intravitreal AAV delivery induces integrin-dependent ocular inflammation and act... | Sus scrofa | 8 | MTX, TSV | 2026/04/07 |
-| [GSE307959](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE307959) | Membrane Fusion Inhibition, Immune Modulation, and Cholesterol Synthesis Dysregu... | Mus musculus | 8 | CSV, TSV | 2026/04/07 |
-| [GSE295600](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE295600) | Combinatorial delivery of low-dose irradiation and immunotherapy to patients wit... | Homo sapiens | 18 | CSV | 2026/04/07 |
-| [GSE295599](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE295599) | Combinatorial delivery of low-dose irradiation and immunotherapy to patients wit... | Homo sapiens | 29 | TXT | 2026/04/07 |
-| [GSE293993](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE293993) | Nuclear myosin 1 regulates platelet activation and immune response in mice | Mus musculus | 12 | TXT | 2026/04/07 |
-| [GSE277691](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE277691) | Elucidating early intestinal stem cell response to bacterial infection | Mus musculus | 12 | CSV, MTX, TSV | 2026/04/07 |
-| [GSE231474](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE231474) | Infiltration of monocyte-derived cells perturbs CNS metabolism, licensing argini... | Mus musculus | 10 | TXT | 2026/04/07 |
-| [GSE327103](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327103) | Glabridin Promotes Melanosome Degradation and Alleviates Melanosome-Induced Mito... | Homo sapiens | 9 | TXT | 2026/04/06 |
-| [GSE326762](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326762) | Fate mapping reveals a prenatal-to-neonatal wave of ILC2s with a history of Cd3g... | Mus musculus | 35 | CSV | 2026/04/06 |
-| [GSE326590](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326590) | NAT10-mediated N4-acetylcytidine modification drives RNA splicing of PML to alle... | Homo sapiens | 6 | CSV | 2026/04/06 |
-| [GSE326246](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326246) | Citraconate preserves T cell stemness and antitumor immunity | Mus musculus | 9 | TXT | 2026/04/06 |
-| [GSE324222](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE324222) | Enhanced endocrine–metabolic support and axonemal assembly in high-sperm-motilit... | Anser cygnoides | 6 | MTX, TSV | 2026/04/06 |
-| [GSE315007](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE315007) | Sex- and hepatocyte Pparg-dependent hepatic effects of a high fat diet containin... | Mus musculus | 30 | TXT | 2026/04/06 |
-| [GSE309821](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE309821) | Enhancer-directed gene delivery for digit regeneration based on conserved epider... | Danio rerio | 5 | H5 | 2026/04/06 |
-| [GSE309792](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE309792) | Enhancer-directed gene delivery for digit regeneration based on conserved epider... | Mus musculus | 4 | TSV | 2026/04/06 |
-| [GSE309461](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE309461) | Bulk RNA sequencing of liver NK cells and ILC1s from T-bet WT vs. inducible Ncr1... | Mus musculus | 16 | TSV | 2026/04/06 |
-| [GSE309188](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE309188) | Phenylalanyl-tRNA synthetase balances longevity and immunity by downregulating e... | Caenorhabditis elegans | 6 | TXT | 2026/04/06 |
-| [GSE307183](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE307183) | FTO Inhibition Depletes Cysteine Metabolism and Sensitizes NSCLC to Radiation Th... | Homo sapiens | 6 | TXT | 2026/04/06 |
-| [GSE294864](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE294864) | Engineered cytokine-secreting cells to prevent foreign body response against imp... | Mus musculus | 7 | H5 | 2026/04/06 |
-| [GSE292341](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE292341) | Single cell RNA sequencing of hippocampus and hypothalamus in AD mice with fruct... | Mus musculus | 48 | CSV, MTX, TSV | 2026/04/06 |
-| [GSE236436](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE236436) | C2orf74 Orchestrates Germ-Leydig Crosstalk to Reprogram White Adipocyte Identity | Mus musculus | 16 | XLSX | 2026/04/06 |
-| [GSE236434](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE236434) | C2orf74 Orchestrates Germ-Leydig Crosstalk to Reprogram White Adipocyte Identity... | Mus musculus | 12 | XLSX | 2026/04/06 |
-| [GSE236432](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE236432) | C2orf74 Orchestrates Germ-Leydig Crosstalk to Reprogram White Adipocyte Identity... | Mus musculus | 4 | XLSX | 2026/04/06 |
-| [GSE326605](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326605) | Bile acid uptake activates STAT signaling and impairs natural killer cells in me... | Homo sapiens | 4 | MTX, TSV, TXT | 2026/04/05 |
-| [GSE326538](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326538) | Aqueous Artemisia argyi extract mitigates acute lung injury by coordinating gut ... | Mus musculus | 24 | CSV | 2026/04/05 |
-| [GSE301123](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE301123) | GPSM1 restricts CD73+CD103+ Treg cells in adipose tissue, critical for promoting... | Mus musculus | 6 | MTX, TSV | 2026/04/05 |
-| [GSE300617](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE300617) | Simulated microgravity models sex differences in knee osteoarthritis through a C... | Mus musculus | 18 | TXT | 2026/04/05 |
-| [GSE287799](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE287799) | Epigenetic modulation of polyamine biosynthetic pathways rectifies T cell dysfun... | Homo sapiens | 6 | TXT | 2026/04/05 |
-| [GSE277310](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE277310) | Metastatic triple-negative breast cancer secretes heme metabolites to alter macr... | Mus musculus | 8 | SF, TSV, TXT | 2026/04/05 |
-| [GSE325273](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325273) | 4-1BBL suppresses the induction of anti-inflammatory responses by regulating the... | Mus musculus | 6 | TXT | 2026/04/04 |
-| [GSE325270](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325270) | Mitochondrial Phosphatase PGAM5 Negatively Regulates the Induction of Anti-infla... | Mus musculus | 6 | TXT | 2026/04/04 |
-| [GSE233919](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE233919) | miR-200a-3p regulates gene expression of diabetic cardiomyopathy in murine cardi... | Mus musculus | 18 | TXT | 2026/04/04 |
-| [GSE326622](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326622) | Mechanotransduction unifies healthy non-diabetic wound healing over time by prom... | Mus musculus | 12 | MTX, TSV | 2026/04/03 |
+| [GSE328990](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328990) | RNA-seq analysis of hypothalamus in female mice reveals effects of membrane-init... | Mus musculus | 8 | CSV | 2026/04/27 |
+| [GSE327790](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327790) | PDHA1 Crotonylation Is Essential for Endometrial Metabolic Reprogramming and Dec... | Homo sapiens | 6 | CSV | 2026/04/27 |
+| [GSE309912](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE309912) | Bulk RNA-seq Toxic Lipid-induced Epigenetic Activation of ICAM1 in Liver Sinusoi... | Homo sapiens | 12 | XLSX | 2026/04/27 |
+| [GSE295666](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE295666) | Transcriptomic insights into a GalNAc/Man-Specific lectin in yeast fermentation | Saccharomyces cerevisiae | 12 | TXT | 2026/04/27 |
+| [GSE328617](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328617) | Early-life nutritional imbalance impairs colonic epithelial regeneration through... | Mus musculus | 6 | MTX, TSV | 2026/04/26 |
+| [GSE303466](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE303466) | CD24+ human dental papilla cells as translational seed cells for dentin-pulp reg... | Homo sapiens; Mus musculus | 12 | TXT | 2026/04/26 |
+| [GSE324273](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE324273) | Loss of the E3 ubiquitin ligase MARCHF6 alters hepatic lipid metabolism and driv... | Mus musculus | 12 | TXT | 2026/04/25 |
+| [GSE295792](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE295792) | Heat Stress-Induced Phenotypic and Transcriptomic Shifts in Dairy Cows: Function... | Bos | 2 | TXT | 2026/04/25 |
+| [GSE295682](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE295682) | Prevotella disiens Disrupts Endometrial Function via p38 MAPK-Mediated WNT Inhib... | Homo sapiens | 12 | XLS | 2026/04/25 |
+| [GSE295591](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE295591) | Lactate and lactylation of RNA splicing factors triggered metabolic code reverse... | Mus musculus | 21 | TXT | 2026/04/25 |
+| [GSE173505](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE173505) | Differential gene expression during biofilm dispersal by gluocse starvation | Vibrio cholerae | 4 | XLSX | 2026/04/25 |
+| [GSE329088](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE329088) | STING Acts as a Rheostat of the Unfolded Protein Response to Regulate Antigen Pr... | Mus musculus | 6 | TXT | 2026/04/24 |
+| [GSE326555](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326555) | Effect of 4EHP (nCBP) mutation on gene expression during heat stress responses i... | Arabidopsis thaliana | 18 | TXT | 2026/04/24 |
+| [GSE289312](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE289312) | Low-input RNA-seq suggests metabolic specialization underlying morphological het... | Bacteroides thetaiotaomicron | 12 | CSV | 2026/04/24 |
+| [GSE283584](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE283584) | Flavonoid and isoflavonoid biosynthetic gene expression is affected by MYB36 tra... | Lotus japonicus | 18 | TXT | 2026/04/24 |
+| [GSE283420](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE283420) | Flavonoid and isoflavonoid biosynthetic gene expression is affected by MYB36 tra... | Lotus japonicus | 18 | XLS | 2026/04/24 |
+| [GSE266290](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE266290) | Integrating Epigenetics, Proteomics, and Metabolomics to Reveal the Involvement ... | Homo sapiens | 12 | CSV | 2026/04/24 |
+| [GSE328637](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328637) | The GET Pathway Modulates Azole Susceptibility through Sterol Metabolic Remodeli... | Neurospora crassa | 18 | TXT | 2026/04/23 |
+| [GSE328573](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328573) | Photosensitizer DTP Co-Administered with Statins Potentiates Renal Carcinoma The... | Homo sapiens | 6 | XLSX | 2026/04/23 |
+| [GSE328508](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328508) | High-throughout sequencing of ovarian cancer cells treated with T-oligo | Homo sapiens | 6 | XLSX | 2026/04/23 |
+| [GSE327245](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327245) | Effects of GOLPH3 knock-out on the mouse liver transcriptomic profile | Mus musculus | 8 | TXT | 2026/04/23 |
+| [GSE300563](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE300563) | RNA-seq analysis for the Fluo-4 abnormal myofibers in aged mice | Mus musculus | 12 | CSV | 2026/04/23 |
+| [GSE299693](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE299693) | A Genome-Wide CRISPR Screen Identifies DTX4 Modulating Alveolar Macrophage Chole... | Homo sapiens | 6 | TXT | 2026/04/23 |
+| [GSE299689](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE299689) | A Genome-Wide CRISPR Screen Identifies DTX4 Modulating Alveolar Macrophage Chole... | Homo sapiens | 6 | TXT | 2026/04/23 |
+| [GSE297044](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE297044) | SETD2 Deficiency Drives Mitochondrial DNA Leakage and Creates a Druggable Depend... | Homo sapiens | 16 | TXT | 2026/04/23 |
+| [GSE328680](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328680) | Hepatocyte-specific PPARγ Deletion Uncovers Role of an Antagonistic PPARγ–HNF4α ... | Mus musculus | 12 | TXT | 2026/04/22 |
+| [GSE328134](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328134) | Adipose tissue inflammation mediated by CCL19 overexpression exacerbates experim... | Mus musculus | 36 | TXT | 2026/04/22 |
+| [GSE327851](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327851) | Transneuronal cytokine delivery promotes functional recovery across spinal cord ... | Mus musculus | 9 | XLSX | 2026/04/22 |
+| [GSE325788](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325788) | Pregnancy precipitates metabolic imbalance and accelerates death in an animal mo... | Mus musculus | 30 | TXT | 2026/04/22 |
+| [GSE324989](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE324989) | A comprehensive transcriptome analysis of the livers of mice in microgravity. | Mus musculus | 9 | XLSX | 2026/04/22 |
+| [GSE322538](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE322538) | An Engineered Viral RNA Degrader on Mitochondrial Surface that Mitigates RNA Vir... | Homo sapiens | 6 | TXT | 2026/04/22 |
+| [GSE321673](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE321673) | An Engineered Viral RNA Degrader on Mitochondrial Surface that Mitigates RNA Vir... | Homo sapiens | 6 | TXT | 2026/04/22 |
+| [GSE320585](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE320585) | Interleukin-27 remodels the bone marrow niche to suppress B-cell development and... | Mus musculus; Homo sapiens | 20 | CSV | 2026/04/22 |
+| [GSE320157](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE320157) | Ovarian Tumor FAK Inhibition Releases Omega-3 Fatty Acids Stimulating GATA6 Peri... | Mus musculus | 5 | CSV | 2026/04/22 |
+| [GSE319257](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE319257) | 2,3-Bisphosphoglycerate mutase (BPGM) defines a stress-resilient metabolic state... | Homo sapiens | 24 | XLSX | 2026/04/22 |
+| [GSE316631](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE316631) | Spatially resolved subtype progression reveals metabolic vulnerabilities in panc... | Homo sapiens | 3 | TXT | 2026/04/22 |
+| [GSE314771](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE314771) | Positive Feedback Regulation of Glycolysis by H4K5 Lactylation Promotes Malignan... | Homo sapiens | 12 | TXT | 2026/04/22 |
+| [GSE312875](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE312875) | IL-33 promotes transcriptional and metabolic adaptations of tissue-resident Th2 ... | Mus musculus | 12 | TSV | 2026/04/22 |
+| [GSE311559](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE311559) | Caspase-6 Controls Lipid and Energy Metabolism in Diet-Induced Obesity | Mus musculus | 18 | TXT | 2026/04/22 |
+| [GSE309739](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE309739) | Spatially resolved subtype progression reveals metabolic vulnerabilities in panc... | Homo sapiens | 16 | TXT | 2026/04/22 |
+| [GSE309669](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE309669) | Spatially resolved subtype progression reveals metabolic vulnerabilities in panc... | Homo sapiens | 8 | TXT | 2026/04/22 |
+| [GSE308712](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE308712) | Effects of overexpression of HKDC1 on gene expression in two colon cancer cells. | Homo sapiens | 12 | CSV | 2026/04/22 |
+| [GSE307956](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE307956) | DJ-1 alleviates high glucose-induced podocyte injury via activating ERK1/2 signa... | Homo sapiens | 9 | TXT | 2026/04/22 |
+| [GSE295488](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE295488) | Engineering perfusable vascular networks in organoids-on-chip | Homo sapiens | 7 | MTX, TSV | 2026/04/22 |
+| [GSE295400](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE295400) | Engineering perfusable vascular networks in organoids-on-chip [bulk RNA-seq] | Homo sapiens | 12 | TXT | 2026/04/22 |
+| [GSE292820](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE292820) | Steatosis shifts the histopathological heterogeneity of liver metastases towards... | Mus musculus | 6 | TXT | 2026/04/22 |
+| [GSE285766](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE285766) | Single-cell multi-omic sequencing reveals cell-specific transcriptomic and chrom... | Mus musculus | 12 | CSV, MTX | 2026/04/22 |
+| [GSE280926](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE280926) | Childhood obesity impairs muscle growth and function via altered myogenic and ad... | Mus musculus | 16 | TXT | 2026/04/22 |
+| [GSE277513](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE277513) | A novel histone H3K27 reader, CBFA2T2, inhibits H3K27me3 demethylation and tumor... | Mus musculus | 6 | TXT | 2026/04/22 |
+| [GSE264747](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE264747) | DC-SIGN+ Macrophages alleviates Non-Alcoholic Steatohepatitis by modulating infl... | Mus musculus | 13 | TXT | 2026/04/22 |
 
-*...and 20629 more datasets.*
+*...and 20806 more datasets.*

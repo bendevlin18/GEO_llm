@@ -1,19 +1,19 @@
 # Cryptococcus neoformans
 
-> 47 RNA-seq datasets | 2015/01/01 – 2026/04/08
+> 48 RNA-seq datasets | 2015/01/01 – 2026/04/27
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 47 |
+| bulk | 48 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
 | TXT | 21 |
-| XLSX | 9 |
+| XLSX | 10 |
 | CSV | 7 |
 | TSV | 6 |
 | BED | 2 |
@@ -27,6 +27,7 @@
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |
 |-----------|-------|----------|--------:|-----------------|------|
+| [GSE193199](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE193199) | Gene expression profiling in the rmt1∆, rmt5∆, rmt1∆rmt5∆ and gis2∆ mutants of C... | Cryptococcus neoformans | 14 | XLSX | 2026/04/11 |
 | [GSE319882](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE319882) | NMD-mediated control of Tor influences adaptation to nutrient and temperature co... | Cryptococcus neoformans | 8 | TXT | 2026/03/17 |
 | [GSE315847](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE315847) | Genetic determinants that permit growth without the core septin Cdc12 in Cryptoc... | Cryptococcus neoformans | 8 | TXT | 2026/01/12 |
 | [GSE312692](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE312692) | The protein phosphatase 2C domain contributes to the pathobiological function of... | Cryptococcus neoformans | 30 | CSV | 2025/12/09 |

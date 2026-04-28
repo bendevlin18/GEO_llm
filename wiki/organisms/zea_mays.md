@@ -1,12 +1,12 @@
 # Zea mays
 
-> 296 RNA-seq datasets | 2015/01/01 – 2026/04/08
+> 297 RNA-seq datasets | 2015/01/01 – 2026/04/27
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 272 |
+| bulk | 273 |
 | single-cell | 22 |
 | single-nucleus | 2 |
 
@@ -18,7 +18,7 @@
 | CSV | 38 |
 | XLSX | 36 |
 | TSV | 19 |
-| XLS | 10 |
+| XLS | 11 |
 | BW | 9 |
 | TAB | 8 |
 | BED | 6 |
@@ -29,6 +29,7 @@
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |
 |-----------|-------|----------|--------:|-----------------|------|
+| [GSE328576](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328576) | A Novel Strain of Bacillus velezensis Exhibits Biocontrol Activity Against Maize... | Zea mays | 12 | XLS | 2026/04/20 |
 | [GSE309101](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE309101) | Dynamic and cell-type specific transcriptional reprogramming underlies the flora... | Zea mays | 26 | BW, CSV, TXT | 2026/02/25 |
 | [GSE282754](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE282754) | Ustilago maydis disrupts carbohydrate signaling networks to induce hypertrophy i... | Zea mays | 9 | XLSX | 2026/01/29 |
 | [GSE309067](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE309067) | Cell-specific transcriptomics and silencing reveal aquaporin function in grass s... | Zea mays | 16 | TXT | 2026/01/26 |
@@ -78,6 +79,5 @@
 | [GSE268429](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE268429) | ZmNF-YA1 contributes to maize thermotolerance by regulating heat shock response | Zea mays | 18 | TXT | 2024/06/02 |
 | [GSE230815](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE230815) | Metabolism of plant stem cells under low oxygen tension: metabolic reprogramming... | Zea mays | 18 | CSV | 2024/05/27 |
 | [GSE229138](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE229138) | Gene Editing of Gibberellin-Oxidase20 improves plant architecture and drought to... | Zea mays | 6 | TXT | 2024/04/10 |
-| [GSE199881](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE199881) | A spatiotemporal dynamic atlas of circular RNAs unraveled extensive intraspecifi... | Zea mays | 157 | GFF3, TXT | 2024/03/30 |
 
-*...and 246 more datasets.*
+*...and 247 more datasets.*

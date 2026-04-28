@@ -1,19 +1,19 @@
 # Schizosaccharomyces pombe
 
-> 223 RNA-seq datasets | 2015/01/01 – 2026/04/08
+> 224 RNA-seq datasets | 2015/01/01 – 2026/04/27
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 221 |
+| bulk | 222 |
 | single-cell | 2 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 104 |
+| TXT | 105 |
 | XLSX | 43 |
 | BW | 40 |
 | BEDGRAPH | 26 |
@@ -22,12 +22,13 @@
 | WIG | 7 |
 | BIGWIG | 6 |
 | TAB | 5 |
-| TSV | 5 |
+| TDF | 5 |
 
 ## Recent Datasets
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |
 |-----------|-------|----------|--------:|-----------------|------|
+| [GSE249616](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE249616) | Recognition and silencing of a new transposable element | Schizosaccharomyces pombe | 113 | TDF, TXT | 2026/04/16 |
 | [GSE318956](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE318956) | Nuclear basket subunits Nup211 and Rsm1 influence RNA 3'-processing and  transcr... | Schizosaccharomyces pombe | 9 | XLSX | 2026/04/01 |
 | [GSE318732](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE318732) | How interdiction of inositol pyrophosphate catabolism perturbs the fission yeast... | Schizosaccharomyces pombe | 21 | XLSX | 2026/04/01 |
 | [GSE326505](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326505) | Differential gene expression drives cell-cycle-dependent transition from monopol... | Schizosaccharomyces pombe | 18 | XLSX | 2026/03/31 |
@@ -77,6 +78,5 @@
 | [GSE179514](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE179514) | Ago and Fkbp project | Schizosaccharomyces pombe | 49 | TDF | 2024/06/25 |
 | [GSE269854](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE269854) | The Greatwall-Endosulfine-PP2A/B55 pathway controls entry into quiescence by pro... | Schizosaccharomyces pombe | 6 | TXT | 2024/06/17 |
 | [GSE235589](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE235589) | Structure of an aberrant spliceosome intermediate on its way to disassembly | Schizosaccharomyces pombe | 7 | BW | 2024/06/01 |
-| [GSE242312](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE242312) | A systematic screen identifies Saf5 as a link between splicing and transcription... | Schizosaccharomyces pombe | 6 | TXT | 2024/05/20 |
 
-*...and 173 more datasets.*
+*...and 174 more datasets.*

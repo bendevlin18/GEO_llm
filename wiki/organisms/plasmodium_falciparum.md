@@ -1,19 +1,19 @@
 # Plasmodium falciparum
 
-> 100 RNA-seq datasets | 2015/01/01 – 2026/04/08
+> 101 RNA-seq datasets | 2015/01/01 – 2026/04/27
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 92 |
+| bulk | 93 |
 | single-cell | 8 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 45 |
+| TXT | 46 |
 | XLSX | 18 |
 | CSV | 13 |
 | BW | 9 |
@@ -28,6 +28,7 @@
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |
 |-----------|-------|----------|--------:|-----------------|------|
+| [GSE295105](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE295105) | Analysis of a pfap2-g reporter line provides insight into the epigenetic mechani... | Plasmodium falciparum | 10 | TXT | 2026/04/17 |
 | [GSE300206](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE300206) | Phase separation of Heterochromatin protein 1 (HP1) controls virulence gene sile... | Plasmodium falciparum | 17 | TXT | 2026/02/16 |
 | [GSE314126](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE314126) | GID/CTLH E3 ligase complex control cell fate programs for sexual development of ... | Plasmodium falciparum | 1 | CSV | 2026/01/23 |
 | [GSE286083](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE286083) | The organization principles of P. falciparum translation initiation features and... | Plasmodium falciparum | 12 | TXT | 2025/11/24 |
@@ -77,6 +78,5 @@
 | [GSE196670](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE196670) | Variable proportions of Plasmodium falciparum schizonts expressing MSPDBL2 in cl... | Plasmodium falciparum | 17 | TXT | 2022/02/17 |
 | [GSE169520](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE169520) | cDNA sequencing of Plasmodium falciparum field parasites 2015-2018 | Plasmodium falciparum | 380 | TXT | 2022/02/07 |
 | [GSE180438](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE180438) | Roles of PfAP2-EXP2 in Plasmodium falciparum blood-stage development | Plasmodium falciparum | 15 | BED, BW | 2022/02/02 |
-| [GSE180436](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE180436) | Roles of PfAP2-EXP2 in Plasmodium falciparum blood-stage development [RNA-seq] | Plasmodium falciparum | 12 | CSV | 2022/02/02 |
 
-*...and 50 more datasets.*
+*...and 51 more datasets.*

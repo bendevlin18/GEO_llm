@@ -1,13 +1,14 @@
 # Oryza sativa
 
-> 363 RNA-seq datasets | 2015/01/01 – 2026/04/08
+> 365 RNA-seq datasets | 2015/01/01 – 2026/04/27
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 352 |
+| bulk | 353 |
 | single-cell | 11 |
+| spatial | 1 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
@@ -15,8 +16,8 @@
 |------|------:|
 | TXT | 219 |
 | XLSX | 65 |
-| CSV | 33 |
-| TSV | 17 |
+| CSV | 34 |
+| TSV | 18 |
 | BW | 14 |
 | XLS | 13 |
 | BIGWIG | 9 |
@@ -28,6 +29,8 @@
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |
 |-----------|-------|----------|--------:|-----------------|------|
+| [GSE308140](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE308140) | Spatiotemporal regulation of arbuscular mycorrhizal symbiosis at cellular resolu... | Oryza sativa | 38 | CSV | 2026/04/27 |
+| [GSE246095](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE246095) | RNA-seq analysis in progeny leaves on rice seed treatd with heat | Oryza sativa | 4 | TSV | 2026/04/15 |
 | [GSE326035](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326035) | Foliar iron application delays flavonoid degradation during the later grain-fill... | Oryza sativa | 17 | FA, XLSX | 2026/03/29 |
 | [GSE324885](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE324885) | Transcriptome sequencing analysis of culm brittle phenotypes in rice  TAC4/TAC4L... | Oryza sativa | 12 | XLSX | 2026/03/19 |
 | [GSE68158](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE68158) | Rice leaf: Control vs. OsSGS3b mutant | Oryza sativa | 2 | TXT | 2026/03/19 |
@@ -76,7 +79,5 @@
 | [GSE288722](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE288722) | Nip and ctb3 mutant RNA-seq under CS-PT treatment for 1 day | Oryza sativa | 6 | TXT | 2025/02/09 |
 | [GSE267558](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE267558) | Simultaneous profiling of ac4C and m5C modifications from nanopore direct RNA se... | Oryza sativa | 1 | TXT | 2025/02/08 |
 | [GSE271400](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE271400) | N-acetyltransferase 10 catalyzes RNA N4-acetylcytidine affecting photosynthesis ... | Oryza sativa | 14 | BW, XLSX | 2025/02/05 |
-| [GSE288025](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE288025) | RAD51 family factors remodel the NHEJ system to modulate stress-induced biosynth... | Oryza sativa | 18 | XLSX | 2025/01/30 |
-| [GSE253909](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE253909) | The PHR2-DGP1 Signaling Integrates Carbon and Nitrogen Assimilatory Metabolisms ... | Oryza sativa | 12 | TXT | 2025/01/27 |
 
-*...and 313 more datasets.*
+*...and 315 more datasets.*

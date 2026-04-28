@@ -1,58 +1,58 @@
 # Cardiovascular
 
-> 10480 RNA-seq datasets | 2015/01/01 – 2026/04/08
+> 10571 RNA-seq datasets | 2015/01/01 – 2026/04/27
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 7558 |
-| single-cell | 2431 |
-| single-nucleus | 347 |
-| spatial | 144 |
+| bulk | 7611 |
+| single-cell | 2462 |
+| single-nucleus | 352 |
+| spatial | 146 |
 
 ## Organism Distribution
 
 | Organism | Count |
 |----------|------:|
-| Mus musculus | 5274 |
-| Homo sapiens | 3678 |
-| Rattus norvegicus | 465 |
-| Danio rerio | 325 |
+| Mus musculus | 5319 |
+| Homo sapiens | 3715 |
+| Rattus norvegicus | 468 |
+| Danio rerio | 326 |
 | Homo sapiens; Mus musculus | 123 |
 | Sus scrofa | 87 |
 | Mus musculus; Homo sapiens | 66 |
 | Arabidopsis thaliana | 42 |
-| Gallus gallus | 25 |
+| Gallus gallus | 27 |
 | Oryctolagus cuniculus | 17 |
 
 ## Related Topics
 
 | Topic | Co-occurring Datasets |
 |-------|---------------------:|
-| [Development & Differentiation](development.md) | 4374 |
-| [Cell Stress & Homeostasis](cell_stress.md) | 2944 |
-| [Immunology](immunology.md) | 2773 |
-| [Muscle & Musculoskeletal](skeletal_muscle.md) | 2478 |
-| [Signal Transduction](signal_transduction.md) | 2288 |
-| [Metabolism & Metabolic Disease](metabolism.md) | 2184 |
-| [Cancer](cancer.md) | 1896 |
-| [Neuroscience](neuroscience.md) | 1471 |
-| [Hematopoiesis & Blood](hematopoiesis.md) | 1262 |
-| [Fibrosis & Wound Healing](fibrosis_wound.md) | 1250 |
+| [Development & Differentiation](development.md) | 4410 |
+| [Cell Stress & Homeostasis](cell_stress.md) | 2974 |
+| [Immunology](immunology.md) | 2810 |
+| [Muscle & Musculoskeletal](skeletal_muscle.md) | 2505 |
+| [Signal Transduction](signal_transduction.md) | 2306 |
+| [Metabolism & Metabolic Disease](metabolism.md) | 2208 |
+| [Cancer](cancer.md) | 1921 |
+| [Neuroscience](neuroscience.md) | 1490 |
+| [Hematopoiesis & Blood](hematopoiesis.md) | 1278 |
+| [Fibrosis & Wound Healing](fibrosis_wound.md) | 1264 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 4948 |
-| TSV | 2087 |
-| CSV | 1693 |
-| MTX | 1356 |
-| XLSX | 1225 |
-| H5 | 330 |
-| TAR | 322 |
-| XLS | 284 |
+| TXT | 4978 |
+| TSV | 2113 |
+| CSV | 1712 |
+| MTX | 1377 |
+| XLSX | 1235 |
+| H5 | 338 |
+| TAR | 323 |
+| XLS | 285 |
 | BW | 246 |
 | BIGWIG | 188 |
 
@@ -60,55 +60,55 @@
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |
 |-----------|-------|----------|--------:|-----------------|------|
-| [GSE327065](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327065) | Persistent Methylmalonate Overload Despite Glycemic Control Drives Mitochondrial... | Mus musculus | 6 | TXT | 2026/04/08 |
-| [GSE310627](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE310627) | Menstrual Fluid-Derived Small Extracellular Vesicles: A Novel Reservoir with Dis... | Homo sapiens | 6 | TXT | 2026/04/08 |
-| [GSE284348](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE284348) | Generation of Stable Chambered Cardioids from human Pluripotent Stem Cells | Homo sapiens | 1 | MTX, TSV | 2026/04/08 |
-| [GSE227622](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE227622) | Neuronal MCT2 for activity-induced blood vessel formation by increasing lactate ... | Mus musculus | 6 | CSV | 2026/04/08 |
-| [GSE325635](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325635) | Antiretroviral therapy during development impairs cardiac reverse remodeling in ... | Rattus norvegicus | 107 | TXT | 2026/04/07 |
-| [GSE325173](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325173) | Antiretroviral therapy in the peripartum period impairs post pregnancy cardiac r... | Rattus norvegicus | 54 | TXT | 2026/04/07 |
-| [GSE305242](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE305242) | Effects of Sphk1 deletion in smooth muscle cells on murine arterial transcriptom... | Mus musculus | 26 | COUNTS | 2026/04/07 |
-| [GSE293993](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE293993) | Nuclear myosin 1 regulates platelet activation and immune response in mice | Mus musculus | 12 | TXT | 2026/04/07 |
-| [GSE327152](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327152) | Cardiac tertiary immune niches drive immune activation in immune checkpoint inhi... | Mus musculus | 1 | CSV, MTX, RDS, TSV | 2026/04/06 |
-| [GSE326989](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326989) | Discovery of a primed endothelial progenitor that requires VEGF/ERK inhibition t... | Homo sapiens | 14 | TSV | 2026/04/06 |
-| [GSE326938](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326938) | Discovery of a primed endothelial progenitor that requires VEGF/ERK inhibition t... | Homo sapiens | 10 | H5 | 2026/04/06 |
-| [GSE326936](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326936) | Discovery of a primed endothelial progenitor that requires VEGF/ERK inhibition t... | Homo sapiens | 6 | H5 | 2026/04/06 |
-| [GSE326751](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326751) | RNA-seq of mouse suprarenal aorta from VAMP8-knockout and wild-type mice with An... | Mus musculus | 16 | TXT | 2026/04/06 |
-| [GSE326579](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326579) | IL-17 Signaling Mediates Inflammation-Induced Capillary Leakage in addition to T... | Homo sapiens | 42 | TSV | 2026/04/06 |
-| [GSE317642](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE317642) | Mutation-dependent responses to sleep and exercise in clonal hematopoiesis | Mus musculus | 8 | CSV, H5 | 2026/04/06 |
-| [GSE293469](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE293469) | Nanoplastics induces Arrhythmia in Human Stem-cells derived Cardiomyocytes [mous... | Mus musculus | 21 | TSV | 2026/04/05 |
-| [GSE264235](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE264235) | Transcriptome analysis of sham-operated, MI-injured and FGF17-treated MI mice he... | Mus musculus | 8 | XLSX | 2026/04/05 |
-| [GSE264234](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE264234) | Transcriptome analysis of sham-operated, MI-injured and FGF17-treated MI mice he... | Mus musculus | 18 | XLSX | 2026/04/05 |
-| [GSE326400](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326400) | Robust and highly efficient generation of functional chimeric antigen receptor e... | Mus musculus | 11 | TXT | 2026/04/04 |
-| [GSE313813](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE313813) | Monocyte Chemokines Enhance Atherosclerotic Plaque Necrosis After Bacterial Kidn... | Mus musculus | 20 | CSV, TSV | 2026/04/04 |
-| [GSE296274](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE296274) | Hcn1-dependent engram neurons in the PVN encode gastric inflammatory memory [gas... | Mus musculus | 2 | TAR | 2026/04/04 |
-| [GSE233919](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE233919) | miR-200a-3p regulates gene expression of diabetic cardiomyopathy in murine cardi... | Mus musculus | 18 | TXT | 2026/04/04 |
-| [GSE316584](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE316584) | MicroRNA-224 Orchestrates the BMP Pathway and Represents a New Therapeutic Targe... | Mus musculus | 9 | MTX, TSV | 2026/04/03 |
-| [GSE312732](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE312732) | Tomatidine is a senotherapeutic compound that improves cognitive function and re... | Mus musculus | 2 | MTX, TSV | 2026/04/03 |
-| [GSE293763](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE293763) | Impaired BCAA metabolism exacerbates vascular calcification by decreasing histon... | Homo sapiens | 6 | XLS | 2026/04/03 |
-| [GSE233542](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE233542) | lncRNA-mediated upregulation of MHC class II transactivator CIITA exacerbates at... | Homo sapiens | 26 |  | 2026/04/03 |
-| [GSE233402](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE233402) | mRNA and lncRNA expression profiling of human atherosclerotic plaques | Homo sapiens | 13 | TXT | 2026/04/03 |
-| [GSE322507](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE322507) | MELK inhibition promotes megakaryopoiesis and platelet recovery in immune thromb... | Homo sapiens | 6 | TSV | 2026/04/02 |
-| [GSE299040](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE299040) | MK2/p38/p53 negatively regulate basal IL-1β and noncanonical NF-κB signaling | Mus musculus | 4 | TXT | 2026/04/02 |
-| [GSE298536](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE298536) | Preservation of Myogenic Tone in Kidney Microvasculature of Dahl Salt-Sensitive ... | Rattus norvegicus | 20 | XLSX | 2026/04/02 |
-| [GSE294004](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE294004) | Effects of Human Plasma-Like Medium on hPSC-derived cardiomyocytes in vitro | Homo sapiens | 16 | CSV | 2026/04/02 |
-| [GSE284350](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE284350) | Transcriptom anasys of human induced stem cell-derived endothelial cells and ret... | Homo sapiens | 8 | TXT | 2026/04/02 |
-| [GSE271775](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE271775) | Cellular Crosstalk Drives Hypertrophic Cardiomyopathy in LZTR1 Deficiency | Homo sapiens | 12 | TXT | 2026/04/02 |
-| [GSE326195](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326195) | Oxygen-generating microparticles enhance viability and functionality of human pl... | Homo sapiens | 14 | TSV | 2026/04/01 |
-| [GSE326172](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326172) | Stromal TNF–NFκB signaling impairs acinar differentiation through inflammation-d... | Mus musculus | 4 | H5AD | 2026/04/01 |
-| [GSE322575](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE322575) | Transcript landscape in the heart of inducible cardiomyocyte-specific Immt knock... | Mus musculus | 5 | XLSX | 2026/04/01 |
-| [GSE320334](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE320334) | Nuclei Isolation from Rat and Bovine White Adipose Tissue for Single-Nuclei RNA ... | Bos taurus; Rattus norvegicus | 6 | CSV, MTX, TSV | 2026/04/01 |
-| [GSE312894](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE312894) | Transcript landscape in the heart of inducible cardiomyocyte-specific Immt knock... | Mus musculus | 6 | XLSX | 2026/04/01 |
-| [GSE310484](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE310484) | Role of MYOC A445V mutation on glaucomatous degeneration of human retinal gangli... | Homo sapiens | 6 | XLSX | 2026/04/01 |
-| [GSE310208](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE310208) | Telomere recapping via gene therapy as a therapeutic strategy for cardio-renal s... | Mus musculus | 12 | TXT | 2026/04/01 |
-| [GSE309322](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE309322) | ChemR23 prevents phenotypic switching of vascular smooth muscle cells into macro... | Mus musculus | 6 | XLSX | 2026/04/01 |
-| [GSE302884](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE302884) | Transcriptome analysis of liver sinusoidal endothelial cells (LSECs) under palmi... | Homo sapiens | 12 | XLSX | 2026/04/01 |
-| [GSE297646](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE297646) | DOT1L enhances BLM-induced pulmonary fibrosis by inducing endothelial-to-mesench... | Homo sapiens | 6 | TXT | 2026/04/01 |
-| [GSE294456](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE294456) | Single-cell TCR Profiling in Left Atria Identifies Complement Pathway Involvemen... | Homo sapiens | 4 | CSV | 2026/04/01 |
-| [GSE293699](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE293699) | Gene Regulatory Network-Driven Drug Repurposing Identifies Anti-Atherosclerotic ... | Homo sapiens; Mus musculus | 21 |  | 2026/04/01 |
-| [GSE293698](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE293698) | Gene Regulatory Network-Driven Drug Repurposing Identifies Anti-Atherosclerotic ... | Homo sapiens | 8 | CSV | 2026/04/01 |
-| [GSE293697](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE293697) | Gene Regulatory Network-Driven Drug Repurposing Identifies Anti-Atherosclerotic ... | Mus musculus | 13 | CSV | 2026/04/01 |
-| [GSE293683](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE293683) | Effect of miR-369-5p on gene expression in endothelial cells and its possible re... | Homo sapiens | 18 | CSV | 2026/04/01 |
-| [GSE287319](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE287319) | Combined Immunotherapy and Particle Therapy for Advanced HCC with Macrovascular ... | Homo sapiens | 12 | GCT | 2026/04/01 |
-| [GSE283439](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE283439) | RNA sequencing of neutrophils treated with microvesicles derived from glucose-de... | Mus musculus | 6 | XLS | 2026/04/01 |
+| [GSE319205](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE319205) | Thrombospondin-1:CD47 signaling contributes to the development of T cell exhaust... | Mus musculus | 4 | MTX, TSV | 2026/04/27 |
+| [GSE309912](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE309912) | Bulk RNA-seq Toxic Lipid-induced Epigenetic Activation of ICAM1 in Liver Sinusoi... | Homo sapiens | 12 | XLSX | 2026/04/27 |
+| [GSE305390](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE305390) | Stromal and Endothelial Transcriptional Changes during Progression from MGUS to ... | Mus musculus | 6 | H5 | 2026/04/26 |
+| [GSE305389](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE305389) | Stromal and Endothelial Transcriptional Changes during Progression from MGUS to ... | Homo sapiens | 25 | TXT | 2026/04/26 |
+| [GSE329070](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE329070) | TCF7L2 Promotes Abdominal Aortic Aneurysm through Smooth Muscle Cell-Mediated Ex... | Homo sapiens | 8 | TXT | 2026/04/25 |
+| [GSE328588](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328588) | The effects of high-thoracic spinal cord injury on the heart transcriptome | Rattus norvegicus | 24 | CSV | 2026/04/25 |
+| [GSE328517](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328517) | Compare the differences in gene expression of TAMs in mouse tumor tissues treate... | Mus musculus | 6 | CSV | 2026/04/24 |
+| [GSE328399](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328399) | Neutrophil extracellular traps aggravate COVID-19 related acute macular neuroret... | Homo sapiens | 6 | XLSX | 2026/04/24 |
+| [GSE314466](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE314466) | Global knockout of melanoma differentiation-associated protein 5 protects mice f... | Homo sapiens | 6 | TXT | 2026/04/24 |
+| [GSE324158](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE324158) | Single-cell multi-omic and spatial landscape of primate pineal gland reveals cir... | Macaca fascicularis | 4 | BED, CSV, H5, JSON, MTX, PNG, TBI, TIFF, TSV, TXT | 2026/04/23 |
+| [GSE310660](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE310660) | PROX1 loss in adult mouse Schlemm’s canal causes permanent ocular hypertension | Homo sapiens | 6 | COUNTS | 2026/04/23 |
+| [GSE295557](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE295557) | First-in-Class CAR T Cell Therapy Selectively Eliminates Mutant Calreticulin-Dri... | Homo sapiens | 5 | RDS | 2026/04/23 |
+| [GSE294109](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE294109) | Hypoxia shapes both therapeutic response and resistance in metastatic clear cell... | Homo sapiens | 25 | MTX, TSV | 2026/04/23 |
+| [GSE293952](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE293952) | Hypoxia shapes both therapeutic response and resistance in metastatic clear cell... | Homo sapiens | 61 | TXT | 2026/04/23 |
+| [GSE293450](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE293450) | Hypoxia shapes both therapeutic response and resistance in metastatic clear cell... | Mus musculus | 38 | MTX, TSV | 2026/04/23 |
+| [GSE247763](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE247763) | Tissue-specific VEGF-D overexpression induces lymphangiogenesis and heterotopic ... | Mus musculus | 2 | MTX, TSV | 2026/04/23 |
+| [GSE328461](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328461) | Osteopontin links acquired resistance to hypoxia-inducing antiangiogenics with r... | Mus musculus | 37 | TSV | 2026/04/22 |
+| [GSE325788](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325788) | Pregnancy precipitates metabolic imbalance and accelerates death in an animal mo... | Mus musculus | 30 | TXT | 2026/04/22 |
+| [GSE324763](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE324763) | A comprehensive transcriptome analysis of the hearts of mice in lunar gravity [R... | Mus musculus | 6 | XLSX | 2026/04/22 |
+| [GSE324731](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE324731) | Transcriptomic and functional profiling of endothelial dysfunction induced by po... | Homo sapiens | 15 | TSV | 2026/04/22 |
+| [GSE318465](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE318465) | EpCAM Supports Exit from Pluripotency of Embryonic Stem Cells via Eomes | Mus musculus | 3 | RDS | 2026/04/22 |
+| [GSE312491](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE312491) | Single-Cell Profiling Reveals Mediators of Immune-Vascular Crosstalk in Mouse Mo... | Mus musculus | 4 | TAR | 2026/04/22 |
+| [GSE295488](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE295488) | Engineering perfusable vascular networks in organoids-on-chip | Homo sapiens | 7 | MTX, TSV | 2026/04/22 |
+| [GSE295400](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE295400) | Engineering perfusable vascular networks in organoids-on-chip [bulk RNA-seq] | Homo sapiens | 12 | TXT | 2026/04/22 |
+| [GSE286109](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE286109) | Single cell transcriptome analysis of human primary osteoblasts | Homo sapiens | 3 | MTX, TSV | 2026/04/22 |
+| [GSE327991](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327991) | Effect of MSCs or tpMSCs on gene expression in hypoxia/LPS-induced dilated acute... | Mus musculus | 12 | TXT | 2026/04/21 |
+| [GSE312675](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE312675) | Pressure Overload-Induced Ventricular Crosstalk Activates Regenerative Mechanism... | Mus musculus | 22 | TABULAR | 2026/04/21 |
+| [GSE312674](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE312674) | Pressure Overload-Induced Ventricular Crosstalk Activates Regenerative Mechanism... | Mus musculus | 1 | CSV, MTX, TSV, XLSX | 2026/04/21 |
+| [GSE302892](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE302892) | Transcriptomic Profiling of the Left Ventricle Using Single-Nucleus RNA Sequenci... | Mus musculus | 3 | H5 | 2026/04/21 |
+| [GSE299978](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE299978) | Accelerated Reprogramming of hiPSCs into Functional Brain Endothelial Cells with... | Homo sapiens | 11 | XLSX | 2026/04/21 |
+| [GSE291782](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE291782) | Single-Cell Transcriptomics Highlights Macrophage-Driven Regulation of EndMT and... | Mus musculus | 6 | MTX, TSV | 2026/04/21 |
+| [GSE262046](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE262046) | YAP rejuvenates cardiomyocytes by changing mitochondrial substrate utilization | Mus musculus | 4 | MTX, TSV | 2026/04/21 |
+| [GSE328522](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328522) | Thrombospondin-1, CD47, and SIRPa display cell-speciﬁc molecular signaturesin hu... | Homo sapiens | 3 | MTX, TSV | 2026/04/20 |
+| [GSE328250](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328250) | scRNA-seq of cardiac neural crest cells following left atrial ligation | Gallus gallus | 7 | MTX, TSV | 2026/04/20 |
+| [GSE327509](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327509) | Tectochrysin alleviates Ang II-induced pathological cardiac hypertrophy by bindi... | Mus musculus | 6 | CSV | 2026/04/20 |
+| [GSE314998](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE314998) | The effects of different lesions on the downstream signaling mechanisms of vascu... | Homo sapiens | 18 | TXT | 2026/04/20 |
+| [GSE314942](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE314942) | Effect of hypoxanthine and pyroglutamic acid on downstream signaling mechanisms ... | Homo sapiens | 36 | TXT | 2026/04/20 |
+| [GSE309251](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE309251) | Western diet-induced MASH in PWK/PhJ mice identifies disruptions in amino acid a... | Mus musculus | 347 | TSV | 2026/04/20 |
+| [GSE295199](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE295199) | KCNN4 mediated potassium ion efflux maintains mitochondrial functions leading to... | Homo sapiens | 10 | TXT | 2026/04/20 |
+| [GSE283464](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE283464) | Impact of chronic kidney disease (CKD) on heart remodeling after myocardial infa... | Mus musculus | 27 | TSV | 2026/04/20 |
+| [GSE275308](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE275308) | Single cell RNA sequencing (scRNA-seq) of embryonic zebrafish and human aortic e... | Danio rerio; Homo sapiens | 9 | MTX, TSV | 2026/04/20 |
+| [GSE266881](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE266881) | Hypoxia-Induced Neural-BBB Coupling via Extracellular Vesicles Delivering CircOG... | Homo sapiens | 6 | XLS | 2026/04/20 |
+| [GSE324772](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE324772) | Single-cell atlas of black rockfish (Sebastes schlegelii) ovarian stroma across ... | Sebastes schlegelii | 3 | MTX, TSV | 2026/04/19 |
+| [GSE328026](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328026) | MiT Fusions, TSC1–TSC2 Divergence, and Stem-like Programs Reveal Distinct Origin... | Homo sapiens | 69 | TXT | 2026/04/18 |
+| [GSE327937](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327937) | MiT Fusions, TSC1–TSC2 Divergence, and Stem-like Programs Reveal Distinct Origin... | Homo sapiens | 5 | CSV, H5 | 2026/04/18 |
+| [GSE327855](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327855) | Endothelial FGF13 impairs angiogenesis by accelerating oxygen-independent HIF-1α... | Homo sapiens | 6 | TXT | 2026/04/18 |
+| [GSE327840](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327840) | RNA-seq profiling of LPS tolerance in monocytes, THP-1, fibroblasts, smooth musc... | Homo sapiens | 58 | CSV | 2026/04/18 |
+| [GSE315915](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE315915) | Exercise Metabolic Memory Halts Pathological Cardiac Hypertrophy via PDK4 | Mus musculus | 10 | TXT | 2026/04/18 |
+| [GSE306718](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE306718) | Macrophage CD163 Promotes Post-Infarction Cardiac Repair and Preserves Left Vent... | Mus musculus | 37 | MTX, TSV, TXT | 2026/04/18 |
+| [GSE230074](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE230074) | HILPDA facilitates PHB1 mitochondrial localization in cardiomyocytes and its def... | Homo sapiens | 4 | TXT | 2026/04/18 |
 
-*...and 10430 more datasets.*
+*...and 10521 more datasets.*

@@ -1,12 +1,12 @@
 # Salmo salar
 
-> 33 RNA-seq datasets | 2015/01/01 – 2026/04/08
+> 34 RNA-seq datasets | 2015/01/01 – 2026/04/27
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 26 |
+| bulk | 27 |
 | single-nucleus | 4 |
 | single-cell | 2 |
 | spatial | 1 |
@@ -19,8 +19,8 @@
 | TSV | 6 |
 | MTX | 6 |
 | XLSX | 5 |
+| COUNTS | 4 |
 | CSV | 3 |
-| COUNTS | 3 |
 | SF | 2 |
 | FNA | 1 |
 | GFF3 | 1 |
@@ -30,6 +30,7 @@
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |
 |-----------|-------|----------|--------:|-----------------|------|
+| [GSE307205](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE307205) | Differential transcriptomic response of Atlantic salmon to fermented sunflower m... | Salmo salar | 120 | COUNTS | 2026/04/16 |
 | [GSE291770](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE291770) | Weak influence of light and time of day on transcriptional response to SAV3 infe... | Salmo salar | 27 | SF | 2026/03/17 |
 | [GSE107769](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE107769) | Transcriptomic response of erythrocytes to hypoxia in temperature- acclimated At... | Salmo salar | 80 | TXT | 2025/12/06 |
 | [GSE297881](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE297881) | Exploring the bioactive properties of fucoidan from Sugar kelp to modulate the i... | Salmo salar | 12 | COUNTS | 2025/09/12 |

@@ -1,18 +1,18 @@
 # Vitis vinifera
 
-> 70 RNA-seq datasets | 2015/01/01 – 2026/04/08
+> 71 RNA-seq datasets | 2015/01/01 – 2026/04/27
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 70 |
+| bulk | 71 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 42 |
+| TXT | 43 |
 | XLSX | 9 |
 | XLS | 7 |
 | CSV | 4 |
@@ -27,6 +27,7 @@
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |
 |-----------|-------|----------|--------:|-----------------|------|
+| [GSE277812](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE277812) | Transcriptional footprints associated with bud fertility in grapevine (Vitis vin... | Vitis vinifera | 27 | TXT | 2026/04/15 |
 | [GSE279795](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE279795) | Methylome of grape berry reveal tissue specific features associated with metabol... | Vitis vinifera | 11 | BW | 2025/09/21 |
 | [GSE283169](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE283169) | Transcriptome profiling of GTDs symptomatic vs. asymptomatic grapevine plants | Vitis vinifera | 12 | XLSX | 2025/05/31 |
 | [GSE273240](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE273240) | Tetralone-ABA enhances winter cold acclimation, reduces deacclimation, and delay... | Vitis vinifera | 90 | CSV | 2025/04/21 |
@@ -76,6 +77,5 @@
 | [GSE33222](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE33222) | Heat stress effects on gene expression in the grape berry. Comparison of pre- an... | Vitis vinifera | 8 | BAM, TAB | 2018/11/22 |
 | [GSE121146](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE121146) | Volatile profiles and transcriptomic variation in Cabernet Sauvignon grapes in r... | Vitis vinifera | 27 | TXT | 2018/10/14 |
 | [GSE98923](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE98923) | Timing and order of the molecular events marking the onset of berry ripening in ... | Vitis vinifera | 219 | TXT | 2018/09/21 |
-| [GSE107014](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE107014) | Analysis of the origin of stenospermocarpy under the control of the major seedle... | Vitis vinifera | 6 | TXT | 2018/07/31 |
 
-*...and 20 more datasets.*
+*...and 21 more datasets.*

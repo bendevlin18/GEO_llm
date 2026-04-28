@@ -1,19 +1,19 @@
 # Mycobacterium tuberculosis
 
-> 122 RNA-seq datasets | 2015/01/01 – 2026/04/08
+> 123 RNA-seq datasets | 2015/01/01 – 2026/04/27
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 122 |
+| bulk | 123 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
 | TXT | 77 |
-| CSV | 34 |
+| CSV | 35 |
 | XLSX | 12 |
 | XLS | 4 |
 | TSV | 3 |
@@ -25,6 +25,7 @@
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |
 |-----------|-------|----------|--------:|-----------------|------|
+| [GSE319896](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE319896) | Relationship between Mycobacterium tuberculosis response to nitric oxide stress ... | Mycobacterium tuberculosis | 12 | CSV | 2026/04/18 |
 | [GSE308059](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE308059) | Structural and functional characterization of  Mycobacterium tuberculosis VapBC5... | Mycobacterium tuberculosis | 6 | TXT | 2026/03/31 |
 | [GSE302675](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE302675) | Transcriptional Response of pe/ppe Knockout Mutants in Mycobacterium tuberculosi... | Mycobacterium tuberculosis | 14 | CSV | 2026/03/05 |
 | [GSE284673](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE284673) | Effect of L-leucine uptake inhibitor on whole-genome transcriptomic profile of M... | Mycobacterium tuberculosis | 6 | TXT | 2026/02/27 |
@@ -74,6 +75,5 @@
 | [GSE198998](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE198998) | PrrA modulates Mycobacterium tuberculosis response to acidic pH and high chlorid... | Mycobacterium tuberculosis | 16 | CSV | 2022/06/23 |
 | [GSE198997](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE198997) | PrrA modulates Mycobacterium tuberculosis response to nitric oxide | Mycobacterium tuberculosis | 8 | CSV | 2022/06/23 |
 | [GSE203032](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE203032) | Condition-Specific Mapping of Operons (COSMO) Using Dynamic and Static Genome Da... | Mycobacterium tuberculosis | 64 | TXT | 2022/05/14 |
-| [GSE173225](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE173225) | RNA-seq analysis of various strains of Mycobacterium tuberculosis. | Mycobacterium tuberculosis | 6 | TXT | 2022/04/22 |
 
-*...and 72 more datasets.*
+*...and 73 more datasets.*

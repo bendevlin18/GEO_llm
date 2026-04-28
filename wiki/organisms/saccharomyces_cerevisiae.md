@@ -1,21 +1,21 @@
 # Saccharomyces cerevisiae
 
-> 980 RNA-seq datasets | 2015/01/01 – 2026/04/08
+> 984 RNA-seq datasets | 2015/01/01 – 2026/04/27
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 952 |
-| single-cell | 28 |
+| bulk | 955 |
+| single-cell | 29 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 449 |
+| TXT | 451 |
 | CSV | 150 |
-| XLSX | 123 |
+| XLSX | 124 |
 | BW | 110 |
 | TSV | 95 |
 | WIG | 42 |
@@ -28,6 +28,10 @@
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |
 |-----------|-------|----------|--------:|-----------------|------|
+| [GSE295666](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE295666) | Transcriptomic insights into a GalNAc/Man-Specific lectin in yeast fermentation | Saccharomyces cerevisiae | 12 | TXT | 2026/04/27 |
+| [GSE312836](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE312836) | Widespread Cap-Unmethylated mRNAs Revealed by Metabolic Stress | Saccharomyces cerevisiae | 8 | XLSX | 2026/04/15 |
+| [GSE327262](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327262) | Long telomeres induce a genome-wide transcriptional response in budding yeast | Saccharomyces cerevisiae | 12 | TXT | 2026/04/13 |
+| [GSE327265](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327265) | Single-cell RNA sequencing of ancestral and evolved Saccharomyces cerevisiae acr... | Saccharomyces cerevisiae | 38 | H5 | 2026/04/10 |
 | [GSE325936](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325936) | Whole-genome combinatorial gene fusions generate novel genes for advanced microb... | Saccharomyces cerevisiae | 78 | TXT | 2026/03/26 |
 | [GSE310163](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE310163) | Trans-Histone Crosstalk-Mediated Establishment of Mutually Exclusive H3K79 Methy... | Saccharomyces cerevisiae | 8 | BW | 2026/03/12 |
 | [GSE318875](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE318875) | Single-Cell Analyses Identify Independent Aging Processes that Compete to Determ... | Saccharomyces cerevisiae | 7 | H5AD, MTX, TSV | 2026/03/10 |
@@ -74,9 +78,5 @@
 | [GSE297008](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE297008) | pH modulation restores proteostasis and extend lifespan in a yeast model of Hunt... | Saccharomyces cerevisiae | 6 | TXT, XLSX | 2025/09/06 |
 | [GSE297007](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE297007) | pH modulation restores proteostasis and extend lifespan in a yeast model of Hunt... | Saccharomyces cerevisiae | 6 | TXT, XLSX | 2025/09/06 |
 | [GSE274454](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE274454) | TRiC/CCT Chaperonin Regulates RNA Polymerase II in the Nucleus [4tU-Seq] | Saccharomyces cerevisiae | 8 | BED | 2025/09/01 |
-| [GSE274453](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE274453) | TRiC/CCT Chaperonin Regulates RNA Polymerase II in the Nucleus [RNA-seq] | Saccharomyces cerevisiae | 6 | BED, DIFF, TXT | 2025/09/01 |
-| [GSE305992](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE305992) | Junction-binding–defective Cdc13 promotes adaptive mutation and transcriptomic r... | Saccharomyces cerevisiae | 9 | XLS | 2025/08/25 |
-| [GSE276521](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE276521) | RNA sequencing in Saccharomyces cerevisiae with abrogated binding of Nab3 to PIC... | Saccharomyces cerevisiae | 9 | BEDGRAPH, FA, GTF, TXT | 2025/08/25 |
-| [GSE211775](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE211775) | RNA-seq in MaV208 WT and mutant Saccharomyces cerevisiae yeast strains treated w... | Saccharomyces cerevisiae | 15 | SF | 2025/08/22 |
 
-*...and 930 more datasets.*
+*...and 934 more datasets.*

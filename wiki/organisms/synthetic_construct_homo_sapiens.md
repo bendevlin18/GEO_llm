@@ -1,12 +1,12 @@
 # synthetic construct; Homo sapiens
 
-> 39 RNA-seq datasets | 2015/01/01 – 2026/04/08
+> 40 RNA-seq datasets | 2015/01/01 – 2026/04/27
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 32 |
+| bulk | 33 |
 | single-cell | 6 |
 | spatial | 1 |
 
@@ -29,6 +29,7 @@
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |
 |-----------|-------|----------|--------:|-----------------|------|
+| [GSE303138](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE303138) | HNRNPH controls alternative splicing cooperatively on a transcriptome-wide scale | synthetic construct; Homo sapiens | 63 |  | 2026/04/14 |
 | [GSE300453](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE300453) | Sequence-specific RNA recognition drives Restrictor-mediated termination of extr... | synthetic construct; Homo sapiens | 163 | BW | 2026/03/03 |
 | [GSE236530](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE236530) | Enzyme-mediated methylation and alkynylation enables transcriptome-wide identifi... | synthetic construct; Homo sapiens | 50 | TXT, XLSX | 2026/02/15 |
 | [GSE208308](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE208308) | Achieving CD8+ T cell-dependent lethality by targeting cancer USP14 in HCC | synthetic construct; Homo sapiens | 6 | TAR | 2025/11/14 |

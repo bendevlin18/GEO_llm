@@ -1,13 +1,13 @@
 # Danio rerio
 
-> 1740 RNA-seq datasets | 2015/01/01 – 2026/04/08
+> 1752 RNA-seq datasets | 2015/01/01 – 2026/04/27
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 1305 |
-| single-cell | 418 |
+| bulk | 1313 |
+| single-cell | 422 |
 | spatial | 10 |
 | single-nucleus | 7 |
 
@@ -15,21 +15,33 @@
 
 | Type | Count |
 |------|------:|
-| TXT | 807 |
-| TSV | 327 |
-| CSV | 253 |
-| MTX | 199 |
-| XLSX | 196 |
+| TXT | 812 |
+| TSV | 330 |
+| CSV | 255 |
+| MTX | 201 |
+| XLSX | 198 |
 | XLS | 62 |
-| BW | 58 |
-| H5 | 55 |
+| BW | 59 |
+| H5 | 56 |
 | RDS | 40 |
-| TAB | 34 |
+| TAR | 35 |
 
 ## Recent Datasets
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |
 |-----------|-------|----------|--------:|-----------------|------|
+| [GSE325884](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325884) | Generation of a prop1 knockin zebrafish enables single-cell transcriptomics of e... | Danio rerio | 2 | MTX, TSV | 2026/04/27 |
+| [GSE295724](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE295724) | Neuronal microexons modulate arousal via the cAMP-PKA-CREB pathway in zebrafish | Danio rerio | 59 | H5, TXT | 2026/04/24 |
+| [GSE298347](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE298347) | Single-cell RNA sequencing of microglia/macrophages in zebrafish pde6c mutant ey... | Danio rerio | 4 | TAR | 2026/04/22 |
+| [GSE206024](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE206024) | Gene expression profile at single cell level of testicular cells from the adult ... | Danio rerio | 4 | MTX, TSV | 2026/04/22 |
+| [GSE317380](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE317380) | Mytho/Phaf1 is required to prevent DNA damage and tissue degeneration in Danio r... | Danio rerio | 8 | TXT | 2026/04/17 |
+| [GSE317627](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE317627) | Telomere interacting proteins Tert and Terb1 regulate meiotic progression in zeb... | Danio rerio | 15 | CSV, TAR | 2026/04/15 |
+| [GSE305059](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE305059) | Mutation of Tubgcp6 induces hematopoietic stem and progenitor cell exhaustion in... | Danio rerio | 4 | TXT | 2026/04/15 |
+| [GSE297911](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE297911) | Bisphenols exposure induces bone loss and osteoporosis by binding to and activat... | Danio rerio | 6 | XLSX | 2026/04/15 |
+| [GSE270112](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE270112) | Gpnmb is required for immune and fibrotic responses during zebrafish heart regen... | Danio rerio | 4 | TXT | 2026/04/15 |
+| [GSE320027](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE320027) | Impact of urban air ultrafine particles on embryonic development and their assoc... | Danio rerio | 33 | XLSX | 2026/04/14 |
+| [GSE304151](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE304151) | Systems-level investigation of mucopolysaccharidosis IIIA identifies deficient s... | Danio rerio | 36 | TSV, TXT | 2026/04/14 |
+| [GSE314610](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE314610) | isl1a Coordinates Onset and Termination of Regeneration of the Zebrafish Lateral... | Danio rerio | 30 | BW, CSV | 2026/04/10 |
 | [GSE309821](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE309821) | Enhancer-directed gene delivery for digit regeneration based on conserved epider... | Danio rerio | 5 | H5 | 2026/04/06 |
 | [GSE296008](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE296008) | Single-Cell Transcriptomic Profiling of Male Zebrafish hypothalamus: Investigati... | Danio rerio | 2 | MTX, TSV | 2026/04/03 |
 | [GSE295139](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE295139) | Single-Cell Transcriptomic Profiling of Male Zebrafish Pituitary: Investigating ... | Danio rerio | 2 | MTX, TSV | 2026/04/03 |
@@ -68,17 +80,5 @@
 | [GSE320275](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE320275) | microRNA-21 promotes dysregulated lipid metabolism and hepatocellular carcinoma | Danio rerio | 34 |  | 2026/02/28 |
 | [GSE307227](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE307227) | mitfa-Independent Melanocyte Progenitors are Highly Susceptible to GNAQ-induced ... | Danio rerio | 11 | MTX, TSV | 2026/02/26 |
 | [GSE299653](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE299653) | BMP–Smad1/9 signaling plays a critical role in regulating zebrafish PGC prolifer... | Danio rerio | 24 | CSV, XLSX | 2026/02/25 |
-| [GSE306623](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE306623) | Triploidy disrupts hormonal and paracrine signaling and enforces male developmen... | Danio rerio | 16 | TXT | 2026/02/24 |
-| [GSE319801](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE319801) | Comprehensive molecular profiling of regenerated retinal neurons in the adult ze... | Danio rerio | 2 | H5 | 2026/02/23 |
-| [GSE290012](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE290012) | Mutations in the microexon splicing regulator srrm4 have minor phenotypic effect... | Danio rerio | 6 | TXT | 2026/02/19 |
-| [GSE306402](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE306402) | GJB2 c.109G>A mutation causes hereditary non-syndromic deafness through the mito... | Danio rerio | 6 | TXT | 2026/02/18 |
-| [GSE305167](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE305167) | Müller glial and microglial responses coupled to recovery of cone photoreceptors... | Danio rerio | 3 | MTX, TSV, XLSX | 2026/02/17 |
-| [GSE319344](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE319344) | Loss of meningeal lymphatic endothelial cells results in formation of a novel va... | Danio rerio | 525 | TXT | 2026/02/16 |
-| [GSE319292](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE319292) | Transcriptome data of larval zebrafish exposed to continuous sub- and supra-MCL ... | Danio rerio | 24 | TXT | 2026/02/16 |
-| [GSE314974](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE314974) | Transcriptomic profiling of zebrafish mutants for orthologs of genes that increa... | Danio rerio | 50 | TXT | 2026/02/16 |
-| [GSE294799](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE294799) | Functional genomics analysis of developing zebrafish and human endoderm reveals ... | Danio rerio | 4 | TXT | 2026/02/16 |
-| [GSE285755](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE285755) | LMO1 expression in neuroblastoma cells reprograms tumor-associated macrophages t... | Danio rerio | 2 | TSV, YAML | 2026/02/12 |
-| [GSE291478](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE291478) | Decaying and expanding Erk gradients process memory of skeletal size during zebr... | Danio rerio | 15 | CSV | 2026/02/11 |
-| [GSE319120](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE319120) | Cryptic Last Exon splicing is a conserved tuning mechanism during neural develop... | Danio rerio | 9 | XLSX | 2026/02/10 |
 
-*...and 1690 more datasets.*
+*...and 1702 more datasets.*

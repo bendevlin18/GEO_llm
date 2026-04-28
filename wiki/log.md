@@ -5,3 +5,4 @@
 - **2026-04-09**: Merged 4 snapshots. 37,355 total GEO records, 25,196 RNA-seq datasets (covering 2025/01/01 – 2026/04/08). Modalities: {'bulk': 17654, 'single-cell': 6126, 'single-nucleus': 1020, 'spatial': 396}.
 - **2026-04-09**: Merged 45 snapshots. 226,980 total GEO records, 130,059 RNA-seq datasets (covering 2015/01/01 – 2026/04/08). Modalities: {'bulk': 104001, 'single-cell': 23057, 'single-nucleus': 1974, 'spatial': 1027}.
 - **2026-04-09**: Merged 45 snapshots. 226,980 total GEO records, 130,059 RNA-seq datasets (covering 2015/01/01 – 2026/04/08). Modalities: {'bulk': 104001, 'single-cell': 23057, 'single-nucleus': 1974, 'spatial': 1027}.
+- **2026-04-27**: Merged 46 snapshots. 228,205 total GEO records, 130,921 RNA-seq datasets (covering 2015/01/01 – 2026/04/27). Modalities: {'bulk': 104612, 'single-cell': 23260, 'single-nucleus': 2003, 'spatial': 1046}.

@@ -1,23 +1,23 @@
 # Candida albicans
 
-> 144 RNA-seq datasets | 2015/01/01 – 2026/04/08
+> 149 RNA-seq datasets | 2015/01/01 – 2026/04/27
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 143 |
+| bulk | 148 |
 | single-cell | 1 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 76 |
-| XLSX | 29 |
+| TXT | 79 |
+| XLSX | 30 |
 | CSV | 25 |
 | TSV | 16 |
-| XLS | 5 |
+| XLS | 6 |
 | BW | 4 |
 | DIFF | 3 |
 | WIG | 2 |
@@ -28,6 +28,11 @@
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |
 |-----------|-------|----------|--------:|-----------------|------|
+| [GSE295027](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE295027) | Coordinated regulation of calcium homeostasis and pathogenicity by a dual-action... | Candida albicans | 16 | TXT | 2026/04/18 |
+| [GSE319691](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE319691) | Shared anti-biofilm targets of biofilm regulators Wor3 and Bcr1 in Candida albic... | Candida albicans | 18 | TXT | 2026/04/15 |
+| [GSE289081](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE289081) | Shared anti-biofilm targets of biofilm regulators Wor3 and Bcr1 in Candida albic... | Candida albicans | 12 | XLS | 2026/04/15 |
+| [GSE327269](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327269) | In vivo RNA sequencing identifies the lncRNA ReLoV critical for morphological tr... | Candida albicans | 9 | TXT | 2026/04/12 |
+| [GSE327268](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327268) | In vivo RNA sequencing identifies the lncRNA ReLoV critical for morphological tr... | Candida albicans | 9 | XLSX | 2026/04/12 |
 | [GSE294295](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE294295) | Met32 governs transcriptional control of sulfur metabolic flexibility and resist... | Candida albicans | 24 | BW, TXT | 2026/04/02 |
 | [GSE325007](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325007) | CTG clade-specific proteins of the RSC chromatin remodeling complex regulate cel... | Candida albicans | 12 | CSV | 2026/03/26 |
 | [GSE315271](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE315271) | Impact of Candida albicans NDT80 and UME6 on biofilm formation and fluconazole s... | Candida albicans | 12 | TXT | 2026/03/16 |
@@ -73,10 +78,5 @@
 | [GSE238051](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE238051) | The Candida albicans reference strain SC5314 contains a rare, dominant allele of... | Candida albicans | 12 | TXT | 2023/07/29 |
 | [GSE217461](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE217461) | Inferring gene regulatory networks via transcriptional profiles as associated dy... | Candida albicans | 51 | TXT | 2023/06/23 |
 | [GSE209608](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE209608) | Next generation sequencing facilitates quantitative analysis of transcriptional ... | Candida albicans | 6 | TXT | 2023/05/18 |
-| [GSE223317](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE223317) | Transcriptional profiling of Candida albicans SC5314 grown on different carbon a... | Candida albicans | 15 | CSV | 2023/03/30 |
-| [GSE227654](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE227654) | The Rfg1 and Bcr1 transcription factors regulate acidic pH-induced filamentous g... | Candida albicans | 4 | TXT | 2023/03/24 |
-| [GSE223218](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE223218) | Grf10 regulates the response to copper, iron, and phosphate in Candida albicans. | Candida albicans | 24 |  | 2023/03/20 |
-| [GSE223217](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE223217) | Differential gene expression in the grf10Δ mutant of Candida albicans in high co... | Candida albicans | 12 | CSV, XLSX | 2023/03/20 |
-| [GSE223216](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE223216) | Differential gene expression in the grf10Δ mutant of Candida albicans in rich gr... | Candida albicans | 12 | CSV, XLSX | 2023/03/20 |
 
-*...and 94 more datasets.*
+*...and 99 more datasets.*

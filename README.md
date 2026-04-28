@@ -134,7 +134,30 @@ You don't need a paid LLM subscription to query this index. The primary data sou
 
 The smaller shards (multiomics through ATAC-seq) can be uploaded directly to most AI tools. For ChIP-seq and RNA-seq, pre-filter with `grep` to get a manageable subset first.
 
-### Option A: Google NotebookLM (recommended)
+### Option A: Gemini CLI (recommended — best free option)
+
+[Gemini CLI](https://github.com/google-gemini/gemini-cli) is Google's open-source terminal agent, free with a Google account. It works like Claude Code — it can grep files on your machine directly and reason over the results — without a paid subscription.
+
+```bash
+# Install
+npm install -g @google/gemini-cli
+
+# Authenticate (one-time)
+gemini auth
+
+# Run from the repo root — Gemini CLI can grep the index and reason over results
+cd GEO_llm
+gemini
+```
+
+Then ask in plain English:
+> "Find mouse kidney snRNA-seq datasets that have processed H5 files and at least 5 samples"
+> "Which human PBMC CITE-seq datasets have both RNA and protein data available?"
+> "Compare the sample counts across all spatial transcriptomics datasets in zebrafish"
+
+Gemini CLI will grep the relevant search index shard, read the results, and interpret them — the same grep → LLM pattern this index is designed for. Gemini 2.5 Pro's 1M token context window means it can handle even the larger shards without pre-filtering.
+
+### Option C: Google NotebookLM
 
 [NotebookLM](https://notebooklm.google.com) is free with a Google account. Upload a shard as a source, then query in plain English.
 
@@ -153,7 +176,7 @@ The smaller shards (multiomics through ATAC-seq) can be uploaded directly to mos
 grep -i "mus musculus" wiki/search_index_rnaseq.txt | grep "single-nucleus" > mouse_snrnaseq.txt
 ```
 
-### Option B: Google Gemini (free tier — large context)
+### Option D: Google Gemini web (free tier — large context)
 
 Gemini's free tier supports a 1M token context window. For smaller shards, paste the file contents directly into the chat. For larger ones, pre-filter first.
 
@@ -166,11 +189,11 @@ Prompt pattern:
 > Here is a pipe-delimited index of GEO datasets (format: accession|modality|organism|n_samples|files|topics|title|keywords|flags). Find entries with processed H5 or RDS files and at least 5 samples:
 > [paste results]
 
-### Option C: Claude.ai or ChatGPT (free tier)
+### Option E: Claude.ai or ChatGPT (free tier)
 
 Both work well for querying pre-filtered subsets. Use `grep` to narrow to a few hundred lines, then paste into the chat with a brief description of the format.
 
-### Option D: Offline / local LLMs (free, private)
+### Option F: Offline / local LLMs (free, private)
 
 If you have [Ollama](https://ollama.com) installed:
 

@@ -1,19 +1,19 @@
 # Vibrio cholerae
 
-> 42 RNA-seq datasets | 2015/01/01 – 2026/04/08
+> 44 RNA-seq datasets | 2015/01/01 – 2026/04/27
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 39 |
+| bulk | 41 |
 | single-cell | 3 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| XLSX | 17 |
+| XLSX | 19 |
 | TXT | 12 |
 | TSV | 8 |
 | CSV | 4 |
@@ -28,6 +28,8 @@
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |
 |-----------|-------|----------|--------:|-----------------|------|
+| [GSE173505](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE173505) | Differential gene expression during biofilm dispersal by gluocse starvation | Vibrio cholerae | 4 | XLSX | 2026/04/25 |
+| [GSE173504](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE173504) | VbdR target identification | Vibrio cholerae | 6 | XLSX | 2026/04/25 |
 | [GSE307158](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE307158) | Single cell RNA-seq reveals that the Vibrio cholerae Mak toxins are required for... | Vibrio cholerae | 2 | MTX, TSV, TXT | 2025/12/31 |
 | [GSE311502](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE311502) | A 3’UTR-derived small RNA modulates the life-cycle of the cholera toxin-encoding... | Vibrio cholerae | 6 | XLSX | 2025/12/03 |
 | [GSE310654](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE310654) | A mutation mimicking post-translational acetylation of CRP at Lysine 52 creates ... | Vibrio cholerae | 42 | BED, TSV | 2025/11/28 |

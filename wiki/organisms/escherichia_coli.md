@@ -1,19 +1,19 @@
 # Escherichia coli
 
-> 296 RNA-seq datasets | 2015/01/01 – 2026/04/08
+> 297 RNA-seq datasets | 2015/01/01 – 2026/04/27
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 295 |
+| bulk | 296 |
 | single-cell | 1 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 132 |
+| TXT | 133 |
 | CSV | 73 |
 | XLSX | 55 |
 | TSV | 16 |
@@ -28,6 +28,7 @@
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |
 |-----------|-------|----------|--------:|-----------------|------|
+| [GSE327273](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327273) | Stepwise DNA unwinding gates TnpB genome-editing activity | Escherichia coli | 3 | BW, TXT | 2026/04/17 |
 | [GSE318057](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE318057) | Comparative Analysis of Alkyne- and Desthiobiotinylated Photoaffinity Probes for... | Escherichia coli | 15 | CSV | 2026/03/18 |
 | [GSE319278](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE319278) | Abrogation of SOS mutagenesis by the E. coli OxyR oxidative stress response | Escherichia coli | 12 | TXT | 2026/03/16 |
 | [GSE324174](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE324174) | SbmC limits the mutation rate of Escherichia coli | Escherichia coli | 3 | WIG | 2026/03/11 |
@@ -77,6 +78,5 @@
 | [GSE277048](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE277048) | Chemotranscriptomic Profiling with a Thiamine Monophosphate Photoaffinity Probe | Escherichia coli | 6 | TXT | 2025/02/17 |
 | [GSE273773](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE273773) | Acclimation of the Escherichia coli transcriptome after 10 hours of incubation i... | Escherichia coli | 6 | CSV, TXT | 2025/01/08 |
 | [GSE252441](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE252441) | Antimicrobial action of t-cinnamaldehyde on Escherichia coli MG1655 | Escherichia coli | 12 | XLSX | 2025/01/03 |
-| [GSE284789](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE284789) | A Noncanonical Intrinsic Terminator in the HicAB Toxin‒Antitoxin Operon Promotes... | Escherichia coli | 3 | TXT | 2024/12/25 |
 
-*...and 246 more datasets.*
+*...and 247 more datasets.*

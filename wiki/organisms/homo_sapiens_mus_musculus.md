@@ -1,35 +1,48 @@
 # Homo sapiens; Mus musculus
 
-> 1643 RNA-seq datasets | 2015/01/01 – 2026/04/08
+> 1656 RNA-seq datasets | 2015/01/01 – 2026/04/27
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 1137 |
-| single-cell | 461 |
+| bulk | 1142 |
+| single-cell | 467 |
+| single-nucleus | 24 |
 | spatial | 23 |
-| single-nucleus | 22 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 682 |
-| TSV | 361 |
-| CSV | 270 |
-| MTX | 238 |
-| BW | 220 |
+| TXT | 686 |
+| TSV | 365 |
+| CSV | 275 |
+| MTX | 242 |
+| BW | 224 |
 | BED | 137 |
-| XLSX | 120 |
-| H5 | 89 |
-| NARROWPEAK | 61 |
+| XLSX | 121 |
+| H5 | 92 |
+| NARROWPEAK | 62 |
 | BEDGRAPH | 59 |
 
 ## Recent Datasets
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |
 |-----------|-------|----------|--------:|-----------------|------|
+| [GSE303466](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE303466) | CD24+ human dental papilla cells as translational seed cells for dentin-pulp reg... | Homo sapiens; Mus musculus | 12 | TXT | 2026/04/26 |
+| [GSE289193](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE289193) | Histone H4 lysine 20 tri-methylation safeguards breast cancer lineage fidelity a... | Homo sapiens; Mus musculus | 160 | BW, MTX, TSV | 2026/04/26 |
+| [GSE294573](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE294573) | HNF4a controls growth, identity and response to KRAS inhibition in IMA. | Homo sapiens; Mus musculus | 60 | BW, H5 | 2026/04/23 |
+| [GSE276680](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE276680) | Comprehensive Molecular and Functional Analysis of NUTM1-Rearranged Leukemia | Homo sapiens; Mus musculus | 62 | BIGWIG, BW, IDAT, NARROWPEAK | 2026/04/22 |
+| [GSE324714](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE324714) | Acquired genetic and cell state changes in IDH-mutant glioma progression [cocult... | Homo sapiens; Mus musculus | 16 | MTX, TSV | 2026/04/20 |
+| [GSE294355](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE294355) | Dual function of DOT1L suppresses tumor intrinsic immunogenicity in Hepatocellul... | Homo sapiens; Mus musculus | 36 | TXT | 2026/04/16 |
+| [GSE284443](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE284443) | L1CAM generates SOX2+ metastatic progenitors through planar cell polarity signal... | Homo sapiens; Mus musculus | 6 | BW, CSV | 2026/04/16 |
+| [GSE300551](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE300551) | Massively multiplex multi-modal chemical screens at single-cell resolution with ... | Homo sapiens; Mus musculus | 25 | CSV, H5, MTX, TXT, XLS | 2026/04/14 |
+| [GSE303593](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE303593) | Ki-67 promotes circulating tumor cell intravasation and metastasis in breast can... | Homo sapiens; Mus musculus | 20 | MTX, TSV | 2026/04/13 |
+| [GSE289991](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE289991) | Persistent dopamine-dependent remodeling of the neural transcriptome in response... | Homo sapiens; Mus musculus | 294 | CSV | 2026/04/13 |
+| [GSE302307](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE302307) | PP2A Regulates Senescence and Immunogenicity in Medulloblastoma | Homo sapiens; Mus musculus | 24 | CSV, TXT, XLSX | 2026/04/11 |
+| [GSE327614](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327614) | Early cell autonomous and niche-mediated alveolar epithelial response to influen... | Homo sapiens; Mus musculus | 24 | H5, RDS, TSV | 2026/04/10 |
+| [GSE324859](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE324859) | TRIM5 integrates hypoglycemic stress and influenza infection | Homo sapiens; Mus musculus | 24 | CSV | 2026/04/10 |
 | [GSE326853](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326853) | Transcriptome analysis of treated and control samples from bladder carcinoma | Homo sapiens; Mus musculus | 18 | CSV, TSV | 2026/04/07 |
 | [GSE326194](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326194) | Distinct signalling centre and progenitor identity dynamics initiate human foreb... | Homo sapiens; Mus musculus | 16 | H5 | 2026/04/01 |
 | [GSE318290](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE318290) | Identification of conserved mecciRNAs | Homo sapiens; Mus musculus | 2 | TXT | 2026/04/01 |
@@ -67,18 +80,5 @@
 | [GSE287347](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE287347) | MafB is a conserved transcriptional regulator of macrophage development and iden... | Homo sapiens; Mus musculus | 57 | BEDGRAPH, MTX, TSV | 2026/02/25 |
 | [GSE282726](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE282726) | FOXA1 loss induces aggressive prostate cancer via unleashing basal/squamous de-d... | Homo sapiens; Mus musculus | 25 | BED, BW, CSV, H5, JSON, MTX, PNG, TAR, TSV | 2026/02/21 |
 | [GSE287688](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE287688) | Sex-specific KDM6A-HNF4A-CREBH network controls lipoprotein cholesterol metaboli... | Homo sapiens; Mus musculus | 68 | TXT | 2026/02/19 |
-| [GSE282283](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE282283) | YAP activation reverses aging-related visual dysfunction caused by impaired cell... | Homo sapiens; Mus musculus | 15 | MTX, TSV, TXT | 2026/02/19 |
-| [GSE256101](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE256101) | Mechanisms linking cytoplasmic decay of translation-defective mRNA to transcript... | Homo sapiens; Mus musculus | 53 | BEDGRAPH | 2026/02/18 |
-| [GSE312574](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE312574) | Unbalanced chromatin binding of Polycomb complexes drives neurodevelopmental dis... | Homo sapiens; Mus musculus | 179 | BIGWIG, BW, MTX, RDS, TSV | 2026/02/17 |
-| [GSE319486](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE319486) | Histone methyl-transferase G9a inhibition boosts the efficacy of immune checkpoi... | Homo sapiens; Mus musculus | 18 | TXT | 2026/02/16 |
-| [GSE287770](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE287770) | Simultaneous profiling of native-state proteomes and transcriptomes of brain cel... | Homo sapiens; Mus musculus | 74 | TXT | 2026/02/16 |
-| [GSE298435](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE298435) | Transcriptomic Characterization of Liver Tissue Changes in Human and Mice with A... | Homo sapiens; Mus musculus | 76 | TXT | 2026/02/13 |
-| [GSE310451](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE310451) | Independent control of neurogenesis and dorsoventral patterning by NKX2-2 | Homo sapiens; Mus musculus | 26 | NARROWPEAK, TXT | 2026/02/11 |
-| [GSE281781](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE281781) | MYC binding to nascent RNA suppresses innate immune signaling by R-loop-derived ... | Homo sapiens; Mus musculus | 186 | BEDGRAPH, BW | 2026/02/06 |
-| [GSE293298](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE293298) | Expression of synaptic function genes in iPSC-derived induced human neurons | Homo sapiens; Mus musculus | 2 | TSV | 2026/02/04 |
-| [GSE312133](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE312133) | Intrinsic mechanisms and microenvironmental cues fine-tune plasticity of esophag... | Homo sapiens; Mus musculus | 26 | H5 | 2026/02/03 |
-| [GSE314854](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE314854) | Targeting Modulated Vascular Smooth Muscle Cells in Atherosclerosis via FAP-Dire... | Homo sapiens; Mus musculus | 102 | CSV, JPG, JSON, MTX, PARQUET, PNG, RDS, TIFF, TSV | 2026/02/02 |
-| [GSE315130](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE315130) | Differential mRNA expression analysis of multiple human and mouse pancreatic can... | Homo sapiens; Mus musculus | 67 | TXT, XLSX | 2026/01/31 |
-| [GSE310202](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE310202) | Linezolid prevents fibroblast activation and ameliorates tissue fibrosis by inhi... | Homo sapiens; Mus musculus | 36 | TABULAR, TXT | 2026/01/29 |
 
-*...and 1593 more datasets.*
+*...and 1606 more datasets.*

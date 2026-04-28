@@ -1,57 +1,57 @@
 # Reproductive Biology
 
-> 6877 RNA-seq datasets | 2015/01/01 – 2026/04/08
+> 6937 RNA-seq datasets | 2015/01/01 – 2026/04/27
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 5557 |
-| single-cell | 1188 |
-| single-nucleus | 79 |
-| spatial | 53 |
+| bulk | 5605 |
+| single-cell | 1198 |
+| single-nucleus | 80 |
+| spatial | 54 |
 
 ## Organism Distribution
 
 | Organism | Count |
 |----------|------:|
-| Mus musculus | 2709 |
-| Homo sapiens | 2264 |
+| Mus musculus | 2731 |
+| Homo sapiens | 2292 |
 | Bos taurus | 188 |
 | Drosophila melanogaster | 164 |
 | Sus scrofa | 139 |
-| Rattus norvegicus | 116 |
+| Rattus norvegicus | 119 |
 | Arabidopsis thaliana | 104 |
 | Caenorhabditis elegans | 95 |
 | Ovis aries | 63 |
-| Gallus gallus | 55 |
+| Homo sapiens; Mus musculus | 56 |
 
 ## Related Topics
 
 | Topic | Co-occurring Datasets |
 |-------|---------------------:|
-| [Development & Differentiation](development.md) | 4138 |
-| [Cancer](cancer.md) | 1660 |
-| [Signal Transduction](signal_transduction.md) | 1309 |
-| [Cell Stress & Homeostasis](cell_stress.md) | 1258 |
-| [Immunology](immunology.md) | 1223 |
-| [Epigenetics & Chromatin](epigenetics.md) | 1191 |
-| [Plant Biology](plant_biology.md) | 1187 |
-| [Metabolism & Metabolic Disease](metabolism.md) | 831 |
-| [RNA Biology & Regulation](rna_biology.md) | 824 |
-| [Gene Regulation & Transcription](gene_regulation.md) | 655 |
+| [Development & Differentiation](development.md) | 4166 |
+| [Cancer](cancer.md) | 1675 |
+| [Signal Transduction](signal_transduction.md) | 1324 |
+| [Cell Stress & Homeostasis](cell_stress.md) | 1269 |
+| [Immunology](immunology.md) | 1240 |
+| [Epigenetics & Chromatin](epigenetics.md) | 1197 |
+| [Plant Biology](plant_biology.md) | 1195 |
+| [Metabolism & Metabolic Disease](metabolism.md) | 845 |
+| [RNA Biology & Regulation](rna_biology.md) | 828 |
+| [Gene Regulation & Transcription](gene_regulation.md) | 658 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 3484 |
-| CSV | 1074 |
-| TSV | 1033 |
-| XLSX | 856 |
-| MTX | 606 |
-| BW | 369 |
-| XLS | 201 |
+| TXT | 3500 |
+| CSV | 1090 |
+| TSV | 1046 |
+| XLSX | 867 |
+| MTX | 611 |
+| BW | 370 |
+| XLS | 203 |
 | BED | 131 |
 | H5 | 126 |
 | BIGWIG | 105 |
@@ -60,55 +60,55 @@
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |
 |-----------|-------|----------|--------:|-----------------|------|
-| [GSE310627](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE310627) | Menstrual Fluid-Derived Small Extracellular Vesicles: A Novel Reservoir with Dis... | Homo sapiens | 6 | TXT | 2026/04/08 |
-| [GSE326820](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326820) | ChREBPα: A Central Metabolic Sensor Driving Lipid Droplet Renewal in Preimplanta... | Mus musculus | 6 | TXT | 2026/04/07 |
-| [GSE325635](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325635) | Antiretroviral therapy during development impairs cardiac reverse remodeling in ... | Rattus norvegicus | 107 | TXT | 2026/04/07 |
-| [GSE325173](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325173) | Antiretroviral therapy in the peripartum period impairs post pregnancy cardiac r... | Rattus norvegicus | 54 | TXT | 2026/04/07 |
-| [GSE311960](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE311960) | tRF and tiRNA Sequencing | Mus musculus | 12 | XLSX | 2026/04/07 |
-| [GSE301179](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE301179) | Bulk RNA sequencing of ovarian tumor samples from high-grade serous ovarian canc... | Homo sapiens | 4 | TSV | 2026/04/07 |
-| [GSE324222](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE324222) | Enhanced endocrine–metabolic support and axonemal assembly in high-sperm-motilit... | Anser cygnoides | 6 | MTX, TSV | 2026/04/06 |
-| [GSE318563](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE318563) | Expression of Atg8a in Somatic Follicle Cells Prevents Age-Associated Decline in... | Drosophila melanogaster | 2 | MTX, TSV | 2026/04/06 |
-| [GSE291273](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE291273) | The placentalia specific histone H3.4 promotes germ cell development and reprodu... | Mus musculus | 126 | BW | 2026/04/06 |
-| [GSE291274](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE291274) | The placentalia specific histone H3.4 promotes germ cell development and reprodu... | Mus musculus | 167 | BW | 2026/04/05 |
-| [GSE326368](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326368) | Zona-pellucida-inspired cellular microenvironment induces the formation of human... | Homo sapiens | 6 | CSV | 2026/04/04 |
-| [GSE326372](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326372) | Refining NOA diagnosis: a dual approach through immunostaining subclassification... | Homo sapiens | 5 | MTX, TSV | 2026/04/03 |
-| [GSE301378](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE301378) | Single-cell RNA-seq and TCR profiling of tissue-resident memory T cells in the f... | Homo sapiens | 32 | CSV, MTX, TSV | 2026/04/03 |
-| [GSE294696](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE294696) | RBMXL3 drives transcriptome changes in human TCam-2 cells (RNA-seq data) | Homo sapiens | 6 | TXT | 2026/04/03 |
-| [GSE322639](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE322639) | C-type natriuretic peptide pre-maturation culture affects cytoplasmic maturation... | Bos taurus | 29 | CSV | 2026/04/02 |
-| [GSE324206](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE324206) | Spatially-Resolved Multiomic Atlas of Leiomyosarcoma Identifies Two Clinically R... | Homo sapiens | 32 | CSV, H5, TBI, TSV, TXT | 2026/04/01 |
-| [GSE319525](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE319525) | Prolactin receptor signaling mediates beta-cell epigenetic adaptations to promot... | Mus musculus | 6 | CSV, TXT | 2026/04/01 |
-| [GSE316086](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE316086) | Heterogeneity in Inflammatory Responses to Endotoxin at the Feto-Maternal Interf... | Homo sapiens | 12 | TXT | 2026/04/01 |
-| [GSE309241](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE309241) | Stromal Erbb3 shapes uterine gland morphogenesis | Mus musculus | 2 | MTX, TSV | 2026/04/01 |
-| [GSE309147](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE309147) | Stromal Erbb3 shapes uterine gland morphogenesis [RNA-seq] | Mus musculus | 8 | TXT | 2026/04/01 |
-| [GSE298544](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE298544) | Persistent dopamine-dependent remodeling of the neural transcriptome in response... | Homo sapiens; Mus musculus | 397 | BW, MTX, TSV | 2026/04/01 |
-| [GSE294280](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE294280) | hnRNPL-orchestrated alternative splicing governs germ cell integrity and primord... | Mus musculus | 6 | TXT | 2026/04/01 |
-| [GSE292237](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE292237) | H2AK119ub1 counteracts MLL2 functions to direct heritable H3K27me3 formation in ... | Mus musculus | 43 | BIGWIG, TXT | 2026/04/01 |
-| [GSE282495](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE282495) | Compressive Force Induces Differential Gene Expression in Uterine Fibroids | Homo sapiens | 20 | CSV | 2026/04/01 |
-| [GSE246098](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE246098) | p27kip1-dependent gene activity within pregranulosa cells implicates pathways re... | Mus musculus | 29 | TXT | 2026/04/01 |
-| [GSE229859](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE229859) | mRNA sequencing in mouse trophoblast stem cells (mTSCs) with and without knockdo... | Mus musculus | 6 | TXT | 2026/04/01 |
-| [GSE323347](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE323347) | Addressing transcriptomic assay heterogeneity for predictive modeling in cancer ... | Homo sapiens | 26 | TXT | 2026/03/31 |
-| [GSE318121](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE318121) | Single-cell transcriptomics reveals the long-term high-fat diet impairs male rep... | Mus musculus | 2 | MTX, TSV | 2026/03/31 |
-| [GSE315189](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE315189) | The effects of oleic acid diet on ovarian cancer tumor growth in murine xenograf... | Mus musculus | 7 | TXT | 2026/03/31 |
-| [GSE313468](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE313468) | RNASeq profiliting of spermatogonia from Wt and Sirt7-/- mice | Mus musculus | 4 | XLSX | 2026/03/31 |
-| [GSE311763](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE311763) | Ccdc117 deficiency triggers compensatory hyperandrogenism to sustain spermatogen... | Mus musculus | 6 | TXT | 2026/03/31 |
-| [GSE310582](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE310582) | MEX3A control of mitochondrial fitness is essential for ovarian clear cell carci... | Homo sapiens | 6 | TXT | 2026/03/31 |
-| [GSE303893](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE303893) | Single-nuclus RNA sequencing of stem cell-derived human trophoblast organoids cu... | Homo sapiens | 1 | MTX, TSV | 2026/03/31 |
-| [GSE299387](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE299387) | Comparative transcriptomics reveals emergent cortical architecture and plasticit... | Monodelphis domestica | 2 | MTX, TSV | 2026/03/31 |
-| [GSE296277](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE296277) | Distinct tissue niches contribute to prostate TRM cell differentiation and heter... | Mus musculus | 2 | H5AD | 2026/03/31 |
-| [GSE296276](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE296276) | Distinct tissue niches contribute to prostate TRM cell differentiation and heter... | Mus musculus | 12 | CSV | 2026/03/31 |
-| [GSE285194](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE285194) | Oocyte transcriptome changes in E18.5 Taf4b-deficient female mice | Mus musculus | 15 | CSV | 2026/03/31 |
-| [GSE275654](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE275654) | Inhibition of salt inducible kinases reprograms T cells and antitumor immunity i... | Mus musculus | 4 | MTX, TSV, TXT | 2026/03/31 |
-| [GSE273961](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE273961) | Inhibition of salt inducible kinases reprograms T cells and antitumor immunity i... | Mus musculus | 9 | TXT | 2026/03/31 |
-| [GSE313802](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE313802) | Identification of  Therapeutic Targets for Low-Grade Serous Ovarian Carcinoma | Homo sapiens | 28 | CSV | 2026/03/30 |
-| [GSE294616](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE294616) | Single-cell RNA sequencing of leukocytes at the maternal-fetal interface in psyh... | Mus musculus | 4 | H5 | 2026/03/30 |
-| [GSE325548](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325548) | Time-resolved transcriptomic profiling of surgical wounds identifies stage-speci... | Mus musculus | 48 | TXT | 2026/03/27 |
-| [GSE311483](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE311483) | BAP1 dysregulation impairs trophoblast differentiation and contributes to placen... | Homo sapiens | 32 | TXT | 2026/03/27 |
-| [GSE324927](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE324927) | Syncytin-a deficiency compromises murine sperm function by suppressing PRL/PGE2 ... | Mus musculus | 6 | TXT | 2026/03/26 |
-| [GSE313141](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE313141) | Single-Cell Transcriptomics Reveals the Characteristics of Bone Marrow Cellular ... | Mus musculus | 2 | MTX, TSV | 2026/03/26 |
-| [GSE325586](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325586) | Single-nucleus RNA-seq of mouse cortex during mid-gestation pregnancy | Mus musculus | 4 | MTX, TSV | 2026/03/25 |
-| [GSE325553](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325553) | Comparative transcriptomic profiling of human 3D endometrial stromal organoids u... | Homo sapiens | 20 | CSV | 2026/03/25 |
-| [GSE306887](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE306887) | FABP4 Contributes to Preeclampsia Through Dysregulating Lipid Metabolism and Ind... | Homo sapiens | 6 | XLSX | 2026/03/25 |
-| [GSE302877](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE302877) | Milk Fat Globule EGF and Factor V/VIII Domain Containing (MFGE8) as a Novel Play... | Equus caballus | 3 | MTX, TSV | 2026/03/25 |
-| [GSE262636](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE262636) | Histone Variant H2A.J is a Key Epigenetic Regulator in Human Trophoblast Develop... | Homo sapiens | 58 | MTX, TSV | 2026/03/25 |
+| [GSE328704](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328704) | MERVL-driven Pcgf5 plays a critical role in the suppression of zygotic genome ac... | Mus musculus | 20 | BW, RESULTS | 2026/04/27 |
+| [GSE327790](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327790) | PDHA1 Crotonylation Is Essential for Endometrial Metabolic Reprogramming and Dec... | Homo sapiens | 6 | CSV | 2026/04/27 |
+| [GSE328626](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328626) | Transcriptome Analysis of Palmitic Acid-treated Human Primary Hair Follicle Stem... | Homo sapiens | 6 | CSV | 2026/04/26 |
+| [GSE295682](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE295682) | Prevotella disiens Disrupts Endometrial Function via p38 MAPK-Mediated WNT Inhib... | Homo sapiens | 12 | XLS | 2026/04/25 |
+| [GSE239936](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE239936) | Formation mechanism of agar-like zona pellucida and its adverse effects on human... | Homo sapiens | 18 | CSV, DOCX, XLS | 2026/04/25 |
+| [GSE328488](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328488) | Bioinformatics analysis of BARX1 as a novel omental metastasis biomarker in high... | Homo sapiens | 23 | TXT | 2026/04/24 |
+| [GSE325162](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325162) | Gut microbiota-modulated glutamic acid rejuvenates the quality of oocytes deteri... | Mus musculus | 69 |  | 2026/04/24 |
+| [GSE325001](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325001) | Gut microbiota-modulated glutamic acid rejuvenates the quality of oocytes deteri... | Mus musculus | 20 | XLSX | 2026/04/24 |
+| [GSE290574](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE290574) | Gene Regulatory Networks Orchestrating Oocyte Fate Bifurcation in Primordial Fol... | Mus musculus | 386 | TXT | 2026/04/24 |
+| [GSE266290](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE266290) | Integrating Epigenetics, Proteomics, and Metabolomics to Reveal the Involvement ... | Homo sapiens | 12 | CSV | 2026/04/24 |
+| [GSE328508](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328508) | High-throughout sequencing of ovarian cancer cells treated with T-oligo | Homo sapiens | 6 | XLSX | 2026/04/23 |
+| [GSE325788](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325788) | Pregnancy precipitates metabolic imbalance and accelerates death in an animal mo... | Mus musculus | 30 | TXT | 2026/04/22 |
+| [GSE320157](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE320157) | Ovarian Tumor FAK Inhibition Releases Omega-3 Fatty Acids Stimulating GATA6 Peri... | Mus musculus | 5 | CSV | 2026/04/22 |
+| [GSE318472](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE318472) | Restoration of Spermatogenesis is Dependent on Activation of a SPRY4-ERK Checkpo... | Mus musculus | 16 | CSV | 2026/04/22 |
+| [GSE316442](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE316442) | Novel driver gene MDC1 confers homologous recombination repair deficiency and ge... | Homo sapiens | 8 | CSV | 2026/04/22 |
+| [GSE311418](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE311418) | Male voles Arvicola terrestris scherman escaping to seasonal breeding: an exampl... | Microtus ochrogaster | 34 | TXT | 2026/04/22 |
+| [GSE308795](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE308795) | Synergistic blockade of cyclophilin A and pathogenic immunity minimizes pregnanc... | Mus musculus | 9 | TXT | 2026/04/22 |
+| [GSE307832](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE307832) | DEVELOPMENTAL LANDMARKS AND CELLULAR TRANSITIONS DURING EXTRAVILLOUS TROPHOBLAST... | Homo sapiens | 11 | XLSX | 2026/04/22 |
+| [GSE307761](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE307761) | DEVELOPMENTAL LANDMARKS AND CELLULAR TRANSITIONS DURING EXTRAVILLOUS TROPHOBLAST... | Homo sapiens | 18 | CSV | 2026/04/22 |
+| [GSE307759](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE307759) | DEVELOPMENTAL LANDMARKS AND CELLULAR TRANSITIONS DURING EXTRAVILLOUS TROPHOBLAST... | Homo sapiens | 12 | CSV | 2026/04/22 |
+| [GSE300618](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE300618) | Sperm lacking Protamine 2 fail to support normal fertilization and embryogenesis... | Mus musculus | 2 | MTX, TSV | 2026/04/22 |
+| [GSE263213](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE263213) | Species-specific gene utilization in the regulation of hemochorial placentation ... | Rattus norvegicus | 6 | TSV | 2026/04/22 |
+| [GSE263212](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE263212) | Species-specific gene utilization in the regulation of hemochorial placentation ... | Homo sapiens | 6 | TSV | 2026/04/22 |
+| [GSE263211](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE263211) | Species-specific gene utilization in the regulation of hemochorial placentation ... | Rattus norvegicus | 10 | TSV | 2026/04/22 |
+| [GSE263209](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE263209) | Species-specific gene utilization in the regulation of hemochorial placentation ... | Rattus norvegicus | 9 | TSV | 2026/04/22 |
+| [GSE263207](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE263207) | Species-specific gene utilization in the regulation of hemochorial placentation ... | Homo sapiens | 6 | TSV | 2026/04/22 |
+| [GSE263205](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE263205) | Species-specific gene utilization in the regulation of hemochorial placentation ... | Homo sapiens | 6 | TSV | 2026/04/22 |
+| [GSE206024](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE206024) | Gene expression profile at single cell level of testicular cells from the adult ... | Danio rerio | 4 | MTX, TSV | 2026/04/22 |
+| [GSE300656](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE300656) | Expression data of neonatal brain from male intra-cytoplasmic sperm injection(IC... | Mus musculus | 8 | XLSX | 2026/04/21 |
+| [GSE300655](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE300655) | Expression data of E13.5 placenta from intra-cytoplasmic sperm injection(ICSI)-F... | Mus musculus | 10 | XLSX | 2026/04/21 |
+| [GSE300654](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE300654) | Expression data of E19.5 placenta from intra-cytoplasmic sperm injection(ICSI)-F... | Mus musculus | 12 | XLSX | 2026/04/21 |
+| [GSE295220](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE295220) | FABP4 Mediated Fatty Acid Transport Promotes Proliferation and Survival of Plati... | Homo sapiens | 15 | TXT | 2026/04/21 |
+| [GSE294457](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE294457) | TCA cycle rewiring underpins histone acetylation sourcing and cell-fate transiti... | Mus musculus | 12 | TSV | 2026/04/21 |
+| [GSE230562](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE230562) | Anti-epileptic drugs are endocrine disruptors for the human fetal testis ex vivo... | Homo sapiens | 12 | DAT | 2026/04/21 |
+| [GSE324772](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE324772) | Single-cell atlas of black rockfish (Sebastes schlegelii) ovarian stroma across ... | Sebastes schlegelii | 3 | MTX, TSV | 2026/04/19 |
+| [GSE320433](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE320433) | Cisplatin resistance in an ovarian cancer model is mediated by the microtubule d... | Homo sapiens | 9 | TXT | 2026/04/17 |
+| [GSE286909](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE286909) | Progesterone receptor (PGR)-mediated transcriptional networks in human ovulatory... | Homo sapiens | 12 | XLSX | 2026/04/17 |
+| [GSE172276](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE172276) | Ovarian transcriptomic profiling of fitness-related genes in F4 inbred mice and ... | Mus musculus | 6 | TXT | 2026/04/16 |
+| [GSE327068](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327068) | Individualised Treatment Approach for Advanced Meningeal Metastases: A Case Stud... | Homo sapiens | 1 | TXT | 2026/04/15 |
+| [GSE326887](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326887) | An Isoform-resolved Single-cell Atlas of the Murine Placenta: Gestational Dynami... | Mus musculus | 5 | H5MU | 2026/04/15 |
+| [GSE318865](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE318865) | Placental gene signatures associated with high neonatal adiposity: role for immu... | Homo sapiens | 79 | CSV | 2026/04/15 |
+| [GSE317627](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE317627) | Telomere interacting proteins Tert and Terb1 regulate meiotic progression in zeb... | Danio rerio | 15 | CSV, TAR | 2026/04/15 |
+| [GSE307299](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE307299) | BOLL-containing Aggregate Mediates Translational Regulation During Human Oogenes... | Homo sapiens | 14 | CSV, TXT | 2026/04/15 |
+| [GSE285362](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE285362) | Identification of Cryosensitive Niches and a Targetable FOS/AP‑1 Program in the ... | Homo sapiens | 7 | MTX, TSV | 2026/04/15 |
+| [GSE277812](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE277812) | Transcriptional footprints associated with bud fertility in grapevine (Vitis vin... | Vitis vinifera | 27 | TXT | 2026/04/15 |
+| [GSE327567](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327567) | Heat shock factor 5 is indispensable for pachynema progression and LINE1 silenci... | Mus musculus | 4 | TXT | 2026/04/14 |
+| [GSE327514](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327514) | High-throughout sequencing of ovarian cancer cells treated with YY-15 | Homo sapiens | 4 | XLSX | 2026/04/14 |
+| [GSE327285](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327285) | Human Chondrocyte Dedifferentiation Bulk RNA-Seq | Homo sapiens | 12 | CSV | 2026/04/14 |
+| [GSE325314](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325314) | Miniaturisation of duckweeds occurred through compression of the angiosperm body... | Spirodela polyrhiza; Colocasia esculenta; Lemna minor | 51 | CSV | 2026/04/14 |
+| [GSE294587](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE294587) | Molecular disruptions to the future fetal tissue lineage are associated with del... | Homo sapiens | 40 | TXT | 2026/04/14 |
 
-*...and 6827 more datasets.*
+*...and 6887 more datasets.*

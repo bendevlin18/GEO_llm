@@ -1,6 +1,6 @@
 # Sorghum bicolor
 
-> 39 RNA-seq datasets | 2015/01/01 – 2026/04/08
+> 39 RNA-seq datasets | 2015/01/01 – 2026/04/27
 
 ## Modality Breakdown
 

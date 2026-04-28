@@ -1,19 +1,19 @@
 # Neurospora crassa
 
-> 74 RNA-seq datasets | 2015/01/01 – 2026/04/08
+> 75 RNA-seq datasets | 2015/01/01 – 2026/04/27
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 73 |
+| bulk | 74 |
 | single-cell | 1 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 55 |
+| TXT | 56 |
 | XLSX | 13 |
 | CSV | 10 |
 | TDF | 8 |
@@ -28,6 +28,7 @@
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |
 |-----------|-------|----------|--------:|-----------------|------|
+| [GSE328637](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328637) | The GET Pathway Modulates Azole Susceptibility through Sterol Metabolic Remodeli... | Neurospora crassa | 18 | TXT | 2026/04/23 |
 | [GSE314682](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE314682) | Chromatin Assembly Factor 1 is Required for Normal Gene Repression and Facultati... | Neurospora crassa | 6 | BW, TXT | 2025/12/26 |
 | [GSE311794](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE311794) | Functional screening of transmembrane proteins identifies dolichyl pyrophosphate... | Neurospora crassa | 18 | XLS | 2025/12/02 |
 | [GSE282317](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE282317) | Circadian clock control of ribosome composition promotes rhythmic  translation a... | Neurospora crassa | 20 | TXT | 2025/10/26 |
@@ -77,6 +78,5 @@
 | [GSE108814](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE108814) | RNA-seq analysis of cry vvd wc-1 triple knockout(△cry,△vvd,△wc-1) strain in the ... | Neurospora crassa | 6 | TXT | 2019/01/05 |
 | [GSE123783](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE123783) | The Neurospora crassa VE-1/VE-2/LAE-1 velvet complex controls development, secon... | Neurospora crassa | 8 | TXT, XLSX | 2018/12/14 |
 | [GSE121356](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE121356) | Context dependent Histone H3 Lysine 4 methylation is necessary for repression an... | Neurospora crassa | 32 |  | 2018/11/30 |
-| [GSE121353](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE121353) | Context dependent Histone H3 Lysine 4 methylation is necessary for repression an... | Neurospora crassa | 12 | FPKM_TRACKING, GTF | 2018/11/30 |
 
-*...and 24 more datasets.*
+*...and 25 more datasets.*

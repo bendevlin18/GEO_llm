@@ -1,13 +1,13 @@
 # Mus musculus; Homo sapiens
 
-> 971 RNA-seq datasets | 2015/01/01 – 2026/04/08
+> 976 RNA-seq datasets | 2015/01/01 – 2026/04/27
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 690 |
-| single-cell | 256 |
+| bulk | 694 |
+| single-cell | 257 |
 | single-nucleus | 16 |
 | spatial | 9 |
 
@@ -15,10 +15,10 @@
 
 | Type | Count |
 |------|------:|
-| TXT | 372 |
+| TXT | 375 |
 | TSV | 206 |
 | BW | 165 |
-| CSV | 156 |
+| CSV | 158 |
 | MTX | 145 |
 | BED | 78 |
 | XLSX | 67 |
@@ -30,6 +30,11 @@
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |
 |-----------|-------|----------|--------:|-----------------|------|
+| [GSE320585](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE320585) | Interleukin-27 remodels the bone marrow niche to suppress B-cell development and... | Mus musculus; Homo sapiens | 20 | CSV | 2026/04/22 |
+| [GSE308503](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE308503) | The transcriptomic profile of the naïve or CpG-stimulated Rfx7-deficient mouse F... | Mus musculus; Homo sapiens | 29 | TXT | 2026/04/15 |
+| [GSE303496](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE303496) | Ki-67 promotes circulating tumor cell intravasation and metastasis in breast can... | Mus musculus; Homo sapiens | 18 | TXT | 2026/04/13 |
+| [GSE316054](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE316054) | Targeting the ADAR1 p150 isoform triggers tumor growth inhibition and antitumor ... | Mus musculus; Homo sapiens | 52 | CSV | 2026/04/12 |
+| [GSE324679](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE324679) | Characterize the effects of L. asaccharolyticus on autistic-like symptoms | Mus musculus; Homo sapiens | 51 | TXT | 2026/04/10 |
 | [GSE294051](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE294051) | SWI/SNF Remodeling Complexes Regulate 3D Chromatin Architecture by Antagonizing ... | Mus musculus; Homo sapiens | 188 | COOL, NARROWPEAK, RDS, TSV, TXT | 2026/04/06 |
 | [GSE291229](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE291229) | Reducing batch effects in single cell chromatin accessibility measurements by po... | Mus musculus; Homo sapiens | 19 | H5, RDS, TSV | 2026/03/31 |
 | [GSE249981](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE249981) | Non-canonical PRC1.1 licenses transcriptional response to enable Treg plasticity... | Mus musculus; Homo sapiens | 70 | BW | 2026/03/31 |
@@ -75,10 +80,5 @@
 | [GSE228550](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE228550) | Reversing myeloid-derived suppressor cells mediated immunosuppression via p38α i... | Mus musculus; Homo sapiens | 12 | TXT | 2025/12/02 |
 | [GSE310371](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE310371) | Combining Spironolactone to Antiretroviral Therapy Accelerates HIV Decay in Huma... | Mus musculus; Homo sapiens | 39 | TXT | 2025/12/01 |
 | [GSE282171](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE282171) | Depression and Anxiety-Induced Metabolic Reprogramming Promotes Hepatocellular C... | Mus musculus; Homo sapiens | 28 | BW, TSV, TXT, XLS, XLSX | 2025/12/01 |
-| [GSE252237](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE252237) | A myeloid trisomy 21-associated gene variant is protective from Alzheimer’s dise... | Mus musculus; Homo sapiens | 7 | MTX, TSV | 2025/11/24 |
-| [GSE284742](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE284742) | Injured epithelial cell states impact kidney allograft survival after T-cell-med... | Mus musculus; Homo sapiens | 21 | MTX, TIFF, TSV, ZIP | 2025/11/21 |
-| [GSE303870](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE303870) | A tumor-associated macrophage-targeted immunocytokine leveraging T and NK cell s... | Mus musculus; Homo sapiens | 223 | MTX, TSV, TXT | 2025/11/19 |
-| [GSE304029](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE304029) | BRD2 Bromodomain-Mediated Regulation of Cell State Plasticity Modulates Therapy ... | Mus musculus; Homo sapiens | 56 | TXT | 2025/11/17 |
-| [GSE270064](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE270064) | In vivo intratumoral Heterogeneity in a dish: Scalable Forebrain Organoid Models... | Mus musculus; Homo sapiens | 0 |  | 2025/11/13 |
 
-*...and 921 more datasets.*
+*...and 926 more datasets.*

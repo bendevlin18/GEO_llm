@@ -1,114 +1,114 @@
 # Neuroscience
 
-> 19903 RNA-seq datasets | 2015/01/01 – 2026/04/08
+> 20075 RNA-seq datasets | 2015/01/01 – 2026/04/27
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 14245 |
-| single-cell | 4501 |
-| single-nucleus | 903 |
-| spatial | 254 |
+| bulk | 14358 |
+| single-cell | 4539 |
+| single-nucleus | 917 |
+| spatial | 261 |
 
 ## Organism Distribution
 
 | Organism | Count |
 |----------|------:|
-| Mus musculus | 10863 |
-| Homo sapiens | 5632 |
-| Rattus norvegicus | 765 |
-| Drosophila melanogaster | 426 |
-| Danio rerio | 395 |
-| Homo sapiens; Mus musculus | 219 |
-| Caenorhabditis elegans | 154 |
-| Mus musculus; Homo sapiens | 111 |
-| Gallus gallus | 106 |
+| Mus musculus | 10952 |
+| Homo sapiens | 5682 |
+| Rattus norvegicus | 774 |
+| Drosophila melanogaster | 427 |
+| Danio rerio | 398 |
+| Homo sapiens; Mus musculus | 222 |
+| Caenorhabditis elegans | 155 |
+| Mus musculus; Homo sapiens | 112 |
+| Gallus gallus | 109 |
 | Macaca mulatta | 85 |
 
 ## Related Topics
 
 | Topic | Co-occurring Datasets |
 |-------|---------------------:|
-| [Development & Differentiation](development.md) | 8439 |
-| [Immunology](immunology.md) | 5294 |
-| [Signal Transduction](signal_transduction.md) | 4871 |
-| [Cell Stress & Homeostasis](cell_stress.md) | 4515 |
-| [Cancer](cancer.md) | 3556 |
-| [Epigenetics & Chromatin](epigenetics.md) | 2345 |
-| [Infectious Disease](infectious_disease.md) | 2275 |
-| [Metabolism & Metabolic Disease](metabolism.md) | 2239 |
-| [RNA Biology & Regulation](rna_biology.md) | 2205 |
-| [Gene Regulation & Transcription](gene_regulation.md) | 1880 |
+| [Development & Differentiation](development.md) | 8498 |
+| [Immunology](immunology.md) | 5364 |
+| [Signal Transduction](signal_transduction.md) | 4937 |
+| [Cell Stress & Homeostasis](cell_stress.md) | 4586 |
+| [Cancer](cancer.md) | 3590 |
+| [Epigenetics & Chromatin](epigenetics.md) | 2371 |
+| [Infectious Disease](infectious_disease.md) | 2296 |
+| [Metabolism & Metabolic Disease](metabolism.md) | 2260 |
+| [RNA Biology & Regulation](rna_biology.md) | 2218 |
+| [Gene Regulation & Transcription](gene_regulation.md) | 1915 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 8969 |
-| TSV | 4123 |
-| CSV | 3582 |
-| MTX | 2510 |
-| XLSX | 2156 |
-| H5 | 743 |
-| BW | 674 |
-| TAR | 499 |
-| RDS | 480 |
-| XLS | 439 |
+| TXT | 9022 |
+| TSV | 4163 |
+| CSV | 3611 |
+| MTX | 2544 |
+| XLSX | 2202 |
+| H5 | 758 |
+| BW | 677 |
+| TAR | 501 |
+| RDS | 488 |
+| XLS | 440 |
 
 ## Recent Datasets
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |
 |-----------|-------|----------|--------:|-----------------|------|
-| [GSE327357](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327357) | Virus-like particles enable targeted gene engineering and pooled CRISPR screenin... | Homo sapiens | 14 | CSV | 2026/04/08 |
-| [GSE327354](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327354) | Virus-like particles enable targeted gene engineering and pooled CRISPR screenin... | Homo sapiens | 18 | CSV | 2026/04/08 |
-| [GSE327352](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327352) | Virus-like particles enable targeted gene engineering and pooled CRISPR screenin... | Homo sapiens | 12 | CSV | 2026/04/08 |
-| [GSE327133](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327133) | Virus-like particles enable targeted gene engineering and pooled CRISPR screenin... | Homo sapiens | 28 | CSV | 2026/04/08 |
-| [GSE326781](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326781) | BAG2 Condensates Couple Proteostasis to CD8 + T Cell Surveillance | Homo sapiens | 12 | TSV | 2026/04/08 |
-| [GSE319656](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE319656) | Bone Marrow Microenvironment in Aplastic Anemia: Insights from Nestin/ CXCL12 Im... | Homo sapiens | 28 | XLSX | 2026/04/08 |
-| [GSE311047](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE311047) | A conserved enhancer cluster controls efnb2 expression in the vertebrate dorsal ... | Tetraodon nigroviridis | 8 | TXT | 2026/04/08 |
-| [GSE310896](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE310896) | A conserved enhancer cluster controls efnb2 expression in the vertebrate dorsal ... | Anableps anableps | 6 | TXT | 2026/04/08 |
-| [GSE308269](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE308269) | Inhibiting Glycan Degradation Prevents HIV-Induced Inflammaging and Cognitive Im... | Mus musculus | 16 | XLSX | 2026/04/08 |
-| [GSE308110](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE308110) | Transcriptomic profiling of brain tissues from HIV-1 gp120 transgenic mice revea... | Mus musculus | 10 | CSV | 2026/04/08 |
-| [GSE298120](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE298120) | Succinate Modulation as a Novel Mechanism Underlying the Effects of Intermittent... | Mus musculus | 29 | TSV | 2026/04/08 |
-| [GSE295406](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE295406) | Polycomb Chromatin Topology Enables Long-Range Enhancer Recruitment during Crani... | Mus musculus | 24 | BW | 2026/04/08 |
-| [GSE290215](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE290215) | Effect of in vitro dolutegravir exposure on transcriptome of oligodendrocyte pre... | Rattus norvegicus | 24 | TXT | 2026/04/08 |
-| [GSE227622](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE227622) | Neuronal MCT2 for activity-induced blood vessel formation by increasing lactate ... | Mus musculus | 6 | CSV | 2026/04/08 |
-| [GSE324449](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE324449) | Single-cell transcriptomic profiling of SPAST exon 17 deletion–induced neurodege... | Homo sapiens | 2 | MTX, TSV | 2026/04/07 |
-| [GSE318565](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE318565) | Single-cell, clonal and spatial atlases of neural plate border and neurogenic pl... | Mus musculus | 12 | CSV, H5 | 2026/04/07 |
-| [GSE308982](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE308982) | Intravitreal AAV delivery induces integrin-dependent ocular inflammation and act... | Sus scrofa | 8 | MTX, TSV | 2026/04/07 |
-| [GSE307927](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE307927) | Uncoupling Neocortical Neuron Fate and Migration via a Let-7–RBX2 Axis | Homo sapiens | 10 | RTF, XLSX | 2026/04/07 |
-| [GSE231474](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE231474) | Infiltration of monocyte-derived cells perturbs CNS metabolism, licensing argini... | Mus musculus | 10 | TXT | 2026/04/07 |
-| [GSE327057](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327057) | Systematically characterizing the roles of E3-ligase family members in inflammat... | Mus musculus | 169 | CSV, H5AD | 2026/04/06 |
-| [GSE326716](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326716) | Aβ suppresses oligodendrocyte differentiation in vivo or vitro via inflammatory ... | Rattus norvegicus | 2 | TXT | 2026/04/06 |
-| [GSE326470](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326470) | Sex-dependent alterations in motor cortex linking spinal cord injury to long-ter... | Rattus norvegicus | 18 | XLSX | 2026/04/06 |
-| [GSE324222](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE324222) | Enhanced endocrine–metabolic support and axonemal assembly in high-sperm-motilit... | Anser cygnoides | 6 | MTX, TSV | 2026/04/06 |
-| [GSE304838](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE304838) | A stem cell-derived neuronal culture model for mouse species variation in neurit... | Mus musculus; Mus musculus castaneus; Mus musculus domesticus | 11 | TXT | 2026/04/06 |
-| [GSE295045](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE295045) | A local sympathetic-immune axis inhibits melanoma growth in mice by dictating ad... | Mus musculus | 4 | CSV, H5 | 2026/04/06 |
-| [GSE292341](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE292341) | Single cell RNA sequencing of hippocampus and hypothalamus in AD mice with fruct... | Mus musculus | 48 | CSV, MTX, TSV | 2026/04/06 |
-| [GSE252183](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE252183) | A stem cell-derived neuronal culture model for mouse species variation in neurit... | Mus musculus castaneus; Mus musculus domesticus x Mus musculus castaneus; Mus musculus domesticus | 27 | TAB | 2026/04/06 |
-| [GSE230733](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE230733) | Cellular Origin and Molecular Mechanisms of Lung Metastases in Patients with Agg... | Homo sapiens | 8 | TXT | 2026/04/06 |
-| [GSE224414](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE224414) | Effect of depletion of SPAST exon17 on gene expression in human embryonic stem c... | Homo sapiens | 12 | XLSX | 2026/04/06 |
-| [GSE326554](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326554) | RNA-seq of wild-type human iPSC-derived retinal organoids at different developme... | Homo sapiens | 18 | TSV | 2026/04/05 |
-| [GSE318140](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE318140) | Posterior explants of Stage 26 embryos treated with picrotoxins | Xenopus laevis | 4 | TSV | 2026/04/05 |
-| [GSE293469](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE293469) | Nanoplastics induces Arrhythmia in Human Stem-cells derived Cardiomyocytes [mous... | Mus musculus | 21 | TSV | 2026/04/05 |
-| [GSE326484](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326484) | Combined dopamine receptor inhibition and radiotherapy target mesothelioma-initi... | Homo sapiens | 4 | MTX, TSV | 2026/04/04 |
-| [GSE296274](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE296274) | Hcn1-dependent engram neurons in the PVN encode gastric inflammatory memory [gas... | Mus musculus | 2 | TAR | 2026/04/04 |
-| [GSE293902](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE293902) | Regulation of germinal center B-cell homeostasis by Deltex-1 (Dtx1) [scRNA] | Mus musculus | 8 | MTX, TSV | 2026/04/04 |
-| [GSE275354](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE275354) | Exploring the Mechanism of SETDB1 in Regulating Neuroinflammation and Anxiety-De... | Mus musculus | 4 | MTX, TSV | 2026/04/04 |
-| [GSE275353](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE275353) | Exploring the Mechanism of SETDB1 in Regulating Neuroinflammation and Anxiety-De... | Mus musculus | 19 | COUNTS | 2026/04/04 |
-| [GSE326616](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326616) | Aldosterone-induced gene expression changes in the brain | Mus musculus | 12 | H5, TSV | 2026/04/03 |
-| [GSE326425](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326425) | Aldosterone-induced gene expression changes in the brain [scRNA-Seq] | Mus musculus | 4 | H5 | 2026/04/03 |
-| [GSE326424](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326424) | Aldosterone-induced gene expression changes in the brain [Multiomic] | Mus musculus | 8 | H5, TSV | 2026/04/03 |
-| [GSE325791](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325791) | Chronic manganese exposure with and without latency period in hiPSC-derived cort... | Homo sapiens | 8 | RDS | 2026/04/03 |
-| [GSE314582](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE314582) | Toll-Like-Receptor 5 Reduces Lung Dysbiosis and Protects Against Pulmonary Fibro... | Mus musculus | 18 | TXT | 2026/04/03 |
-| [GSE312732](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE312732) | Tomatidine is a senotherapeutic compound that improves cognitive function and re... | Mus musculus | 2 | MTX, TSV | 2026/04/03 |
-| [GSE296008](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE296008) | Single-Cell Transcriptomic Profiling of Male Zebrafish hypothalamus: Investigati... | Danio rerio | 2 | MTX, TSV | 2026/04/03 |
-| [GSE276139](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE276139) | Gene expression profile at single cell level of cerebrospinal fluid (CSF) cells ... | Homo sapiens | 6 | MTX, TAR, TSV | 2026/04/03 |
-| [GSE270265](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE270265) | Developmental molecular signatures define de novo cortico-brainstem circuit for ... | Mus musculus | 5 | H5 | 2026/04/03 |
-| [GSE326834](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326834) | Cell-Inspired Dual-Tandem Catalytic Nanoreactors Drive Targeted Hearing Protecti... | Mus musculus | 9 | XLSX | 2026/04/02 |
-| [GSE325822](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325822) | Bimodal Imaging-Guided Temporal Optimization of Combined Chemotherapy and DC Vac... | Mus musculus | 45 | TXT | 2026/04/02 |
-| [GSE325620](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325620) | Comparative single-cell multiomic analysis reveals evolutionarily conserved and ... | Danio rerio | 14 | H5 | 2026/04/02 |
-| [GSE325478](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325478) | Comparative single-cell multiomic analysis reveals evolutionarily conserved and ... | Mus musculus | 18 | H5 | 2026/04/02 |
+| [GSE328990](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328990) | RNA-seq analysis of hypothalamus in female mice reveals effects of membrane-init... | Mus musculus | 8 | CSV | 2026/04/27 |
+| [GSE314567](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE314567) | Age- and Tissue-dependent Diversity of Human Plasmacytoid Dendritic Cells Uncove... | Mus musculus | 4 | H5, XLSX | 2026/04/27 |
+| [GSE308140](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE308140) | Spatiotemporal regulation of arbuscular mycorrhizal symbiosis at cellular resolu... | Oryza sativa | 38 | CSV | 2026/04/27 |
+| [GSE295381](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE295381) | Altered primary somatosensory neuron development in a Pten heterozygous model fo... | Mus musculus | 6 | CSV, TXT | 2026/04/27 |
+| [GSE273852](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE273852) | Age- and Tissue-dependent Diversity of Human Plasmacytoid Dendritic Cells Uncove... | Homo sapiens | 11 | CSV, MTX, TSV | 2026/04/27 |
+| [GSE217876](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE217876) | Development and characterization of 3D spinal cord organoids to advance the stud... | Homo sapiens | 10 | TXT | 2026/04/27 |
+| [GSE328645](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328645) | Transcriptomic profiling of mouse subgranular zone-derived neural stem cells exp... | Mus musculus | 6 | TXT | 2026/04/26 |
+| [GSE328588](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328588) | The effects of high-thoracic spinal cord injury on the heart transcriptome | Rattus norvegicus | 24 | CSV | 2026/04/25 |
+| [GSE327807](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327807) | Transcriptomic profile of the hippocampus of rat strains with contrasting nervou... | Rattus norvegicus | 10 | XLSX | 2026/04/25 |
+| [GSE329088](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE329088) | STING Acts as a Rheostat of the Unfolded Protein Response to Regulate Antigen Pr... | Mus musculus | 6 | TXT | 2026/04/24 |
+| [GSE328514](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328514) | Chronic Reduction of Topoisomerase IIβ Alters Neural Circuit Function and Behavi... | Mus musculus | 6 | CSV | 2026/04/24 |
+| [GSE328399](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328399) | Neutrophil extracellular traps aggravate COVID-19 related acute macular neuroret... | Homo sapiens | 6 | XLSX | 2026/04/24 |
+| [GSE328195](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328195) | Gene regulatory co-option drives birdsong neural circuit specialization [overexp... | Gallus gallus | 3 | MTX, TSV | 2026/04/24 |
+| [GSE326387](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326387) | Ngn3 reprograms late retinal progenitor cells through transcriptional and epigen... | Mus musculus | 6 | TXT | 2026/04/24 |
+| [GSE317726](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE317726) | Co-targeting neurotransmitter signaling and CDK9 to treat diffuse midline glioma... | Homo sapiens | 24 | TXT | 2026/04/24 |
+| [GSE303931](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE303931) | Global transcriptional changes across multiple isogenic C9orf72 Patient iPSC-der... | Homo sapiens | 12 | SF | 2026/04/24 |
+| [GSE295724](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE295724) | Neuronal microexons modulate arousal via the cAMP-PKA-CREB pathway in zebrafish | Danio rerio | 59 | H5, TXT | 2026/04/24 |
+| [GSE295687](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE295687) | ATF2 phosphorylation is a core transcriptional driver of neuron apoptosis | Homo sapiens | 61 | TXT | 2026/04/24 |
+| [GSE295555](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE295555) | Numb-Ifi204 inhibits microglial activation and the hippocampal inflammation indu... | Mus musculus | 6 | XLSX | 2026/04/24 |
+| [GSE294786](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE294786) | A lineage shared core gene expression network specific to human infants, links h... | Homo sapiens | 6 | TSV | 2026/04/24 |
+| [GSE277487](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE277487) | Single-nucleus RNA-seq of mouse cortex following CCI-induced traumatic brain inj... | Mus musculus | 12 | CSV, MTX, TSV | 2026/04/24 |
+| [GSE328709](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328709) | Type I interferon signaling in microglia drives synaptic engulfment and neuronal... | Mus musculus | 13 | H5 | 2026/04/23 |
+| [GSE326221](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326221) | Acquired genetic and cell state changes in IDH-mutant glioma progression [snRNA-... | Homo sapiens | 75 | H5, MTX, TSV | 2026/04/23 |
+| [GSE326070](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326070) | Interleukin-34 induced Arg1+ macrophages play a key role in breast cancer brain ... | Mus musculus | 1 | MTX, TSV | 2026/04/23 |
+| [GSE324860](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE324860) | Acquired genetic and cell state changes in IDH-mutant glioma progression [organo... | Homo sapiens | 6 | MTX, TSV | 2026/04/23 |
+| [GSE324158](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE324158) | Single-cell multi-omic and spatial landscape of primate pineal gland reveals cir... | Macaca fascicularis | 4 | BED, CSV, H5, JSON, MTX, PNG, TBI, TIFF, TSV, TXT | 2026/04/23 |
+| [GSE324146](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE324146) | H3 dopaminylation and CaMKII modulate diffuse midline glioma response to CDK9 in... | Homo sapiens | 50 | BIGWIG | 2026/04/23 |
+| [GSE322712](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE322712) | Distinct activity in prefrontal projections promotes temporal control of action | Mus musculus | 8 | H5 | 2026/04/23 |
+| [GSE303977](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE303977) | MECP2 Mutations Rewire Human ESC Fate and Bias Cortical Lineage Commitment II | Homo sapiens | 8 | CSV, MTX | 2026/04/23 |
+| [GSE303838](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE303838) | MECP2 Mutations Rewire Human ESC Fate and Bias Cortical Lineage Commitment [RNA-... | Homo sapiens | 48 | CSV | 2026/04/23 |
+| [GSE303813](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE303813) | MECP2 Mutations Rewire Human ESC Fate and Bias Cortical Lineage Commitment | Homo sapiens | 2 | CSV, MTX | 2026/04/23 |
+| [GSE295411](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE295411) | Numb-Ifi204 inhibits microglial activation and the hippocampal inflammation indu... | Mus musculus | 6 | TXT, XLSX | 2026/04/23 |
+| [GSE291623](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE291623) | Glycine-modulating Slc6a20a-ASO restores NMDA receptor function in SHANK2 and SH... | Homo sapiens | 1 | MTX, TSV | 2026/04/23 |
+| [GSE218624](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE218624) | Single cell RNA-sequencing of the preoptic area of hypothalamus from sleep depri... | Mus musculus | 2 | CSV, MTX, TSV | 2026/04/23 |
+| [GSE328360](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328360) | Laminaria japonica Polysaccharide Mitigates Acute Neuroinflammation in Cerebral ... | Mus musculus | 12 | TXT | 2026/04/22 |
+| [GSE327851](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327851) | Transneuronal cytokine delivery promotes functional recovery across spinal cord ... | Mus musculus | 9 | XLSX | 2026/04/22 |
+| [GSE325634](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325634) | HP1B and H3K9me3 Regulate Olfactory Receptor Choice and 2 Transcriptional Identi... | Mus musculus | 24 | BW | 2026/04/22 |
+| [GSE312491](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE312491) | Single-Cell Profiling Reveals Mediators of Immune-Vascular Crosstalk in Mouse Mo... | Mus musculus | 4 | TAR | 2026/04/22 |
+| [GSE311559](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE311559) | Caspase-6 Controls Lipid and Energy Metabolism in Diet-Induced Obesity | Mus musculus | 18 | TXT | 2026/04/22 |
+| [GSE310471](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE310471) | Progression of Nipah virus infection in African green monkeys: role of macrophag... | Chlorocebus aethiops | 35 | TSV | 2026/04/22 |
+| [GSE309006](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE309006) | A conserved logic for the development of cortical layering in tetrapods [St_55] | Pleurodeles waltl | 10 | CSV, FASTA, RDS, TXT | 2026/04/22 |
+| [GSE308588](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE308588) | A conserved logic for the development of cortical layering in tetrapods [St_30-5... | Pleurodeles waltl | 14 | CSV, RDS | 2026/04/22 |
+| [GSE304025](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE304025) | Thyroid hormones maintain parvalbumin neuron functions in mouse neocortex | Mus musculus | 15 | TABULAR | 2026/04/22 |
+| [GSE299278](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE299278) | Encephalopathy-linked UFM1 variants impede neuronal protein translation, develop... | Mus musculus | 18 | TXT | 2026/04/22 |
+| [GSE298347](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE298347) | Single-cell RNA sequencing of microglia/macrophages in zebrafish pde6c mutant ey... | Danio rerio | 4 | TAR | 2026/04/22 |
+| [GSE294698](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE294698) | Homeostatic mature dendritic cells instruct fibroblast specialization via Notch2... | Mus musculus | 1 | MTX, TSV | 2026/04/22 |
+| [GSE294697](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE294697) | Homeostatic mature dendritic cells instruct fibroblast specialization via Notch2... | Mus musculus | 4 | MTX, TSV | 2026/04/22 |
+| [GSE290207](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE290207) | Thyroid hormones act as a timer for the postnatal maturation of parvalbumin neur... | Mus musculus | 8 | TXT | 2026/04/22 |
+| [GSE290072](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE290072) | Thyroid hormones act as a timer for the postnatal maturation of parvalbumin neur... | Mus musculus | 8 | TXT | 2026/04/22 |
+| [GSE272954](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE272954) | Blocking microglial reactivity via purinergic receptors prevents long-term cogni... | Mus musculus | 3 | MTX, TSV | 2026/04/22 |
 
-*...and 19853 more datasets.*
+*...and 20025 more datasets.*

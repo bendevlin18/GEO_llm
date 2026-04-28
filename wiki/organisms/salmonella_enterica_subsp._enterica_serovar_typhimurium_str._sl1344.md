@@ -1,6 +1,6 @@
 # Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344
 
-> 22 RNA-seq datasets | 2015/01/01 – 2026/04/08
+> 22 RNA-seq datasets | 2015/01/01 – 2026/04/27
 
 ## Modality Breakdown
 

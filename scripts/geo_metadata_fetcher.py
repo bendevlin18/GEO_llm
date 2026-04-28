@@ -31,7 +31,8 @@ REQUEST_DELAY = 0.35  # seconds between requests
 
 def eutils_get(endpoint: str, params: dict) -> ET.Element:
     """Make a GET request to an E-Utils endpoint and return parsed XML."""
-    url = f"{BASE_URL}/{endpoint}?{urlencode(params, safe='+[]\"')}"
+    safe_chars = '+[]"'
+    url = f"{BASE_URL}/{endpoint}?{urlencode(params, safe=safe_chars)}"
     for attempt in range(3):
         try:
             req = Request(url, headers={"User-Agent": "GEO-Metadata-Fetcher/1.0"})

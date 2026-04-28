@@ -1,12 +1,12 @@
 # Triticum aestivum
 
-> 96 RNA-seq datasets | 2015/01/01 – 2026/04/08
+> 97 RNA-seq datasets | 2015/01/01 – 2026/04/27
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 93 |
+| bulk | 94 |
 | single-cell | 2 |
 | spatial | 1 |
 
@@ -29,6 +29,7 @@
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |
 |-----------|-------|----------|--------:|-----------------|------|
+| [GSE316071](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE316071) | Transcriptome analysis of wheat seedlings in response to abscisic acid | Triticum aestivum | 16 | SF | 2026/04/19 |
 | [GSE310687](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE310687) | Epigenetic plasticity and regulatory remodeling of metabolism and cell wall dyna... | Triticum aestivum | 18 | XLSX | 2026/02/11 |
 | [GSE294406](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE294406) | Integrative morpho-physiological and transcriptomic insights into wheat response... | Triticum aestivum | 24 | XLSX | 2025/08/22 |
 | [GSE275202](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE275202) | Transcriptomic Insights into Drought Tolerance Enhancement in Bread Wheat  Induc... | Triticum aestivum | 12 | CSV, TSV | 2025/08/01 |
@@ -78,6 +79,5 @@
 | [GSE188723](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE188723) | Low-affinity SPL binding sites contribute to subgenome expression divergence in ... | Triticum aestivum | 16 | TXT | 2022/11/28 |
 | [GSE210495](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE210495) | Grain RNAseq of two hard red winter wheat cultivars with contrasting grain prote... | Triticum aestivum | 12 | CSV | 2022/11/02 |
 | [GSE156300](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE156300) | Dynamics of leaf transcriptome during cold acclimation in wheat | Triticum aestivum | 24 | TXT, XLSX | 2022/10/24 |
-| [GSE200377](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE200377) | Ultrasound effect on the wheat (Triticum aestivum) seedlings | Triticum aestivum | 6 | TXT | 2022/09/14 |
 
-*...and 46 more datasets.*
+*...and 47 more datasets.*

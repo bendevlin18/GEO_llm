@@ -1,13 +1,13 @@
 # Oryctolagus cuniculus
 
-> 91 RNA-seq datasets | 2015/01/01 – 2026/04/08
+> 92 RNA-seq datasets | 2015/01/01 – 2026/04/27
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
 | bulk | 77 |
-| single-cell | 11 |
+| single-cell | 12 |
 | single-nucleus | 2 |
 | spatial | 1 |
 
@@ -23,13 +23,14 @@
 | XLS | 4 |
 | TAB | 2 |
 | JPG | 2 |
+| H5 | 2 |
 | FA | 1 |
-| GFF | 1 |
 
 ## Recent Datasets
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |
 |-----------|-------|----------|--------:|-----------------|------|
+| [GSE328779](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328779) | Single cell RNA-seq characterization of non-fibrotic stromal wound repopulation ... | Oryctolagus cuniculus | 8 | H5 | 2026/04/26 |
 | [GSE286500](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE286500) | Feeding Time Altered Intestinal Microbiota and SCFA Potentially Induce Diurnal O... | Oryctolagus cuniculus | 22 | TXT | 2026/03/04 |
 | [GSE290953](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE290953) | Proteoglycan Mimetics-based Bioactive Microneedles with Regulation Capacities of... | Oryctolagus cuniculus | 9 | TXT | 2026/03/03 |
 | [GSE314820](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE314820) | Obeticholic acid accelerates portal vein embolization-induced liver hypertrophy ... | Oryctolagus cuniculus | 36 | XLSX | 2026/02/25 |
@@ -79,6 +80,5 @@
 | [GSE221331](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE221331) | Delivery of a tissue derived extracellular matrix gel modulates early fibro-adip... | Oryctolagus cuniculus | 34 | TAB | 2022/12/30 |
 | [GSE207804](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE207804) | Matrix from Urine Stem Cells Boosts Tissue-Specific Stem Cell Mediated Functiona... | Oryctolagus cuniculus | 10 | TXT | 2022/11/29 |
 | [GSE217333](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE217333) | Comparative analysis of single-cell and single-nucleus RNA-sequencing in a rabbi... | Oryctolagus cuniculus | 10 | CSV | 2022/11/08 |
-| [GSE210773](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE210773) | Spatial transcriptomics tools allow for regional exploration of heterogeneous mu... | Oryctolagus cuniculus | 4 | JPG, JSON, MTX, TSV | 2022/10/11 |
 
-*...and 41 more datasets.*
+*...and 42 more datasets.*

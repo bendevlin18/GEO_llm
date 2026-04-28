@@ -28,34 +28,34 @@ See [search_index.txt](search_index.txt) (5,580 entries, one per dataset).
 
 | Topic | Count | Page |
 |-------|------:|------|
-| Development & Differentiation | 45,439 | [development.md](topics/development.md) |
-| Cancer | 39,487 | [cancer.md](topics/cancer.md) |
-| Immunology | 37,313 | [immunology.md](topics/immunology.md) |
-| Cell Stress & Homeostasis | 26,969 | [cell_stress.md](topics/cell_stress.md) |
-| Signal Transduction | 26,755 | [signal_transduction.md](topics/signal_transduction.md) |
-| Metabolism & Metabolic Disease | 20,679 | [metabolism.md](topics/metabolism.md) |
-| Neuroscience | 19,903 | [neuroscience.md](topics/neuroscience.md) |
-| Infectious Disease | 19,407 | [infectious_disease.md](topics/infectious_disease.md) |
-| Epigenetics & Chromatin | 18,860 | [epigenetics.md](topics/epigenetics.md) |
-| RNA Biology & Regulation | 14,899 | [rna_biology.md](topics/rna_biology.md) |
-| Gene Regulation & Transcription | 14,516 | [gene_regulation.md](topics/gene_regulation.md) |
-| Drug Response & Pharmacology | 13,275 | [drug_response.md](topics/drug_response.md) |
-| Microbiology | 13,013 | [microbiology.md](topics/microbiology.md) |
-| Muscle & Musculoskeletal | 10,877 | [skeletal_muscle.md](topics/skeletal_muscle.md) |
-| Hematopoiesis & Blood | 10,797 | [hematopoiesis.md](topics/hematopoiesis.md) |
-| Cardiovascular | 10,480 | [cardiovascular.md](topics/cardiovascular.md) |
-| Plant Biology | 9,525 | [plant_biology.md](topics/plant_biology.md) |
-| CRISPR & Gene Editing | 8,080 | [crispr_gene_editing.md](topics/crispr_gene_editing.md) |
-| Liver & Hepatology | 7,656 | [liver.md](topics/liver.md) |
-| Lung & Respiratory | 7,543 | [lung_respiratory.md](topics/lung_respiratory.md) |
-| Kidney & Renal | 7,012 | [kidney.md](topics/kidney.md) |
-| Fibrosis & Wound Healing | 6,912 | [fibrosis_wound.md](topics/fibrosis_wound.md) |
-| Reproductive Biology | 6,877 | [reproduction.md](topics/reproduction.md) |
-| Gut & Intestinal Biology | 6,793 | [gut_intestine.md](topics/gut_intestine.md) |
-| Cell Cycle & Proliferation | 6,652 | [cell_cycle.md](topics/cell_cycle.md) |
-| Aging & Senescence | 5,833 | [aging.md](topics/aging.md) |
-| Skin & Dermatology | 4,288 | [skin.md](topics/skin.md) |
-| Eye & Vision | 2,902 | [eye_vision.md](topics/eye_vision.md) |
+| Development & Differentiation | 45,736 | [development.md](topics/development.md) |
+| Cancer | 39,798 | [cancer.md](topics/cancer.md) |
+| Immunology | 37,640 | [immunology.md](topics/immunology.md) |
+| Cell Stress & Homeostasis | 27,251 | [cell_stress.md](topics/cell_stress.md) |
+| Signal Transduction | 26,987 | [signal_transduction.md](topics/signal_transduction.md) |
+| Metabolism & Metabolic Disease | 20,856 | [metabolism.md](topics/metabolism.md) |
+| Neuroscience | 20,075 | [neuroscience.md](topics/neuroscience.md) |
+| Infectious Disease | 19,558 | [infectious_disease.md](topics/infectious_disease.md) |
+| Epigenetics & Chromatin | 18,987 | [epigenetics.md](topics/epigenetics.md) |
+| RNA Biology & Regulation | 14,979 | [rna_biology.md](topics/rna_biology.md) |
+| Gene Regulation & Transcription | 14,634 | [gene_regulation.md](topics/gene_regulation.md) |
+| Drug Response & Pharmacology | 13,398 | [drug_response.md](topics/drug_response.md) |
+| Microbiology | 13,108 | [microbiology.md](topics/microbiology.md) |
+| Muscle & Musculoskeletal | 10,965 | [skeletal_muscle.md](topics/skeletal_muscle.md) |
+| Hematopoiesis & Blood | 10,876 | [hematopoiesis.md](topics/hematopoiesis.md) |
+| Cardiovascular | 10,571 | [cardiovascular.md](topics/cardiovascular.md) |
+| Plant Biology | 9,595 | [plant_biology.md](topics/plant_biology.md) |
+| CRISPR & Gene Editing | 8,147 | [crispr_gene_editing.md](topics/crispr_gene_editing.md) |
+| Liver & Hepatology | 7,729 | [liver.md](topics/liver.md) |
+| Lung & Respiratory | 7,601 | [lung_respiratory.md](topics/lung_respiratory.md) |
+| Kidney & Renal | 7,063 | [kidney.md](topics/kidney.md) |
+| Fibrosis & Wound Healing | 6,973 | [fibrosis_wound.md](topics/fibrosis_wound.md) |
+| Reproductive Biology | 6,937 | [reproduction.md](topics/reproduction.md) |
+| Gut & Intestinal Biology | 6,859 | [gut_intestine.md](topics/gut_intestine.md) |
+| Cell Cycle & Proliferation | 6,708 | [cell_cycle.md](topics/cell_cycle.md) |
+| Aging & Senescence | 5,878 | [aging.md](topics/aging.md) |
+| Skin & Dermatology | 4,318 | [skin.md](topics/skin.md) |
+| Eye & Vision | 2,921 | [eye_vision.md](topics/eye_vision.md) |
 
 ## By Organism
 

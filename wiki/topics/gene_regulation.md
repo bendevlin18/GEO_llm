@@ -1,114 +1,114 @@
 # Gene Regulation & Transcription
 
-> 14516 RNA-seq datasets | 2015/01/01 – 2026/04/08
+> 14634 RNA-seq datasets | 2015/01/01 – 2026/04/27
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 12477 |
-| single-cell | 1859 |
-| single-nucleus | 148 |
+| bulk | 12573 |
+| single-cell | 1878 |
+| single-nucleus | 151 |
 | spatial | 32 |
 
 ## Organism Distribution
 
 | Organism | Count |
 |----------|------:|
-| Homo sapiens | 5622 |
-| Mus musculus | 5173 |
-| Arabidopsis thaliana | 398 |
-| Drosophila melanogaster | 366 |
-| Saccharomyces cerevisiae | 220 |
+| Homo sapiens | 5655 |
+| Mus musculus | 5232 |
+| Arabidopsis thaliana | 399 |
+| Drosophila melanogaster | 368 |
+| Saccharomyces cerevisiae | 221 |
 | Homo sapiens; Mus musculus | 217 |
-| Danio rerio | 187 |
-| Caenorhabditis elegans | 163 |
-| Rattus norvegicus | 115 |
-| Mus musculus; Homo sapiens | 109 |
+| Danio rerio | 188 |
+| Caenorhabditis elegans | 164 |
+| Rattus norvegicus | 119 |
+| Mus musculus; Homo sapiens | 110 |
 
 ## Related Topics
 
 | Topic | Co-occurring Datasets |
 |-------|---------------------:|
-| [Development & Differentiation](development.md) | 6266 |
-| [Epigenetics & Chromatin](epigenetics.md) | 6224 |
-| [Cancer](cancer.md) | 4073 |
-| [Signal Transduction](signal_transduction.md) | 3068 |
-| [Cell Stress & Homeostasis](cell_stress.md) | 3026 |
-| [Immunology](immunology.md) | 3009 |
-| [RNA Biology & Regulation](rna_biology.md) | 1975 |
-| [Neuroscience](neuroscience.md) | 1880 |
-| [CRISPR & Gene Editing](crispr_gene_editing.md) | 1795 |
-| [Metabolism & Metabolic Disease](metabolism.md) | 1650 |
+| [Development & Differentiation](development.md) | 6308 |
+| [Epigenetics & Chromatin](epigenetics.md) | 6270 |
+| [Cancer](cancer.md) | 4104 |
+| [Signal Transduction](signal_transduction.md) | 3121 |
+| [Cell Stress & Homeostasis](cell_stress.md) | 3081 |
+| [Immunology](immunology.md) | 3058 |
+| [RNA Biology & Regulation](rna_biology.md) | 1989 |
+| [Neuroscience](neuroscience.md) | 1915 |
+| [CRISPR & Gene Editing](crispr_gene_editing.md) | 1806 |
+| [Metabolism & Metabolic Disease](metabolism.md) | 1663 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 7454 |
-| TSV | 2341 |
-| CSV | 1932 |
-| BW | 1847 |
-| XLSX | 1476 |
-| BIGWIG | 941 |
-| MTX | 830 |
+| TXT | 7496 |
+| TSV | 2359 |
+| CSV | 1943 |
+| BW | 1854 |
+| XLSX | 1507 |
+| BIGWIG | 943 |
+| MTX | 841 |
 | BED | 727 |
 | BEDGRAPH | 472 |
-| NARROWPEAK | 323 |
+| XLS | 327 |
 
 ## Recent Datasets
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |
 |-----------|-------|----------|--------:|-----------------|------|
-| [GSE311047](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE311047) | A conserved enhancer cluster controls efnb2 expression in the vertebrate dorsal ... | Tetraodon nigroviridis | 8 | TXT | 2026/04/08 |
-| [GSE310896](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE310896) | A conserved enhancer cluster controls efnb2 expression in the vertebrate dorsal ... | Anableps anableps | 6 | TXT | 2026/04/08 |
-| [GSE307597](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE307597) | NAT10-Dependent N4-acetylcytidine (ac4C) on R-loops Drive Glioblastoma Tumorigen... | Homo sapiens | 8 | TXT | 2026/04/08 |
-| [GSE296815](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE296815) | Polycomb Chromatin Topology Enables Long-Range Enhancer Recruitment during Crani... | Mus musculus | 98 | BW, HIC, TXT, WIG | 2026/04/08 |
-| [GSE295406](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE295406) | Polycomb Chromatin Topology Enables Long-Range Enhancer Recruitment during Crani... | Mus musculus | 24 | BW | 2026/04/08 |
-| [GSE262443](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE262443) | Co-targeting CDK7/CDK9 and CKIα exerts efficacious anticancer effects against TE... | Homo sapiens | 12 | TXT | 2026/04/08 |
-| [GSE327208](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327208) | Control of Cellular Differentiation Trajectories for Cancer Reversion | Homo sapiens | 12 | TSV | 2026/04/07 |
-| [GSE326704](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326704) | ROS-sensing Transcription Factor YchJ Regulates RssB-RpoS Pathway to Protect Sal... | Mus musculus; Salmonella enterica | 12 | TXT | 2026/04/06 |
-| [GSE316271](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE316271) | Bulk RNA-seq profiling of p53-deficient mammary tumors driven by Runx1 and/or Rb... | Mus musculus | 14 | CSV | 2026/04/06 |
-| [GSE309821](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE309821) | Enhancer-directed gene delivery for digit regeneration based on conserved epider... | Danio rerio | 5 | H5 | 2026/04/06 |
-| [GSE309792](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE309792) | Enhancer-directed gene delivery for digit regeneration based on conserved epider... | Mus musculus | 4 | TSV | 2026/04/06 |
-| [GSE309461](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE309461) | Bulk RNA sequencing of liver NK cells and ILC1s from T-bet WT vs. inducible Ncr1... | Mus musculus | 16 | TSV | 2026/04/06 |
-| [GSE307183](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE307183) | FTO Inhibition Depletes Cysteine Metabolism and Sensitizes NSCLC to Radiation Th... | Homo sapiens | 6 | TXT | 2026/04/06 |
-| [GSE294051](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE294051) | SWI/SNF Remodeling Complexes Regulate 3D Chromatin Architecture by Antagonizing ... | Mus musculus; Homo sapiens | 188 | COOL, NARROWPEAK, RDS, TSV, TXT | 2026/04/06 |
-| [GSE326554](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326554) | RNA-seq of wild-type human iPSC-derived retinal organoids at different developme... | Homo sapiens | 18 | TSV | 2026/04/05 |
-| [GSE287799](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE287799) | Epigenetic modulation of polyamine biosynthetic pathways rectifies T cell dysfun... | Homo sapiens | 6 | TXT | 2026/04/05 |
-| [GSE326394](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326394) | Genome-wide identification of vitamin D receptor–regulated enhancer RNAs reveals... | Homo sapiens | 8 | BW, TXT | 2026/04/04 |
-| [GSE303359](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE303359) | Elevated Labile Iron Contributes to Membrane Repair Deficits in FSHD | Homo sapiens | 8 | MTX, TSV | 2026/04/02 |
-| [GSE298536](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE298536) | Preservation of Myogenic Tone in Kidney Microvasculature of Dahl Salt-Sensitive ... | Rattus norvegicus | 20 | XLSX | 2026/04/02 |
-| [GSE293545](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE293545) | CUX1 Manifests Species-Dependent Regulation in Controlling Adipocyte Differentia... | Homo sapiens | 12 | CSV | 2026/04/02 |
-| [GSE326331](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326331) | Transcriptomic data of 84K poplar were detected at 3, 6, and 9 days under drough... | Populus alba x Populus glandulosa | 12 | CSV | 2026/04/01 |
-| [GSE325590](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325590) | Regulation of Cyclic Lipopeptide Orfamide A Biosynthesis in Pseudomonas protegen... | Pseudomonas protegens | 6 | CSV | 2026/04/01 |
-| [GSE324208](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE324208) | Epigenetic reprogramming drives cellular and phenotypic plasticity in liposarcom... | Homo sapiens | 42 | CSV, H5, TBI, TSV, TXT | 2026/04/01 |
-| [GSE320255](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE320255) | Pan-Cancer Analysis Reveals Mutation-Driven TE Dysregulation as a Contributor to... | Homo sapiens | 14 | TXT | 2026/04/01 |
-| [GSE318956](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE318956) | Nuclear basket subunits Nup211 and Rsm1 influence RNA 3'-processing and  transcr... | Schizosaccharomyces pombe | 9 | XLSX | 2026/04/01 |
-| [GSE316979](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE316979) | African Swine Fever Virus R238L and R298L Disrupt Lung Cell's Collagen Formation... | Sus scrofa | 9 | TXT | 2026/04/01 |
-| [GSE313595](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE313595) | Single-nucleus RNA sequencing and functional studies of acute methamphetamine-in... | Mus musculus | 6 | MTX, TSV | 2026/04/01 |
-| [GSE313477](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE313477) | Enhanced woody biomass production in hybrid aspen through xylem-specific overexp... | Populus tremula x Populus tremuloides | 22 | TSV | 2026/04/01 |
-| [GSE313401](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE313401) | Transcriptome analysis uncovers PacC-mediated metabolic adaptation in the dermat... | Trichophyton interdigitale | 12 | CSV, TXT | 2026/04/01 |
-| [GSE313038](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE313038) | The DoGA Consortium Atlas of Canine Enhancers and Promoters Across Tissues and D... | Canis lupus familiaris | 114 | CSV | 2026/04/01 |
-| [GSE305019](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE305019) | C/EBPβ Deficiency Enhances Keratinocyte Apoptosis after UVB-Induced DNA Damage v... | Mus musculus | 6 | CSV | 2026/04/01 |
-| [GSE294478](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE294478) | Genomic Convergence in Hibernating Mammals Elucidates the Genetics of Metabolic ... | Mus musculus | 30 | TXT | 2026/04/01 |
-| [GSE294052](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE294052) | Deciphering the STAT3-PXN positive feedback loop in GBM, IDH-wildtype: transcrip... | Homo sapiens | 4 | CSV | 2026/04/01 |
-| [GSE293985](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE293985) | Epigenetic gene regulation by type I restriction modification systems in Strepto... | Streptococcus pneumoniae | 13 | TXT | 2026/04/01 |
-| [GSE293699](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE293699) | Gene Regulatory Network-Driven Drug Repurposing Identifies Anti-Atherosclerotic ... | Homo sapiens; Mus musculus | 21 |  | 2026/04/01 |
-| [GSE293698](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE293698) | Gene Regulatory Network-Driven Drug Repurposing Identifies Anti-Atherosclerotic ... | Homo sapiens | 8 | CSV | 2026/04/01 |
-| [GSE293697](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE293697) | Gene Regulatory Network-Driven Drug Repurposing Identifies Anti-Atherosclerotic ... | Mus musculus | 13 | CSV | 2026/04/01 |
-| [GSE288384](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE288384) | Effect of depletion of FAT4 on gene expression in A673 Ewing sarcoma cells | Homo sapiens | 4 | TXT | 2026/04/01 |
-| [GSE281237](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE281237) | Widespread gene-environment interactions shape the immune response to SARS-CoV-2... | Homo sapiens | 29 | MTX, TSV | 2026/04/01 |
-| [GSE245857](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE245857) | Hepatic stellate cell-derived thrombospondin-2 as a novel therapeutic target for... | Mus musculus | 8 | XLSX | 2026/04/01 |
-| [GSE230860](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE230860) | Overlapping and Distinct Transcriptional Functions of an Extended Repertoire of ... | Homo sapiens | 114 | XLSX | 2026/04/01 |
-| [GSE199064](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE199064) | Single cell multiomic landscape reveals gene programs driving lipid droplet hete... | Mus musculus | 4 | H5 | 2026/04/01 |
-| [GSE325547](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325547) | The Chromatin Remodeler, Mit1, Enables the Propagation of the Histone Modificati... | Schizosaccharomyces pombe | 9 | TXT | 2026/03/31 |
-| [GSE325239](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325239) | RNA-seq profiling of P2 rat neonatal atrial myocytes transfected with non-target... | Rattus norvegicus | 8 | TXT | 2026/03/31 |
-| [GSE316417](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE316417) | HTLV-1 Tax reshapes the DNA-binding pattern of transcription factor IRF4 and dis... | Homo sapiens | 19 | CSV, TXT | 2026/03/31 |
-| [GSE312616](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE312616) | The effects of FBW7 ablation on nuclear receptor transcriptional regulation | Homo sapiens | 18 | XLSX | 2026/03/31 |
-| [GSE311793](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE311793) | ZipV is required for oxidative stress resistance and pathogenicity in Aspergillu... | Aspergillus fumigatus | 12 | XLSX | 2026/03/31 |
-| [GSE310706](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE310706) | Identification of a set of transcriptional regulators involved in the temporal r... | Mus musculus | 23 | CSV | 2026/03/31 |
-| [GSE301507](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE301507) | Therapeutic targeting of eIF4E cap-binding domain reveals control of lineage fat... | Homo sapiens | 6 | TXT | 2026/03/31 |
-| [GSE300774](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE300774) | H3K9me3 controls epidermis development by repressing RNA Pol II activity on key ... | Mus musculus | 34 | BW, MTX, TSV | 2026/03/31 |
+| [GSE329205](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE329205) | EZH2 inhibition reshapes 3D chromatin architecture to induce immunogenic phenoty... | Homo sapiens | 6 | TSV | 2026/04/27 |
+| [GSE325594](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325594) | Adulthood depletion of Integrator extends lifespan and healthspan via defective ... | Caenorhabditis elegans | 11 | BW, CSV, TXT, XLSX | 2026/04/27 |
+| [GSE324874](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE324874) | Elongin B orchestrates chromatin and transcriptional programs in H3K27M‑mutant d... | Homo sapiens | 12 | TXT | 2026/04/27 |
+| [GSE288803](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE288803) | Proteasome inhibition alleviates proteinuria in Lmx1b knock-in mice with dysfunc... | Mus musculus | 35 | TSV | 2026/04/27 |
+| [GSE271663](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE271663) | Tumor-Suppressing Multi-Enterobacteria enhance the anti-PD-1/PD-L1 efficacy in m... | Mus musculus | 36 | TXT | 2026/04/26 |
+| [GSE329070](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE329070) | TCF7L2 Promotes Abdominal Aortic Aneurysm through Smooth Muscle Cell-Mediated Ex... | Homo sapiens | 8 | TXT | 2026/04/25 |
+| [GSE328195](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328195) | Gene regulatory co-option drives birdsong neural circuit specialization [overexp... | Gallus gallus | 3 | MTX, TSV | 2026/04/24 |
+| [GSE326387](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326387) | Ngn3 reprograms late retinal progenitor cells through transcriptional and epigen... | Mus musculus | 6 | TXT | 2026/04/24 |
+| [GSE317726](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE317726) | Co-targeting neurotransmitter signaling and CDK9 to treat diffuse midline glioma... | Homo sapiens | 24 | TXT | 2026/04/24 |
+| [GSE296037](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE296037) | Fragile nucleosomes are coupled with transcription activation of RNA Polymerase ... | Homo sapiens | 2 | BIGWIG | 2026/04/24 |
+| [GSE295687](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE295687) | ATF2 phosphorylation is a core transcriptional driver of neuron apoptosis | Homo sapiens | 61 | TXT | 2026/04/24 |
+| [GSE290574](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE290574) | Gene Regulatory Networks Orchestrating Oocyte Fate Bifurcation in Primordial Fol... | Mus musculus | 386 | TXT | 2026/04/24 |
+| [GSE283584](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE283584) | Flavonoid and isoflavonoid biosynthetic gene expression is affected by MYB36 tra... | Lotus japonicus | 18 | TXT | 2026/04/24 |
+| [GSE283420](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE283420) | Flavonoid and isoflavonoid biosynthetic gene expression is affected by MYB36 tra... | Lotus japonicus | 18 | XLS | 2026/04/24 |
+| [GSE280266](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE280266) | Reprogramming of Cellular Plasticity via ETS and MYC Core-regulatory circuits Du... | Homo sapiens | 48 | TXT | 2026/04/24 |
+| [GSE328424](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328424) | Ductal Epithelial MXD3 Promotes Disease Progression in Acute Pancreatitis throug... | Rattus norvegicus | 0 | TXT | 2026/04/23 |
+| [GSE324146](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE324146) | H3 dopaminylation and CaMKII modulate diffuse midline glioma response to CDK9 in... | Homo sapiens | 50 | BIGWIG | 2026/04/23 |
+| [GSE319518](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE319518) | Gene expression profiling of HepG2 cells with or without SAMD4B overexpression | Homo sapiens | 2 | CSV | 2026/04/23 |
+| [GSE310103](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE310103) | Runx3 instructs Aire+ mTEC development, TSA gene expression, and central toleran... | Mus musculus | 2 | MTX, TSV | 2026/04/23 |
+| [GSE305486](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE305486) | ATF7ip inhibits the tumor immune response by promoting terminal CD8+ T cell Exha... | Mus musculus | 6 | CSV | 2026/04/23 |
+| [GSE305418](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE305418) | ATF7ip inhibits the tumor immune response by promoting terminal CD8+ T cell Exha... | Mus musculus | 2 | MTX, TSV | 2026/04/23 |
+| [GSE303217](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE303217) | Mutant TP53 hijacks RNA-splicing factor RBM28 to suppress double-strand RNA trig... | Homo sapiens | 6 | CSV | 2026/04/23 |
+| [GSE283585](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE283585) | Flavonoid and isoflavonoid biosynthetic gene expression is affected by MYB36 tra... | Lotus japonicus | 36 |  | 2026/04/23 |
+| [GSE328503](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328503) | CBFA2T3-GLIS2 fusion-mediated mSWI/SNF chromatin remodeler disruption generates ... | Homo sapiens | 24 | TAB | 2026/04/22 |
+| [GSE328421](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328421) | CBFA2T3-GLIS2 fusion-mediated mSWI/SNF chromatin remodeler disruption generates ... | Homo sapiens | 9 | TSV | 2026/04/22 |
+| [GSE325634](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325634) | HP1B and H3K9me3 Regulate Olfactory Receptor Choice and 2 Transcriptional Identi... | Mus musculus | 24 | BW | 2026/04/22 |
+| [GSE324728](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE324728) | HP1B and H3K9me3 Regulate Olfactory Receptor Choice and 2 Transcriptional Identi... | Mus musculus | 6 | MTX, TSV | 2026/04/22 |
+| [GSE319218](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE319218) | SlMYB60 regulates cuticle formation in tomato | Solanum lycopersicum | 12 | CSV | 2026/04/22 |
+| [GSE306295](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE306295) | Wounding activates HSFA1 to  promote cellular reprogramming in Arabidopsis | Arabidopsis thaliana | 30 | TSV | 2026/04/22 |
+| [GSE305461](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE305461) | miR-4711-5p suppresses the cancer stemness, proliferation and invasion activity ... | Homo sapiens | 6 | TXT | 2026/04/22 |
+| [GSE303132](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE303132) | circTGFBR2(3-6) acts as an assembly platform for IGF2BP3 protein and TGFBR1 mRNA... | Homo sapiens | 6 | TXT | 2026/04/22 |
+| [GSE296732](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE296732) | SP5/8 transcription factors drive primary cilia formation | Mus musculus | 2 | MTX, TSV | 2026/04/22 |
+| [GSE264595](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE264595) | The XPO7-NPAT axis represents key vulnerabilities in TP53-mutated acute myeloid ... | Mus musculus | 18 | TXT | 2026/04/22 |
+| [GSE297989](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE297989) | HNF1B integrates signals in a feed-forward loop driving kidney disease progressi... | Mus musculus | 8 | TXT | 2026/04/21 |
+| [GSE297988](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE297988) | HNF1B integrates signals in a feed-forward loop driving kidney disease progressi... | Mus musculus | 8 | TXT | 2026/04/21 |
+| [GSE295329](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE295329) | RNA Folding Energy Regulates Discontinuous Transcription in Coronaviruses | Mus musculus; Chlorocebus aethiops | 18 | XLSX | 2026/04/21 |
+| [GSE307028](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE307028) | DNA-PK Mediated CRTC2 Phosphorylation Promotes CRTC2 Relocation from Transcripti... | Mus musculus | 2 | MTX, TSV | 2026/04/20 |
+| [GSE306599](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE306599) | DNA-PK Mediated CRTC2 Phosphorylation Promotes CRTC2 Relocation from Transcripti... | Homo sapiens | 6 | CSV | 2026/04/20 |
+| [GSE288427](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE288427) | Translational changes upon aging and dietary restriction in progeroid DNA-repair... | Mus musculus | 24 | TXT | 2026/04/20 |
+| [GSE278416](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE278416) | 3D Chromatin organization of signal-induced specific enhancers safeguards early ... | Mus musculus | 40 | BW, H5, HIC, TAB | 2026/04/20 |
+| [GSE276738](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE276738) | 3D Chromatin organization of signal-induced specific enhancers safeguards early ... | Mus musculus | 8 | H5 | 2026/04/20 |
+| [GSE276734](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE276734) | 3D Chromatin organization of signal-induced specific enhancers safeguards early ... | Mus musculus | 21 | TAB | 2026/04/20 |
+| [GSE327820](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327820) | Transcriptome profiling reveals the molecular mechanism of cuticular wax (bloom)... | Vaccinium corymbosum | 9 | TXT | 2026/04/18 |
+| [GSE312107](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE312107) | PerturbPair: A Dual-Modality Platform Integrating Perturb-seq and Optical Pooled... | Mus musculus | 70 | CSV, H5 | 2026/04/18 |
+| [GSE298771](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE298771) | Dose-dependent Effects of Estrogen on Genomic Regulation in Breast Cancer Cells ... | Homo sapiens | 23 | BW | 2026/04/18 |
+| [GSE295027](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE295027) | Coordinated regulation of calcium homeostasis and pathogenicity by a dual-action... | Candida albicans | 16 | TXT | 2026/04/18 |
+| [GSE288114](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE288114) | Krüppel-like factor 2 programs early exhausted T cell states and restrains antiv... | Mus musculus | 32 | TXT | 2026/04/18 |
+| [GSE255221](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE255221) | Mediator Subunit Med4 Enforces Metastatic Dormancy in Breast Cancer (RNA-seq_shM... | Mus musculus | 9 | TXT | 2026/04/18 |
+| [GSE255220](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE255220) | Mediator Subunit Med4 Enforces Metastatic Dormancy in Breast Cancer (RNA-seq_shM... | Mus musculus | 9 | TXT | 2026/04/18 |
+| [GSE328413](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328413) | Molecular mechanisms of promoter silencing by transcriptional readthrough | Mus musculus | 4 | TXT | 2026/04/17 |
 
-*...and 14466 more datasets.*
+*...and 14584 more datasets.*

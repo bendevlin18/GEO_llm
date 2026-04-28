@@ -1,22 +1,22 @@
 # Solanum lycopersicum
 
-> 188 RNA-seq datasets | 2015/01/01 – 2026/04/08
+> 192 RNA-seq datasets | 2015/01/01 – 2026/04/27
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 182 |
+| bulk | 184 |
 | single-cell | 5 |
-| spatial | 1 |
+| spatial | 3 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 106 |
+| TXT | 108 |
 | XLSX | 32 |
-| CSV | 23 |
+| CSV | 25 |
 | XLS | 11 |
 | BW | 9 |
 | TSV | 8 |
@@ -29,6 +29,10 @@
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |
 |-----------|-------|----------|--------:|-----------------|------|
+| [GSE319218](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE319218) | SlMYB60 regulates cuticle formation in tomato | Solanum lycopersicum | 12 | CSV | 2026/04/22 |
+| [GSE294740](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE294740) | Roots in Action for the Fe Response: Early Response-Omics in Tomato Dependent on... | Solanum lycopersicum | 15 | TXT | 2026/04/15 |
+| [GSE293947](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE293947) | Spatially organizing million callus cells identify the core-network enable tomat... | Solanum lycopersicum | 84 | CSV, TXT | 2026/04/15 |
+| [GSE293946](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE293946) | Spatially organizing million callus cells identify the core-network enable tomat... | Solanum lycopersicum | 8 | RDS | 2026/04/15 |
 | [GSE325371](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325371) | SlCAX3 drives the formation of crystal idioblasts for tomato ion compartmentaliz... | Solanum lycopersicum | 10 | RDS, TAR | 2026/03/20 |
 | [GSE303360](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE303360) | TET3-mediated DNA demethylation contributes to the formation of stable epiallele... | Solanum lycopersicum | 6 | BW, TSV | 2026/03/13 |
 | [GSE303457](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE303457) | TET3-mediated DNA demethylation contributes to the formation of stable epiallele... | Solanum lycopersicum | 60 | BW, TSV | 2026/03/12 |
@@ -75,9 +79,5 @@
 | [GSE262552](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE262552) | Tomato RS2Z35 and RS2Z36 | Solanum lycopersicum | 32 | BW, TAB | 2024/07/26 |
 | [GSE261816](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE261816) | Effect of RS2Z35 and RS2Z36 single and double knockout on gene expression and sp... | Solanum lycopersicum | 24 | TAB | 2024/07/26 |
 | [GSE256238](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE256238) | iSB09 and iCB elicit ABA-responsive gene expression in Solanum lycopersicum seed... | Solanum lycopersicum | 12 | TSV | 2024/07/22 |
-| [GSE245529](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE245529) | KRYPTONITE shapes TAD-like boundaries through the control of H3K9ac | Solanum lycopersicum | 51 | BIGWIG, BROADPEAK, NARROWPEAK | 2024/07/11 |
-| [GSE245528](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE245528) | KRYPTONITE shapes TAD-like boundaries through the control of H3K9ac [RNA-seq] | Solanum lycopersicum | 6 | TXT | 2024/07/11 |
-| [GSE201931](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE201931) | High-throughput single-cell transcriptome profiling of tomato leaf | Solanum lycopersicum | 4 | MTX, TSV | 2024/05/01 |
-| [GSE264066](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE264066) | Effects of strigolactones on tomato leaf transcriptome under irrigated and repea... | Solanum lycopersicum | 21 | TXT | 2024/04/17 |
 
-*...and 138 more datasets.*
+*...and 142 more datasets.*

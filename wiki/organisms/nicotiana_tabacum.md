@@ -1,12 +1,12 @@
 # Nicotiana tabacum
 
-> 57 RNA-seq datasets | 2015/01/01 – 2026/04/08
+> 58 RNA-seq datasets | 2015/01/01 – 2026/04/27
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 55 |
+| bulk | 56 |
 | single-cell | 2 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
@@ -14,7 +14,7 @@
 | Type | Count |
 |------|------:|
 | TXT | 35 |
-| XLSX | 9 |
+| XLSX | 10 |
 | CSV | 6 |
 | FASTA | 4 |
 | XLS | 3 |
@@ -28,6 +28,7 @@
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |
 |-----------|-------|----------|--------:|-----------------|------|
+| [GSE295211](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE295211) | RNA-Seq and BiFC joint analysis revealed that NtCISZOG regulates the expression ... | Nicotiana tabacum | 12 | XLSX | 2026/04/18 |
 | [GSE323976](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE323976) | Functional analysis of NtWRKY70 regulating tobacco defense against Rhizoctonia s... | Nicotiana tabacum | 6 | TXT | 2026/03/10 |
 | [GSE292748](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE292748) | NtispH as a Key Regulator of Glandular Trichome Development and Terpenoid Metabo... | Nicotiana tabacum | 6 | TXT | 2026/03/01 |
 | [GSE314253](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE314253) | Transcriptome comparison of tobacco cell cultures in various stages of their lif... | Nicotiana tabacum | 9 | SF | 2025/12/31 |
@@ -77,6 +78,5 @@
 | [GSE113473](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE113473) | Expression of defense related genes in resistance and susceptible tobacco (Nicot... | Nicotiana tabacum | 8 | FA, TXT | 2019/04/20 |
 | [GSE128049](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE128049) | Highly resolved systems biology to dissect the etioplast-to-chloroplast transiti... | Nicotiana tabacum | 39 | TXT | 2019/03/09 |
 | [GSE120388](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE120388) | Tobacco transcriptomic changes induced by C. sph. MVOC | Nicotiana tabacum | 8 | XLSX | 2018/11/05 |
-| [GSE111980](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE111980) | RNA-seq of Nicotiana tabacum BY-2 cells treated with the chitin oligomer NAG6 an... | Nicotiana tabacum | 54 | FASTA, TXT | 2018/09/13 |
 
-*...and 7 more datasets.*
+*...and 8 more datasets.*

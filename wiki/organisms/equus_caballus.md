@@ -1,12 +1,12 @@
 # Equus caballus
 
-> 84 RNA-seq datasets | 2015/01/01 – 2026/04/08
+> 85 RNA-seq datasets | 2015/01/01 – 2026/04/27
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 78 |
+| bulk | 79 |
 | single-cell | 6 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
@@ -28,6 +28,7 @@
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |
 |-----------|-------|----------|--------:|-----------------|------|
+| [GSE312304](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE312304) | CD8 T-cells, CD86+ macrophages, and TNF-α signaling pathways are correlated with... | Equus caballus | 23 | TAB | 2026/04/21 |
 | [GSE302877](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE302877) | Milk Fat Globule EGF and Factor V/VIII Domain Containing (MFGE8) as a Novel Play... | Equus caballus | 3 | MTX, TSV | 2026/03/25 |
 | [GSE245349](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE245349) | Transcriptomic responses of synovial and peripheral blood mononuclear cells in h... | Equus caballus | 31 | TXT | 2025/12/25 |
 | [GSE288575](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE288575) | Investigation of gene stability in equine luteal tissue during mid-luteal phase ... | Equus caballus | 14 | TXT | 2025/12/09 |
@@ -77,6 +78,5 @@
 | [GSE180022](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE180022) | Transcriptional profiling of equine endometrium before, during and after capsule... | Equus caballus | 13 | TXT | 2021/09/01 |
 | [GSE154637](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE154637) | Transcriptomic Analysis of the Chorioallantois of Mares with Nocardioform Placen... | Equus caballus | 12 | XLSX | 2021/07/14 |
 | [GSE166468](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE166468) | Identification of Myotendinous junction (MTJ) related mRNA | Equus caballus | 15 | XLSX | 2021/07/12 |
-| [GSE167260](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE167260) | Pathogenesis, miR-122 gene-regulation, and protective immune responses after acu... | Equus caballus | 2 | TXT | 2021/06/01 |
 
-*...and 34 more datasets.*
+*...and 35 more datasets.*

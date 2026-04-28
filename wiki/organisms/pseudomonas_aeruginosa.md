@@ -1,18 +1,18 @@
 # Pseudomonas aeruginosa
 
-> 165 RNA-seq datasets | 2015/01/01 – 2026/04/08
+> 166 RNA-seq datasets | 2015/01/01 – 2026/04/27
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 165 |
+| bulk | 166 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 75 |
+| TXT | 76 |
 | XLSX | 45 |
 | CSV | 31 |
 | XLS | 10 |
@@ -27,6 +27,7 @@
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |
 |-----------|-------|----------|--------:|-----------------|------|
+| [GSE270548](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE270548) | Perception of a quorum sensing signal by cell surface immune receptors increases... | Pseudomonas aeruginosa | 6 | TXT | 2026/04/16 |
 | [GSE302429](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE302429) | SadB is a modulator of Pseudomonas aeruginosa PAO1 virulence | Pseudomonas aeruginosa | 18 | XLSX | 2026/03/09 |
 | [GSE312996](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE312996) | Global regulation of mediated by the histidine-responsive local transcription fa... | Pseudomonas aeruginosa | 4 | XLSX | 2026/01/25 |
 | [GSE298078](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE298078) | Discovery of a global translation activator in Pseudomonas aeruginosa [RNA-seq] | Pseudomonas aeruginosa | 9 | BW | 2026/01/12 |
@@ -76,6 +77,5 @@
 | [GSE223542](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE223542) | Transcriptomic analysis of Pseudomonas aeruginosa under the treatment of bismuth... | Pseudomonas aeruginosa | 8 | TXT | 2023/09/26 |
 | [GSE230851](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE230851) | The phage-encoded PIT4 protein impacts the Pseudomonas aeruginosa type IV pili b... | Pseudomonas aeruginosa | 12 | CSV | 2023/09/25 |
 | [GSE239971](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE239971) | Effect of markerless deletion of ptsP from P. aeruginosa PA14 biofilm colonies o... | Pseudomonas aeruginosa | 3 | XLS | 2023/08/09 |
-| [GSE233379](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE233379) | ChIPseq analysis of ParB binding to parSs and half-parSs in Pseudomonas aerugino... | Pseudomonas aeruginosa | 61 | BIGWIG | 2023/08/03 |
 
-*...and 115 more datasets.*
+*...and 116 more datasets.*

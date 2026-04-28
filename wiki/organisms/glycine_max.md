@@ -1,12 +1,12 @@
 # Glycine max
 
-> 141 RNA-seq datasets | 2015/01/01 – 2026/04/08
+> 143 RNA-seq datasets | 2015/01/01 – 2026/04/27
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 136 |
+| bulk | 138 |
 | single-cell | 3 |
 | single-nucleus | 2 |
 
@@ -14,7 +14,7 @@
 
 | Type | Count |
 |------|------:|
-| TXT | 86 |
+| TXT | 88 |
 | XLSX | 21 |
 | CSV | 12 |
 | XLS | 9 |
@@ -29,6 +29,8 @@
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |
 |-----------|-------|----------|--------:|-----------------|------|
+| [GSE300521](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE300521) | Editing of the of the gene model underlying the major protein quantitative trait... | Glycine max | 12 | TXT | 2026/04/15 |
+| [GSE317596](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE317596) | GmJAG1 regulates leaf shape development in soybean through transcriptional contr... | Glycine max | 60 | TXT | 2026/04/10 |
 | [GSE270020](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE270020) | Physiological and transcriptional response of VPZ trangenic soybean lines under ... | Glycine max | 32 | CSV | 2026/03/31 |
 | [GSE325098](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325098) | GmMYB21a improves male fertility of CMS-based restorer line under high-temperatu... | Glycine max | 12 | TXT | 2026/03/21 |
 | [GSE307342](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE307342) | Glycine max JmjC domain-containing proteins JMJ19/20 exhibit endopeptidase activ... | Glycine max | 6 | TXT | 2026/03/11 |
@@ -77,7 +79,5 @@
 | [GSE240964](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE240964) | Transcriptomic and epigenetic responses unveil resistance mechanisms to Phytopht... | Glycine max | 64 | TXT | 2023/11/24 |
 | [GSE240966](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE240966) | Transcriptomic and epigenetic responses unveil resistance mechanisms to Phytopht... | Glycine max | 80 | TXT | 2023/11/23 |
 | [GSE237798](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE237798) | Combined phenotypic and transcriptomic analysis of soybean plants subjected to m... | Glycine max | 108 | TXT | 2023/07/23 |
-| [GSE201762](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE201762) | Transcriptome analysis reveals GmZF351-affected gene expression in leaf and root... | Glycine max | 12 | TXT | 2023/06/24 |
-| [GSE221901](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE221901) | RNA-seq dissects incomplete activation of glyceollin biosynthesis by soybean tra... | Glycine max | 9 |  | 2023/05/31 |
 
-*...and 91 more datasets.*
+*...and 93 more datasets.*

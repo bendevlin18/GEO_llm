@@ -364,3 +364,80 @@ A hosted app that takes natural-language queries, runs grep to find candidates, 
 - Could use the Anthropic API with a hosted key for higher-quality answers
 
 **Decided against GitHub Pages static search** — explored and rejected. A faceted filter UI (dropdowns, text boxes) cannot handle the complex natural-language queries this project is designed for. The grep → LLM pattern is the right architecture; a static UI that skips the LLM step doesn't serve the core use case.
+
+## LLM Query Benchmark: Claude Code vs. Gemini CLI
+
+A structured test suite to evaluate how well each tool handles GEO dataset discovery queries. Both tools use the same grep → LLM pattern on local files — this benchmark measures where they diverge in practice.
+
+### Evaluation criteria (score each 1–3)
+
+| Criterion | 1 — Poor | 2 — OK | 3 — Good |
+|---|---|---|---|
+| **Accuracy** | Returns wrong datasets | Mostly right, some errors | All returned datasets match query |
+| **Completeness** | Misses obvious results | Finds most relevant | Finds all clearly relevant results |
+| **Constraint adherence** | Ignores n_samples / file type filters | Partially applies | Correctly filters all constraints |
+| **Domain interpretation** | Misses domain terms (e.g. APP/PS1) | Partially understands | Correctly resolves domain knowledge |
+| **Explanation quality** | No justification | Brief justification | Clear reasoning per result |
+| **Hallucination** | Invents accessions or details | Minor inaccuracies | No fabrication |
+| **Tool efficiency** | Redundant or wrong shard searched | Minor inefficiency | Picks right shard, minimal calls |
+
+### Query tiers
+
+#### Tier 1 — Simple / exact match
+These should be easy for both tools. Failures here are red flags.
+
+1. `"Find zebrafish spatial transcriptomics datasets"`
+2. `"List ATAC-seq datasets from Arabidopsis thaliana"`
+3. `"How many human WGBS methylation datasets are there?"`
+4. `"Find CITE-seq datasets with more than 20 samples"`
+
+#### Tier 2 — Multi-constraint
+Require combining organism + modality + topic + file format or sample count.
+
+5. `"Mouse kidney snRNA-seq with at least 5 samples and processed H5 files"`
+6. `"Human PBMC scRNA-seq with RDS files available and at least 10 samples"`
+7. `"Bulk RNA-seq datasets studying drug response in human liver, with count matrices"`
+8. `"Find H3K27ac ChIP-seq datasets in mouse embryonic stem cells"`
+
+#### Tier 3 — Domain knowledge required
+Require resolving specialized biology terms not present verbatim in the index.
+
+9. `"Find single-cell RNA-seq from APP/PS1 or 5XFAD mice"` — Alzheimer's mouse models; these appear in titles as "APP/PS1", "5XFAD", "amyloid precursor protein"
+10. `"CITE-seq datasets studying T cell exhaustion"` — immunology term; look for TIL, exhaustion, PD-1, TOX
+11. `"Find snRNA-seq datasets from the Allen Brain Cell Atlas"` — major consortium dataset
+12. `"Datasets studying the tumor microenvironment in pancreatic ductal adenocarcinoma"` — PDAC; look for "PDAC", "ductal", "pancreatic cancer", "stroma"
+
+#### Tier 4 — Comparison and reasoning
+Require the model to evaluate and compare multiple results, not just list them.
+
+13. `"Find two comparable scRNA-seq datasets of mouse hippocampus I could use to replicate an analysis — similar sample counts preferred"`
+14. `"Which spatial transcriptomics dataset has the most samples in any non-human primate?"`
+15. `"I want to study chromatin remodeling in mouse brain development. What RNA-seq and ATAC-seq datasets are available from the same tissue?"`
+16. `"Find a bulk RNA-seq and a matched ChIP-seq dataset from the same human cancer cell line study"` — requires cross-shard reasoning
+
+#### Tier 5 — Ambiguous / open-ended
+Require the model to interpret vague intent and make judgment calls.
+
+17. `"What's the best dataset to start with if I want to learn single-cell analysis on mouse data?"` — subjective; good answer factors in sample count, file format ease, topic familiarity
+18. `"Are there any unusual organisms with a surprising amount of RNA-seq data?"` — requires browsing organism distribution
+19. `"Find me something like the Tabula Muris"` — must recognize reference to a landmark multi-organ mouse scRNA-seq atlas
+20. `"I'm studying liver fibrosis — what's available?"` — requires cross-assay awareness (RNA-seq + ATAC-seq + ChIP-seq all relevant)
+
+### What to record per query
+
+For each query run on each tool:
+
+- **Shard(s) used** — did it pick the right one?
+- **Grep command(s) issued** — how many calls, were the patterns sensible?
+- **Results returned** — accessions listed, how many
+- **Spot-check** — manually verify 2–3 returned accessions against the index
+- **Score** — 1–3 on each criterion above
+- **Notable failures or wins** — any surprising behavior worth noting
+
+### What to watch for
+
+- **Hallucination risk**: Does either tool ever return accession numbers not in the index? This is a hard failure.
+- **Context window behavior**: For large shards (RNA-seq, 52.9 MB), does either tool load the full file or grep first? Gemini 2.5 Pro's 1M token window may tempt it to load everything.
+- **Domain knowledge gap**: Claude and Gemini have different training data. Do they differ on resolving mouse model names or consortium names?
+- **Multi-hop queries**: Tier 4–5 queries may require reading one result, then doing a follow-up grep. Does either tool do this naturally?
+- **Shard selection**: For cross-assay queries (Tier 4 Q15–16), does the tool know to search multiple shards?

@@ -1,12 +1,12 @@
 # Oryza sativa Japonica Group
 
-> 128 RNA-seq datasets | 2015/01/01 – 2026/04/08
+> 129 RNA-seq datasets | 2015/01/01 – 2026/04/27
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 123 |
+| bulk | 124 |
 | single-nucleus | 4 |
 | single-cell | 1 |
 
@@ -15,7 +15,7 @@
 | Type | Count |
 |------|------:|
 | TXT | 67 |
-| XLSX | 25 |
+| XLSX | 26 |
 | BW | 17 |
 | XLS | 12 |
 | CSV | 9 |
@@ -29,6 +29,7 @@
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |
 |-----------|-------|----------|--------:|-----------------|------|
+| [GSE294193](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE294193) | Acetylated OsWOX13 coordinately regulated drought-responsive and NUE- related ge... | Oryza sativa Japonica Group | 4 | XLSX | 2026/04/10 |
 | [GSE308757](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE308757) | Single-cell transcriptome profiling of Oryza sativa node I at booting, flowering... | Oryza sativa Japonica Group | 3 | MTX, TSV | 2026/03/11 |
 | [GSE322568](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE322568) | Integrated metabolome and transcriptome profiling demonstrates dynamic regulator... | Oryza sativa Japonica Group | 5 | XLSX | 2026/03/06 |
 | [GSE316765](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE316765) | Subfamily-level Comparative Transcriptomics of Key Immune Regulators in Plants a... | Oryza sativa Japonica Group | 18 | CSV | 2026/01/25 |
@@ -78,6 +79,5 @@
 | [GSE194096](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE194096) | Transcriptome analysis of piperonylic acid-treated, Meloidogyne graminicola-inoc... | Oryza sativa Japonica Group | 30 | CSV | 2022/12/06 |
 | [GSE185088](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE185088) | Transcriptomic analysis of rice seedlings under cold stress engineered with rd29... | Oryza sativa Japonica Group | 8 | TXT | 2022/10/05 |
 | [GSE211516](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE211516) | RNA-Seq of Hrip1-treated rice leaves | Oryza sativa Japonica Group | 24 | TXT | 2022/08/21 |
-| [GSE194283](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE194283) | A plant-specific splicing factor RS33 regulates abiotic stress responses in rice | Oryza sativa Japonica Group | 24 | BW, XLSX | 2022/06/15 |
 
-*...and 78 more datasets.*
+*...and 79 more datasets.*

@@ -1,6 +1,6 @@
 # Astyanax mexicanus
 
-> 23 RNA-seq datasets | 2015/01/01 – 2026/04/08
+> 23 RNA-seq datasets | 2015/01/01 – 2026/04/27
 
 ## Modality Breakdown
 

@@ -1,12 +1,12 @@
 # Escherichia coli str. K-12 substr. MG1655
 
-> 144 RNA-seq datasets | 2015/01/01 – 2026/04/08
+> 145 RNA-seq datasets | 2015/01/01 – 2026/04/27
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 139 |
+| bulk | 140 |
 | single-cell | 4 |
 | spatial | 1 |
 
@@ -18,7 +18,7 @@
 | CSV | 41 |
 | XLSX | 21 |
 | GFF | 9 |
-| WIG | 8 |
+| WIG | 9 |
 | BW | 5 |
 | XLS | 3 |
 | FPKM_TRACKING | 2 |
@@ -29,6 +29,7 @@
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |
 |-----------|-------|----------|--------:|-----------------|------|
+| [GSE298132](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE298132) | Spatial and genetic constraints govern transcription-translation coupling and mR... | Escherichia coli str. K-12 substr. MG1655 | 20 | WIG | 2026/04/16 |
 | [GSE325428](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325428) | Viral SSB-bound ssDNA activates the bacterial anti-phage defense system DARNA | Escherichia coli str. K-12 substr. MG1655 | 4 | CSV, TXT | 2026/03/24 |
 | [GSE311194](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE311194) | Beneficial impact of acquired AmpC β-lactamases on bacterial fitness and pathoge... | Escherichia coli str. K-12 substr. MG1655 | 12 | XLSX | 2026/03/24 |
 | [GSE316857](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE316857) | Cost adjusted hierarchical defense strategies enables stratified oxidative stres... | Escherichia coli str. K-12 substr. MG1655 | 24 | XLSX | 2026/03/03 |
@@ -78,6 +79,5 @@
 | [GSE222248](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE222248) | The E. coli pathobiont LF82 encodes a unique variant of sigma 70 that results in... | Escherichia coli str. K-12 substr. MG1655 | 12 | CSV | 2023/01/10 |
 | [GSE192799](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE192799) | Construction of an artificial diploid Escherichia coli using a CRISPR-based chro... | Escherichia coli str. K-12 substr. MG1655 | 6 | TXT | 2022/12/29 |
 | [GSE221314](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE221314) | Lab evolution, transcriptomics, and modeling reveal mechanisms of paraquat toler... | Escherichia coli str. K-12 substr. MG1655 | 84 | CSV | 2022/12/19 |
-| [GSE195954](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE195954) | A Systems Biology Approach To Disentangle the Direct and Indirect Effects of Glo... | Escherichia coli str. K-12 substr. MG1655 | 8 | TXT | 2022/11/30 |
 
-*...and 94 more datasets.*
+*...and 95 more datasets.*

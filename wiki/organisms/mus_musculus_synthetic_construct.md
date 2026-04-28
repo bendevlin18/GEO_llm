@@ -1,13 +1,13 @@
 # Mus musculus; synthetic construct
 
-> 23 RNA-seq datasets | 2015/01/01 – 2026/04/08
+> 24 RNA-seq datasets | 2015/01/01 – 2026/04/27
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
 | bulk | 16 |
-| single-cell | 5 |
+| single-cell | 6 |
 | spatial | 2 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
@@ -20,15 +20,16 @@
 | MTX | 3 |
 | BW | 3 |
 | NARROWPEAK | 2 |
+| CSV | 2 |
 | TAB | 1 |
 | BED | 1 |
 | SEG | 1 |
-| VCF | 1 |
 
 ## Recent Datasets
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |
 |-----------|-------|----------|--------:|-----------------|------|
+| [GSE297068](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE297068) | A spatial code governs olfactory receptor choice and aligns sensory maps in the ... | Mus musculus; synthetic construct | 291 | CSV, GEF, H5 | 2026/04/21 |
 | [GSE275724](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE275724) | GeoMx DSP- profiling of mouse spleen | Mus musculus; synthetic construct | 67 | DCC | 2025/12/31 |
 | [GSE229500](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE229500) | Unraveling the Cellular Landscape of Abdominal Aortic Aneurysm Using High-Resolu... | Mus musculus; synthetic construct | 3 | MTX, TSV | 2025/06/12 |
 | [GSE274507](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE274507) | Reporter CRISPR screens decipher cis- and trans-regulatory principles at the Xis... | Mus musculus; synthetic construct | 244 | BW | 2025/05/21 |

@@ -1,18 +1,18 @@
 # Solanum tuberosum
 
-> 48 RNA-seq datasets | 2015/01/01 – 2026/04/08
+> 49 RNA-seq datasets | 2015/01/01 – 2026/04/27
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 48 |
+| bulk | 49 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 25 |
+| TXT | 26 |
 | XLSX | 8 |
 | CSV | 5 |
 | DIFF | 2 |
@@ -27,6 +27,7 @@
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |
 |-----------|-------|----------|--------:|-----------------|------|
+| [GSE289026](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE289026) | Effect of ethylene on potato tuber dormancy during postharvest storage | Solanum tuberosum | 136 | TXT | 2026/04/20 |
 | [GSE309416](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE309416) | Integrated transcriptomic and metabolomic analyses reveal the regulatory network... | Solanum tuberosum | 3 | XLSX | 2026/03/18 |
 | [GSE297139](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE297139) | Hormonal and transcriptional responses to 1,4-dimethylnaphthalene reveal tissue-... | Solanum tuberosum | 97 | TXT | 2026/03/11 |
 | [GSE313881](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE313881) | Role of potato Pti5 in HR-mediated resistance to potato virus Y | Solanum tuberosum | 12 | TXT | 2025/12/23 |

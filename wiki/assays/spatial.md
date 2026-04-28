@@ -1,6 +1,6 @@
 # Spatial Transcriptomics
 
-> 1027 datasets | 2015/01/01 – 2026/04/08
+> 1046 datasets | 2015/01/01 – 2026/04/27
 
 Spatially-resolved transcriptomics that preserves tissue context. Includes sequencing-based (10x Visium, Slide-seq, Stereo-seq) and imaging-based (MERFISH, seqFISH, CosMx, Xenium) methods. Supplementary files may include spatial coordinates (JSON/CSV) and tissue images (PNG/JPG).
 
@@ -8,8 +8,8 @@ Spatially-resolved transcriptomics that preserves tissue context. Includes seque
 
 | Organism | Count |
 |----------|------:|
-| Homo sapiens | 441 |
-| Mus musculus | 435 |
+| Homo sapiens | 451 |
+| Mus musculus | 440 |
 | Homo sapiens; Mus musculus | 23 |
 | Rattus norvegicus | 11 |
 | Danio rerio | 10 |
@@ -20,25 +20,25 @@ Spatially-resolved transcriptomics that preserves tissue context. Includes seque
 | Mus | 4 |
 | Nematostella vectensis | 3 |
 | Arabidopsis thaliana | 3 |
+| Macaca fascicularis | 3 |
 | Macaca mulatta | 3 |
 | Dugesia japonica | 3 |
-| Homo sapiens; blank sample | 2 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count | Description |
 |------|------:|-------------|
-| TSV | 428 | Tab-separated (10x barcodes/features, metadata) |
-| MTX | 364 | Sparse matrices (10x CellRanger output) |
-| CSV | 339 | Comma-separated (count matrices, DE results) |
-| TXT | 213 | Text files (count matrices, gene lists, metadata) |
-| H5 | 209 | HDF5 (CellRanger filtered matrices) |
-| PNG | 163 | Images (spatial, QC plots) |
-| JSON | 146 | JSON (cell metadata, spatial coordinates) |
-| JPG | 121 | Images (spatial, QC plots) |
+| TSV | 439 | Tab-separated (10x barcodes/features, metadata) |
+| MTX | 374 | Sparse matrices (10x CellRanger output) |
+| CSV | 343 | Comma-separated (count matrices, DE results) |
+| TXT | 217 | Text files (count matrices, gene lists, metadata) |
+| H5 | 213 | HDF5 (CellRanger filtered matrices) |
+| PNG | 165 | Images (spatial, QC plots) |
+| JSON | 148 | JSON (cell metadata, spatial coordinates) |
+| JPG | 122 | Images (spatial, QC plots) |
 | TAR | 110 | Tar archives (bundled outputs) |
-| TIFF | 75 |  |
-| RDS | 71 | R serialized objects (Seurat, SingleCellExperiment) |
+| TIFF | 76 |  |
+| RDS | 76 | R serialized objects (Seurat, SingleCellExperiment) |
 | XLSX | 62 | Excel (DE results, sample annotations) |
 | H5AD | 40 | AnnData HDF5 (scanpy/Python ecosystem) |
 | DCC | 34 |  |
@@ -60,6 +60,25 @@ Spatially-resolved transcriptomics that preserves tissue context. Includes seque
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |
 |-----------|-------|----------|--------:|-----------------|------|
+| [GSE308140](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE308140) | Spatiotemporal regulation of arbuscular mycorrhizal symbiosis at cellular resolu... | Oryza sativa | 38 | CSV | 2026/04/27 |
+| [GSE328649](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328649) | Lineage 2-Beijing Mycobacterium tuberculosis strains suppress BCG-trained innate... | Homo sapiens | 39 | TXT | 2026/04/26 |
+| [GSE328930](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328930) | The DUTRENEO trial: bulk prospective biomarker-guided therapy selection and spat... | Homo sapiens | 66 | TSV | 2026/04/24 |
+| [GSE324158](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE324158) | Single-cell multi-omic and spatial landscape of primate pineal gland reveals cir... | Macaca fascicularis | 4 | BED, CSV, H5, JSON, MTX, PNG, TBI, TIFF, TSV, TXT | 2026/04/23 |
+| [GSE294765](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE294765) | A skeletal muscle atlas shows neuromuscular junction adaptations to growth and a... | Mus musculus | 35 | CSV, JPG, JSON, MTX, PNG, TSV | 2026/04/23 |
+| [GSE277893](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE277893) | Single-Cell Spatial Mapping of Human Kidney Development Reveals Cellular Niches ... | Homo sapiens | 5 | MTX, TSV | 2026/04/22 |
+| [GSE295236](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE295236) | Excitatory neurons and astrocytes-specific dysregulation and aberrant interactio... | Homo sapiens | 6 | MTX, TSV | 2026/04/21 |
+| [GSE327442](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327442) | Cellular Signatures of Melanocortin Pathway Genes Across the Locus Coeruleus [sn... | Homo sapiens | 4 | MTX, RDS, TSV | 2026/04/20 |
+| [GSE296374](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE296374) | Region- and cell type-specific changes in gene expression in the cerebellum afte... | Mus musculus | 3 | H5 | 2026/04/19 |
+| [GSE327665](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327665) | Ustekinumab Resistance in Individuals with Ulcerative Colitis is Associated with... | Homo sapiens | 6 | MTX, TSV | 2026/04/17 |
+| [GSE305558](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE305558) | Single-cell profiling reveals RAB13+ endothelial cells and profibrotic mesenchym... | Homo sapiens | 12 | H5 | 2026/04/15 |
+| [GSE294771](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE294771) | A cellular anatomy of normal adult human female urethra | Homo sapiens | 4 | H5, RDS | 2026/04/15 |
+| [GSE293947](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE293947) | Spatially organizing million callus cells identify the core-network enable tomat... | Solanum lycopersicum | 84 | CSV, TXT | 2026/04/15 |
+| [GSE293946](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE293946) | Spatially organizing million callus cells identify the core-network enable tomat... | Solanum lycopersicum | 8 | RDS | 2026/04/15 |
+| [GSE285362](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE285362) | Identification of Cryosensitive Niches and a Targetable FOS/AP‑1 Program in the ... | Homo sapiens | 7 | MTX, TSV | 2026/04/15 |
+| [GSE278973](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE278973) | Multi-omic profiling reveals epithelial remodeling in necrotizing enterocolitis | Mus musculus | 4 | MTX, TSV | 2026/04/15 |
+| [GSE327488](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327488) | Mutual interaction between Schwann cells and CD4+T cells promotes the progressio... | Homo sapiens | 12 | TXT | 2026/04/14 |
+| [GSE327303](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327303) | Spatiotemporal transcriptomics characterizes immune microenvironment during mous... | Mus musculus | 7 | MTX, RDS, TSV | 2026/04/13 |
+| [GSE327302](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327302) | Spatiotemporal transcriptomics characterizes immune microenvironment during mous... | Mus musculus | 7 | MTX, RDS, TSV | 2026/04/13 |
 | [GSE318565](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE318565) | Single-cell, clonal and spatial atlases of neural plate border and neurogenic pl... | Mus musculus | 12 | CSV, H5 | 2026/04/07 |
 | [GSE326312](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326312) | Development and first-in-human CAR T therapy targeting the pathognomonic MiT-fus... | Homo sapiens | 20 | CSV, MTX, TSV | 2026/04/02 |
 | [GSE325772](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325772) | CAR T therapy against the MiTF-driven protein GPNMB [Multiome-Seq] | Homo sapiens | 16 | CSV, MTX, TSV | 2026/04/02 |
@@ -91,24 +110,5 @@ Spatially-resolved transcriptomics that preserves tissue context. Includes seque
 | [GSE325371](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325371) | SlCAX3 drives the formation of crystal idioblasts for tomato ion compartmentaliz... | Solanum lycopersicum | 10 | RDS, TAR | 2026/03/20 |
 | [GSE317209](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE317209) | Mapping Endothelial-Macrophage Interactions in Diabetic Vasculature: Role of TRE... | Homo sapiens | 6 | TXT | 2026/03/20 |
 | [GSE293428](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE293428) | Mapping Endothelial-Macrophage Interactions in Diabetic Vasculature: Role of TRE... | Homo sapiens | 18 | MTX, TSV | 2026/03/20 |
-| [GSE317073](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE317073) | Oncogenic and tumor-suppressive forces converge on a progenitor-orchestrated nic... | Mus musculus | 4 | H5AD, MTX, TSV | 2026/03/18 |
-| [GSE315670](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE315670) | Oncogenic and tumor-suppressive forces converge on a progenitor-orchestrated nic... | Mus musculus | 6 | MTX, TSV | 2026/03/18 |
-| [GSE315242](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE315242) | Oncogenic and tumor-suppressive forces converge on a progenitor-orchestrated nic... | Mus musculus | 8 | MTX, TSV | 2026/03/18 |
-| [GSE315241](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE315241) | Oncogenic and tumor-suppressive forces converge on a progenitor-orchestrated nic... | Mus musculus | 1 | JSON, MTX, TSV | 2026/03/18 |
-| [GSE313305](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE313305) | Oncogenic and tumor-suppressive forces converge on a progenitor-orchestrated nic... | Mus musculus | 17 | MTX, TSV | 2026/03/18 |
-| [GSE276088](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE276088) | Single-cell transcriptomic and spatial subcellular landscape of the articular di... | Mus musculus | 18 | CSV | 2026/03/18 |
-| [GSE324074](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE324074) | Integrated spatial transcriptomics (Stereo-seq) and bulk RNA-seq of cardiac sono... | Rattus norvegicus | 13 | TXT | 2026/03/17 |
-| [GSE292145](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE292145) | Dynamic plasticity of gastric neck cells contributes to regeneration and metapla... | Mus musculus | 11 | TSV | 2026/03/17 |
-| [GSE290367](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE290367) | Single-cell multiomic integration identifies widespread, cell-type resolved feta... | Homo sapiens | 90 | H5AD, TSV | 2026/03/15 |
-| [GSE289709](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE289709) | Tff2 marks gastric corpus progenitors that give rise to pyloric metaplasia/SPEM ... | Mus musculus | 2 | MTX, TSV | 2026/03/14 |
-| [GSE293781](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE293781) | An organoid model of the human adrenal cortex identifies drivers of steroidogene... | Homo sapiens | 9 | H5AD | 2026/03/12 |
-| [GSE286328](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE286328) | Single-Cell Chromatin Accessibility Landscape of Developing Perinatal Mouse Skin... | Mus musculus | 10 | H5, TSV | 2026/03/12 |
-| [GSE323357](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE323357) | Single-cell and Spatial Transcriptomic Profiling of the Bone Metastatic Microenv... | Mus musculus | 5 | CSV, JPG, JSON, MTX, PNG, TSV | 2026/03/11 |
-| [GSE324453](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE324453) | Dissecting the cellular architecture of breast cancer brain metastases reveals p... | Homo sapiens | 28 | RDS | 2026/03/10 |
-| [GSE322943](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE322943) | Dissecting the cellular architecture of breast cancer brain metastases reveals p... | Homo sapiens | 100 | XLSX | 2026/03/10 |
-| [GSE299050](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE299050) | Immune Dynamics in Palmoplantar Pustulosis Unveiled by Single-Cell and High-Reso... | Homo sapiens | 5 | H5 | 2026/03/09 |
-| [GSE317680](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE317680) | Single Cell and Spatial Transcriptomics Identify Novel Immune-Stromal Interactio... | Homo sapiens | 13 | CSV, MTX, RDS | 2026/03/06 |
-| [GSE304864](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE304864) | Multiomics immune profiling of a patient-relevant orthotopic lung cancer model u... | Mus musculus | 11 | CSV, H5 | 2026/03/06 |
-| [GSE299711](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE299711) | Clonal dynamics reveal cancer resistance arises from adaptive programs [scRNA-Se... | Homo sapiens | 8 | RDS | 2026/03/04 |
 
-*...and 977 more datasets.*
+*...and 996 more datasets.*

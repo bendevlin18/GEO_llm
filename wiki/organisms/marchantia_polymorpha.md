@@ -1,18 +1,18 @@
 # Marchantia polymorpha
 
-> 25 RNA-seq datasets | 2015/01/01 – 2026/04/08
+> 28 RNA-seq datasets | 2015/01/01 – 2026/04/27
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 25 |
+| bulk | 28 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 19 |
+| TXT | 21 |
 | CSV | 3 |
 | BIGWIG | 1 |
 | TAB | 1 |
@@ -26,6 +26,9 @@
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |
 |-----------|-------|----------|--------:|-----------------|------|
+| [GSE296364](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE296364) | Conservation and divergence of UVR8 photoreceptor-mediated UV-B signaling in Mar... | Marchantia polymorpha | 42 |  | 2026/04/21 |
+| [GSE296030](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE296030) | Conservation and divergence of UVR8 photoreceptor-mediated UV-B signaling in Mar... | Marchantia polymorpha | 12 | TXT | 2026/04/21 |
+| [GSE295939](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE295939) | Conservation and divergence of UVR8 photoreceptor-mediated UV-B signaling in Mar... | Marchantia polymorpha | 30 | TXT | 2026/04/21 |
 | [GSE316508](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE316508) | Antagonism between blue and red light-signalling controls thallus flatness in Ma... | Marchantia polymorpha | 78 | CSV | 2026/01/21 |
 | [GSE300298](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE300298) | A Conserved Salicylic Acid Signaling Pathway Controls Plant Immunity against Pse... | Marchantia polymorpha | 24 | TXT | 2026/01/16 |
 | [GSE305650](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE305650) | Histone H3K4 methylation regulation and three-dimensional aggregating distributi... | Marchantia polymorpha | 12 | TXT | 2025/12/08 |

@@ -1,6 +1,6 @@
 # Macaca fascicularis
 
-> 121 RNA-seq datasets | 2015/01/01 – 2026/04/08
+> 122 RNA-seq datasets | 2015/01/01 – 2026/04/27
 
 ## Modality Breakdown
 
@@ -8,28 +8,29 @@
 |----------|------:|
 | bulk | 65 |
 | single-cell | 51 |
+| spatial | 3 |
 | single-nucleus | 3 |
-| spatial | 2 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 55 |
-| TSV | 31 |
-| MTX | 27 |
-| CSV | 14 |
+| TXT | 56 |
+| TSV | 32 |
+| MTX | 28 |
+| CSV | 15 |
 | XLSX | 13 |
-| H5 | 8 |
+| H5 | 9 |
 | TAB | 5 |
 | RDS | 4 |
+| BED | 3 |
 | XLS | 2 |
-| BED | 2 |
 
 ## Recent Datasets
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |
 |-----------|-------|----------|--------:|-----------------|------|
+| [GSE324158](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE324158) | Single-cell multi-omic and spatial landscape of primate pineal gland reveals cir... | Macaca fascicularis | 4 | BED, CSV, H5, JSON, MTX, PNG, TBI, TIFF, TSV, TXT | 2026/04/23 |
 | [GSE279424](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE279424) | Dysbiotic Microbiota-Induced Ammonium Stress Drives Intestinal Barrier Dysfuncti... | Macaca fascicularis | 9 | MTX, TSV | 2026/03/30 |
 | [GSE319557](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE319557) | Cell Atlas and Novel Signal Processing Strategy in Primate Insular Cortex [scRNA... | Macaca fascicularis | 22 | MTX, TSV | 2026/02/20 |
 | [GSE319369](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE319369) | Cell Atlas and Novel Signal Processing Strategy in Primate Insular Cortex [Patch... | Macaca fascicularis | 5 | XLSX | 2026/02/16 |
@@ -79,6 +80,5 @@
 | [GSE239741](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE239741) | A somatic cell cloned rhesus monkey obtained by trophoblast replacement [RNA-seq... | Macaca fascicularis | 4 | TXT | 2023/08/01 |
 | [GSE237547](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE237547) | A recombinant vesicular stomatitis virus-based vaccine provides postexposure pro... | Macaca fascicularis | 104 | XLSX | 2023/07/24 |
 | [GSE233232](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE233232) | RNAseq of the in vitro matured and in vivo matured monkey oocytes | Macaca fascicularis | 6 | TXT | 2023/07/15 |
-| [GSE188418](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE188418) | A Transcriptomic and Proteomic Atlas of Obesity and Type 2 Diabetes in Cynomolgu... | Macaca fascicularis | 516 | TXT | 2023/06/22 |
 
-*...and 71 more datasets.*
+*...and 72 more datasets.*

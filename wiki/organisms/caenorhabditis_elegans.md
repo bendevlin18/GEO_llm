@@ -1,12 +1,12 @@
 # Caenorhabditis elegans
 
-> 1071 RNA-seq datasets | 2015/01/01 – 2026/04/08
+> 1075 RNA-seq datasets | 2015/01/01 – 2026/04/27
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 1023 |
+| bulk | 1027 |
 | single-cell | 44 |
 | single-nucleus | 3 |
 | spatial | 1 |
@@ -15,13 +15,13 @@
 
 | Type | Count |
 |------|------:|
-| TXT | 478 |
-| XLSX | 187 |
-| CSV | 160 |
-| BW | 86 |
+| TXT | 479 |
+| XLSX | 189 |
+| CSV | 162 |
+| BW | 87 |
 | TSV | 86 |
 | XLS | 43 |
-| TAB | 34 |
+| TAB | 35 |
 | BED | 18 |
 | H5 | 12 |
 | MTX | 12 |
@@ -30,6 +30,10 @@
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |
 |-----------|-------|----------|--------:|-----------------|------|
+| [GSE325594](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325594) | Adulthood depletion of Integrator extends lifespan and healthspan via defective ... | Caenorhabditis elegans | 11 | BW, CSV, TXT, XLSX | 2026/04/27 |
+| [GSE264529](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE264529) | Gelsenicine disrupted the intestinal barrier of Caenorhabditis elegans | Caenorhabditis elegans | 6 | XLSX | 2026/04/21 |
+| [GSE325231](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325231) | Scavenger Cells Failure to Maintain Systemic RNA Homeostasis Causes Epigenetical... | Caenorhabditis elegans | 11 | CSV | 2026/04/15 |
+| [GSE326863](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326863) | Biallelic UNC5C variants cause a recessive neurodevelopmental disorder with brai... | Caenorhabditis elegans | 9 | TAB | 2026/04/10 |
 | [GSE309188](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE309188) | Phenylalanyl-tRNA synthetase balances longevity and immunity by downregulating e... | Caenorhabditis elegans | 6 | TXT | 2026/04/06 |
 | [GSE292138](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE292138) | Ribonuclease DIS-3 promotes longevity by generating tRNA halves that inhibit tra... | Caenorhabditis elegans | 12 | TXT | 2026/04/06 |
 | [GSE281448](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE281448) | Sequencing experiments on poly(U) mutants in C. elegans adults and embryos | Caenorhabditis elegans | 20 | TXT | 2026/04/01 |
@@ -76,9 +80,5 @@
 | [GSE314570](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE314570) | Silencing lipid catabolism determines longevity in response to fasting | Caenorhabditis elegans | 8 | TXT | 2025/12/19 |
 | [GSE312756](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE312756) | Gene expression profiling of adult C. elegans in response to heat hormesis regim... | Caenorhabditis elegans | 55 | TXT | 2025/12/12 |
 | [GSE293122](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE293122) | BCL-11 enables adaptive stress responses to environmental challenges | Caenorhabditis elegans | 12 | CSV | 2025/12/10 |
-| [GSE293058](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE293058) | BCL-11 enables adaptive stress responses to environmental challenges | Caenorhabditis elegans | 24 | CSV | 2025/12/10 |
-| [GSE291568](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE291568) | A SET domain-containing protein and HCF-1 maintain transgenerational epigenetic ... | Caenorhabditis elegans | 22 | BEDGRAPH, SF | 2025/12/10 |
-| [GSE312042](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE312042) | Phenotypic expansion of CALM1/2-associated disorders to include neurologic pheno... | Caenorhabditis elegans | 9 | SF, TXT | 2025/12/06 |
-| [GSE303122](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE303122) | Parental age selection in C. elegans influences progeny stress resistance capaci... | Caenorhabditis elegans | 7 | XLS | 2025/12/04 |
 
-*...and 1021 more datasets.*
+*...and 1025 more datasets.*

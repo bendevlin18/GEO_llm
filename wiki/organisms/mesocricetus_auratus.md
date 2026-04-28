@@ -1,6 +1,6 @@
 # Mesocricetus auratus
 
-> 75 RNA-seq datasets | 2015/01/01 – 2026/04/08
+> 75 RNA-seq datasets | 2015/01/01 – 2026/04/27
 
 ## Modality Breakdown
 

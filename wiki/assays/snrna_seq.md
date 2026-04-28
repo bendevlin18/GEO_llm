@@ -1,6 +1,6 @@
 # Single-Nucleus RNA-seq (snRNA-seq)
 
-> 1974 datasets | 2015/01/01 – 2026/04/08
+> 2003 datasets | 2015/01/01 – 2026/04/27
 
 Transcriptome profiling from isolated nuclei rather than whole cells. Preferred for tissues that are difficult to dissociate (e.g., brain, adipose, muscle) or for frozen archival samples.
 
@@ -8,16 +8,16 @@ Transcriptome profiling from isolated nuclei rather than whole cells. Preferred 
 
 | Organism | Count |
 |----------|------:|
-| Mus musculus | 1017 |
-| Homo sapiens | 651 |
+| Mus musculus | 1029 |
+| Homo sapiens | 664 |
 | Rattus norvegicus | 46 |
-| Homo sapiens; Mus musculus | 22 |
+| Homo sapiens; Mus musculus | 24 |
 | Sus scrofa | 20 |
-| Drosophila melanogaster | 18 |
+| Drosophila melanogaster | 19 |
 | Mus musculus; Homo sapiens | 16 |
 | Arabidopsis thaliana | 15 |
 | Macaca mulatta | 13 |
-| Gallus gallus | 8 |
+| Gallus gallus | 9 |
 | Danio rerio | 7 |
 | Bos taurus | 6 |
 | Macaca mulatta; Homo sapiens | 5 |
@@ -28,16 +28,16 @@ Transcriptome profiling from isolated nuclei rather than whole cells. Preferred 
 
 | Type | Count | Description |
 |------|------:|-------------|
-| TSV | 820 | Tab-separated (10x barcodes/features, metadata) |
-| MTX | 716 | Sparse matrices (10x CellRanger output) |
-| TXT | 623 | Text files (count matrices, gene lists, metadata) |
+| TSV | 837 | Tab-separated (10x barcodes/features, metadata) |
+| MTX | 732 | Sparse matrices (10x CellRanger output) |
+| TXT | 627 | Text files (count matrices, gene lists, metadata) |
 | TAR | 468 | Tar archives (bundled outputs) |
-| CSV | 307 | Comma-separated (count matrices, DE results) |
-| H5 | 264 | HDF5 (CellRanger filtered matrices) |
-| RDS | 168 | R serialized objects (Seurat, SingleCellExperiment) |
+| CSV | 312 | Comma-separated (count matrices, DE results) |
+| H5 | 270 | HDF5 (CellRanger filtered matrices) |
+| RDS | 170 | R serialized objects (Seurat, SingleCellExperiment) |
+| XLSX | 57 | Excel (DE results, sample annotations) |
 | TBI | 57 |  |
-| XLSX | 56 | Excel (DE results, sample annotations) |
-| H5AD | 54 | AnnData HDF5 (scanpy/Python ecosystem) |
+| H5AD | 55 | AnnData HDF5 (scanpy/Python ecosystem) |
 | BED | 32 |  |
 | BW | 21 | BigWig (coverage tracks) |
 | RDATA | 18 |  |
@@ -60,6 +60,35 @@ Transcriptome profiling from isolated nuclei rather than whole cells. Preferred 
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |
 |-----------|-------|----------|--------:|-----------------|------|
+| [GSE328195](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328195) | Gene regulatory co-option drives birdsong neural circuit specialization [overexp... | Gallus gallus | 3 | MTX, TSV | 2026/04/24 |
+| [GSE294786](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE294786) | A lineage shared core gene expression network specific to human infants, links h... | Homo sapiens | 6 | TSV | 2026/04/24 |
+| [GSE280266](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE280266) | Reprogramming of Cellular Plasticity via ETS and MYC Core-regulatory circuits Du... | Homo sapiens | 48 | TXT | 2026/04/24 |
+| [GSE277487](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE277487) | Single-nucleus RNA-seq of mouse cortex following CCI-induced traumatic brain inj... | Mus musculus | 12 | CSV, MTX, TSV | 2026/04/24 |
+| [GSE326221](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326221) | Acquired genetic and cell state changes in IDH-mutant glioma progression [snRNA-... | Homo sapiens | 75 | H5, MTX, TSV | 2026/04/23 |
+| [GSE324860](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE324860) | Acquired genetic and cell state changes in IDH-mutant glioma progression [organo... | Homo sapiens | 6 | MTX, TSV | 2026/04/23 |
+| [GSE322712](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE322712) | Distinct activity in prefrontal projections promotes temporal control of action | Mus musculus | 8 | H5 | 2026/04/23 |
+| [GSE328680](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328680) | Hepatocyte-specific PPARγ Deletion Uncovers Role of an Antagonistic PPARγ–HNF4α ... | Mus musculus | 12 | TXT | 2026/04/22 |
+| [GSE285766](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE285766) | Single-cell multi-omic sequencing reveals cell-specific transcriptomic and chrom... | Mus musculus | 12 | CSV, MTX | 2026/04/22 |
+| [GSE312674](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE312674) | Pressure Overload-Induced Ventricular Crosstalk Activates Regenerative Mechanism... | Mus musculus | 1 | CSV, MTX, TSV, XLSX | 2026/04/21 |
+| [GSE302892](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE302892) | Transcriptomic Profiling of the Left Ventricle Using Single-Nucleus RNA Sequenci... | Mus musculus | 3 | H5 | 2026/04/21 |
+| [GSE302702](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE302702) | Single-nucleus RNA sequencing of human visceral adipose tissue biopsies from 11 ... | Homo sapiens | 11 | MTX, TSV | 2026/04/21 |
+| [GSE302599](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE302599) | Single-nucleus RNA sequencing of human visceral adipose tissue biopsies from 63 ... | Homo sapiens | 63 | MTX, TSV | 2026/04/21 |
+| [GSE325391](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325391) | Unique transcriptional profiles of adult human immature neurons in healthy aging... | Homo sapiens | 27 | RDS | 2026/04/20 |
+| [GSE324714](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE324714) | Acquired genetic and cell state changes in IDH-mutant glioma progression [cocult... | Homo sapiens; Mus musculus | 16 | MTX, TSV | 2026/04/20 |
+| [GSE324694](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE324694) | Acquired genetic and cell state changes in IDH-mutant glioma progression | Homo sapiens | 10 | MTX, TSV | 2026/04/20 |
+| [GSE324481](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE324481) | Acquired genetic and cell state changes in IDH-mutant glioma progression | Homo sapiens | 4 | MTX, TSV | 2026/04/20 |
+| [GSE328026](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328026) | MiT Fusions, TSC1–TSC2 Divergence, and Stem-like Programs Reveal Distinct Origin... | Homo sapiens | 69 | TXT | 2026/04/18 |
+| [GSE327937](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327937) | MiT Fusions, TSC1–TSC2 Divergence, and Stem-like Programs Reveal Distinct Origin... | Homo sapiens | 5 | CSV, H5 | 2026/04/18 |
+| [GSE328077](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328077) | Cultured ex vivo human brain tissue maintains cell-type transcriptional identiti... | Homo sapiens | 12 | H5 | 2026/04/16 |
+| [GSE305396](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE305396) | PGC-1alpha pathway dysregulation disrupts myofiber specification in a mouse mode... | Mus musculus | 6 | MTX, TSV | 2026/04/15 |
+| [GSE305395](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE305395) | PGC-1alpha pathway dysregulation disrupts myofiber specification in a mouse mode... | Mus musculus | 27 | CSV | 2026/04/15 |
+| [GSE286360](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE286360) | Angiopoietin-2 aggravates Alzheimer’s disease by promoting BBB breakdown and neu... | Mus musculus | 7 | MTX, TSV | 2026/04/15 |
+| [GSE271813](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE271813) | Location matters: spatial-dependent effects of myofibroblasts determine survival... | Homo sapiens | 5 | MTX, TSV | 2026/04/15 |
+| [GSE293016](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE293016) | Glycogen metabolism in Sertoli cells sustains germ cell survival through lactate... | Mus musculus | 6 | BIGWIG, TXT | 2026/04/13 |
+| [GSE289992](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE289992) | Persistent dopamine-dependent remodeling of the neural transcriptome in response... | Mus musculus | 15 | MTX, TSV | 2026/04/13 |
+| [GSE327236](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327236) | Integrated single-nucleus RNA-seq dataset of mouse brain from a multi-factorial ... | Mus musculus | 4 | MTX, TSV | 2026/04/12 |
+| [GSE327614](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327614) | Early cell autonomous and niche-mediated alveolar epithelial response to influen... | Homo sapiens; Mus musculus | 24 | H5, RDS, TSV | 2026/04/10 |
+| [GSE327108](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327108) | Tet governs transcriptional programs required for intestinal stem cell developme... | Drosophila melanogaster | 10 | H5AD | 2026/04/10 |
 | [GSE308982](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE308982) | Intravitreal AAV delivery induces integrin-dependent ocular inflammation and act... | Sus scrofa | 8 | MTX, TSV | 2026/04/07 |
 | [GSE303719](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE303719) | SnRNAseq of tumors isolated from Apc cKO; Kras-mutant animals | Mus musculus | 12 | H5 | 2026/04/05 |
 | [GSE301123](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE301123) | GPSM1 restricts CD73+CD103+ Treg cells in adipose tissue, critical for promoting... | Mus musculus | 6 | MTX, TSV | 2026/04/05 |
@@ -81,34 +110,5 @@ Transcriptome profiling from isolated nuclei rather than whole cells. Preferred 
 | [GSE324211](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE324211) | Inducible XIST-mediated trisomy 21 correction uncovers a USP16-p16 senescence ax... | Homo sapiens | 4 | MTX, TSV | 2026/03/29 |
 | [GSE322851](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE322851) | Inducible XIST-mediated trisomy 21 correction uncovers a USP16-p16 senescence ax... | Homo sapiens | 45 | TXT | 2026/03/29 |
 | [GSE293075](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE293075) | Evolutionary transcriptomic and cellular specializations within the mammalian st... | Pan troglodytes; Macaca mulatta; Homo sapiens; Phyllostomus discolor | 42 | MTX, TSV | 2026/03/27 |
-| [GSE319510](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE319510) | Oligodendrocyte subtype imbalance and dysfunction contribute to motor deficits a... | Mus musculus | 8 | H5AD | 2026/03/26 |
-| [GSE309355](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE309355) | Inflammatory signaling differentially changes chromatin accessibility and gene e... | Homo sapiens | 4 | RDATA | 2026/03/26 |
-| [GSE325956](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325956) | Thalamic NRXN1-Mediated Input to Human Cortical Progenitors Drives Excitatory Ne... | Homo sapiens | 43 | RDS | 2026/03/25 |
-| [GSE325730](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325730) | The genotoxic stress sensor ZBP1 drives tau pathology | Mus musculus | 2 | MTX, TSV | 2026/03/25 |
-| [GSE325591](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325591) | High-Resolution Profiling of Osteocyte Transcriptomes via Single-Nucleus RNA Seq... | Mus musculus | 8 | CSV, H5, XLSX | 2026/03/25 |
-| [GSE325586](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325586) | Single-nucleus RNA-seq of mouse cortex during mid-gestation pregnancy | Mus musculus | 4 | MTX, TSV | 2026/03/25 |
-| [GSE319635](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE319635) | Methionine and choline deficiency rewires transcriptional programs to recapitula... | Homo sapiens; Mus musculus | 8 | TXT | 2026/03/25 |
-| [GSE318413](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE318413) | Patient-derived orthotopic xenograft models recapitulate the peritoneal dissemin... | Homo sapiens | 19 | MTX, TSV | 2026/03/25 |
-| [GSE318411](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE318411) | Patient-derived orthotopic xenograft models recapitulate the peritoneal dissemin... | Homo sapiens | 11 | TAB | 2026/03/25 |
-| [GSE314911](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE314911) | Dominant Malignant Clones Leverage Lineage Restricted Epigenomic Programs to Dri... | Homo sapiens | 21 | H5, TBI, TSV | 2026/03/25 |
-| [GSE314599](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE314599) | Dominant Malignant Clones Leverage Lineage Restricted Epigenomic Programs to Dri... | Mus musculus | 11 | H5 | 2026/03/25 |
-| [GSE278367](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE278367) | Conjugation to a transferrin receptor 1-binding Bicycle peptide enhances ASO and... | Mus musculus | 8 | MTX, TSV | 2026/03/25 |
-| [GSE253535](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE253535) | Recovery from Heart Failure: Microvascular Mechanisms | Homo sapiens | 2 | CSV | 2026/03/25 |
-| [GSE301982](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE301982) | The pleuroparenchymal fibroelastosis atlas reveals aberrant cell states and thei... | Homo sapiens | 4 | MTX, RDS, TSV | 2026/03/24 |
-| [GSE284081](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE284081) | Aberrant and Ectopic Cell Populations of the Fibrotic Front of Restrictive Allog... | Homo sapiens | 4 | MTX, RDS, TSV | 2026/03/24 |
-| [GSE316698](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE316698) | Single-nucleus RNA sequencing of human subcutaneous adipose tissue biopsies from... | Homo sapiens | 49 | MTX, TSV | 2026/03/20 |
-| [GSE313956](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE313956) | Gene expression profiles at the single-nucleus level in heart tissue after myoca... | Mus musculus | 3 | H5 | 2026/03/20 |
-| [GSE306263](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE306263) | Astrocyte glucocorticoid receptor signaling restricts neuronal plasticity [snRNA... | Mus musculus | 8 | MTX, TSV | 2026/03/20 |
-| [GSE325252](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325252) | snRNA-Seq analysis of islets from WT mice treated with or without 0.5mM Glucosam... | Mus musculus | 6 | RDS | 2026/03/19 |
-| [GSE312657](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE312657) | Single-nucleus RNA-seq analysis of Tox3 dependent gene expression in the mouse c... | Mus musculus | 2 | MTX, TSV | 2026/03/19 |
-| [GSE312655](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE312655) | RNAseq analysis of Tox3 dependent gene expression in the mouse cerebellum | Mus musculus | 6 | TXT | 2026/03/19 |
-| [GSE286038](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE286038) | BRD8 is a therapeutic vulnerability for overcoming resistance to dual ER/HER2 bl... | Homo sapiens | 8 | MTX, TSV | 2026/03/19 |
-| [GSE312658](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE312658) | A transcription regulator atlas identifies TOX3 as an Atoh1 co-activator in cere... | Mus musculus | 13 | BW, MTX, TSV | 2026/03/18 |
-| [GSE306235](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE306235) | Sex and life experience shape locus coeruleus pretangle tau pathology | Rattus norvegicus | 36 | H5 | 2026/03/18 |
-| [GSE288107](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE288107) | snRNAseq of diffuse leptomeningeal glioneuronal tumors | Homo sapiens | 2 | MTX, TSV | 2026/03/18 |
-| [GSE288058](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE288058) | Steroid Hormone Dependent Pathogenesis in Vascular Ehlers-Danlos Syndrome | Mus musculus | 18 | DOCX, MTX, TSV | 2026/03/17 |
-| [GSE269703](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE269703) | Microbiota-derived polyphosphates govern mucosal immunity through multilevel sup... | Mus musculus | 16 | H5, TBI, TSV | 2026/03/17 |
-| [GSE296329](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE296329) | Single-cell epigenetic landscape, microenvironment interactions, and gene regula... | Homo sapiens | 12 | H5 | 2026/03/16 |
-| [GSE296139](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE296139) | Single-cell epigenetic landscape, microenvironment interactions, and gene regula... | Homo sapiens | 12 | H5 | 2026/03/16 |
 
-*...and 1924 more datasets.*
+*...and 1953 more datasets.*

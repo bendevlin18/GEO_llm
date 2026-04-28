@@ -1,12 +1,12 @@
 # Synechococcus elongatus PCC 7942 = FACHB-805
 
-> 21 RNA-seq datasets | 2015/01/01 – 2026/04/08
+> 22 RNA-seq datasets | 2015/01/01 – 2026/04/27
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 21 |
+| bulk | 22 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
@@ -15,12 +15,13 @@
 | XLS | 6 |
 | TXT | 5 |
 | XLSX | 5 |
-| CSV | 3 |
+| CSV | 4 |
 
 ## Recent Datasets
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |
 |-----------|-------|----------|--------:|-----------------|------|
+| [GSE327989](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327989) | Comparative Study of Phycoerythrobilin Synthases for Fine-Tuning Photosynthetic ... | Synechococcus elongatus PCC 7942 = FACHB-805 | 12 | CSV | 2026/04/19 |
 | [GSE311172](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE311172) | Transcriptional Response and Adaptive Evolution to Oxidative Stress in Synechoco... | Synechococcus elongatus PCC 7942 = FACHB-805 | 23 | CSV | 2025/11/26 |
 | [GSE254350](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE254350) | Cyanobacterial sigma factor controls biofilm-promoting genes through intra- and ... | Synechococcus elongatus PCC 7942 = FACHB-805 | 32 | XLSX | 2024/09/13 |
 | [GSE252562](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE252562) | Bacteria can anticipate and adaptively respond to the seasons | Synechococcus elongatus PCC 7942 = FACHB-805 | 36 | CSV | 2024/06/01 |

@@ -1,25 +1,25 @@
 # Drosophila melanogaster
 
-> 1818 RNA-seq datasets | 2015/01/01 – 2026/04/08
+> 1825 RNA-seq datasets | 2015/01/01 – 2026/04/27
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 1612 |
-| single-cell | 188 |
-| single-nucleus | 18 |
+| bulk | 1617 |
+| single-cell | 189 |
+| single-nucleus | 19 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 878 |
-| CSV | 267 |
+| TXT | 882 |
+| CSV | 269 |
+| TSV | 236 |
 | XLSX | 235 |
-| TSV | 235 |
 | BW | 218 |
-| MTX | 94 |
+| MTX | 95 |
 | BED | 67 |
 | BEDGRAPH | 60 |
 | BIGWIG | 44 |
@@ -29,6 +29,13 @@
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |
 |-----------|-------|----------|--------:|-----------------|------|
+| [GSE311622](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE311622) | Niche-dependent modular regulation of the stem cell transcriptome separates cell... | Drosophila melanogaster | 5 | MTX, TSV | 2026/04/22 |
+| [GSE294309](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE294309) | RNA-seq from Drosophila heads and bodies associated with age-dependent sleep fra... | Drosophila melanogaster | 30 | TXT | 2026/04/20 |
+| [GSE294159](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE294159) | RNA-seq from Drosophila heads differentiating place preference | Drosophila melanogaster | 39 | TXT | 2026/04/20 |
+| [GSE299645](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE299645) | Maternal IntS11 primes embryonic totipotency by organizing early zygotic transcr... | Drosophila melanogaster | 72 | TXT | 2026/04/13 |
+| [GSE294612](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE294612) | Time-series RNA-Seq of Drosophila fat body during wing disc tumor development | Drosophila melanogaster | 24 | CSV | 2026/04/13 |
+| [GSE307078](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE307078) | Dopaminergic neurons are vulnerable to dysregulation of YEATS2-dependent calcium... | Drosophila melanogaster | 12 | CSV, TXT | 2026/04/11 |
+| [GSE327108](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327108) | Tet governs transcriptional programs required for intestinal stem cell developme... | Drosophila melanogaster | 10 | H5AD | 2026/04/10 |
 | [GSE318563](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE318563) | Expression of Atg8a in Somatic Follicle Cells Prevents Age-Associated Decline in... | Drosophila melanogaster | 2 | MTX, TSV | 2026/04/06 |
 | [GSE326696](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326696) | Biallelic inactivating variants in the chromatin remodeler DMAP1 cause a syndrom... | Drosophila melanogaster | 6 | TXT | 2026/04/02 |
 | [GSE300826](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE300826) | Intracellular Aβ42 Sequestration by a Serine Protease Mitigates Neurotoxicity | Drosophila melanogaster | 12 | TXT | 2026/04/01 |
@@ -72,12 +79,5 @@
 | [GSE236035](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE236035) | Aub, Vasa and Armi concentration in phase separated nuage is dispensable for piR... | Drosophila melanogaster | 91 | TXT | 2026/02/24 |
 | [GSE234723](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE234723) | Rapid disassembly and Piwi-independent reassembly of Drosophila piRNA cluster he... | Drosophila melanogaster | 120 | BW, TXT | 2026/02/24 |
 | [GSE234721](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE234721) | Rapid disassembly and Piwi-independent reassembly of Drosophila piRNA cluster he... | Drosophila melanogaster | 51 | TXT | 2026/02/24 |
-| [GSE320063](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE320063) | A Naïve RNA Sampling Core Enables Adaptive piRNA Specificity Against Transposabl... | Drosophila melanogaster | 92 | BW | 2026/02/23 |
-| [GSE320060](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE320060) | A Naïve RNA Sampling Core Enables Adaptive piRNA Specificity Against Transposabl... | Drosophila melanogaster | 13 | BW, TXT | 2026/02/23 |
-| [GSE319955](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE319955) | Quiescent neural stem cells transiently become neuronal-like to coordinate long-... | Drosophila melanogaster | 4 | MTX, TSV | 2026/02/23 |
-| [GSE291056](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE291056) | Hh and EGFR-Ras signaling promote distinct steps of tumor progression in the Dro... | Drosophila melanogaster | 16 | CSV | 2026/02/18 |
-| [GSE290241](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE290241) | Hh and EGFR-Ras signaling promote distinct steps of tumor progression in the Dro... | Drosophila melanogaster | 6 | CSV | 2026/02/18 |
-| [GSE305311](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE305311) | Homeostatic Preservation of Action Potential Waveform by Notch and Nerfin-1 | Drosophila melanogaster | 13 | XLSX | 2026/02/16 |
-| [GSE293356](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE293356) | Morphological innovation without gene co-option: the Drosophila sex comb evolved... | Drosophila melanogaster | 6 | MTX, TSV, XLSX | 2026/02/12 |
 
-*...and 1768 more datasets.*
+*...and 1775 more datasets.*

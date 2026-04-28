@@ -1,13 +1,13 @@
 # Xenopus tropicalis
 
-> 65 RNA-seq datasets | 2015/01/01 – 2026/04/08
+> 66 RNA-seq datasets | 2015/01/01 – 2026/04/27
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
 | bulk | 59 |
-| single-cell | 5 |
+| single-cell | 6 |
 | single-nucleus | 1 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
@@ -15,13 +15,13 @@
 | Type | Count |
 |------|------:|
 | TXT | 38 |
-| TSV | 10 |
+| TSV | 11 |
 | TAB | 9 |
 | CSV | 7 |
 | BED | 5 |
 | BW | 4 |
+| MTX | 4 |
 | NARROWPEAK | 4 |
-| MTX | 3 |
 | XLSX | 3 |
 | GTF | 2 |
 
@@ -29,6 +29,7 @@
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |
 |-----------|-------|----------|--------:|-----------------|------|
+| [GSE327206](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327206) | Spinal cord regeneration deploys cell-type specific developmental and non-develo... | Xenopus tropicalis | 8 | MTX, RDS, TSV | 2026/04/11 |
 | [GSE310727](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE310727) | Analysis of Xenopus tropicalis stage NF33 regional gene expression in micro-diss... | Xenopus tropicalis | 18 | TXT | 2025/11/24 |
 | [GSE288638](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE288638) | Foxi2 and Sox3 are master regulators controlling ectoderm germ layer specificati... | Xenopus tropicalis | 2 | CSV, H5AD, MTX | 2025/09/16 |
 | [GSE288636](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE288636) | Foxi2 and Sox3 are master regulators controlling ectoderm germ layer specificati... | Xenopus tropicalis | 18 | TXT | 2025/09/16 |
@@ -78,6 +79,5 @@
 | [GSE110063](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE110063) | Profiling of alternative transcription start sites and alternative polyadenylati... | Xenopus tropicalis | 30 | TXT | 2020/02/01 |
 | [GSE140120](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE140120) | DNA methylation dynamics underlie metamorphic gene regulation programs in Xenopu... | Xenopus tropicalis | 12 | FA, MATRIX, TXT | 2019/11/08 |
 | [GSE134545](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE134545) | Using RNAseq for identifying hepatic genes involved in the response to chronic e... | Xenopus tropicalis | 16 | GTF | 2019/07/20 |
-| [GSE118024](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE118024) | Endodermal maternal transcription factors establish super enhancers during zygot... | Xenopus tropicalis | 39 | BED, TXT | 2019/06/04 |
 
-*...and 15 more datasets.*
+*...and 16 more datasets.*

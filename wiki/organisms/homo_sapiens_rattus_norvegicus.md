@@ -1,12 +1,12 @@
 # Homo sapiens; Rattus norvegicus
 
-> 35 RNA-seq datasets | 2015/01/01 – 2026/04/08
+> 36 RNA-seq datasets | 2015/01/01 – 2026/04/27
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 31 |
+| bulk | 32 |
 | single-cell | 4 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
@@ -16,8 +16,8 @@
 | TXT | 12 |
 | CSV | 8 |
 | BW | 5 |
+| TSV | 5 |
 | MTX | 4 |
-| TSV | 4 |
 | XLSX | 3 |
 | BED | 2 |
 | BEDGRAPH | 1 |
@@ -28,6 +28,7 @@
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |
 |-----------|-------|----------|--------:|-----------------|------|
+| [GSE309050](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE309050) | Biomimetic microfibers for myelin-enhancer screening and neural regeneration | Homo sapiens; Rattus norvegicus | 12 | TSV | 2026/04/15 |
 | [GSE295253](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE295253) | Dynamic Transcriptomic Remodeling in Grafted Human Neural Progenitor Cells Uncov... | Homo sapiens; Rattus norvegicus | 15 | H5, MTX, TSV | 2026/01/16 |
 | [GSE300150](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE300150) | Single-cell multidimensional profiling of tumor cell heterogeneity in supratento... | Homo sapiens; Rattus norvegicus | 55 | CSV, MTX, TSV | 2025/12/09 |
 | [GSE217296](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE217296) | RNA Binding Patterns of Ischemic Heart Failure Prognosis Indicator Eukaryotic Tr... | Homo sapiens; Rattus norvegicus | 20 | TXT | 2025/11/04 |

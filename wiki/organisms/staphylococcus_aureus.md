@@ -1,12 +1,12 @@
 # Staphylococcus aureus
 
-> 175 RNA-seq datasets | 2015/01/01 – 2026/04/08
+> 177 RNA-seq datasets | 2015/01/01 – 2026/04/27
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 173 |
+| bulk | 175 |
 | single-cell | 2 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
@@ -18,9 +18,9 @@
 | CSV | 17 |
 | XLS | 12 |
 | GTF | 8 |
+| TSV | 8 |
 | GFF | 7 |
 | WIG | 6 |
-| TSV | 6 |
 | FA | 3 |
 | BW | 2 |
 
@@ -28,6 +28,8 @@
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |
 |-----------|-------|----------|--------:|-----------------|------|
+| [GSE299333](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE299333) | Gene expression in Erm-minus and Erm-proficient Staphylococcus aureus strains un... | Staphylococcus aureus | 12 | TSV | 2026/04/12 |
+| [GSE298918](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE298918) | The role of PurR purine transcriptional repressor and Rae1 endoribonuclease in E... | Staphylococcus aureus | 36 | TSV | 2026/04/12 |
 | [GSE228225](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE228225) | YlaN is an iron binding protein that is required to relieve Fur-mediated gene ex... | Staphylococcus aureus | 12 | XLSX | 2026/03/01 |
 | [GSE290813](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE290813) | Broad-host-range Kayvirus phages preferentially infect Staphylocococcus aureus c... | Staphylococcus aureus | 6 | CSV | 2026/02/28 |
 | [GSE290916](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE290916) | An anti-adhesive compound modulating the production of Staphylococcus aureus cel... | Staphylococcus aureus | 44 | TXT | 2026/02/25 |
@@ -76,7 +78,5 @@
 | [GSE241582](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE241582) | Exploring modulation in Staphylococcus aureus biofilm formation and virulence du... | Staphylococcus aureus | 12 | XLSX | 2023/08/28 |
 | [GSE239411](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE239411) | Janus nanoparticles targeting extracellular polymeric substance achieve flexible... | Staphylococcus aureus | 4 | CSV | 2023/08/01 |
 | [GSE239513](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE239513) | Transcriptional response of USA300 MRSA to coculture with EGM139 Desemzia incert... | Staphylococcus aureus | 8 | CSV, TSV | 2023/07/28 |
-| [GSE237701](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE237701) | Transcriptomic exploration of SSR42 and its impact on Staphylococcus aureus viru... | Staphylococcus aureus | 2 | XLSX | 2023/07/25 |
-| [GSE136543](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE136543) | Characterized functions of hypothetical genes identified by Tn-seq important for... | Staphylococcus aureus | 21 | XLSX | 2023/06/27 |
 
-*...and 125 more datasets.*
+*...and 127 more datasets.*

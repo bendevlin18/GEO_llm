@@ -1,6 +1,6 @@
 # Dictyostelium discoideum
 
-> 40 RNA-seq datasets | 2015/01/01 – 2026/04/08
+> 40 RNA-seq datasets | 2015/01/01 – 2026/04/27
 
 ## Modality Breakdown
 

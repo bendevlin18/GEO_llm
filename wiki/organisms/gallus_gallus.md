@@ -1,14 +1,14 @@
 # Gallus gallus
 
-> 488 RNA-seq datasets | 2015/01/01 – 2026/04/08
+> 491 RNA-seq datasets | 2015/01/01 – 2026/04/27
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 390 |
-| single-cell | 85 |
-| single-nucleus | 8 |
+| bulk | 391 |
+| single-cell | 86 |
+| single-nucleus | 9 |
 | spatial | 5 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
@@ -16,10 +16,10 @@
 | Type | Count |
 |------|------:|
 | TXT | 254 |
-| TSV | 69 |
+| TSV | 71 |
 | XLSX | 64 |
 | CSV | 52 |
-| MTX | 49 |
+| MTX | 51 |
 | XLS | 14 |
 | BW | 12 |
 | RDS | 11 |
@@ -30,6 +30,9 @@
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |
 |-----------|-------|----------|--------:|-----------------|------|
+| [GSE328195](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328195) | Gene regulatory co-option drives birdsong neural circuit specialization [overexp... | Gallus gallus | 3 | MTX, TSV | 2026/04/24 |
+| [GSE328250](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328250) | scRNA-seq of cardiac neural crest cells following left atrial ligation | Gallus gallus | 7 | MTX, TSV | 2026/04/20 |
+| [GSE328084](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328084) | CAGE-seq profiling of fast and slow growing chickens in different tissues | Gallus gallus | 144 | BED | 2026/04/15 |
 | [GSE294546](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE294546) | Characterization of Persistency of Lay in Laying Hens | Gallus gallus | 7 | TXT | 2026/04/01 |
 | [GSE325611](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325611) | RNA-seq analysis of host responses to Newcastle disease virus infection in HD11 ... | Gallus gallus | 6 | TXT | 2026/03/26 |
 | [GSE293264](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE293264) | Comparative single cell genomics of facial signaling centers of avian and murine... | Gallus gallus | 1 | MTX, TSV | 2026/03/24 |
@@ -77,8 +80,5 @@
 | [GSE228354](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE228354) | Induction of embryonic axes by distinct population of the Hensens's node | Gallus gallus | 4 | MTX, TSV | 2025/08/11 |
 | [GSE228352](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE228352) | Induction of embryonic axes by distinct population of the Hensens's node [scRNAs... | Gallus gallus | 3 | MTX, TSV | 2025/08/11 |
 | [GSE254284](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE254284) | Derivation of Embryonic Stem Cells Across Avian Species | Gallus gallus | 6 | RESULTS | 2025/07/31 |
-| [GSE302788](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE302788) | Effect of Arginine Supplementation on Liver and Pectoral Muscle: Tissue-Specific... | Gallus gallus | 32 | TXT | 2025/07/17 |
-| [GSE302747](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE302747) | KLF2 may suppress chicken adipogenesis by enhancing the GATA2 transcription | Gallus gallus | 6 | TXT | 2025/07/17 |
-| [GSE294245](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE294245) | Integrating metabolomic and transcriptomic to reveal the dynamics of ntramuscula... | Gallus gallus | 15 | TXT | 2025/07/16 |
 
-*...and 438 more datasets.*
+*...and 441 more datasets.*

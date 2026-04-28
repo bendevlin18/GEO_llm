@@ -1,12 +1,12 @@
 # Nothobranchius furzeri
 
-> 61 RNA-seq datasets | 2015/01/01 – 2026/04/08
+> 64 RNA-seq datasets | 2015/01/01 – 2026/04/27
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 53 |
+| bulk | 56 |
 | single-cell | 7 |
 | spatial | 1 |
 
@@ -15,8 +15,8 @@
 | Type | Count |
 |------|------:|
 | XLS | 31 |
-| CSV | 15 |
-| TXT | 14 |
+| CSV | 17 |
+| TXT | 15 |
 | TSV | 6 |
 | MTX | 4 |
 | FA | 1 |
@@ -29,6 +29,9 @@
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |
 |-----------|-------|----------|--------:|-----------------|------|
+| [GSE315825](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE315825) | Identification of aging and senescence markers of male African turquoise killifi... | Nothobranchius furzeri | 9 | TXT | 2026/04/15 |
+| [GSE300596](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE300596) | An Antagonistically Pleiotropic Gene Regulates Vertebrate Growth, Maturity and A... | Nothobranchius furzeri | 18 | CSV | 2026/04/10 |
+| [GSE226279](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE226279) | Exploring life-long tissue homeostasis through lineage tracing and cell transpla... | Nothobranchius furzeri | 6 | CSV | 2026/04/10 |
 | [GSE316983](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE316983) | A single-cell RNA sequencing dataset of cardiac aging in African Turquoise Killi... | Nothobranchius furzeri | 1 | CSV, MTX, RDS | 2026/03/24 |
 | [GSE287914](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE287914) | Gene expression profiles of skin basal layer in young, aged, and Tunicamycin tre... | Nothobranchius furzeri | 3 | CSV | 2025/12/17 |
 | [GSE284196](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE284196) | Effects of aging on the gut tube of the short-lived Turquoise killifish: Reduced... | Nothobranchius furzeri | 12 | TSV | 2025/12/04 |
@@ -76,8 +79,5 @@
 | [GSE103139](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE103139) | Sequencing of Nothobranchius furzeri (strain: MZM-0410p) skin after Rotenone and... | Nothobranchius furzeri | 10 | XLS | 2021/10/19 |
 | [GSE103138](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE103138) | Sequencing of Nothobranchius furzeri (strain: GRZ) liver from Rotenone treated a... | Nothobranchius furzeri | 15 | XLS | 2021/10/19 |
 | [GSE103137](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE103137) | Sequencing of Nothobranchius furzeri (strain: GRZ) liver in different age groups | Nothobranchius furzeri | 20 | XLS | 2021/10/19 |
-| [GSE103136](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE103136) | Sequencing of Nothobranchius furzeri (strain: MZM-0410p) liver after Rotenone an... | Nothobranchius furzeri | 10 | XLS | 2021/10/19 |
-| [GSE103135](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE103135) | Sequencing of Nothobranchius furzeri (strain: GRZ) brain from Rotenone treated a... | Nothobranchius furzeri | 15 | XLS | 2021/10/19 |
-| [GSE103132](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE103132) | Sequencing of Nothobranchius furzeri (strain: GRZ) brain in different age groups | Nothobranchius furzeri | 20 | XLS | 2021/10/19 |
 
-*...and 11 more datasets.*
+*...and 14 more datasets.*

@@ -1,6 +1,6 @@
 # Bacillus subtilis
 
-> 64 RNA-seq datasets | 2015/01/01 – 2026/04/08
+> 64 RNA-seq datasets | 2015/01/01 – 2026/04/27
 
 ## Modality Breakdown
 

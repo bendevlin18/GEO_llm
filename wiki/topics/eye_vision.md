@@ -1,13 +1,13 @@
 # Eye & Vision
 
-> 2902 RNA-seq datasets | 2015/01/01 – 2026/04/08
+> 2921 RNA-seq datasets | 2015/01/01 – 2026/04/27
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 2078 |
-| single-cell | 727 |
+| bulk | 2092 |
+| single-cell | 732 |
 | single-nucleus | 55 |
 | spatial | 42 |
 
@@ -15,9 +15,9 @@
 
 | Organism | Count |
 |----------|------:|
-| Mus musculus | 1240 |
-| Homo sapiens | 918 |
-| Danio rerio | 119 |
+| Mus musculus | 1247 |
+| Homo sapiens | 925 |
+| Danio rerio | 120 |
 | Rattus norvegicus | 65 |
 | Gallus gallus | 47 |
 | Drosophila melanogaster | 44 |
@@ -30,36 +30,55 @@
 
 | Topic | Co-occurring Datasets |
 |-------|---------------------:|
-| [Neuroscience](neuroscience.md) | 1662 |
-| [Development & Differentiation](development.md) | 1168 |
-| [Cell Stress & Homeostasis](cell_stress.md) | 646 |
-| [Immunology](immunology.md) | 606 |
-| [Cancer](cancer.md) | 551 |
-| [Signal Transduction](signal_transduction.md) | 548 |
-| [Infectious Disease](infectious_disease.md) | 494 |
-| [Metabolism & Metabolic Disease](metabolism.md) | 372 |
-| [Cardiovascular](cardiovascular.md) | 334 |
-| [Gene Regulation & Transcription](gene_regulation.md) | 304 |
+| [Neuroscience](neuroscience.md) | 1672 |
+| [Development & Differentiation](development.md) | 1177 |
+| [Cell Stress & Homeostasis](cell_stress.md) | 654 |
+| [Immunology](immunology.md) | 611 |
+| [Signal Transduction](signal_transduction.md) | 552 |
+| [Cancer](cancer.md) | 552 |
+| [Infectious Disease](infectious_disease.md) | 498 |
+| [Metabolism & Metabolic Disease](metabolism.md) | 375 |
+| [Cardiovascular](cardiovascular.md) | 339 |
+| [Gene Regulation & Transcription](gene_regulation.md) | 305 |
 
 ## Archive Contents (file types inside supplementary TAR/gz)
 
 | Type | Count |
 |------|------:|
-| TXT | 1340 |
-| CSV | 521 |
-| TSV | 521 |
-| MTX | 361 |
-| XLSX | 349 |
-| H5 | 98 |
+| TXT | 1346 |
+| TSV | 524 |
+| CSV | 523 |
+| MTX | 363 |
+| XLSX | 351 |
+| H5 | 100 |
 | XLS | 87 |
 | BW | 79 |
 | RDS | 55 |
-| BED | 47 |
+| BED | 48 |
 
 ## Recent Datasets
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |
 |-----------|-------|----------|--------:|-----------------|------|
+| [GSE328779](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328779) | Single cell RNA-seq characterization of non-fibrotic stromal wound repopulation ... | Oryctolagus cuniculus | 8 | H5 | 2026/04/26 |
+| [GSE328399](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328399) | Neutrophil extracellular traps aggravate COVID-19 related acute macular neuroret... | Homo sapiens | 6 | XLSX | 2026/04/24 |
+| [GSE326387](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE326387) | Ngn3 reprograms late retinal progenitor cells through transcriptional and epigen... | Mus musculus | 6 | TXT | 2026/04/24 |
+| [GSE310660](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE310660) | PROX1 loss in adult mouse Schlemm’s canal causes permanent ocular hypertension | Homo sapiens | 6 | COUNTS | 2026/04/23 |
+| [GSE298347](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE298347) | Single-cell RNA sequencing of microglia/macrophages in zebrafish pde6c mutant ey... | Danio rerio | 4 | TAR | 2026/04/22 |
+| [GSE328681](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328681) | Neonatal Roselovirus Infection Induces Predisposition to Systemic Autoimmunity | Mus musculus | 12 | CSV, MTX, TSV | 2026/04/21 |
+| [GSE328236](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328236) | Transcriptomic profiling of Carfilzomib (CFZ) treatment in HSV-1 infected BV2 mi... | Mus musculus | 12 | XLSX | 2026/04/21 |
+| [GSE328235](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328235) | Single-cell sequencing of carfilzomib-associated HSV-1 encephalitis mouse model | Mus musculus | 7 | MTX, TSV | 2026/04/21 |
+| [GSE296364](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE296364) | Conservation and divergence of UVR8 photoreceptor-mediated UV-B signaling in Mar... | Marchantia polymorpha | 42 |  | 2026/04/21 |
+| [GSE296030](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE296030) | Conservation and divergence of UVR8 photoreceptor-mediated UV-B signaling in Mar... | Marchantia polymorpha | 12 | TXT | 2026/04/21 |
+| [GSE295939](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE295939) | Conservation and divergence of UVR8 photoreceptor-mediated UV-B signaling in Mar... | Marchantia polymorpha | 30 | TXT | 2026/04/21 |
+| [GSE327855](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327855) | Endothelial FGF13 impairs angiogenesis by accelerating oxygen-independent HIF-1α... | Homo sapiens | 6 | TXT | 2026/04/18 |
+| [GSE327656](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327656) | Endothelial FGF13 impairs angiogenesis by accelerating oxygen-independent HIF-1α... | Mus musculus | 10 | TXT | 2026/04/17 |
+| [GSE328096](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE328096) | Single-cell RNA sequencing reveals that Epac1 deletion attenuates Müller glial p... | Mus musculus | 4 | H5 | 2026/04/15 |
+| [GSE315511](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE315511) | Attenuation of oxygen-induced neovascularization and inflammation by neutralizin... | Mus musculus | 40 | CSV | 2026/04/15 |
+| [GSE307577](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE307577) | Isolation protocol of viable human central nervous system T cells | Homo sapiens | 21 | TAB | 2026/04/15 |
+| [GSE327751](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE327751) | Defined cell culture medium contributes to transcriptional reprogramming to enha... | Homo sapiens | 2 | TXT | 2026/04/14 |
+| [GSE301525](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE301525) | Chromatin topology dynamics of dexamethasone-treated trabecular meshwork identif... | Homo sapiens | 131 | BED, BIGWIG | 2026/04/10 |
+| [GSE301517](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE301517) | Chromatin topology dynamics of dexamethasone-treated trabecular meshwork identif... | Homo sapiens | 21 | TSV | 2026/04/10 |
 | [GSE311047](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE311047) | A conserved enhancer cluster controls efnb2 expression in the vertebrate dorsal ... | Tetraodon nigroviridis | 8 | TXT | 2026/04/08 |
 | [GSE310896](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE310896) | A conserved enhancer cluster controls efnb2 expression in the vertebrate dorsal ... | Anableps anableps | 6 | TXT | 2026/04/08 |
 | [GSE308982](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE308982) | Intravitreal AAV delivery induces integrin-dependent ocular inflammation and act... | Sus scrofa | 8 | MTX, TSV | 2026/04/07 |
@@ -91,24 +110,5 @@
 | [GSE312862](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE312862) | Sox8 and Sox9 influence differentiation and nuclear positioning of retinal Mulle... | Mus musculus | 8 | H5 | 2026/03/19 |
 | [GSE301077](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE301077) | CD5L Promotes Efferocytosis and Resolution of Retinal Ischemic Injury | Mus musculus | 18 | TXT | 2026/03/19 |
 | [GSE317073](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE317073) | Oncogenic and tumor-suppressive forces converge on a progenitor-orchestrated nic... | Mus musculus | 4 | H5AD, MTX, TSV | 2026/03/18 |
-| [GSE315670](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE315670) | Oncogenic and tumor-suppressive forces converge on a progenitor-orchestrated nic... | Mus musculus | 6 | MTX, TSV | 2026/03/18 |
-| [GSE315242](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE315242) | Oncogenic and tumor-suppressive forces converge on a progenitor-orchestrated nic... | Mus musculus | 8 | MTX, TSV | 2026/03/18 |
-| [GSE315241](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE315241) | Oncogenic and tumor-suppressive forces converge on a progenitor-orchestrated nic... | Mus musculus | 1 | JSON, MTX, TSV | 2026/03/18 |
-| [GSE313305](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE313305) | Oncogenic and tumor-suppressive forces converge on a progenitor-orchestrated nic... | Mus musculus | 17 | MTX, TSV | 2026/03/18 |
-| [GSE308189](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE308189) | CD63 regulates corneal epithelium abundant genes in the limbus | Homo sapiens; Mus musculus | 15 | XLSX | 2026/03/18 |
-| [GSE305503](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE305503) | Retinal Organoid Screening Reveals ABT-737 and Luminespib as Selective Agents Ag... | Homo sapiens | 1 | CSV, H5AD, MTX | 2026/03/18 |
-| [GSE324641](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE324641) | Gammaherpesviruses reprogram long-term myelopoiesis through CD8⁺ T cell–monocyte... | Mus musculus | 27 | BED, BW, CSV, H5, TBI, TSV | 2026/03/17 |
-| [GSE324569](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE324569) | Gammaherpesviruses reprogram long-term myelopoiesis through CD8⁺ T cell–monocyte... | Mus musculus | 3 | CSV, TXT, XLSX | 2026/03/17 |
-| [GSE324568](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE324568) | Gammaherpesviruses reprogram long-term myelopoiesis through CD8⁺ T cell–monocyte... | Mus musculus | 4 | BED, H5, TBI, TSV | 2026/03/17 |
-| [GSE267056](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE267056) | Effect of Gnmt overexpression on rhythmic gene expression in Drosophila melanoga... | Drosophila melanogaster | 54 | BW | 2026/03/16 |
-| [GSE311056](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE311056) | Transcriptional consequences of herpes simplex virus 1 ICP4 inducible expression... | Homo sapiens | 22 | CSV | 2026/03/13 |
-| [GSE324043](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE324043) | Celastrol induces autophagy and apoptosis of human osteosarcoma cells via downre... | Homo sapiens | 6 | TXT | 2026/03/11 |
-| [GSE309371](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE309371) | Transcriptomic Changes in the Lacrimal Glands of a Sjogren's Disease Animal Mode... | Mus musculus | 18 | TXT | 2026/03/11 |
-| [GSE310839](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE310839) | Transcriptome profiling of B-cell lymphoma cells with pharmacological inhibition... | Homo sapiens | 12 | CSV | 2026/03/10 |
-| [GSE307923](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE307923) | Single cell transcriptomics of retinal organoids reveal effects of PRPF31 mutati... | Homo sapiens | 4 | MTX, TSV | 2026/03/10 |
-| [GSE299237](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE299237) | COMPARATIVE RNAseq ANALYSIS OF THE IRIDOCORNEAL REGION OF DBA/2J AND DBA/2J-Gpnm... | Mus musculus | 5 | CSV | 2026/03/10 |
-| [GSE296278](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE296278) | scRNAseq of retinal cells in experimental autoimmune uveitis comparing young vs.... | Mus musculus | 4 | RDS | 2026/03/10 |
-| [GSE300323](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE300323) | Re-analysis of PRO-seq data from HCT116 cells (GSE129501) | Homo sapiens | 0 | BW, XLSX | 2026/03/09 |
-| [GSE322550](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE322550) | Dissecting the mechanism of circZNF827-mediated transcriptional regulation of ne... | Homo sapiens | 12 | TXT | 2026/03/08 |
 
-*...and 2852 more datasets.*
+*...and 2871 more datasets.*

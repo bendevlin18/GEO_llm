@@ -1,12 +1,12 @@
 # Ovis aries
 
-> 184 RNA-seq datasets | 2015/01/01 – 2026/04/08
+> 185 RNA-seq datasets | 2015/01/01 – 2026/04/27
 
 ## Modality Breakdown
 
 | Modality | Count |
 |----------|------:|
-| bulk | 156 |
+| bulk | 157 |
 | single-cell | 26 |
 | single-nucleus | 1 |
 | spatial | 1 |
@@ -16,11 +16,11 @@
 | Type | Count |
 |------|------:|
 | TXT | 98 |
+| XLSX | 27 |
 | TSV | 27 |
 | CSV | 26 |
-| XLSX | 26 |
 | MTX | 19 |
-| XLS | 4 |
+| XLS | 5 |
 | DIFF | 4 |
 | FA | 3 |
 | GTF | 2 |
@@ -30,6 +30,7 @@
 
 | Accession | Title | Organism | Samples | Archive Contents | Date |
 |-----------|-------|----------|--------:|-----------------|------|
+| [GSE306255](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE306255) | Molecular phenotypes in early gallbladder and liver disease in the CFTR-/- sheep... | Ovis aries | 42 | BW, XLS, XLSX | 2026/04/13 |
 | [GSE325213](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325213) | Transcriptomic analysis of fetal sheep liver across gestation (Gestational days ... | Ovis aries | 15 | TXT | 2026/03/23 |
 | [GSE324243](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE324243) | ST36 acupoint implantation of an astragaloside IV–glycyrrhizic acid drug eluting... | Ovis aries | 2 | MTX, TSV | 2026/03/13 |
 | [GSE320427](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE320427) | A Single-Cell Transcriptomic Atlas of Symmetry Breaking in Sheep | Ovis aries | 1 | RDS | 2026/02/26 |
@@ -79,6 +80,5 @@
 | [GSE270269](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE270269) | RNA splicing and alternative polyadenylation profile during sheep zygotic genome... | Ovis aries | 26 | TXT | 2024/06/20 |
 | [GSE269818](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE269818) | Cell and tissue adaptation in the pulmonary autograft in a large animal model of... | Ovis aries | 22 | TXT | 2024/06/14 |
 | [GSE268651](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE268651) | Single-cell Transcriptomes and Follicular Fluid Proteomics of Ovine Atretic Foll... | Ovis aries | 6 | TXT | 2024/06/05 |
-| [GSE227043](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE227043) | Transcriptome profiling of multi-chambered stomachs in developing lambs [Day 5 a... | Ovis aries | 24 | CSV | 2024/05/17 |
 
-*...and 134 more datasets.*
+*...and 135 more datasets.*
