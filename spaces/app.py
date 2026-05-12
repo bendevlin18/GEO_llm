@@ -168,8 +168,31 @@ def extract_terms(query: str) -> list[str]:
     return terms[:8]
 
 
+def expand_query(query: str) -> list[str]:
+    """Use Haiku to generate biological synonyms and abbreviations for better recall."""
+    try:
+        response = client.messages.create(
+            model="claude-haiku-4-5-20251001",
+            max_tokens=150,
+            messages=[{
+                "role": "user",
+                "content": (
+                    f"Given this GEO dataset search query, list 5-8 additional specific biological terms "
+                    f"(synonyms, abbreviations, gene names, mouse model names, cell line names, disease aliases) "
+                    f"that would appear in relevant dataset titles or summaries.\n"
+                    f"Query: {query}\n"
+                    f"Return only a comma-separated list. No explanations. No generic words like 'mouse' or 'RNA'."
+                ),
+            }],
+        )
+        raw = response.content[0].text.strip()
+        return [t.strip() for t in raw.split(",") if t.strip() and len(t.strip()) >= 3][:8]
+    except Exception:
+        return []
+
+
 def search_shard(shard_path: str, terms: list[str], modality_filter: str | None = None,
-                 max_results: int = 300) -> list[str]:
+                 max_results: int = 300, min_matches_override: int | None = None) -> list[str]:
     """
     Stream through a shard and score lines by how many terms they match.
     Returns up to max_results lines, ranked by match count (highest first).
@@ -179,9 +202,12 @@ def search_shard(shard_path: str, terms: list[str], modality_filter: str | None 
         return []
 
     terms_lower = [t.lower() for t in terms]
-    # Require all terms to match when we have ≤3 specific terms;
-    # require at least half when we have more (handles broad queries gracefully)
-    min_matches = len(terms_lower) if len(terms_lower) <= 3 else max(2, len(terms_lower) // 2)
+    if min_matches_override is not None:
+        min_matches = min_matches_override
+    else:
+        # Require all terms to match when we have ≤3 specific terms;
+        # require at least half when we have more (handles broad queries gracefully)
+        min_matches = len(terms_lower) if len(terms_lower) <= 3 else max(2, len(terms_lower) // 2)
 
     scored: list[tuple[int, str]] = []
 
@@ -208,25 +234,51 @@ def search_shard(shard_path: str, terms: list[str], modality_filter: str | None 
     return [line for _, line in scored[:max_results]]
 
 
-def run_search(query: str) -> tuple[list[str], list[str]]:
+def run_search(query: str) -> tuple[list[str], list[str], list[str]]:
     """
     Detect shards, run scored intersection search, return
-    (candidate_lines, search_summary_strings).
-    Falls back to a single-term broad search if intersection yields nothing.
+    (candidate_lines, search_summary_strings, expanded_terms).
+    Pass 1: keyword grep on extracted terms (precision).
+    Pass 2: synonym grep on LLM-expanded terms (recall).
+    Falls back to a single-term broad search if both passes yield nothing.
     """
     shard_keys = detect_shards(query)
     terms = extract_terms(query)
+    expanded = expand_query(query)
 
     all_lines: list[str] = []
     summaries: list[str] = []
+    seen: set[str] = set()
 
     for key in shard_keys:
         path, label = SHARDS[key]
         mod_filter = "bulk" if key == "rnaseq_bulk" else None
+
+        # Pass 1: primary keyword search
         hits = search_shard(path, terms, modality_filter=mod_filter)
-        if hits:
-            all_lines.extend(hits[:150])
-            summaries.append(f"{label}: {len(hits)} match{'es' if len(hits) != 1 else ''}")
+        primary_count = 0
+        for line in hits[:150]:
+            acc = line.split("|")[0]
+            if acc not in seen:
+                all_lines.append(line)
+                seen.add(acc)
+                primary_count += 1
+        if primary_count:
+            summaries.append(f"{label}: {primary_count} match{'es' if primary_count != 1 else ''}")
+
+        # Pass 2: expansion search — any single expanded term qualifies
+        if expanded:
+            exp_hits = search_shard(path, expanded, modality_filter=mod_filter,
+                                    max_results=100, min_matches_override=1)
+            added = 0
+            for line in exp_hits:
+                acc = line.split("|")[0]
+                if acc not in seen:
+                    all_lines.append(line)
+                    seen.add(acc)
+                    added += 1
+            if added:
+                summaries.append(f"{label} +{added} via expansion")
 
     # Fallback: if nothing found, retry with the single longest specific term
     if not all_lines and terms:
@@ -236,17 +288,22 @@ def run_search(query: str) -> tuple[list[str], list[str]]:
             mod_filter = "bulk" if key == "rnaseq_bulk" else None
             hits = search_shard(path, fallback, modality_filter=mod_filter)
             if hits:
-                all_lines.extend(hits[:100])
-                summaries.append(f"{label} (broad): {len(hits)} matches")
+                for line in hits[:100]:
+                    acc = line.split("|")[0]
+                    if acc not in seen:
+                        all_lines.append(line)
+                        seen.add(acc)
+                summaries.append(f"{label} (broad fallback)")
 
-    return all_lines[:300], summaries
+    return all_lines[:300], summaries, expanded
 
 
 # ---------------------------------------------------------------------------
 # LLM step
 # ---------------------------------------------------------------------------
 
-def build_user_message(query: str, candidates: list[str], summaries: list[str]) -> str:
+def build_user_message(query: str, candidates: list[str], summaries: list[str],
+                       expanded: list[str]) -> str:
     if not candidates:
         return (
             f'The user searched for: "{query}"\n\n'
@@ -257,12 +314,13 @@ def build_user_message(query: str, candidates: list[str], summaries: list[str]) 
 
     candidate_block = "\n".join(candidates)
     search_note = ", ".join(summaries) if summaries else "unknown shards"
+    expansion_note = (f"\nExpanded search terms used: {', '.join(expanded)}" if expanded else "")
 
     return f"""The user is searching the GEO Multi-omics index for: "{query}"
 
 Index format: {INDEX_FORMAT}
 
-Search results ({search_note}):
+Search results ({search_note}){expansion_note}:
 {candidate_block}
 
 Please identify the most relevant datasets for the user's query and present them clearly."""
@@ -273,8 +331,8 @@ def answer_query(query: str, history: list[dict]) -> tuple[list[dict], str]:
     if not query.strip():
         return history, ""
 
-    candidates, summaries = run_search(query)
-    user_msg = build_user_message(query, candidates, summaries)
+    candidates, summaries, expanded = run_search(query)
+    user_msg = build_user_message(query, candidates, summaries, expanded)
 
     response = client.messages.create(
         model="claude-sonnet-4-6",
