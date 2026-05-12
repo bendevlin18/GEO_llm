@@ -157,6 +157,12 @@ Then ask in plain English:
 
 Gemini CLI will grep the relevant search index shard, read the results, and interpret them — the same grep → LLM pattern this index is designed for. Gemini 2.5 Pro's 1M token context window means it can handle even the larger shards without pre-filtering.
 
+For structured workflows (fetch, rebuild, release), use the `@` include syntax:
+```
+@prompts/search.md find mouse kidney snRNA-seq with H5 files
+@prompts/rebuild.md
+```
+
 ### Option C: Google NotebookLM
 
 [NotebookLM](https://notebooklm.google.com) is free with a Google account. Upload a shard as a source, then query in plain English.
@@ -242,11 +248,19 @@ GEO_llm/
 │   ├── generate_plots.py            # Generate README charts (requires matplotlib)
 │   └── merge_and_rebuild.py         # End-to-end pipeline runner
 │
+├── prompts/                     # Tool-agnostic workflow prompts
+│   ├── search.md                    # Dataset discovery workflow (grep → LLM)
+│   ├── rebuild.md                   # Full pipeline rebuild steps
+│   ├── fetch.md                     # Fetch new GEO metadata
+│   └── release.md                   # Publish a data release
+│
 ├── data/                        # Raw GEO metadata snapshots (gitignored, ~315 MB)
 ├── rnaseq_classified.json       # Classified records (gitignored, bootstrap via script)
 ├── ftp_index.json               # FTP file listings (gitignored, bootstrap via script)
 │
-├── CLAUDE.md                    # Full technical documentation
+├── AGENTS.md                    # Full technical documentation (shared across AI tools)
+├── CLAUDE.md                    # Claude Code stub → points to AGENTS.md
+├── GEMINI.md                    # Gemini CLI stub → points to AGENTS.md
 └── plans.md                     # Project roadmap
 ```
 
@@ -269,23 +283,23 @@ Datasets are tagged with one or more of 28 research topics:
 
 ## Updating the data
 
-To pull in new GEO records and rebuild:
+Full workflow steps are in [`prompts/fetch.md`](prompts/fetch.md) and [`prompts/rebuild.md`](prompts/rebuild.md). Quick reference:
 
 ```bash
-# 1. Fetch new metadata (adjust date range as needed)
+# Fetch a new date range
 conda run -n GEO_llm python scripts/geo_metadata_fetcher.py \
     --email your@email.com \
     --start-date 2026/01/01 --end-date 2026/06/30 \
     -o data/geo_metadata_2026-Q2.json
 
-# 2. Merge, classify, tag, and rebuild everything
-conda run -n GEO_llm python scripts/merge_and_rebuild.py
-
-# 3. Index new FTP entries (incremental — resumes if interrupted)
-conda run -n GEO_llm python scripts/index_ftp.py
-
-# 4. Rebuild search index with FTP data
+# Classify → build index → generate wiki → generate plots
+conda run -n GEO_llm python scripts/extract_rnaseq.py
+conda run -n GEO_llm python scripts/extract_chipseq.py
+conda run -n GEO_llm python scripts/extract_methylation.py
+conda run -n GEO_llm python scripts/extract_multiomics.py
 conda run -n GEO_llm python scripts/build_search_index.py
+conda run -n GEO_llm python scripts/generate_wiki.py
+conda run -n GEO_llm python scripts/generate_plots.py
 ```
 
 All scripts use the NCBI E-Utilities API. An `NCBI_EMAIL` env var is required by NCBI policy; an optional `NCBI_API_KEY` raises the rate limit from 3 to 10 req/sec.
