@@ -319,7 +319,8 @@ with gr.Blocks(title="GEO Multi-omics Search", theme=gr.themes.Soft()) as demo:
 
     chatbot = gr.Chatbot(
         label="Results",
-        height=540,
+        height=800,
+        min_width=600,
         show_copy_button=True,
         render_markdown=True,
         type="messages",
