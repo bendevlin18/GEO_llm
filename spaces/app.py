@@ -369,5 +369,11 @@ with gr.Blocks(title="GEO Multi-omics Search", theme=gr.themes.Soft()) as demo:
         outputs=chatbot,
     )
 
-if __name__ == "__main__":
-    demo.launch()
+_auth_pairs = []
+for _i in range(1, 5):
+    _u = os.environ.get(f"AUTH_USER{_i}")
+    _p = os.environ.get(f"AUTH_PASS{_i}")
+    if _u and _p:
+        _auth_pairs.append((_u, _p))
+
+demo.launch(auth=_auth_pairs or None, server_name="0.0.0.0", ssr_mode=False)
