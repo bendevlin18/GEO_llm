@@ -317,7 +317,7 @@ All scripts use the NCBI E-Utilities API. An `NCBI_EMAIL` env var is required by
 
 ## Roadmap
 
-See [`plans.md`](plans.md) for the full roadmap. Current priorities:
+See [`plans.md`](plans.md) for the full roadmap and [`docs/search_architecture.md`](docs/search_architecture.md) for how the grep → LLM search pattern works across CLI tools and the HF Space. Current priorities:
 
 - **`scripts/query.py`** — CLI grep wrapper with named flags (`--modality`, `--organism`, `--topic`, `--files`) for users who want search without memorizing the index format
 - **GitHub Pages static search** — browser-based faceted search with no install or LLM required
