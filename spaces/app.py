@@ -266,22 +266,23 @@ def run_search(query: str) -> tuple[list[str], list[str], list[str]]:
                 all_lines.append(line)
                 seen.add(acc)
                 primary_count += 1
-        if primary_count:
-            summaries.append(f"{label}: {primary_count} match{'es' if primary_count != 1 else ''}")
 
         # Pass 2: expansion search — any single expanded term qualifies
+        exp_count = 0
         if expanded:
             exp_hits = search_shard(path, expanded, modality_filter=mod_filter,
                                     max_results=100, min_matches_override=1)
-            added = 0
             for line in exp_hits:
                 acc = line.split("|")[0]
                 if acc not in seen:
                     all_lines.append(line)
                     seen.add(acc)
-                    added += 1
-            if added:
-                summaries.append(f"{label} +{added} via expansion")
+                    exp_count += 1
+
+        total = primary_count + exp_count
+        if total:
+            note = f" (+{exp_count} via synonyms)" if exp_count and primary_count else " (via synonyms)" if exp_count else ""
+            summaries.append(f"{label}: {total}{note}")
 
     # Fallback: if nothing found, retry with the single longest specific term
     if not all_lines and terms:
