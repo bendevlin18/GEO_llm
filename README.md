@@ -40,6 +40,10 @@ This project solves that by building a structured, grep-friendly index designed 
 
 ## Quick start
 
+### Option 0: Use the hosted app
+
+A search UI is live at **[huggingface.co/spaces/bendevlin/geo-multiomics-search](https://huggingface.co/spaces/bendevlin/geo-multiomics-search)** — type a natural-language query and get ranked results powered by Claude Haiku. No setup required.
+
 ### Option 1: Query the wiki directly (no setup)
 
 The wiki and search index are checked into this repo. Clone and grep:
