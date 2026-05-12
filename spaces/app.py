@@ -94,6 +94,10 @@ MODALITY_SIGNALS = {
 
 def detect_shards(query: str) -> list[str]:
     """Return ordered list of shard keys to search, based on query signals."""
+    # Direct accession lookup — search every shard so we never miss a known GSE ID
+    if re.search(r'\bGSE\d+\b', query, re.IGNORECASE):
+        return list(SHARDS.keys())
+
     q = query.lower()
     scores: dict[str, int] = {k: 0 for k in MODALITY_SIGNALS}
     for shard_key, signals in MODALITY_SIGNALS.items():
@@ -105,9 +109,8 @@ def detect_shards(query: str) -> list[str]:
     matched = sorted([k for k, v in scores.items() if v > 0], key=lambda k: -scores[k])
 
     if not matched:
-        # No explicit modality signal — default to single-cell (most common complex query)
-        # and snRNA + spatial as secondary
-        return ["rnaseq_singlecell", "rnaseq_snrnaseq", "rnaseq_spatial"]
+        # No explicit modality signal — include bulk since it covers ~80% of RNA-seq records
+        return ["rnaseq_singlecell", "rnaseq_bulk", "rnaseq_snrnaseq", "rnaseq_spatial"]
 
     return matched
 
