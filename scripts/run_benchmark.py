@@ -14,14 +14,10 @@ Run:    conda run -n GEO_llm python scripts/run_benchmark.py
 import os
 import re
 import sys
+import time
 from datetime import date
 
 import anthropic
-
-if not os.environ.get("ANTHROPIC_API_KEY"):
-    print("Error: ANTHROPIC_API_KEY not set.")
-    print("Run as: ANTHROPIC_API_KEY=sk-ant-... conda run -n GEO_llm python scripts/run_benchmark.py")
-    sys.exit(1)
 
 client = anthropic.Anthropic()
 
@@ -99,18 +95,23 @@ MODALITY_SIGNALS = {
                           "multi-omic", "multiomics", "rna+atac", "protein and rna"],
 }
 
-BENCHMARK_QUERIES = [
-    ("Q1",  "T1", "Find zebrafish spatial transcriptomics datasets"),
-    ("Q2",  "T1", "How many CITE-seq datasets profile human PBMCs?"),
-    ("Q3",  "T2", "Mouse kidney snRNA-seq with at least 5 samples and H5 files available"),
-    ("Q4",  "T2", "Human bulk RNA-seq cancer datasets with processed count matrices (CSV or TSV files)"),
-    ("Q5",  "T2", "H3K27ac ChIP-seq datasets in mouse embryonic stem cells"),
-    ("Q6",  "T3", "Find single-cell RNA-seq from APP/PS1 or 5XFAD mice"),
-    ("Q7",  "T3", "Find datasets from the Tabula Muris project"),
-    ("Q8",  "T4", "Find two comparable snRNA-seq datasets of human kidney that I could use to replicate an analysis — similar sample counts preferred"),
-    ("Q9",  "T4", "I want to study chromatin accessibility in mouse brain development — what datasets are available?"),
-    ("Q10", "T5", "I'm studying liver fibrosis — what's the best dataset to start with?"),
-]
+QUERIES_FILE = "tool_testing/benchmark_queries.md"
+
+
+def load_queries(path: str = QUERIES_FILE) -> list[tuple[str, str, str]]:
+    queries = []
+    with open(path) as f:
+        for line in f:
+            line = line.strip()
+            if not line.startswith("|") or line.startswith("| ID") or line.startswith("|---"):
+                continue
+            parts = [p.strip() for p in line.strip("|").split("|")]
+            if len(parts) == 3:
+                queries.append((parts[0], parts[1], parts[2]))
+    return queries
+
+
+BENCHMARK_QUERIES = load_queries()
 
 # ---------------------------------------------------------------------------
 # App pipeline (mirrors spaces/app.py)
@@ -234,7 +235,7 @@ def run_app_pipeline(query: str) -> dict:
                     + "\n".join(candidates)
                     + '\n\nIdentify the most relevant datasets and present them clearly.')
 
-    response = client.messages.create(
+    response = api_create_with_backoff(
         model="claude-sonnet-4-6",
         max_tokens=2048,
         system=SYSTEM_PROMPT,
@@ -308,12 +309,23 @@ def run_grep_tool(shard: str, terms: list[str], require_any: bool = False) -> st
     return f"# {label} — {len(hits)} results\n" + "\n".join(hits[:100])
 
 
+def api_create_with_backoff(**kwargs):
+    for attempt in range(6):
+        try:
+            return client.messages.create(**kwargs)
+        except anthropic.RateLimitError:
+            wait = 30 * (2 ** attempt)
+            print(f"    rate limited — waiting {wait}s…", flush=True)
+            time.sleep(wait)
+    return client.messages.create(**kwargs)
+
+
 def run_agentic_pipeline(query: str) -> dict:
     messages = [{"role": "user", "content": query}]
     tool_calls = []
 
     while True:
-        response = client.messages.create(
+        response = api_create_with_backoff(
             model="claude-sonnet-4-6",
             max_tokens=4096,
             system=AGENTIC_SYSTEM,
@@ -353,24 +365,12 @@ def run_agentic_pipeline(query: str) -> dict:
 # Runner and output
 # ---------------------------------------------------------------------------
 
-def run_benchmark(queries: list | None = None) -> str:
+def run_benchmark(queries: list | None = None, out_dir: str = "tool_testing") -> None:
     queries = queries or BENCHMARK_QUERIES
     today = date.today().isoformat()
-    lines = [
-        f"# Benchmark Results — {today}",
-        "",
-        "Scoring rubric (1–3 each): Accuracy · Completeness · Constraint adherence · "
-        "Domain interpretation · Explanation quality · Hallucination · Tool efficiency",
-        "",
-        "| Query | App Score | Agentic Score | Notes |",
-        "|---|---|---|---|",
-        *[f"| {qid} | | | |" for qid, _, _ in queries],
-        "",
-        "---",
-        "",
-    ]
 
     for qid, tier, query in queries:
+        out_path = f"{out_dir}/{today}_{qid}.md"
         print(f"Running {qid} ({tier})…", flush=True)
 
         print(f"  app pipeline…", flush=True)
@@ -383,11 +383,11 @@ def run_benchmark(queries: list | None = None) -> str:
             f"{c['shard']}({', '.join(c['terms'])})" for c in agentic["tool_calls"]
         ) or "none"
 
-        lines += [
-            f"## {qid} ({tier})",
+        block = "\n".join([
+            f"# {qid} ({tier}) — {today}",
             f"**Query:** {query}",
             "",
-            "### App pipeline",
+            "## App pipeline",
             f"*Shards: {', '.join(app['shards_searched'])} | "
             f"Terms: {', '.join(app['terms'])} | "
             f"Expanded: {', '.join(app['expanded'])} | "
@@ -395,35 +395,30 @@ def run_benchmark(queries: list | None = None) -> str:
             "",
             app["answer"],
             "",
-            "### Agentic pipeline",
+            "## Agentic pipeline",
             f"*Tool calls: {tool_summary}*",
             "",
             agentic["answer"],
             "",
-            "---",
-            "",
-        ]
-        print(f"  done.", flush=True)
+        ])
 
-    return "\n".join(lines)
+        with open(out_path, "w") as f:
+            f.write(block)
+
+        print(f"  done. Written to {out_path}", flush=True)
 
 
 if __name__ == "__main__":
+    if not os.environ.get("ANTHROPIC_API_KEY"):
+        print("Error: ANTHROPIC_API_KEY not set.")
+        print("Run as: ANTHROPIC_API_KEY=sk-ant-... conda run -n GEO_llm python scripts/run_benchmark.py")
+        sys.exit(1)
+
     import argparse
     parser = argparse.ArgumentParser()
     parser.add_argument("--queries", nargs="+", help="Run specific query IDs only, e.g. Q1 Q6")
+    parser.add_argument("--out-dir", default="tool_testing", help="Output directory")
     args = parser.parse_args()
 
-    if args.queries:
-        subset = [q for q in BENCHMARK_QUERIES if q[0] in args.queries]
-    else:
-        subset = None
-
-    output = run_benchmark(subset)
-
-    today = date.today().isoformat()
-    out_path = f"tool_testing/benchmark_results_{today}.md"
-    with open(out_path, "w") as f:
-        f.write(output)
-
-    print(f"\nResults saved to {out_path}")
+    subset = [q for q in BENCHMARK_QUERIES if q[0] in args.queries] if args.queries else None
+    run_benchmark(subset, out_dir=args.out_dir)

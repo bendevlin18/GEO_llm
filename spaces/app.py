@@ -330,6 +330,25 @@ Search results ({search_note}){expansion_note}:
 Please identify the most relevant datasets for the user's query and present them clearly."""
 
 
+def generate_report_file(history: list[dict]) -> str | None:
+    if not history:
+        return None
+    lines = [
+        "# GEO Dataset Search Report",
+        f"*Generated: {datetime.now().strftime('%Y-%m-%d %H:%M')}*",
+        "",
+    ]
+    for msg in history:
+        if msg["role"] == "user":
+            lines += [f"## Query", f"> {msg['content']}", ""]
+        else:
+            lines += [msg["content"], "", "---", ""]
+    tmp = tempfile.NamedTemporaryFile(mode="w", suffix=".md", delete=False, prefix="geo_report_")
+    tmp.write("\n".join(lines))
+    tmp.close()
+    return tmp.name
+
+
 def answer_query(query: str, history: list[dict]) -> tuple[list[dict], str]:
     """Gradio handler: run search + LLM, return updated chat history."""
     if not query.strip():
@@ -359,6 +378,8 @@ def answer_query(query: str, history: list[dict]) -> tuple[list[dict], str]:
 # Gradio UI
 # ---------------------------------------------------------------------------
 
+import tempfile
+from datetime import datetime
 import gradio as gr
 
 DESCRIPTION = """
@@ -397,6 +418,12 @@ with gr.Blocks(title="GEO Multi-omics Search", theme=gr.themes.Soft()) as demo:
         )
         submit_btn = gr.Button("Search", variant="primary", scale=1)
 
+    download_btn = gr.DownloadButton(
+        label="Download Report",
+        visible=False,
+        size="sm",
+    )
+
     gr.Examples(
         examples=[
             "Single-cell RNA-seq from APP/PS1 mice, and a similar-sized dataset from 5XFAD mice",
@@ -412,25 +439,24 @@ with gr.Blocks(title="GEO Multi-omics Search", theme=gr.themes.Soft()) as demo:
 
     state = gr.State([])
 
-    submit_btn.click(
-        fn=answer_query,
-        inputs=[query_box, state],
-        outputs=[state, query_box],
-    ).then(
-        fn=lambda h: h,
-        inputs=state,
-        outputs=chatbot,
-    )
+    def _refresh_download(history):
+        path = generate_report_file(history)
+        return gr.DownloadButton(value=path, visible=path is not None)
 
-    query_box.submit(
-        fn=answer_query,
-        inputs=[query_box, state],
-        outputs=[state, query_box],
-    ).then(
-        fn=lambda h: h,
-        inputs=state,
-        outputs=chatbot,
-    )
+    for trigger in (submit_btn.click, query_box.submit):
+        trigger(
+            fn=answer_query,
+            inputs=[query_box, state],
+            outputs=[state, query_box],
+        ).then(
+            fn=lambda h: h,
+            inputs=state,
+            outputs=chatbot,
+        ).then(
+            fn=_refresh_download,
+            inputs=state,
+            outputs=download_btn,
+        )
 
 _auth_pairs = []
 for _i in range(1, 5):
