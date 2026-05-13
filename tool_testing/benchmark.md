@@ -19,18 +19,74 @@ Scoring rubric (1–3 each): Accuracy · Completeness · Constraint adherence ·
 
 ## Scoring
 
-| Query | App Score | Agentic Score | Notes |
-|---|---|---|---|
-| Q1 | | | |
-| Q2 | | | |
-| Q3 | | | |
-| Q4 | | | |
-| Q5 | | | |
-| Q6 | | | |
-| Q7 | | | |
-| Q8 | | | |
-| Q9 | | | |
-| Q10 | | | |
+Scores out of 21 (7 criteria × 3). Criteria: **Acc**uracy · **Comp**leteness · **Const**raint adherence · **Dom**ain interpretation · **Expl**anation quality · **Hall**ucination · **Tool** efficiency.
+
+### Q1–Q10
+
+| Query | App | Agentic | App detail (Acc·Comp·Const·Dom·Expl·Hall·Tool) | Agentic detail | Notes |
+|---|---|---|---|---|---|
+| Q1 | 16 | 18 | 2·2·2·2·3·3·2 | 3·2·3·3·2·3·2 | App: broad synonym expansion pulls in non-ST datasets (GSE66688, GSE192740); Agentic: more precise, missed some real ST hits |
+| Q2 | 17 | 13 | 2·2·2·3·3·2·3 | 1·1·3·2·2·3·1 | App: reasonable ~27 count estimate; Agentic: critically underreported at 3 datasets, wrong answer to "how many" |
+| Q3 | 19 | 19 | 3·2·3·3·3·3·2 | 3·3·3·3·3·2·2 | App: honest caveat that no dataset provides .h5 directly; Agentic: clever—notes RAW.tar often contains .h5 internally |
+| Q4 | 20 | 7 | 3·2·3·3·3·3·3 | 1·1·1·1·1·1·1 | **Agentic pipeline error** (6 tool calls then crash); App: excellent, 6310-sample TCGA dataset as top pick |
+| Q5 | 19 | 20 | 3·2·2·3·3·3·3 | 3·3·2·3·3·3·3 | Both strong; Agentic: slightly broader with 2 targeted calls |
+| Q6 | 19 | 21 | 3·2·3·3·3·3·2 | 3·3·3·3·3·3·3 | Agentic: 4 targeted calls (APP/PS1 + 5XFAD × scRNA + snRNA) yielded 31 vs app's 20 |
+| Q7 | 13 | 20 | 1·1·1·3·3·3·1 | 3·3·3·3·3·3·2 | App: **failed to find Tabula Muris**—honest about it, provided accessions manually; Agentic: found all 4 components (GSE109774, GSE132042, GSE132040, GSE149590) |
+| Q8 | 19 | 19 | 3·2·3·3·3·3·2 | 3·2·2·3·3·3·3 | App: better on "similar sample counts" constraint (GSE151302×GSE232479, both n=10); Agentic top pick (47 vs 17) violates the constraint |
+| Q9 | 18 | 20 | 2·2·2·3·3·3·3 | 3·3·3·3·3·3·2 | Agentic: surfaced ENCODE developmental time-course (20 datasets, GSE172xxx series) that app missed entirely |
+| Q10 | 19 | 19 | 3·2·3·3·3·3·2 | 3·2·3·3·3·3·2 | Both correctly identified GSE136103 as the landmark starting point; app searched spatial shard, agentic did not |
+
+**Q1–Q10 totals: App 179/210 (85.2%) · Agentic 176/210 (83.8%)**  
+Excluding Q4 error: App 159/189 (84.1%) · Agentic 169/189 (89.4%)
+
+### Q11–Q21
+
+| Query | App | Agentic | App detail (Acc·Comp·Const·Dom·Expl·Hall·Tool) | Agentic detail | Notes |
+|---|---|---|---|---|---|
+| Q11 | 20 | 21 | 3·2·3·3·3·3·3 | 3·3·3·3·3·3·3 | Agentic: added multiomics shard call, surfaced GSE211822 (n=210, 25 regions), GSE244618 (n=128); app correctly excluded kidney DNase-seq false positives |
+| Q12 | 16 | 20 | 2·1·2·3·3·3·2 | 3·3·3·3·3·3·2 | Agentic: 5 targeted calls with cortical synonyms → ~37 datasets; app returned ~7 with count severely underestimated |
+| Q13 | 19 | 9 | 3·2·3·3·3·3·2 | 1·1·1·1·1·3·1 | **Agentic pipeline error**; app returned comprehensive Drosophila scRNA-seq list (output truncated at 25) |
+| Q14 | 19 | 21 | 3·2·3·3·3·3·2 | 3·3·3·3·3·3·3 | Agentic: found 26 datasets via spatial+multiomics calls vs app's 14; both covered human MI and heart failure well |
+| Q15 | 18 | 18 | 2·1·3·3·3·3·3 | 2·3·2·3·3·2·3 | App: precise 12-dataset WGBS count with strong methodology caveats; Agentic: broader 37 datasets but "70+" estimate risks overcounting SuperSeries |
+| Q16 | 20 | 18 | 3·2·3·3·3·3·3 | 3·1·3·3·3·3·2 | App: searched chipseq+cut_run_tag → 20 datasets; Agentic: only cut_run_tag call → 7 (missed H3K27me3 datasets in chipseq shard) |
+| Q17 | 20 | 20 | 3·2·3·3·3·3·3 | 3·3·2·3·3·3·3 | Both strong; Agentic: "rat"+"Rattus norvegicus" dual call is the right strategy to catch both naming conventions |
+| Q18 | 17 | 18 | 2·2·2·3·3·3·2 | 2·2·3·3·3·3·2 | Agentic: found GSE280267 (199 samples, .h5ad) — the strict-constraint match app missed; both returned many alternatives without H5AD |
+| Q19 | 18 | 19 | 2·2·2·3·3·3·3 | 2·2·3·3·3·3·3 | Both include some non-ATAC datasets (ChIP-seq, CUT&RUN); Agentic flagged them better; app listed them with ⚠️ |
+| Q20 | 19 | 20 | 3·2·2·3·3·3·3 | 3·2·3·3·3·3·3 | App: includes many ENCODE ENCSR datasets; Agentic: explicitly excludes mouse ESC (correct), more scoped to hESC |
+| Q21 | 19 | 19 | 3·3·2·3·3·3·2 | 3·1·3·3·3·3·3 | App: comprehensive 16 datasets (includes 1 below threshold); Agentic: only 6 datasets, missed landmark GSE98679, GSE85721, GSE104525 |
+
+**Q11–Q21 totals: App 205/231 (88.7%) · Agentic 203/231 (87.9%)**  
+Excluding Q13 error: App 186/210 (88.6%) · Agentic 194/210 (92.4%)
+
+---
+
+## Overall Summary (Q1–Q21)
+
+| Pipeline | Raw score | Pct | Excl. errors | Pct |
+|---|---|---|---|---|
+| App | 384 / 441 | **87.1%** | 345 / 399 | 86.5% |
+| Agentic | 379 / 441 | **85.9%** | 363 / 399 | **91.0%** |
+
+**Pipeline errors: Q4 (agentic — bulk cancer CSV query), Q13 (agentic — Drosophila scRNA-seq query)**
+
+### Criterion breakdown (App · Agentic, 21 queries, max 63 each)
+
+| Criterion | App | Agentic |
+|---|---|---|
+| Accuracy | 53 | 52 |
+| Completeness | 40 | 45 |
+| Constraint adherence | 51 | 52 |
+| Domain interpretation | 61 | 59 |
+| Explanation quality | 63 | 59 |
+| Hallucination | 61 | 59 |
+| Tool efficiency | 55 | 53 |
+
+**Key takeaways:**
+- App leads on Explanation quality and Hallucination — it almost never fabricates and always provides thorough per-dataset reasoning.
+- Agentic leads on Completeness — when it works, targeted multi-call strategies surface more relevant datasets.
+- App leads on Tool efficiency for single-criterion queries; Agentic is more efficient for complex named-entity or multi-concept queries.
+- **Both pipelines have consistent domain interpretation** — synonym expansion and biology understanding are strong across the board.
+- **Two agentic pipeline errors** (Q4, Q13) are the biggest gap. Excluding them, Agentic outperforms App 91% vs 87%.
 
 ---
 
